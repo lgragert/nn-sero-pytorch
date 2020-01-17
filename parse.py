@@ -4,7 +4,7 @@
 ## Department: Pathology and Laboratory Medicine
 ## Location: Louisiana Cancer Research Center
 ## Date Begun: 01/16/2020
-## Purpose: To modernize SNNS
+## Purpose: to parse files for SNNS
 
 # figure out how to parse the training, testing, and validation files into vectors.
 import torch
@@ -21,7 +21,8 @@ def _parse(tng_file, tst_file, val_file):
     # loop through each line of the training file
     for each in tng_file:
         # will only be executed once, to create a list of the polymorphic amino acids
-        if each.find("# A1") != -1:
+        if each.find("No. of output") != -1:
+            each = next(tng_file)
             AA = each.strip("# ")
             AA_list = AA.split()
             continue
@@ -72,33 +73,41 @@ def _parse(tng_file, tst_file, val_file):
 def _file_handler():
     # opening files to send to the parser
     # there is almost definitely a much simpler way to code this
-    A_tng_file = open("/Users/dbiagini/dev/nn-serology/A.tng.pat", 'r')
-    A_tst_file = open("/Users/dbiagini/dev/nn-serology/A.tst.pat", 'r')
-    A_val_file = open("/Users/dbiagini/dev/nn-serology/A.val.pat", 'r')
-    B_tng_file = open("/Users/dbiagini/dev/nn-serology/B.tng.pat", 'r')
-    B_tst_file = open("/Users/dbiagini/dev/nn-serology/B.tst.pat", 'r')
-    B_val_file = open("/Users/dbiagini/dev/nn-serology/B.tst.pat", 'r')
-    C_tng_file = open("/Users/dbiagini/dev/nn-serology/C.tst.pat", 'r')
-    C_tst_file = open("/Users/dbiagini/dev/nn-serology/C.tst.pat", 'r')
-    C_val_file = open("/Users/dbiagini/dev/nn-serology/C.tst.pat", 'r')
-    DPB1_tng_file = open("/Users/dbiagini/dev/nn-serology/DPB1.tng.pat", 'r')
-    DPB1_tst_file = open("/Users/dbiagini/dev/nn-serology/DPB1.tst.pat", 'r')
-    DPB1_val_file = open("/Users/dbiagini/dev/nn-serology/DPB1.tst.pat", 'r')
-    DQB1_tng_file = open("/Users/dbiagini/dev/nn-serology/DQB1.tng.pat", 'r')
-    DQB1_tst_file = open("/Users/dbiagini/dev/nn-serology/DQB1.tst.pat", 'r')
-    DQB1_val_file = open("/Users/dbiagini/dev/nn-serology/DQB1.tst.pat", 'r')
-    DRB1_tng_file = open("/Users/dbiagini/dev/nn-serology/DRB1.tng.pat", 'r')
-    DRB1_tst_file = open("/Users/dbiagini/dev/nn-serology/DRB1.tst.pat", 'r')
-    DRB1_val_file = open("/Users/dbiagini/dev/nn-serology/DRB1.tst.pat", 'r')
+    A_tng_file = open("A.tng.pat", 'r')
+    A_tst_file = open("A.tst.pat", 'r')
+    A_val_file = open("A.val.pat", 'r')
+    B_tng_file = open("B.tng.pat", 'r')
+    B_tst_file = open("B.tst.pat", 'r')
+    B_val_file = open("B.val.pat", 'r')
+    C_tng_file = open("C.tng.pat", 'r')
+    C_tst_file = open("C.tst.pat", 'r')
+    C_val_file = open("C.val.pat", 'r')
+    DPB1_tng_file = open("DPB1.tng.pat", 'r')
+    DPB1_tst_file = open("DPB1.tst.pat", 'r')
+    DPB1_val_file = open("DPB1.val.pat", 'r')
+    DQB1_tng_file = open("DQB1.tng.pat", 'r')
+    DQB1_tst_file = open("DQB1.tst.pat", 'r')
+    DQB1_val_file = open("DQB1.val.pat", 'r')
+    DRB1_tng_file = open("DRB1.tng.pat", 'r')
+    DRB1_tst_file = open("DRB1.tst.pat", 'r')
+    DRB1_val_file = open("DRB1.val.pat", 'r')
 
     # function call to the parser
     # this part is actually pretty succint, but it could be shorter
     A_tng_dict, A_tst_dict, A_val_dict = _parse(A_tng_file, A_tst_file, A_val_file)
-    B_tng_dict, B_tst_dict, B_val_file = _parse(B_tng_file, B_tst_file, B_val_file)
-    C_tng_dict, C_tst_dict, C_val_file = _parse(C_tng_file, C_tst_file, C_val_file)
-    DPB1_tng_dict, DPB1_tst_dict, DPB1_val_file = _parse(DPB1_tng_file, DPB1_tst_file, DPB1_val_file)
-    DQB1_tng_dict, DQB1_tst_dict, DQB1_val_file = _parse(DQB1_tng_file, DQB1_tst_file, DQB1_val_file)
-    DRB1_tng_dict, DRB1_tst_dict, DRB1_val_file = _parse(DRB1_tng_file, DRB1_tst_file, DRB1_val_file)
+    B_tng_dict, B_tst_dict, B_val_dict = _parse(B_tng_file, B_tst_file, B_val_file)
+    C_tng_dict, C_tst_dict, C_val_dict = _parse(C_tng_file, C_tst_file, C_val_file)
+    DPB1_tng_dict, DPB1_tst_dict, DPB1_val_dict = _parse(DPB1_tng_file, DPB1_tst_file, DPB1_val_file)
+    DQB1_tng_dict, DQB1_tst_dict, DQB1_val_dict = _parse(DQB1_tng_file, DQB1_tst_file, DQB1_val_file)
+    DRB1_tng_dict, DRB1_tst_dict, DRB1_val_dict = _parse(DRB1_tng_file, DRB1_tst_file, DRB1_val_file)
+    
+    # lists of dictionaries for easier return
+    A = [A_tng_dict, A_tst_dict, A_val_dict]
+    B = [B_tng_dict, B_tst_dict, B_val_dict]
+    C = [C_tng_dict, C_tst_dict, C_val_dict]
+    DPB1 = [DPB1_tng_dict, DPB1_tst_dict, DPB1_val_dict]
+    DQB1 = [DQB1_tng_dict, DQB1_tst_dict, DQB1_val_dict]
+    DRB1 = [DRB1_tng_dict, DRB1_tst_dict, DRB1_val_dict]
 
     A = [A_tng_dict, A_tst_dict, A_val_dict]
     B = [B_tng_dict, B_tst_dict, B_val_dict]
@@ -132,6 +141,3 @@ def _file_handler():
     # to cut down on the verbosity of the above code
     return(A, B, C, DPB1, DQB1, DRB1)
 
-A, B, C, DPB1, DQB1, DRB1 = _file_handler()
-
-print(A)
