@@ -21,7 +21,8 @@ def _parse(tng_file, tst_file, val_file):
     # loop through each line of the training file
     for each in tng_file:
         # will only be executed once, to create a list of the polymorphic amino acids
-        if each.find("# A1") != -1:
+        if each.find("No. of output") != -1:
+            each = next(tng_file)
             AA = each.strip("# ")
             AA_list = AA.split()
             continue
@@ -77,28 +78,28 @@ def _file_handler()
     A_val_file = open("A.val.pat", 'r')
     B_tng_file = open("B.tng.pat", 'r')
     B_tst_file = open("B.tst.pat", 'r')
-    B_val_file = open("B.tst.pat", 'r')
-    C_tng_file = open("C.tst.pat", 'r')
+    B_val_file = open("B.val.pat", 'r')
+    C_tng_file = open("C.tng.pat", 'r')
     C_tst_file = open("C.tst.pat", 'r')
-    C_val_file = open("C.tst.pat", 'r')
+    C_val_file = open("C.val.pat", 'r')
     DPB1_tng_file = open("DPB1.tng.pat", 'r')
     DPB1_tst_file = open("DPB1.tst.pat", 'r')
-    DPB1_val_file = open("DPB1.tst.pat", 'r')
+    DPB1_val_file = open("DPB1.val.pat", 'r')
     DQB1_tng_file = open("DQB1.tng.pat", 'r')
     DQB1_tst_file = open("DQB1.tst.pat", 'r')
-    DQB1_val_file = open("DQB1.tst.pat", 'r')
+    DQB1_val_file = open("DQB1.val.pat", 'r')
     DRB1_tng_file = open("DRB1.tng.pat", 'r')
     DRB1_tst_file = open("DRB1.tst.pat", 'r')
-    DRB1_val_file = open("DRB1.tst.pat", 'r')
+    DRB1_val_file = open("DRB1.val.pat", 'r')
 
     # function call to the parser
     # this part is actually pretty succint, but it could be shorter
     A_tng_dict, A_tst_dict, A_val_dict = _parse(A_tng_file, A_tst_file, A_val_file)
-    B_tng_dict, B_tst_dict, B_val_file = _parse(B_tng_file, B_tst_file, B_val_file)
-    C_tng_dict, C_tst_dict, C_val_file = _parse(C_tng_file, C_tst_file, C_val_file)
-    DPB1_tng_dict, DPB1_tst_dict, DPB1_val_file = _parse(DPB1_tng_file, DPB1_tst_file, DPB1_val_file)
-    DQB1_tng_dict, DQB1_tst_dict, DQB1_val_file = _parse(DQB1_tng_file, DQB1_tst_file, DQB1_val_file)
-    DRB1_tng_dict, DRB1_tst_dict, DRB1_val_file = _parse(DRB1_tng_file, DRB1_tst_file, DRB1_val_file)
+    B_tng_dict, B_tst_dict, B_val_dict = _parse(B_tng_file, B_tst_file, B_val_file)
+    C_tng_dict, C_tst_dict, C_val_dict = _parse(C_tng_file, C_tst_file, C_val_file)
+    DPB1_tng_dict, DPB1_tst_dict, DPB1_val_dict = _parse(DPB1_tng_file, DPB1_tst_file, DPB1_val_file)
+    DQB1_tng_dict, DQB1_tst_dict, DQB1_val_dict = _parse(DQB1_tng_file, DQB1_tst_file, DQB1_val_file)
+    DRB1_tng_dict, DRB1_tst_dict, DRB1_val_dict = _parse(DRB1_tng_file, DRB1_tst_file, DRB1_val_file)
     
     # lists of dictionaries for easier return
     A = [A_tng_dict, A_tst_dict, A_val_dict]
