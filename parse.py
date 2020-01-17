@@ -70,7 +70,7 @@ def _parse(tng_file, tst_file, val_file):
                 val_dict[allele] = AA_dict
     return(tng_dict, tst_dict, val_dict)
 
-def _file_handler()
+def _file_handler():
     # opening files to send to the parser
     # there is almost definitely a much simpler way to code this
     A_tng_file = open("A.tng.pat", 'r')
@@ -109,6 +109,13 @@ def _file_handler()
     DQB1 = [DQB1_tng_dict, DQB1_tst_dict, DQB1_val_dict]
     DRB1 = [DRB1_tng_dict, DRB1_tst_dict, DRB1_val_dict]
 
+    A = [A_tng_dict, A_tst_dict, A_val_dict]
+    B = [B_tng_dict, B_tst_dict, B_val_dict]
+    C = [C_tng_dict, C_tst_dict, C_val_dict]
+    DPB1 = [DPB1_tng_dict, DPB1_tst_dict, DPB1_val_dict]
+    DQB1 = [DQB1_tng_dict, DQB1_tst_dict, DQB1_val_dict]
+    DRB1 = [DRB1_tng_dict, DRB1_tst_dict, DRB1_val_dict]
+
     # closing files after parsing
     # there is almost definitely a much simpler way to code this
     A_tng_file.close()
@@ -133,3 +140,4 @@ def _file_handler()
     # look into a potentially nested function that generates the locations for the input files and assigns to different variables in order
     # to cut down on the verbosity of the above code
     return(A, B, C, DPB1, DQB1, DRB1)
+
