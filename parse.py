@@ -4,7 +4,7 @@
 ## Department: Pathology and Laboratory Medicine
 ## Location: Louisiana Cancer Research Center
 ## Date Begun: 01/16/2020
-## Purpose: To modernize SNNS
+## Purpose: to parse files for SNNS
 
 # figure out how to parse the training, testing, and validation files into vectors.
 import torch
