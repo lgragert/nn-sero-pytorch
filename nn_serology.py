@@ -13,35 +13,34 @@ dep_var = 'serology'
 cat_names = ['allele'] + AAs
 procs = [FillMissing, Categorify]
 
-
-cat_names = ['allele'] + AAs
-test = TabularList.from_df(tst_df, path=Path(''), cat_names=cat_names)
-data = (TabularList.from_df(df=df, path=Path(''), procs=procs, cat_names=cat_names)
-                            .split_by_idx(list(range(65,100)))
+test = TabularList.from_df(tst_df, path=Path(''), cat_names=None, cont_names=cat_names)
+data = (TabularList.from_df(df=df, path=Path(''), procs=procs, cat_names=None, cont_names=cat_names)
+                            .split_by_idx(list(range(tng_idx,tng_idx+val_idx)))
                             .label_from_df(cols=dep_var, label_delim=';')
                             .add_test(test)
-                            .databunch(bs=37))
+                            .databunch(bs=37, num_workers=0))
                           
 
 data.show_batch(rows = 37)
 
-acc_02 = partial(accuracy_thresh, thresh=0.2)
-f_score = partial(fbeta, thresh=0.2)
+acc_02 = partial(accuracy_thresh, thresh=0.55)
+f_score = partial(fbeta, thresh=0.55)
 
-learn = tabular_learner(data, layers=[30,30,30], metrics=[acc_02, f_score])
-print(data.classes)
+learn = tabular_learner(data, layers=[24,276], loss_func=MSELossFlat(), metrics=[acc_02,f_score])
+print(len(data.classes))
 
 learn.lr_find()
 learn.recorder.plot(suggestion=True)
 
-learn.fit(75, lr=3.63e-2)
+learn.fit(20, lr=6.31e-4)
 
 learn.model
 learn.recorder.plot_losses()
 
-learn.show_results(rows=10)
+
+learn.show_results(rows=100)
 interp = ClassificationInterpretation.from_learner(learn)
-interp.most_confused(min_val=5)
+
 
 test_id = list(tst_df['allele'])
 for j in range(0,len(test_id)):
@@ -59,3 +58,4 @@ for i in range(0,1692):
 # below code involved help from some website using fast.ai to demonstrate kaggle solutions
 output_preds = pd.DataFrame({'allele': test_id, 'serology': predictions})
 output_preds.to_csv('predictions.csv', index=False)
+

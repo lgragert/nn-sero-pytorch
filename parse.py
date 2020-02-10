@@ -1,16 +1,7 @@
-## Name: Giovanni Biagini
-## PI: Loren Gragert, PhD
-## Institution: Tulane University School of Medicine
-## Department: Pathology and Laboratory Medicine
-## Location: Louisiana Cancer Research Center
-## Date Begun: 01/16/2020
-## Purpose: To modernize SNNS
-
-# figure out how to parse the training, testing, and validation files into vectors.
-
+import pandas as pd
 
 # multi-purpose function to parse each type of file
-def _parse(tng_file, tst_file, val_file):
+def _parse(tng_file, tst_file, val_file, locus):
     tng_dict = {}
     tst_dict = {}
     val_dict = {}
@@ -18,6 +9,9 @@ def _parse(tng_file, tst_file, val_file):
 
     # loop through each line of the training file
     for each in tng_file:
+        #values = []
+        AAs = []
+        trick = {}
         # will only be executed once, to create a list of the polymorphic amino acids
         if each.find("No. of output") != -1:
             each = next(tng_file)
@@ -25,73 +19,147 @@ def _parse(tng_file, tst_file, val_file):
             AA_list = AA.split()
             continue
         # main purpose, identifying the hashtags at the beginning of the significant lines
-        if each.find('#') != -1:
+        if each.find("#") != -1:
             # gathering information on a specific allele
-            if (each.find('# input') == -1) & (each.find('# output') == -1):
-                temp = each.strip('# ')
+            if (each.find("# input") == -1) & (each.find("# output") == -1):
+                temp = each.strip("# ")
                 allele = temp.rstrip()
+                allele = locus + '*' + allele
                 continue
             # looking for the binary values corresponding to the amino acid polymorphisms
-            elif each.find('# input') != -1:
+            elif each.find("# input") != -1:
                 line = next(tng_file)
                 # generating a list of the binary values
                 bin_val = line.split()
-                # the values for the specific amino acid are zipped into a dictionary with the polymorphic AAs as the keys
-                AA_dict = dict(zip(AA_list, bin_val))
-                # the dictionary of AA polymorphisms is added to the (nested) dictionary of all alleles, with its specific allele as its key
-                tng_dict[allele] = AA_dict
+                bin_val = list(map(int, bin_val))
+                line = next(tng_file)
+                out_lines_idx = line
+                specificities_n = out_lines_idx.strip("# output")
+                specificities_f = specificities_n.rstrip()
+                specificities = specificities_f.split()
+                line = next(tng_file)
+                out_vals = line.strip(' ').split()
+                out_vals = list(map(float,out_vals))
+                out_dict = dict(zip(specificities, out_vals))
+                for spec in list(out_dict):
+                  if out_dict[spec] == 0.00:
+                    del(out_dict[spec])
+                serology = list(out_dict)
+                serology = list(map(str,serology))
+                for val in range(len(serology)):
+                  serology[val] += 'a'
+                #values.append(out_dict)
+                spacer = ';'
+                serology = spacer.join(serology)
+                AAs = ['allele'] + AA_list
+                values = [allele] + bin_val
+                trick = dict(zip(AAs, values))
+                trick['serology'] = serology
+                tng_dict[allele] = trick
 
     # basically the same, but to parse the testing file
     for each in tst_file:
-        if each.find('#') != -1:
-            if (each.find('# input') == -1) & (each.find('# output') == -1):
-                temp = each.strip('# testing ')
+        #values = []
+        AAs = []
+        trick = {}
+        if each.find("#") != -1:
+            if (each.find("# input") == -1) & (each.find("# output") == -1):
+                temp = each.strip("# testing ")
                 allele = temp.rstrip()
+                allele = locus + '*' + allele
                 continue
-            elif each.find('# input') != -1:
+            elif each.find("# input") != -1:
                 line = next(tst_file)
                 bin_val = line.split()
-                AA_dict = dict(zip(AA_list, bin_val))
-                tst_dict[allele] = AA_dict
+                bin_val = list(map(int,bin_val))
+                AAs = ['allele'] + AA_list + ['serology']
+                values = [allele] + bin_val
+                trick = dict(zip(AAs, values))
+                trick['serology'] = None
+                tst_dict[allele] = trick
 
      # final loop to parse the validation file       
     for each in val_file:
-        if each.find('#') != -1:
-            if (each.find('# input') == -1) & (each.find('# output') == -1):
-                temp = each.strip('# ')
+        #values = []
+        AAs = []
+        trick = {}
+        if each.find("#") != -1:
+            if (each.find("# input") == -1) & (each.find("# output") == -1):
+                temp = each.strip("# ")
                 allele = temp.rstrip()
+                allele = locus + '*' + allele
                 continue
-            elif each.find('# input') != -1:
+            elif each.find("# input") != -1:
                 line = next(val_file)
                 bin_val = line.split()
-                AA_dict = dict(zip(AA_list, bin_val))
-                val_dict[allele] = AA_dict
+                bin_val = list(map(int,bin_val))
+                line = next(val_file)
+                out_lines_idx = line
+                specificities_n = out_lines_idx.strip("# output")
+                specificities_f = specificities_n.rstrip()
+                specificities = specificities_f.split()
+                line = next(val_file)
+                out_vals = line.strip(' ').split()
+                out_vals = list(map(float,out_vals))
+                out_dict = dict(zip(specificities, out_vals))
+                for spec in list(out_dict):
+                  if out_dict[spec] == 0.00:
+                    del(out_dict[spec])
+                serology = list(out_dict)
+                serology = list(map(str,serology))
+                for val in range(len(serology)):
+                  serology[val] += 'a'
+                #values.append(out_dict)
+                spacer = ';'
+                serology = spacer.join(serology)
+                AAs = ['allele'] + AA_list
+                values = [allele] + bin_val
+                trick = dict(zip(AAs, values))
+                trick['serology'] = serology
+
+                val_dict[allele] = trick
     return(tng_dict, tst_dict, val_dict)
 
 def _file_handler():
-    # opening files to send to the parser
-    # there is almost definitely a much simpler way to code this
 
     loci = ["A", "B", "C", "DPB1", "DQB1", "DRB1"]
     output_list = []
     
-    for each in loci:
-        training_file = open(each + ".tng.pat", 'r')
-        testing_file = open(each + ".tst.pat", 'r')
-        validation_file = open(each + ".val.pat", 'r')
-        tng_dict, tst_dict, val_dict = _parse(training_file, testing_file, validation_file)
-        output_list.append(tng_dict)
-        output_list.append(tst_dict)
-        output_list.append(val_dict)
+    for locus in loci:
+        tng_AAs = []
+        tst_AAs = []
+        val_AAs = []
+        AAs = []
+
+        training_file = open(locus + ".tng.pat", 'r')
+        testing_file = open(locus + ".tst.pat", 'r')
+        validation_file = open(locus + ".val.pat", 'r')
+        tng_dict, tst_dict, val_dict = _parse(training_file, testing_file, validation_file, locus)
+
+        for key in tng_dict.keys():
+            tng_AAs.append(tng_dict[key])
+
+        for tst_key in tst_dict.keys():
+            tst_AAs.append(tst_dict[tst_key])
+
+        for val_key in val_dict.keys():
+            val_AAs.append(val_dict[val_key])
+
+        for one in tng_AAs[0].keys():
+            if (one != 'serology') & (one != 'allele'):
+                AAs.append(one)
+
+
+        tng_frame = pd.DataFrame(data=tng_AAs)
+        val_frame = pd.DataFrame(data=val_AAs)
+        tst_frame = pd.DataFrame(data=tst_AAs)
+        out_frame = tng_frame.append(val_frame)
+        out_frame.to_csv(locus + '_train.csv', index=False)
+        tst_frame.to_csv(locus + '_test.csv', index=False)
         training_file.close()
         testing_file.close()
         validation_file.close()
 
-    A = output_list[0:3]
-    B = output_list[3:6]
-    C = output_list[6:9]
-    DPB1 = output_list[9:12]
-    DQB1 = output_list[12:15]
-    DRB1 = output_list[15:18]
+    return()
 
-    return(A, B, C, DPB1, DQB1, DRB1)
+_file_handler()
