@@ -2,9 +2,14 @@ import pandas as pd
 import numpy as np
 from fastai import *
 from fastai.tabular import *
-from _parse.py import *
+from parse import *
 
 _file_handler()
+
+AAs = []
+for each in tng_df:
+  if (each != 'allele') & (each != 'serology'):
+    AAs.append(each)
 
 tng_df = pd.read_csv('A_train.csv')
 tst_df = pd.read_csv('A_test.csv')
