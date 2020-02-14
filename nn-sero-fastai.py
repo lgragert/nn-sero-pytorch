@@ -49,9 +49,9 @@ _file_handler()
 loci = ['A', 'B', 'C', 'DPB1', 'DQB1', 'DRB1']
 for locus in loci:
   AAs = []
-  tng_df = pd.read_csv(locus + '_train.csv')
-  tst_df = pd.read_csv(locus + '_test.csv')
-  val_df = pd.read_csv(locus + '_validation.csv')
+  tng_df = pd.read_csv('train/' + locus + '_train.csv')
+  tst_df = pd.read_csv('test/' + locus + '_test.csv')
+  val_df = pd.read_csv('train/' + locus + '_validation.csv')
   tng_idx = len(tng_df)
   val_idx = len(val_df) + 1
   tst_idx = len(tst_df)
@@ -92,11 +92,6 @@ for locus in loci:
 
   test_id = list(tst_df['allele'])
 
-  '''
-  for j in range(0,len(test_id)):
-    test_id[j] = locus + '*' + test_id[j] 
-  '''
-
   classes = data.classes
   predictions = []
   print(classes)
@@ -111,4 +106,4 @@ for locus in loci:
 
   # below code involved help from some website using fast.ai to demonstrate kaggle solutions
   output_preds = pd.DataFrame({'allele': test_id, 'serology': predictions})
-  output_preds.to_csv(locus + '_predictions.csv', index=False)
+  output_preds.to_csv('predictions/' + locus + '_predictions.csv', index=False)
