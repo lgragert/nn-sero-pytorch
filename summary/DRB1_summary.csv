@@ -1,0 +1,6 @@
+data,value
+# training/validation alleles,244
+# testing alleles,903
+# previous training alleles,36
+# previous validation alleles,107
+# previous testing alleles,1004

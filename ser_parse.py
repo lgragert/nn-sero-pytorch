@@ -16,11 +16,11 @@ for locus in loci:
                 nums = numsplit[0] + ':' + numsplit[1]
                 allele = info[0] + nums
                 if info[2] == '?':
-                    info[2] = ''
+                    info[2] = np.nan
                 elif info[2] == '0':
-                    info[2] = ''
+                    info[2] = np.nan
                 elif info[2] == '':
-                    info[2] == ''
+                    info[2] = np.nan
                 else:
                     info[2] = info[2] + 'a'
                 serology = str(info[2])
@@ -33,11 +33,11 @@ for locus in loci:
     ser_handler.close()
 
     #open all of the current dataframes with old serology info
-    trn_frame = pd.read_csv('train/' + locus + '_train.csv')
+    trn_frame = pd.read_csv('old_sets/train/' + locus + '_train.csv')
     trn_frame.replace('', np.nan)
-    val_frame = pd.read_csv('train/' + locus + '_validation.csv')
+    val_frame = pd.read_csv('old_sets/train/' + locus + '_validation.csv')
     val_frame.replace('', np.nan)
-    tst_frame = pd.read_csv('test/' + locus + '_test.csv')
+    tst_frame = pd.read_csv('old_sets/test/' + locus + '_test.csv')
     tst_frame.replace('', np.nan)
 
     #combine the current dataframes all together to make data wrangling work correctly
@@ -49,10 +49,14 @@ for locus in loci:
 
     #combining new serology info with old frame to make new frame
     loc_frame.update(serologies, overwrite=False)
-    loc_frame.replace('', 'NaN')
+    loc_frame.replace('', np.nan)
 
-    ordered = loc_frame.sort_values(by=['serology'])
-    print(ordered.count())
+    loc_frame.sort_values(by=['serology'], inplace=True, na_position='last')
 
     loc_frame.to_csv('full_frames/' + locus + '_result.csv', index=False)
 
+    test_df = loc_frame[loc_frame['serology'] == 'nan']
+    test_df.to_csv('testing/' + locus + '_test.csv', index=False)
+
+    training_df = loc_frame[loc_frame['serology'] != 'nan']
+    training_df.to_csv('training/' + locus + '_train.csv', index=False)
