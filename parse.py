@@ -50,7 +50,7 @@ def _parse(tng_file, tst_file, val_file, locus):
                   serology[val] += 'a'
                 #values.append(out_dict)
                 spacer = ';'
-                serology = spacer.join(serology)
+                serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
@@ -111,7 +111,7 @@ def _parse(tng_file, tst_file, val_file, locus):
                   serology[val] += 'a'
                 #values.append(out_dict)
                 spacer = ';'
-                serology = spacer.join(serology)
+                serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
@@ -153,9 +153,9 @@ def _file_handler():
         tng_frame = pd.DataFrame(data=tng_AAs)
         val_frame = pd.DataFrame(data=val_AAs)
         tst_frame = pd.DataFrame(data=tst_AAs)
-        tng_frame.to_csv('train/' + locus + '_train.csv', index=False)
-        val_frame.to_csv('train/' + locus + '_validation.csv', index=False)
-        tst_frame.to_csv('test/' + locus + '_test.csv', index=False)
+        tng_frame.to_csv('old_sets/train/' + locus + '_train.csv', index=False)
+        val_frame.to_csv('old_sets/train/' + locus + '_validation.csv', index=False)
+        tst_frame.to_csv('old_sets/test/' + locus + '_test.csv', index=False)
         training_file.close()
         testing_file.close()
         validation_file.close()

@@ -58,5 +58,5 @@ for loc in aa_mm.ard_start_pos:
 
     
     output_frame = pd.DataFrame(HLA_alleles)
-    output_frame.to_csv('output/' + loc + '_AA_poly.csv', index=False)
+    output_frame.to_csv('aa_matching/output/' + loc + '_AA_poly.csv', index=False)
     # print (HLA_AA_AlleleList[])

@@ -108,7 +108,7 @@ else:
     dbversion = "3390"
 
 for locus in loci:
-    seq_filename = "msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    seq_filename = "aa_matching/msf/" + locus + "_prot_" + str(dbversion) + ".msf"
     multipleseq = AlignIO.read(seq_filename, format="msf")
 
     for record in multipleseq:
