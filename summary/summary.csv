@@ -1,0 +1,17 @@
+,A,B,C,DPB1,DQB1,DRB1
+Number of Training Alleles,37.0,77.0,10.0,46.0,7.0,36.0
+R-SNNS Number of Training Alleles,37.0,77.0,10.0,46.0,7.0,36.0
+Difference in Training Set,0.0,0.0,0.0,0.0,0.0,0.0
+Percent (%) Growth in Training Set,0.0,0.0,0.0,0.0,0.0,0.0
+Number of Validation Alleles,170.0,302.0,52.0,3.0,21.0,144.0
+R-SNNS Number of Validation Alleles,62.0,139.0,9.0,3.0,6.0,107.0
+Difference in Validation Set,108.0,163.0,43.0,0.0,15.0,37.0
+Percent (%) Growth in Validation Set,174.19354838709677,117.26618705035972,477.77777777777777,0.0,250.0,34.57943925233645
+Number of Testing Alleles,3809.0,4462.0,3642.0,1033.0,1243.0,1807.0
+R-SNNS Number of Testing Alleles,1692.0,2272.0,1321.0,157.0,276.0,1004.0
+Difference in Testing Set,2117.0,2190.0,2321.0,876.0,967.0,803.0
+Percent (%) Growth in Testing Set,125.11820330969267,96.39084507042254,175.7002271006813,557.9617834394904,350.3623188405797,79.9800796812749
+Number of Polymorphisms,1788.0,1694.0,1616.0,603.0,708.0,801.0
+R-SNNS Number of Polymorphisms,122.0,133.0,66.0,48.0,68.0,94.0
+Difference in Polymorphisms,1666.0,1561.0,1550.0,555.0,640.0,707.0
+Percent (%) Growth in Polymorphisms,1365.5737704918033,1173.6842105263158,2348.4848484848485,1156.25,941.1764705882354,752.127659574468
