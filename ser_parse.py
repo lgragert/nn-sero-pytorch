@@ -73,6 +73,7 @@ for locus in loci:
     newtst.to_csv('testing/' + locus + '_test.csv')
 
     trn = df[df['serology'] != 'nan']
+    trn.sort_values(by=['allele'], inplace=True, na_position='last')
     trn = trn[~trn.index.duplicated()]
     trn = trn[~trn.serology.isnull()]
     newtrn = trn[trn.index.isin(oldtrn_frame.index)]
