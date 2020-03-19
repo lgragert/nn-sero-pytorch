@@ -75,12 +75,10 @@ for locus in loci:
     print(droplist)
 
     corfac = 0
-    for vally in range(0, len(droplist)):
-        if df[ref_seq[indy]][vally] == 0:
-            droplist = droplist.remove(droplist[vally - corfac])
+    for vally in droplist:
+        if df.loc[ref_seq[indy]][vally] == 0:
+            droplist.remove(vally)
             corfac += 1
-        else:
-            continue
 
     fixed_df = df.drop(droplist, axis=1)
 
