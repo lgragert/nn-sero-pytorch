@@ -3,8 +3,9 @@ import numpy as np
 
 current = '3370'
 loci = ["A", "B", "C", "DPB1", "DQB1", "DRB1"]
-
+ref_seq = ["A*01:01", "B*07:02", "C*01:02", "DPB1*01:01", "DQB1*05:01", "DRB1*01:01"]
 for locus in loci:
+    indy = loci.index(locus)
     ser_handler = open('rel_dna_ser/rel_dna_ser_' + current + '.txt', 'r')
     loc_test = locus + '*'
     ser_dict = {}
@@ -66,13 +67,30 @@ for locus in loci:
     loc_frame = loc_frame.replace('', np.nan)
     loc_frame.sort_values(by=['serology'], inplace=True, na_position='last')
 
+    droplist = []
+    for col in df.columns:
+        if col.find('-') != -1:
+            droplist.append(col)
+
+    print(droplist)
+
+    corfac = 0
+    for vally in range(0, len(droplist)):
+        if df[ref_seq[indy]][vally] == 0:
+            droplist = droplist.remove(droplist[vally - corfac])
+            corfac += 1
+        else:
+            continue
+
+    fixed_df = df.drop(droplist, axis=1)
+
     loc_frame.to_csv('full_frames/' + locus + '_result.csv')
 
-    newtst = df[df['serology'] == 'nan']
-    newtst = newtst.append(df[df.serology.isnull()])
+    newtst = fixed_df[fixed_df['serology'] == 'nan']
+    newtst = newtst.append(fixed_df[fixed_df.serology.isnull()])
     newtst.to_csv('testing/' + locus + '_test.csv')
 
-    trn = df[df['serology'] != 'nan']
+    trn = fixed_df[fixed_df['serology'] != 'nan']
     trn.sort_values(by=['allele'], inplace=True, na_position='last')
     trn = trn[~trn.index.duplicated()]
     trn = trn[~trn.serology.isnull()]
