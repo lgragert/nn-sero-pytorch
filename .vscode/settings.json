@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\DGB82\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.pythonPath": "/usr/bin/python3",
     "git.autofetch": true,
     "python.linting.enabled": false
 }

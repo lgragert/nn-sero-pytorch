@@ -49,9 +49,9 @@ _file_handler()
 loci = ['A', 'B', 'C', 'DPB1', 'DQB1', 'DRB1']
 for locus in loci:
   AAs = []
-  tng_df = pd.read_csv('train/' + locus + '_train.csv')
-  tst_df = pd.read_csv('test/' + locus + '_test.csv')
-  val_df = pd.read_csv('train/' + locus + '_validation.csv')
+  tng_df = pd.read_csv('training/' + locus + '_train.csv')
+  tst_df = pd.read_csv('testing/' + locus + '_test.csv')
+  val_df = pd.read_csv('training/' + locus + '_validation.csv')
   tng_idx = len(tng_df)
   val_idx = len(val_df) + 1
   tst_idx = len(tst_df)
