@@ -74,13 +74,16 @@ for locus in loci:
 
     '''
     corfac = 0
-    for vally in range(0, len(droplist)):
-        if df[ref_seq[indy]][vally] == 0:
-            droplist = droplist.remove(droplist[vally - corfac])
+    for vally in droplist:
+        if df.loc[ref_seq[indy]][vally] == 0:
+            droplist.remove(vally)
             corfac += 1
+<<<<<<< HEAD
         else:
             continue
     '''
+=======
+>>>>>>> abff8bf86bb0b1bc9f4643733188489d607e9c3e
 
     fixed_df = df.drop(droplist, axis=1)
 
