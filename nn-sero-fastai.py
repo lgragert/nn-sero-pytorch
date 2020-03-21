@@ -3,6 +3,7 @@ import numpy as np
 from fastai import *
 from fastai.tabular import *
 from parse import _file_handler
+from tqdm import tqdm
 
 #below function directly from Andrew Chang in fast.ai forums (https://forums.fast.ai/t/automated-learning-rate-suggester/44199)
 def find_appropriate_lr(model:Learner, lr_diff:int = 15, loss_threshold:float = .05, adjust_value:float = 1, plot:bool = False) -> float:
@@ -96,13 +97,12 @@ for locus in loci:
   predictions = []
   print(classes)
 
-  for i in range(0,tst_idx):
+  for i in tqdm(range(0,tst_idx)):
     category = str(learn.predict(tst_df.iloc[i], thresh=0.40)[0])
     sero = category.strip('MultiCategory ')
     sero = sero.replace(';',' ')
     predictions.append(sero.split())
-    if (i%40) == 0:
-      print('working...' + str(i))
+
 
   # below code involved help from some website using fast.ai to demonstrate kaggle solutions
   output_preds = pd.DataFrame({'allele': test_id, 'serology': predictions})

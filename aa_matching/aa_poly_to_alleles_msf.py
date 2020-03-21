@@ -4,7 +4,7 @@ from collections import OrderedDict
 
 # generate list of IMGT/HLA alleles that have each single AA polymorphism
 
-for loc in aa_mm.ard_start_pos:
+for loc in aa_mm.ard_start_pos_incomplete:
     print (loc)
     HLA_alleles = []
     AA_polys = {}
@@ -15,7 +15,7 @@ for loc in aa_mm.ard_start_pos:
             continue
         # print (loc + '*' + allele_typ)
 
-        for AA_pos in range (aa_mm.ard_start_pos[loc],aa_mm.ard_end_pos[loc]):
+        for AA_pos in range (aa_mm.ard_start_pos_incomplete[loc],aa_mm.ard_end_pos_incomplete[loc]):
             # print (AA_pos)
             side_chain = aa_mm.getAAposition(allele_loctyp,AA_pos)
             # if (side_chain == "-"):
@@ -36,7 +36,7 @@ for loc in aa_mm.ard_start_pos:
         for key in AA_polys.keys():
             HLA_AA_polys[key] = 0
 
-        for XAA_pos in range(aa_mm.ard_start_pos[loc],aa_mm.ard_end_pos[loc]):
+        for XAA_pos in range(aa_mm.ard_start_pos_incomplete[loc],aa_mm.ard_end_pos_incomplete[loc]):
             # print (AA_pos)
             Xside_chain = aa_mm.getAAposition(Xallele_loctyp,XAA_pos)
             # if (side_chain == "-"):
