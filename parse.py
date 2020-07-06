@@ -50,7 +50,7 @@ def _parse(tng_file, tst_file, val_file, locus):
                   serology[val] += 'a'
                 #values.append(out_dict)
                 spacer = ';'
-                serology = spacer.join(serology)
+                serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
@@ -111,7 +111,7 @@ def _parse(tng_file, tst_file, val_file, locus):
                   serology[val] += 'a'
                 #values.append(out_dict)
                 spacer = ';'
-                serology = spacer.join(serology)
+                serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
@@ -131,9 +131,9 @@ def _file_handler():
         val_AAs = []
         AAs = []
 
-        training_file = open(locus + ".tng.pat", 'r')
-        testing_file = open(locus + ".tst.pat", 'r')
-        validation_file = open(locus + ".val.pat", 'r')
+        training_file = open('pat_old/' + locus + ".tng.pat", 'r')
+        testing_file = open('pat_old/' + locus + ".tst.pat", 'r')
+        validation_file = open('pat_old/' + locus + ".val.pat", 'r')
         tng_dict, tst_dict, val_dict = _parse(training_file, testing_file, validation_file, locus)
 
         for key in tng_dict.keys():
@@ -153,9 +153,9 @@ def _file_handler():
         tng_frame = pd.DataFrame(data=tng_AAs)
         val_frame = pd.DataFrame(data=val_AAs)
         tst_frame = pd.DataFrame(data=tst_AAs)
-        out_frame = tng_frame.append(val_frame)
-        out_frame.to_csv(locus + '_train.csv', index=False)
-        tst_frame.to_csv(locus + '_test.csv', index=False)
+        tng_frame.to_csv('old_sets/train/' + locus + '_train.csv', index=False)
+        val_frame.to_csv('old_sets/train/' + locus + '_validation.csv', index=False)
+        tst_frame.to_csv('old_sets/test/' + locus + '_test.csv', index=False)
         training_file.close()
         testing_file.close()
         validation_file.close()
