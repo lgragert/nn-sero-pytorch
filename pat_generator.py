@@ -11,7 +11,7 @@ date = today.strftime("%B %d, %Y")
 # training files 
 for locus in loci:
 
-    loc_frame = pd.read_csv("./training/" + locus + "_train.csv")
+    loc_frame = pd.read_csv("./RSNNS_fixed/training/" + locus + "_train.csv")
     
     pat_file = open("./pat_new/" + locus + ".tng.pat", "w+")
     pat_file.write("SNNS pattern definition file V3.2\n")
@@ -42,6 +42,7 @@ for locus in loci:
         serologies = {}
         for j in uni_list:
             serologies[j] = 0.00
+        allele.pop(0)
         name = allele.pop(0)
         name = name.split('*')[1]
         sero = allele.pop()
@@ -62,7 +63,7 @@ for locus in loci:
         pat_file.write('# output ' + in_serkey + "\n")
         pat_file.write(in_serval + "\n")
 
-    val_frame = pd.read_csv("./training/" + locus + "_validation.csv")
+    val_frame = pd.read_csv("./RSNNS_fixed/training/" + locus + "_validation.csv")
     
     val_file = open("./pat_new/" + locus + ".val.pat", "w+")
     val_file.write("SNNS pattern definition file V3.2\n")
@@ -75,6 +76,7 @@ for locus in loci:
         serologies = {}
         for j in uni_list:
             serologies[j] = 0.00
+        val_allele.pop(0)
         val_name = val_allele.pop(0)
         val_name = val_name.split('*')[1]
         val_sero = val_allele.pop()
@@ -96,7 +98,7 @@ for locus in loci:
         val_file.write(val_in_serval + "\n")
 
 
-    tst_frame = pd.read_csv("./testing/" + locus + "_test.csv")
+    tst_frame = pd.read_csv("./RSNNS_fixed/testing/" + locus + "_test.csv")
     
     tst_file = open("./pat_new/" + locus + ".tst.pat", "w+")
     tst_file.write("SNNS pattern definition file V3.2\n")
@@ -106,6 +108,7 @@ for locus in loci:
     tst_file.write("No. of output units: " + str(len(uni_list)) + "\n")
     
     for tst_allele in tst_frame.values.tolist():
+        tst_allele.pop(0)
         tst_name = tst_allele.pop(0)
         tst_name = tst_name.split('*')[1]
         tst_allele.pop()
