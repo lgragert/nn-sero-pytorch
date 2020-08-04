@@ -4,7 +4,9 @@ from collections import OrderedDict
 
 # generate list of IMGT/HLA alleles that have each single AA polymorphism
 
-for loc in aa_mm.ard_start_pos_incomplete:
+refseq = {"A":"A*01:01", "B":"B*07:02", "C":"C*01:02", "DRB1":"DRB1*01:01", "DQB1":"DQB1*05:01", "DPB1":"DPB1*01:01"}
+
+for loc in aa_mm.ard_start_pos:
     print (loc)
     HLA_alleles = []
     AA_polys = {}
@@ -15,7 +17,7 @@ for loc in aa_mm.ard_start_pos_incomplete:
             continue
         # print (loc + '*' + allele_typ)
 
-        for AA_pos in range (aa_mm.ard_start_pos_incomplete[loc],aa_mm.ard_end_pos_incomplete[loc]):
+        for AA_pos in range (aa_mm.ard_start_pos[loc],aa_mm.ard_end_pos[loc]):
             # print (AA_pos)
             side_chain = aa_mm.getAAposition(allele_loctyp,AA_pos)
             # if (side_chain == "-"):
@@ -36,7 +38,7 @@ for loc in aa_mm.ard_start_pos_incomplete:
         for key in AA_polys.keys():
             HLA_AA_polys[key] = 0
 
-        for XAA_pos in range(aa_mm.ard_start_pos_incomplete[loc],aa_mm.ard_end_pos_incomplete[loc]):
+        for XAA_pos in range(aa_mm.ard_start_pos[loc],aa_mm.ard_end_pos[loc]):
             # print (AA_pos)
             Xside_chain = aa_mm.getAAposition(Xallele_loctyp,XAA_pos)
             # if (side_chain == "-"):
@@ -58,5 +60,34 @@ for loc in aa_mm.ard_start_pos_incomplete:
 
     
     output_frame = pd.DataFrame(HLA_alleles)
-    output_frame.to_csv('aa_matching/output/' + loc + '_AA_poly.csv', index=False)
+    output_frame = output_frame.set_index('allele')
+
+    i = aa_mm.ard_start_pos[loc]
+    j = 0
+    new_cols = {}
+
+    for column in output_frame:
+        if (column[0] == '-'):
+            if output_frame.loc[refseq[loc]][column] == 1:
+                new_col = (str(i) + '_insert_' + str(j))
+                new_cols[column] = new_col
+                j += 1
+            else: 
+                j = 1
+                new_col = (str(i) + '_insert_' + str(j))
+                new_cols[column] = new_col
+        else:
+            if output_frame.loc[refseq[loc]][column] == 1:
+                new_col = (str(column[0]) + str(i))
+                new_cols[column] = new_col
+                i += 1
+            else:
+                new_col = (str(column[0]) + str(i))
+                new_cols[column] = new_col
+
+        
+    output_frame = output_frame.rename(columns=new_cols)
+
+
+    output_frame.to_csv('aa_matching/output/' + loc + '_AA_poly.csv', index=True)
     # print (HLA_AA_AlleleList[])
