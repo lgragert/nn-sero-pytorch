@@ -3,6 +3,8 @@
 # aa_matching.py - Module for amino acid matching functions
 
 import re
+import os.path
+from os import path
 import Bio
 from Bio import SeqIO
 from Bio import AlignIO
@@ -11,27 +13,104 @@ from Bio.Seq import Seq
 from Bio.Alphabet import IUPAC
 import pandas as pd
 import random
+import requests
 
 # mature protein sequence offsets differ by locus
 # get offsets by examining mature protein length in IMGT/HLA alignment tool
 # https://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/align.cgi - Mature protein
 hlaProteinOffset = {
     "A" : 24, # 365 versus 341 mature
-    "B" : 24,
+    "B" : 22, # offset reduced by 2 to match indexes from nn-serology (RSNNS) .pat files
     "C" : 24,
     "DRA" : 25,
-    "DRB1" : 29,
+    "DRB1" : 29, # offset reduced by 2
     "DRB3" : 29,
     "DRB4" : 29,
     "DRB5" : 29,
     "DQA1" : 23,
-    "DQB1" : 32,
+    "DQB1" : 26, # offset reduced by 6
     "DPA1" : 31,
     "DPB1" : 29,
 }
 
 def getMatureProteinOffset(locus):
         return hlaProteinOffset.get(locus, "Invalid HLA Locus")
+
+def adjust_offset(loc, ard_start_pos, ard_start_pos_incomplete, ard_end_pos, ard_end_pos_incomplete, prev=0, prev_inc=0):
+    start = ard_start_pos
+    end = ard_end_pos
+    start_inc = ard_start_pos_incomplete
+    end_inc = ard_end_pos_incomplete
+    count = mature_protein[start:end].count('-')
+    count_inc = mature_protein[start_inc:end_inc].count('-')
+
+    check = count - prev
+    check_inc = count_inc - prev_inc
+
+    if (check == 0):
+        new_end = end + (count-prev)
+        new_end_inc = end_inc + (count_inc-prev_inc)
+        newlist = [new_end, new_end_inc]
+        return newlist
+    else:
+        new_end = end + (count - prev)
+        prev = count
+        if (check_inc != 0):
+            new_end_inc = end_inc + (count_inc - prev_inc)
+            prev_inc = count_inc
+            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc)
+        else:
+            new_end_inc = end_inc
+            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc=0)
+
+def remove_ins(loc_full_alseq):
+    # need to remove the inserts from the reference sequence to print into the IMGT/HLA .txt file
+    gapframe = pd.DataFrame.from_dict(loc_full_alseq, orient="index")
+    droplist = []
+    for i, row in gapframe.iterrows():
+        if i == refseq[loc]:
+            for name, data in gapframe.iteritems():
+                if data[i] == '-':
+                    droplist.append(name)
+                else:
+                    continue
+        else:
+            continue
+    ungapframe = gapframe.drop(droplist, axis=1)
+    for j, jrow in ungapframe.iterrows():
+        jrow = jrow.to_string(header=False, index=False)
+        jrow = jrow.replace('\n', '')
+        jrow = jrow.replace(' ', '')
+        loc_full_alseq[j] = jrow
+
+    return loc_full_alseq
+
+def generate_IMGT(HLA_full_alseq, dbversion):
+    outfile = open("./IMGT_HLA_Full_Protein_" + str(dbversion) + ".txt", "w+")
+    outfile.write("Allele\tFull_Protein\n")
+    for allele_loctype in HLA_full_alseq:
+        outfile.write("HLA-" + allele_loctype + "\t" + str(HLA_full_alseq[allele_loctype]) + "\n")
+    outfile.close()
+    return
+
+'''
+def check_ver():
+    url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/Latest/version_report.txt"
+    r = requests.get(url)
+    regex = "\d\.\d\d\.\d"
+    result = re.search(regex, r.text)
+    curfile = "./msf/msfversion.txt"
+    with (curfile, "r+") as handle:
+        line = handle.readline().rstrip()
+        if line == result.group(0):
+            same = "yes"
+        else:
+            handle.seek(0)
+            handle.write(result.group(0))
+            same = "no"
+    return [same, result.group(0)]
+'''
+
 
 # use only ARD positions
 ard_start_pos = {
@@ -41,7 +120,7 @@ ard_start_pos = {
     "DRB1" : 1,
 	"DRB3" : 1,
 	"DRB4" : 1,
-	"DRB5" : 1,	
+	"DRB5" : 1,
     "DQA1" : 1,
     "DQB1" : 1,
     "DPA1" : 1,
@@ -54,9 +133,9 @@ ard_end_pos = {
     "DRB1" : 94,
 	"DRB3" : 94,
 	"DRB4" : 94,
-	"DRB5" : 94,	
+	"DRB5" : 94,
     "DQA1" : 94,
-    "DQB1" : 94,
+    "DQB1" : 95, #increased end_pos by 1 to match nn-sero .pat files
     "DPA1" : 94,
     "DPB1" : 94,
 }
@@ -95,7 +174,26 @@ ard_end_pos_incomplete = {
 ##seqfile = open(seq_filename, "r")
 
 loci = ['A', 'B', 'C', 'DRB1', 'DRB345', 'DQA1', 'DQB1', 'DPA1', 'DPB1']
+<<<<<<< Updated upstream:aa_matching/aa_matching_msf.py
+=======
+
+refseq = {
+    "A" : "A*01:01:01:01",
+    "B" : "B*07:02:01:01",
+    "C" : "C*01:02:01:01",
+    "DRB1" : "DRB1*01:01:01:01",
+    "DRB3" : "DRB3*01:01:02:01",
+    "DRB4" : "DRB4*01:01:01:01",
+    "DRB5" : "DRB5*01:01:01:01",
+    "DQA1" : "DQA1*01:01:01:01",
+    "DQB1" : "DQB1*05:01:01:01",
+    "DPA1" : "DPA1*01:03:01:01",
+    "DPB1" : "DPB1*01:01:01:01",
+    }
+
+>>>>>>> Stashed changes:aa-matching/aa_matching_msf.py
 HLA_full_allele = {} # Full four-field allele names
+HLA_full_alseq = {}
 HLA_seq = {} # Two-field
 regex = '\w*\*\d*\:\d*'
 
@@ -105,10 +203,27 @@ if (quest == "y") or (quest == "Y"):
     dbversion = dbversion.strip()
     dbversion = dbversion.replace('.','')
 else:
-    dbversion = "3390"
+    dbversion = "3400"
 
 for locus in loci:
+<<<<<<< Updated upstream:aa_matching/aa_matching_msf.py
     seq_filename = "aa_matching/msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+=======
+    loc_full_alseq = {}
+    seq_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    #old_filename = seq_filename
+    #new_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    #os.rename(r(old_filename),r(new_filename))
+    if path.exists(seq_filename) == False:
+        print("Downloading requested MSF files for locus " + locus + "...")
+        url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/" + str(dbversion) + "/msf/" + locus + "_prot.msf"
+        r = requests.get(url)
+        #seq_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+        with open(seq_filename, 'wb') as f:
+            f.write(r.content)
+    else:
+        print("MSF files already downloaded")
+>>>>>>> Stashed changes:aa-matching/aa_matching_msf.py
     multipleseq = AlignIO.read(seq_filename, format="msf")
 
     for record in multipleseq:
@@ -117,6 +232,9 @@ for locus in loci:
         loc_full_allele = record.id
         loc_two_field_allele = re.match(regex, loc_full_allele).group()
         full_protein = record.seq
+        nogap = full_protein
+
+        loc_full_alseq[loc_full_allele] = SeqRecord(nogap)
 
         # skip missing sequences in IMGT/HLA file
         if (len(full_protein) <10): # #NAME?
@@ -126,6 +244,17 @@ for locus in loci:
         (loc,full_allele) = loc_full_allele.split("*")
         mature_protein = full_protein[getMatureProteinOffset(loc):]
 
+<<<<<<< Updated upstream:aa_matching/aa_matching_msf.py
+=======
+
+        if loc_full_allele == refseq[loc]:
+            new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc], ard_start_pos_incomplete[loc], ard_end_pos[loc], ard_end_pos_incomplete[loc], prev=0, prev_inc=0)
+            ard_end_pos[loc] = new_end
+            ard_end_pos_incomplete[loc] = new_end_inc
+
+        #print(mature_protein)
+
+>>>>>>> Stashed changes:aa-matching/aa_matching_msf.py
         mrecord = SeqRecord(mature_protein)
 
 
@@ -137,7 +266,7 @@ for locus in loci:
             HLA_seq[loc_two_field_allele] = mrecord
 
         # print (HLA_seqrecord_dict[allele])
-        
+
         # TODO - add feature annotation to SeqIO object
         # https://biopython.org/wiki/SeqRecord
         # e.g. - which allele contain Bw4/Bw6 epitopes, bind LILRB1, etc
@@ -145,6 +274,13 @@ for locus in loci:
 
         # print (HLA_seqrecord_dict[allele].seq)
 
+    #!GB!# Commented out these two lines as well as the generate_IMGT() function call, since the process is intensive and does not need to be
+    #!GB!# run every time the code is used. Might should consider a switch to splitting a HLA_full_alseq DataFrame by locus and doing all of the work in
+    #!GB!# a single function definition.
+    #loc_full_alseq = remove_ins(loc_full_alseq)
+    #HLA_full_alseq.update(loc_full_alseq)
+
+#generate_IMGT(HLA_full_alseq, dbversion)
 
 # get the AA mature protein subsequence of any HLA allele
 # Python strings start at zero, but amino acid sequences start at position 1
@@ -207,7 +343,7 @@ def count_AA_Mismatches_SFVT(allele1_donor,allele2_donor,allele1_recip,allele2_r
 	mm_total = 0
 	if (allele1_donor == allele2_donor):
 		donor_homoz = 1
-	
+
 	# increment MM count for all positions in list
 	for position in position_list:
 		aa1_donor = getAAposition(allele1_donor,position)
