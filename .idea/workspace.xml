@@ -31,20 +31,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/A_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/A_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/B_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/B_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/C_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/C_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DPA1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DPA1_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DPB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DPB1_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DQA1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DQA1_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DQB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DQB1_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB1_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB3_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB3_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB4_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB4_AA_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB5_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB5_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +57,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -77,7 +68,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.one_hot_aa (1)">
+  <component name="RunManager" selected="Python.RSNNS_prep_pipeline">
     <configuration name="RSNNS_fixer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +85,47 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSNNS_fixer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RSNNS_prep_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSNNS_prep_pipeline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -168,6 +200,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RSNNS_prep_pipeline" />
         <item itemvalue="Python.one_hot_aa (1)" />
         <item itemvalue="Python.one_hot_aa" />
         <item itemvalue="Python.pat_generator" />
@@ -189,6 +222,7 @@
       <workItem from="1595863568937" duration="1637000" />
       <workItem from="1597774420595" duration="1303000" />
       <workItem from="1598424107096" duration="363000" />
+      <workItem from="1598451758981" duration="1330000" />
     </task>
     <servers />
   </component>
@@ -205,11 +239,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="100" y="134" width="1720" height="846" key="DiffContextDialog" timestamp="1598452852626">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="100" y="134" width="1720" height="846" key="DiffContextDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1598452852626" />
     <state x="2600" y="475" width="530" height="605" key="FileChooserDialogImpl" timestamp="1597779220135">
       <screen x="1920" y="211" width="1920" height="1080" />
     </state>

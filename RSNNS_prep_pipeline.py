@@ -138,15 +138,10 @@ def ser_parse():
 
         #editing this section to create the new/old dataframes
         tst = fixed_df
-<<<<<<< HEAD
-        newtst1 = tst[~tst.index.isin(oldtrn_frame.index)]
-        newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
-        newtst = newtst[~newtst.index.duplicated()]
-=======
+
         #newtst1 = tst[~tst.index.isin(oldtrn_frame.index)]
         #newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
         newtst = tst[~tst.index.duplicated()]
->>>>>>> testground
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
         newtst.to_csv('testing/' + locus + '_test.csv')
 
@@ -192,10 +187,8 @@ def RSNNS_fixer():
         fixed_val.to_csv('./RSNNS_fixed/training/' + locus + '_validation.csv', index=False)
 
         tst_droplist = []
-<<<<<<< HEAD
-=======
+
         tst_drop2 = []
->>>>>>> testground
         for column in new_tst.columns:
             if column not in old_tst.columns:
                 tst_droplist.append(column)
@@ -204,25 +197,15 @@ def RSNNS_fixer():
         
         fixed_tst = new_tst.drop(tst_droplist, axis=1)
         fixed_tst.to_csv('./RSNNS_fixed/testing/' + locus + '_test.csv', index=False)
-<<<<<<< HEAD
-    return
-
-def pat_generator():
-=======
 
     return
 
 def pat_generator(date):
->>>>>>> testground
     loci = ["A", "B", "C", "DPB1", "DQB1", "DRB1"]
     today = date.today()
     date = today.strftime("%B %d, %Y")
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> testground
     # training files 
     for locus in loci:
 
@@ -277,15 +260,10 @@ def pat_generator(date):
 
             pat_file.write("# " + name + "\n")
             pat_file.write("# input" + "\n")
-<<<<<<< HEAD
-            pat_file.write(in_allele + "\n")
-            pat_file.write('# output ' + in_serkey + "\n")
-            pat_file.write(in_serval + "\n")
-=======
+
             pat_file.write(in_allele + " \n")
             pat_file.write('# output ' + in_serkey + " \n")
             pat_file.write(in_serval + " \n")
->>>>>>> testground
 
         val_frame = pd.read_csv("./RSNNS_fixed/training/" + locus + "_validation.csv")
         
@@ -319,15 +297,10 @@ def pat_generator(date):
 
             val_file.write("# " + val_name + "\n")
             val_file.write("# input" + "\n")
-<<<<<<< HEAD
-            val_file.write(val_in_allele + "\n")
-            val_file.write('# output ' + val_in_serkey + "\n")
-            val_file.write(val_in_serval + "\n")
-=======
+
             val_file.write(val_in_allele + " \n")
             val_file.write('# output ' + val_in_serkey + " \n")
             val_file.write(val_in_serval + " \n")
->>>>>>> testground
 
 
         tst_frame = pd.read_csv("./RSNNS_fixed/testing/" + locus + "_test.csv")
@@ -339,10 +312,7 @@ def pat_generator(date):
         tst_file.write("No. of input units : " + str(len(tst_frame.columns) - 2) + "\n")
         tst_file.write("No. of output units : " + str(len(uni_list)) + "\n")
         
-<<<<<<< HEAD
-=======
 
->>>>>>> testground
         for tst_allele in tst_frame.values.tolist():
             #tst_allele.pop(0)
             tst_name = tst_allele.pop(0)
@@ -350,33 +320,20 @@ def pat_generator(date):
             tst_allele.pop()
             tst_in_allele = ' '.join(map(str,tst_allele))
             tst_serval = []
-<<<<<<< HEAD
-            for each in in_serkey:
-                tst_serval.append(0.00)
-=======
+
             lister = in_serkey.split()
             for each in lister:
                 tst_serval.append("0.00")
->>>>>>> testground
             tst_serval = ' '.join(map(str,tst_serval))
 
             tst_file.write("# testing " + tst_name + "\n")
             tst_file.write("# input" + "\n")
-<<<<<<< HEAD
-            tst_file.write(tst_in_allele + "\n")
-            tst_file.write('# output ' + in_serkey + "\n")
-            tst_file.write(tst_serval + "\n")
-=======
+
             tst_file.write(tst_in_allele + " \n")
             tst_file.write('# output ' + in_serkey + " \n")
             tst_file.write(tst_serval + " \n")
->>>>>>> testground
     return
 
 ser_parse()
 RSNNS_fixer()
-<<<<<<< HEAD
-pat_generator()
-=======
 pat_generator(date)
->>>>>>> testground

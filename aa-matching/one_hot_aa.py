@@ -25,4 +25,4 @@ for loc in aa_mm.ard_start_pos:
     locFrame = locFrame.transpose()
     locFrame = pd.get_dummies(locFrame, prefix_sep='')
     locFrame = locFrame.rename(mapper=(lambda x: (str(x[-1]) + str(int(x[:-1])+1))), axis=1)
-    locFrame.to_csv('./output/' + loc + '_AA_poly.csv')
+    locFrame.to_csv('./output/' + loc + '_AA_poly.csv', index=True)
