@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/B_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/B_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/C_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/C_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/DPB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/DPB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/DQB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/DQB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/DRB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/DRB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/B_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/B_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/C_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/C_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DPB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DPB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DQB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DQB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DRB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DRB1_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/A_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/A_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/B_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/B_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/C_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/C_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DPA1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DPA1_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DPB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DPB1_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DQA1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DQA1_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DQB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DQB1_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB1_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB1_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB3_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB3_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB4_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB4_AA_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/output/DRB5_AA_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/output/DRB5_AA_poly.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +56,15 @@
   </component>
   <component name="JupyterTrust" id="47f26367-8005-4399-8054-f212b979701e" />
   <component name="ProjectId" id="1fH8Gy3O8nnlUn3306zCFnAIKsD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -62,7 +77,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.pat_generator">
+  <component name="RunManager" selected="Python.one_hot_aa (1)">
     <configuration name="RSNNS_fixer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +92,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSNNS_fixer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="one_hot_aa (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aa-matching/one_hot_aa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="one_hot_aa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/one_hot_aa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,6 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.one_hot_aa (1)" />
+        <item itemvalue="Python.one_hot_aa" />
         <item itemvalue="Python.pat_generator" />
         <item itemvalue="Python.RSNNS_fixer" />
       </list>
@@ -127,40 +188,61 @@
       <updated>1595863565755</updated>
       <workItem from="1595863568937" duration="1637000" />
       <workItem from="1597774420595" duration="1303000" />
+      <workItem from="1598424107096" duration="363000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2600" y="475" width="530" height="605" key="FileChooserDialogImpl" timestamp="1597779220135">
       <screen x="1920" y="211" width="1920" height="1080" />
     </state>
     <state x="2600" y="475" width="530" height="605" key="FileChooserDialogImpl/1920.211.1920.1080/0.245.1920.955@1920.211.1920.1080" timestamp="1597779220135" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1595865206320">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1862" height="257" key="GridCell.Tab.0.bottom" timestamp="1598424469415">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1595865206320" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1595865206318">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1862" height="257" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1598424469415" />
+    <state width="1862" height="257" key="GridCell.Tab.0.center" timestamp="1598424469415">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1595865206318" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1595865206316">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1862" height="257" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1598424469415" />
+    <state width="1862" height="257" key="GridCell.Tab.0.left" timestamp="1598424469415">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1595865206316" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1595865206319">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1862" height="257" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1598424469415" />
+    <state width="1862" height="257" key="GridCell.Tab.0.right" timestamp="1598424469415">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1595865206319" />
+    <state width="1862" height="257" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1598424469415" />
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor" timestamp="1595863842936">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595863842936" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/nn_sero_pytorch$one_hot_aa__1_.coverage" NAME="one_hot_aa (1) Coverage Results" MODIFIED="1598424367316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aa-matching" />
     <SUITE FILE_PATH="coverage/nn_sero_pytorch$RSNNS_fixer.coverage" NAME="RSNNS_fixer Coverage Results" MODIFIED="1595864615510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nn_sero_pytorch$pat_generator.coverage" NAME="pat_generator Coverage Results" MODIFIED="1595865146291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nn_sero_pytorch$pat_generator.coverage" NAME="pat_generator Coverage Results" MODIFIED="1598424213451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nn_sero_pytorch$one_hot_aa.coverage" NAME="one_hot_aa Coverage Results" MODIFIED="1598424222167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

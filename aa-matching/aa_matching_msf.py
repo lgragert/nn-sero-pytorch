@@ -33,6 +33,68 @@ hlaProteinOffset = {
 def getMatureProteinOffset(locus):
         return hlaProteinOffset.get(locus, "Invalid HLA Locus")
 
+
+def adjust_offset(loc, ard_start_pos, ard_start_pos_incomplete, ard_end_pos, ard_end_pos_incomplete, prev=0,
+                  prev_inc=0):
+    start = ard_start_pos
+    end = ard_end_pos
+    start_inc = ard_start_pos_incomplete
+    end_inc = ard_end_pos_incomplete
+    count = mature_protein[start:end].count('-')
+    count_inc = mature_protein[start_inc:end_inc].count('-')
+
+    check = count - prev
+    check_inc = count_inc - prev_inc
+
+    if (check == 0):
+        new_end = end + (count - prev)
+        new_end_inc = end_inc + (count_inc - prev_inc)
+        newlist = [new_end, new_end_inc]
+        return newlist
+    else:
+        new_end = end + (count - prev)
+        prev = count
+        if (check_inc != 0):
+            new_end_inc = end_inc + (count_inc - prev_inc)
+            prev_inc = count_inc
+            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc)
+        else:
+            new_end_inc = end_inc
+            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc=0)
+
+
+def remove_ins(loc_full_alseq):
+    # need to remove the inserts from the reference sequence to print into the IMGT/HLA .txt file
+    gapframe = pd.DataFrame.from_dict(loc_full_alseq, orient="index")
+    droplist = []
+    for i, row in gapframe.iterrows():
+        if i == refseq[loc]:
+            for name, data in gapframe.iteritems():
+                if data[i] == '-':
+                    droplist.append(name)
+                else:
+                    continue
+        else:
+            continue
+    ungapframe = gapframe.drop(droplist, axis=1)
+    for j, jrow in ungapframe.iterrows():
+        jrow = jrow.to_string(header=False, index=False)
+        jrow = jrow.replace('\n', '')
+        jrow = jrow.replace(' ', '')
+        loc_full_alseq[j] = jrow
+
+    return loc_full_alseq
+
+
+def generate_IMGT(HLA_full_alseq, dbversion):
+    outfile = open("./IMGT_HLA_Full_Protein_" + str(dbversion) + ".txt", "w+")
+    outfile.write("Allele\tFull_Protein\n")
+    for allele_loctype in HLA_full_alseq:
+        outfile.write("HLA-" + allele_loctype + "\t" + str(HLA_full_alseq[allele_loctype]) + "\n")
+    outfile.close()
+    return
+
+
 # use only ARD positions
 ard_start_pos = {
     "A" : 1,
@@ -124,7 +186,7 @@ else:
     dbversion = "3390"
 
 for locus in loci:
-    seq_filename = "aa-matching/msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    seq_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
     multipleseq = AlignIO.read(seq_filename, format="msf")
 
     for record in multipleseq:
