@@ -37,6 +37,7 @@ def ungap(dataframe, refseq, loc):
     dataframe = dataframe.rename(columns=new_cols)
     return dataframe
 
+
 # generate list of IMGT/HLA alleles that have each single AA polymorphism
 
 refseq = {
@@ -67,7 +68,7 @@ for loc in aa_mm.ard_start_pos:
 
         for AA_pos in range(aa_mm.ard_start_pos[loc],aa_mm.ard_end_pos[loc]):
             # print (AA_pos)
-            
+
             side_chain = aa_mm.getAAposition(allele_loctyp,AA_pos)
             # if (side_chain == "-"):
             AA_poly = (side_chain + str(AA_pos))
@@ -75,7 +76,7 @@ for loc in aa_mm.ard_start_pos:
             # print (allele_loctyp + " " + AA_poly)
             if AA_poly not in AA_polys.keys():
                 AA_polys[AA_poly] = 0
-                
+
     for Xallele_loctyp in aa_mm.HLA_full_allele:
         (Xallele_loc, Xallele_typ) = Xallele_loctyp.split('*')
         if (Xallele_loc != loc):
@@ -83,7 +84,7 @@ for loc in aa_mm.ard_start_pos:
         # print (loc + '*' + allele_typ)
 
         HLA_AA_polys = {}
-        
+
         for key in AA_polys.keys():
             HLA_AA_polys[key] = 0
 
@@ -94,7 +95,7 @@ for loc in aa_mm.ard_start_pos:
 
             XAA_poly = (Xside_chain + str(XAA_pos))
             #XAA_poly = (str(XAA_pos) + Xside_chain)
-            
+
             for poly in HLA_AA_polys.keys():
                 if poly == XAA_poly:
                     HLA_AA_polys[poly] = 1
@@ -115,4 +116,4 @@ for loc in aa_mm.ard_start_pos:
     output_frame = ungap(output_frame, refseq, loc)
 
     output_frame.to_csv('./output/' + loc + '_AA_poly.csv', index=True)
-    # print (HLA_AA_AlleleList[])
+    print(output_frame)
