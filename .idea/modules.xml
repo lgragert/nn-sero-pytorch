@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../aa-matching/.idea/aa-matching.iml" filepath="$PROJECT_DIR$/../aa-matching/.idea/aa-matching.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" filepath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" />
     </modules>
   </component>
