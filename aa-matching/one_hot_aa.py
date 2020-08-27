@@ -35,38 +35,39 @@ def ungap(dataframe, refseq, loc):
     dataframe = dataframe.rename(columns=new_cols)
     return dataframe
 
-# refseq = {
-#     "A" : "A*01:01",
-#     "B" : "B*07:02",
-#     "C" : "C*01:02",
-#     "DRB1" : "DRB1*01:01",
-#     "DRB3" : "DRB3*01:01",
-#     "DRB4" : "DRB4*01:01",
-#     "DRB5" : "DRB5*01:01",
-#     "DQA1" : "DQA1*01:01",
-#     "DQB1" : "DQB1*05:01",
-#     "DPA1" : "DPA1*01:03",
-#     "DPB1" : "DPB1*01:01",
-#     }
-
 refseq = {
-    "A" : "A*01:01:01:01",
-    "B" : "B*07:02:01:01",
-    "C" : "C*01:02:01:01",
-    "DRB1" : "DRB1*01:01:01:01",
-    "DRB3" : "DRB3*01:01:02:01",
-    "DRB4" : "DRB4*01:01:01:01",
-    "DRB5" : "DRB5*01:01:01:01",
-    "DQA1" : "DQA1*01:01:01:01",
-    "DQB1" : "DQB1*05:01:01:01",
-    "DPA1" : "DPA1*01:03:01:01",
-    "DPB1" : "DPB1*01:01:01:01",
+    "A" : "A*01:01",
+    "B" : "B*07:02",
+    "C" : "C*01:02",
+    "DRB1" : "DRB1*01:01",
+    "DRB3" : "DRB3*01:01",
+    "DRB4" : "DRB4*01:01",
+    "DRB5" : "DRB5*01:01",
+    "DQA1" : "DQA1*01:01",
+    "DQB1" : "DQB1*05:01",
+    "DPA1" : "DPA1*01:03",
+    "DPB1" : "DPB1*01:01",
     }
+#
+# refseq = {
+#     "A" : "A*01:01:01:01",
+#     "B" : "B*07:02:01:01",
+#     "C" : "C*01:02:01:01",
+#     "DRB1" : "DRB1*01:01:01:01",
+#     "DRB3" : "DRB3*01:01:02:01",
+#     "DRB4" : "DRB4*01:01:01:01",
+#     "DRB5" : "DRB5*01:01:01:01",
+#     "DQA1" : "DQA1*01:01:01:01",
+#     "DQB1" : "DQB1*05:01:01:01",
+#     "DPA1" : "DPA1*01:03:01:01",
+#     "DPB1" : "DPB1*01:01:01:01",
+#     }
+#
 
-
-HLA_full_allele = aa_mm.HLA_full_allele
+HLA_seq = aa_mm.HLA_seq
 for loc in aa_mm.ard_start_pos:
-    locDict = { newKey: (HLA_full_allele[newKey])[aa_mm.ard_start_pos[loc]+1:aa_mm.ard_end_pos[loc]+1] for newKey in HLA_full_allele.keys() if (newKey.split('*')[0] == loc) }
+    print("Processing locus " + loc + "...")
+    locDict = { newKey: (HLA_seq[newKey])[aa_mm.ard_start_pos[loc]-1:aa_mm.ard_end_pos[loc]] for newKey in HLA_seq.keys() if (newKey.split('*')[0] == loc) }
     locFrame = pd.DataFrame.from_dict(locDict)
     locDict = {}
     locFrame = locFrame.transpose()
@@ -75,3 +76,4 @@ for loc in aa_mm.ard_start_pos:
     locFrame.index.names = ['allele']
     locFrame = ungap(locFrame, refseq, loc)
     locFrame.to_csv('./output/' + loc + '_AA_poly.csv', index=True)
+    print("Done")

@@ -18,19 +18,20 @@ import requests
 # mature protein sequence offsets differ by locus
 # get offsets by examining mature protein length in IMGT/HLA alignment tool
 # https://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/align.cgi - Mature protein
+
 hlaProteinOffset = {
-    "A" : 24, # 365 versus 341 mature
-    "B" : 22, # offset reduced by 2 to match indexes from nn-serology (RSNNS) .pat files
-    "C" : 22, # offset reduced by 2
+    "A" : 26, # 365 versus 341 mature (increased by 2 due to inserts in the offset region)
+    "B" : 24,
+    "C" : 24,
     "DRA" : 25,
-    "DRB1" : 27, # offset reduced by 2
+    "DRB1" : 29,
     "DRB3" : 29,
     "DRB4" : 29,
     "DRB5" : 29,
     "DQA1" : 23,
-    "DQB1" : 27, # offset reduced by 5
+    "DQB1" : 32,
     "DPA1" : 31,
-    "DPB1" : 27, # offset reduced by 2
+    "DPB1" : 29,
 }
 
 def getMatureProteinOffset(locus):
@@ -92,25 +93,6 @@ def generate_IMGT(HLA_full_alseq, dbversion):
         outfile.write("HLA-" + allele_loctype + "\t" + str(HLA_full_alseq[allele_loctype]) + "\n")
     outfile.close()
     return
-
-'''
-def check_ver():
-    url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/Latest/version_report.txt"
-    r = requests.get(url)
-    regex = "\d\.\d\d\.\d"
-    result = re.search(regex, r.text)
-    curfile = "./msf/msfversion.txt"
-    with (curfile, "r+") as handle:
-        line = handle.readline().rstrip()
-        if line == result.group(0):
-            same = "yes"
-        else:
-            handle.seek(0)
-            handle.write(result.group(0))
-            same = "no"
-    return [same, result.group(0)]
-'''
-
 
 # use only ARD positions
 ard_start_pos = {
@@ -200,7 +182,7 @@ if (quest == "y") or (quest == "Y"):
     dbversion = dbversion.strip()
     dbversion = dbversion.replace('.','')
 else:
-    dbversion = "3400"
+    dbversion = "3410"
 
 for locus in loci:
     loc_full_alseq = {}
