@@ -1,5 +1,5 @@
 {
     "git.autofetch": true,
     "python.linting.enabled": false,
-    "python.pythonPath": "/home/gbiagini/miniconda3/envs/nn-sero/bin/python"
+    "python.pythonPath": "/home/gbiagini/miniforge3/envs/nn-sero/bin/python"
 }

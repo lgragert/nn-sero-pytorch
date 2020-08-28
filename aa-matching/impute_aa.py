@@ -33,11 +33,14 @@ def ungap(dataframe, refseq, loc):
     dataframe = dataframe.rename(columns=new_cols)
     return dataframe
 
+# converts sequence string to binary
+# needed for XOR comparing binary sequences
 def toBinary(string):
     string = ''.join(format(ord(x), 'b') for x in string)
     return string
 
-#from StackOverflow:  https://stackoverflow.com/questions/52452911/finding-all-positions-of-a-character-in-a-string
+# from StackOverflow:  https://stackoverflow.com/questions/52452911/finding-all-positions-of-a-character-in-a-string
+# returns list of indexes for dash characters in all sequences
 def findIns(sequence):
     seqIns = []
     idx = sequence.find('-')
@@ -49,6 +52,7 @@ def findIns(sequence):
             seqIns.append(idx)
     return seqIns
 
+# removes indexes if also in refseq[loc]
 def checkComplete(sequence, seqIns):
     checkIns = []
     idx = sequence.find('-')
@@ -61,6 +65,7 @@ def checkComplete(sequence, seqIns):
     checkIns = [x for x in checkIns if x not in seqIns]
     return checkIns
 
+# Sums result of XOR operation for nearest neighbor determination
 def sumHam(binNum):
     sum = 0
     binNum = str(binNum)
@@ -79,17 +84,22 @@ def impute(locDict, refseq):
         rDist = {}
         if (len(replacePos[rKey]) != 0):
             print("Imputing peptide sequence for allele " + str(rKey))
+            # difference accumulation - possible sorting 
             hDict = {hKey: binDict[hKey] for hKey in
                        binDict.keys() if (hKey.split(':')[0] == rKey.split(':')[0]) and len(replacePos[hKey]) == 0}
             for binKey in hDict.keys():
                 if binKey != rKey:
+                    #rename summed variable - it is not summed - just result of XOR
                     summed = int(binDict[rKey], 2) ^ int(hDict[binKey], 2)
                     rDist[binKey] = bin(summed)[2:].zfill(len(locDict[rKey]))
                     rDist[binKey] = sumHam(rDist[binKey])
                 else:
                     next
+            # arbitrary nearest value to be overwritten
             nNearest = 100000
+            # placeholder for nearest allele
             nearest = "NA"
+            # return allele closest to incomplete sequence
             for near in rDist.keys():
                 nNear = int(rDist[near])
                 if (nNear < nNearest):
@@ -97,6 +107,7 @@ def impute(locDict, refseq):
                     nearest = near
                 else:
                     next
+            # infers sequence from nearest neighbor
             for rVal in replacePos[rKey]:
                 if nearest != "NA":
                     locDict[rKey] = locDict[rKey][:rVal] + locDict[nearest][rVal] + locDict[rKey][rVal+1:]
@@ -106,17 +117,19 @@ refseq = aa_mm.refseq
 HLA_seq = aa_mm.HLA_seq
 for loc in aa_mm.ard_start_pos:
     print("Processing locus " + loc + "...")
-    locDict = { newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys() }
-    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(aa_mm.ard_end_pos[loc])] for locKey in
-               locDict.keys() if (locKey.split('*')[0] == loc) }
+    locDict = { newKey: str(HLA_seq[newKey].seq) fo for locKey in
+               locDict.keys() if (locKey.split('*')[0] == loc) }r newKey in HLA_seq.keys() }
+    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(aa_mm.ard_end_pos[loc])]
     locDict = newDict
     del(newDict)
     imputed = impute(locDict, refseq[loc])
+    # creates list from sequence strings for Pandas dataframe
     repDict = { repKey: list(imputed[repKey]) for repKey in imputed.keys() }
     del(imputed)
     repFrame = pd.DataFrame.from_dict(repDict)
     repFrame = repFrame.transpose()
     repFrame = pd.get_dummies(repFrame, prefix_sep='')
+    # lambda function to rename columns with string character first then position
     repFrame = repFrame.rename(mapper=(lambda x: (str(x[-1]) + str(int(x[:-1]) + 1))), axis=1)
     repFrame.index.names = ['allele']
     repFrame = ungap(repFrame, refseq, loc)
