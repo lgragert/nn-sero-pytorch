@@ -35,6 +35,29 @@ def ungap(dataframe, refseq, loc):
     dataframe = dataframe.rename(columns=new_cols)
     return dataframe
 
+def toBinary(string):
+    string = ''.join(format(ord(x), 'b')) for x in string
+    return string
+
+#from StackOverflow:  https://stackoverflow.com/questions/52452911/finding-all-positions-of-a-character-in-a-string
+def findIns(sequence):
+    seqIns = []
+    idx = sequence.find('-')
+    if (idx != -1):
+        seqIns.append(idx)
+    while (idx != -1):
+        yield idx
+        idx = sequence.find('-', idx+1)
+        seqIns.append(idx)
+    return seqIns
+
+def impute(locDict, refseq):
+    seqIns = findIns(locDict[refseq])
+    for key in locDict.keys():
+        locDict[key] = toBinary(key)
+    binFrame = pd.DataFrame.from_dict(locDict)
+
+
 refseq = {
     "A" : "A*01:01",
     "B" : "B*07:02",

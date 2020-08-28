@@ -157,7 +157,7 @@ ard_end_pos_incomplete = {
 
 loci = ['A', 'B', 'C', 'DRB1', 'DRB345', 'DQA1', 'DQB1', 'DPA1', 'DPB1']
 
-refseq = {
+refseq_full = {
     "A" : "A*01:01:01:01",
     "B" : "B*07:02:01:01",
     "C" : "C*01:02:01:01",
@@ -169,6 +169,20 @@ refseq = {
     "DQB1" : "DQB1*05:01:01:01",
     "DPA1" : "DPA1*01:03:01:01",
     "DPB1" : "DPB1*01:01:01:01",
+    }
+
+refseq = {
+    "A" : "A*01:01",
+    "B" : "B*07:02",
+    "C" : "C*01:02",
+    "DRB1" : "DRB1*01:01",
+    "DRB3" : "DRB3*01:01",
+    "DRB4" : "DRB4*01:01",
+    "DRB5" : "DRB5*01:01",
+    "DQA1" : "DQA1*01:01",
+    "DQB1" : "DQB1*05:01",
+    "DPA1" : "DPA1*01:03",
+    "DPB1" : "DPB1*01:01",
     }
 
 HLA_full_allele = {} # Full four-field allele names
@@ -220,7 +234,7 @@ for locus in loci:
         mature_protein = full_protein[getMatureProteinOffset(loc):]
 
         
-        if loc_full_allele == refseq[loc]:
+        if loc_full_allele == refseq_full[loc]:
             new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc], ard_start_pos_incomplete[loc], ard_end_pos[loc], ard_end_pos_incomplete[loc], prev=0, prev_inc=0)
             ard_end_pos[loc] = new_end
             ard_end_pos_incomplete[loc] = new_end_inc
