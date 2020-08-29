@@ -86,7 +86,8 @@ def impute(locDict, refseq):
             print("Imputing peptide sequence for allele " + str(rKey))
             # difference accumulation - possible sorting 
             hDict = {hKey: binDict[hKey] for hKey in
-                       binDict.keys() if (hKey.split(':')[0] == rKey.split(':')[0]) and len(replacePos[hKey]) == 0}
+                       # binDict.keys() if (hKey.split(':')[0] == rKey.split(':')[0]) and len(replacePos[hKey]) == 0}
+                        binDict.keys() if len(replacePos[hKey]) == 0}
             for binKey in hDict.keys():
                 if binKey != rKey:
                     #rename summed variable - it is not summed - just result of XOR
@@ -117,9 +118,9 @@ refseq = aa_mm.refseq
 HLA_seq = aa_mm.HLA_seq
 for loc in aa_mm.ard_start_pos:
     print("Processing locus " + loc + "...")
-    locDict = { newKey: str(HLA_seq[newKey].seq) fo for locKey in
-               locDict.keys() if (locKey.split('*')[0] == loc) }r newKey in HLA_seq.keys() }
-    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(aa_mm.ard_end_pos[loc])]
+    locDict = { newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys() }
+    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(aa_mm.ard_end_pos[loc])] for locKey in
+               locDict.keys() if (locKey.split('*')[0] == loc) }
     locDict = newDict
     del(newDict)
     imputed = impute(locDict, refseq[loc])
@@ -133,5 +134,8 @@ for loc in aa_mm.ard_start_pos:
     repFrame = repFrame.rename(mapper=(lambda x: (str(x[-1]) + str(int(x[:-1]) + 1))), axis=1)
     repFrame.index.names = ['allele']
     repFrame = ungap(repFrame, refseq, loc)
+    if loc == "DRB1":
+        repFrame.insert(1, "ZZ1", 0)
+        repFrame.insert(2,"ZZ2", 0)
     repFrame.to_csv('./imputed/' + loc + '_imputed_poly.csv', index=True)
     print("Done with locus " + loc)

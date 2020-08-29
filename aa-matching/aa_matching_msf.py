@@ -29,7 +29,7 @@ hlaProteinOffset = {
     "DRB4" : 29,
     "DRB5" : 29,
     "DQA1" : 23,
-    "DQB1" : 32,
+    "DQB1" : 28,#(decreased by 4 to match RSNNS pat files)
     "DPA1" : 31,
     "DPB1" : 29,
 }

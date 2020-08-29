@@ -105,7 +105,7 @@ def ser_parse():
         serologies = serologies[~serologies.index.duplicated()]
         serologies.update(loc_frame, overwrite=True)
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
-        df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
+        df = pd.read_csv('aa-matching/imputed/' + locus + '_imputed_poly.csv')
         df = df.set_index('allele')
         df['serology'] = np.nan
         df.update(serologies, overwrite=False)
