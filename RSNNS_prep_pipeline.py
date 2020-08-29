@@ -105,7 +105,7 @@ def ser_parse():
         serologies = serologies[~serologies.index.duplicated()]
         serologies.update(loc_frame, overwrite=True)
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
-        df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
+        df = pd.read_csv('aa-matching/imputed/' + locus + '_imputed_poly.csv')
         df = df.set_index('allele')
         df['serology'] = np.nan
         df.update(serologies, overwrite=False)
@@ -138,9 +138,10 @@ def ser_parse():
 
         #editing this section to create the new/old dataframes
         tst = fixed_df
-        newtst1 = tst[~tst.index.isin(oldtrn_frame.index)]
-        newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
-        newtst = newtst[~newtst.index.duplicated()]
+
+        #newtst1 = tst[~tst.index.isin(oldtrn_frame.index)]
+        #newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
+        newtst = tst[~tst.index.duplicated()]
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
         newtst.to_csv('testing/' + locus + '_test.csv')
 
@@ -186,6 +187,8 @@ def RSNNS_fixer():
         fixed_val.to_csv('./RSNNS_fixed/training/' + locus + '_validation.csv', index=False)
 
         tst_droplist = []
+
+        tst_drop2 = []
         for column in new_tst.columns:
             if column not in old_tst.columns:
                 tst_droplist.append(column)
@@ -194,12 +197,14 @@ def RSNNS_fixer():
         
         fixed_tst = new_tst.drop(tst_droplist, axis=1)
         fixed_tst.to_csv('./RSNNS_fixed/testing/' + locus + '_test.csv', index=False)
+
     return
 
-def pat_generator():
+def pat_generator(date):
     loci = ["A", "B", "C", "DPB1", "DQB1", "DRB1"]
     today = date.today()
     date = today.strftime("%B %d, %Y")
+
 
     # training files 
     for locus in loci:
@@ -255,9 +260,10 @@ def pat_generator():
 
             pat_file.write("# " + name + "\n")
             pat_file.write("# input" + "\n")
-            pat_file.write(in_allele + "\n")
-            pat_file.write('# output ' + in_serkey + "\n")
-            pat_file.write(in_serval + "\n")
+
+            pat_file.write(in_allele + " \n")
+            pat_file.write('# output ' + in_serkey + " \n")
+            pat_file.write(in_serval + " \n")
 
         val_frame = pd.read_csv("./RSNNS_fixed/training/" + locus + "_validation.csv")
         
@@ -291,9 +297,10 @@ def pat_generator():
 
             val_file.write("# " + val_name + "\n")
             val_file.write("# input" + "\n")
-            val_file.write(val_in_allele + "\n")
-            val_file.write('# output ' + val_in_serkey + "\n")
-            val_file.write(val_in_serval + "\n")
+
+            val_file.write(val_in_allele + " \n")
+            val_file.write('# output ' + val_in_serkey + " \n")
+            val_file.write(val_in_serval + " \n")
 
 
         tst_frame = pd.read_csv("./RSNNS_fixed/testing/" + locus + "_test.csv")
@@ -305,6 +312,7 @@ def pat_generator():
         tst_file.write("No. of input units : " + str(len(tst_frame.columns) - 2) + "\n")
         tst_file.write("No. of output units : " + str(len(uni_list)) + "\n")
         
+
         for tst_allele in tst_frame.values.tolist():
             #tst_allele.pop(0)
             tst_name = tst_allele.pop(0)
@@ -312,17 +320,20 @@ def pat_generator():
             tst_allele.pop()
             tst_in_allele = ' '.join(map(str,tst_allele))
             tst_serval = []
-            for each in in_serkey:
-                tst_serval.append(0.00)
+
+            lister = in_serkey.split()
+            for each in lister:
+                tst_serval.append("0.00")
             tst_serval = ' '.join(map(str,tst_serval))
 
             tst_file.write("# testing " + tst_name + "\n")
             tst_file.write("# input" + "\n")
-            tst_file.write(tst_in_allele + "\n")
-            tst_file.write('# output ' + in_serkey + "\n")
-            tst_file.write(tst_serval + "\n")
+
+            tst_file.write(tst_in_allele + " \n")
+            tst_file.write('# output ' + in_serkey + " \n")
+            tst_file.write(tst_serval + " \n")
     return
 
 ser_parse()
 RSNNS_fixer()
-pat_generator()
+pat_generator(date)
