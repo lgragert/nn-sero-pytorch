@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../aa-matching/.idea/aa-matching.iml" filepath="$PROJECT_DIR$/../aa-matching/.idea/aa-matching.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" filepath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nn-serology/.idea/nn-serology.iml" filepath="$PROJECT_DIR$/../nn-serology/.idea/nn-serology.iml" />
     </modules>
   </component>
 </project>
