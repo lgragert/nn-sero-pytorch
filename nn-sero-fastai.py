@@ -45,14 +45,14 @@ def find_appropriate_lr(model:Learner, lr_diff:int = 15, loss_threshold:float = 
         
     return lr_to_use
 
-_file_handler()
+# _file_handler()
 
 loci = ['A', 'B', 'C', 'DPB1', 'DQB1', 'DRB1']
 for locus in loci:
   AAs = []
-  tng_df = pd.read_csv('training/' + locus + '_train.csv')
-  tst_df = pd.read_csv('testing/' + locus + '_test.csv')
-  val_df = pd.read_csv('training/' + locus + '_validation.csv')
+  tng_df = pd.read_csv('RSNNS_fixed/training/' + locus + '_train.csv')
+  tst_df = pd.read_csv('RSNNS_fixed/testing/' + locus + '_test.csv')
+  val_df = pd.read_csv('RSNNS_fixed/training/' + locus + '_validation.csv')
   tng_idx = len(tng_df)
   val_idx = len(val_df) + 1
   tst_idx = len(tst_df)
@@ -77,16 +77,16 @@ for locus in loci:
                             
 
 
-  acc_02 = partial(accuracy_thresh, thresh=0.2)
+  acc_02 = partial(accuracy_thresh, thresh=0.51)
   f_score = partial(fbeta, thresh=0.2)
 
-  learn = tabular_learner(data, layers=[30,30,30], metrics=[acc_02, f_score])
+  learn = tabular_learner(data, layers=[200,50], metrics=[acc_02, f_score])
   print(data.classes)
 
   lr = find_appropriate_lr(model=learn)
   learn.recorder.plot(suggestion=True)
 
-  learn.fit(50, lr=lr)
+  learn.fit(15, lr=lr)
 
   learn.model
   learn.recorder.plot_losses()
@@ -98,7 +98,7 @@ for locus in loci:
   print(classes)
 
   for i in tqdm(range(0,tst_idx)):
-    category = str(learn.predict(tst_df.iloc[i], thresh=0.40)[0])
+    category = str(learn.predict(tst_df.iloc[i], thresh=0.75)[0])
     sero = category.strip('MultiCategory ')
     sero = sero.replace(';',' ')
     predictions.append(sero.split())

@@ -31,24 +31,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/A.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/B.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/C.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/DPB1.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/DQB1.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-predictions/DRB1.chile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predictions/B_predictions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predictions/C_predictions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tmp.pth" beforeDir="false" afterPath="$PROJECT_DIR$/models/tmp.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nn-sero-fastai.py" beforeDir="false" afterPath="$PROJECT_DIR$/nn-sero-fastai.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictions/A_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/A_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/B_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/B_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/C_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/C_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aa-matching" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,32 +175,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="impute_aa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="metrics (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aa-matching/impute_aa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="metrics (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nn-sero-pytorch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -242,13 +219,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="nn-sero-fastai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nn-sero-fastai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.metrics (1)" />
         <item itemvalue="Python.metrics" />
+        <item itemvalue="Python.nn-sero-fastai" />
         <item itemvalue="Python.compare" />
         <item itemvalue="Python.RSNNS_prep_pipeline" />
-        <item itemvalue="Python.impute_aa" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +272,8 @@
       <workItem from="1598555006042" duration="22288000" />
       <workItem from="1598812079152" duration="1220000" />
       <workItem from="1598837839838" duration="4251000" />
+      <workItem from="1598880989174" duration="5275000" />
+      <workItem from="1598978890206" duration="870000" />
     </task>
     <servers />
   </component>
@@ -353,6 +354,10 @@
     </state>
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595863842936" />
     <state x="160" y="100" width="1546" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1598753671331" />
+    <state x="440" y="133" width="1030" height="855" key="editAsTableFormatDialogDimension" timestamp="1598881798331">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="440" y="133" width="1030" height="855" key="editAsTableFormatDialogDimension/0.34.1920.1046@0.34.1920.1046" timestamp="1598881798331" />
     <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1598752633019">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
