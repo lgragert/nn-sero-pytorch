@@ -83,7 +83,7 @@ def impute(locDict, refseq):
     for rKey in replacePos.keys():
         rDist = {}
         if (len(replacePos[rKey]) != 0):
-            print("Imputing peptide sequence for allele " + str(rKey))
+            # print("Imputing peptide sequence for allele " + str(rKey))
             # difference accumulation - possible sorting 
             hDict = {hKey: binDict[hKey] for hKey in
                        # binDict.keys() if (hKey.split(':')[0] == rKey.split(':')[0]) and len(replacePos[hKey]) == 0}
@@ -108,6 +108,8 @@ def impute(locDict, refseq):
                     nearest = near
                 else:
                     next
+            if rKey in ["A*26:03","C*03:23", "C*03:46", "DPB1*35:01","DRB1*04:20", "DRB1*05:13", "DQB1*06:06"]:
+                print(rKey + " nearest neighbor: " + nearest)
             # infers sequence from nearest neighbor
             for rVal in replacePos[rKey]:
                 if nearest != "NA":
