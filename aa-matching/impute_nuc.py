@@ -12,6 +12,7 @@
 
 import pandas as pd
 import nuc_matching_msf as nuc_mm
+import aa_matching_msf as aa_mm
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
 from Bio.Data.CodonTable import TranslationError
@@ -90,12 +91,14 @@ def sumHam(binNum):
 
 def translate_nuc(nuc_dict, seqIns):
     translated = {}
+    incorrect = []
     for record in tqdm(nuc_dict.keys()):
         nuc_seq = SeqRecord(Seq(nuc_dict[record]))
         try:
             aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
             print(aa_seq)
         except TranslationError:
+            incorrect.append(record)
             new_seq = str(nuc_seq.seq)
             new_sequel = []
             new_sequel[:] = new_seq
@@ -103,8 +106,15 @@ def translate_nuc(nuc_dict, seqIns):
                            not in seqIns) ]
             nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
             aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
-            print("Sequence for allele " + rKey + ": " + aa_seq.seq)
+            print("Sequence for allele " + record + ": " + aa_seq.seq)
         translated[record] = aa_seq
+    return translated, incorrect
+
+def correction(incorrect, translated, aaIns):
+    for each in incorrect:
+        for insert in aaIns:
+            translated[each] = translated[each][:insert] + '-' + \
+                               translated[each][insert+1:]
     return translated
 
 # testing function for validation of the translation approach
@@ -124,8 +134,9 @@ def translate_nuc(nuc_dict, seqIns):
 #         print("Sequence for allele " + rKey + ": " + aa_seq.seq)
 #     return
 
-def impute(locDict, refseq):
+def impute(locDict, refseq, aaDict):
     seqIns = findIns(locDict[refseq])
+    aaIns = findIns(str(aaDict[refseq].seq))
     replacePos = {}
     binDict = {}
     for key in locDict.keys():
@@ -165,10 +176,12 @@ def impute(locDict, refseq):
 		# Here to test functionality of translation
         # elif (len(replacePos[rKey]) == 0):
         #     test_translate(locDict[rKey], rKey, seqIns)
-    locDict = translate_nuc(locDict)
-    return locDict
+    locDict, incorrect = translate_nuc(locDict)
+    translated = correction(incorrect, locDict, aaIns)
+    return translated
 
 def main():
+    aaDict = aa_mm.HLA_seq
     refseq = nuc_mm.refseq
     HLA_seq = nuc_mm.HLA_seq
     for loc in nuc_mm.refseq:
@@ -180,7 +193,7 @@ def main():
                     locKey.split('*')[0] == loc)}
         locDict = newDict
         del (newDict)
-        imputed = impute(locDict, refseq[loc])
+        imputed = impute(locDict, refseq[loc], aaDict)
         # creates list from sequence strings for Pandas dataframe
         repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
         del (imputed)
