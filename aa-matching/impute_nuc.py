@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 ###############################################################################
 #   SCRIPT NAME:    impute_nuc.py
-#   DESCRIPTION:    Package for inference of HLA nucleotide sequences
+#   DESCRIPTION:    Module for inference of HLA nucleotide sequences
 #   OUTPUT:
 #   DATE:           September 01, 2020
 #   AUTHOR:         Giovanni Biagini (dbiagini@tulane.edu ; GitHub: gbiagini)
@@ -13,7 +13,9 @@
 import pandas as pd
 import nuc_matching_msf as nuc_mm
 from Bio.SeqRecord import SeqRecord
-import nuc_translate
+from Bio.Seq import Seq
+from Bio.Data.CodonTable import TranslationError
+from tqdm import tqdm
 
 def ungap(dataframe, refseq, loc):
     # the dashes will be put at the beginning of every set of possible
@@ -86,13 +88,41 @@ def sumHam(binNum):
         sum += int(char)
     return sum
 
-def translate_nuc(nuc_dict):
+def translate_nuc(nuc_dict, seqIns):
     translated = {}
-    for record in nuc_dict.keys():
-        nuc_seq = SeqRecord(nuc_dict[record])
-        aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+    for record in tqdm(nuc_dict.keys()):
+        nuc_seq = SeqRecord(Seq(nuc_dict[record]))
+        try:
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+            print(aa_seq)
+        except TranslationError:
+            new_seq = str(nuc_seq.seq)
+            new_sequel = []
+            new_sequel[:] = new_seq
+            new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
+                           not in seqIns) ]
+            nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+            print("Sequence for allele " + rKey + ": " + aa_seq.seq)
         translated[record] = aa_seq
     return translated
+
+# testing function for validation of the translation approach
+# def test_translate(sequence, rKey, seqIns):
+#     nuc_seq = SeqRecord(Seq(sequence))
+#     try:
+#         aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+#         print(aa_seq)
+#     except TranslationError:
+#         new_seq = str(nuc_seq.seq)
+#         new_sequel = []
+#         new_sequel[:] = new_seq
+#         new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
+#                        not in seqIns) ]
+#         nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
+#         aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+#         print("Sequence for allele " + rKey + ": " + aa_seq.seq)
+#     return
 
 def impute(locDict, refseq):
     seqIns = findIns(locDict[refseq])
@@ -101,7 +131,7 @@ def impute(locDict, refseq):
     for key in locDict.keys():
         replacePos[key] = checkComplete(locDict[key], seqIns)
         binDict[key] = toBinary(locDict[key])
-    for rKey in replacePos.keys():
+    for rKey in tqdm(replacePos.keys()):
         rDist = {}
         if (len(replacePos[rKey]) != 0):
             print("Imputing nucleotide sequence for allele " + str(rKey))
@@ -132,35 +162,42 @@ def impute(locDict, refseq):
                     locDict[rKey] = locDict[rKey][:rVal] + \
                                     locDict[nearest][rVal] + \
                                     locDict[rKey][rVal + 1:]
+		# Here to test functionality of translation
+        # elif (len(replacePos[rKey]) == 0):
+        #     test_translate(locDict[rKey], rKey, seqIns)
     locDict = translate_nuc(locDict)
     return locDict
 
-refseq = nuc_mm.refseq
-HLA_seq = nuc_mm.HLA_seq
-for loc in nuc_mm.refseq:
-    print("Processing locus " + loc + "...")
-    locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
-    # GB - Removing the indexes that limit this to the antigen recognition
-    # domain. I'll need to reintroduce this in the future.
-    newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
-                locKey.split('*')[0] == loc)}
-    locDict = newDict
-    del (newDict)
-    imputed = impute(locDict, refseq[loc])
-    # creates list from sequence strings for Pandas dataframe
-    repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
-    del (imputed)
-    repFrame = pd.DataFrame.from_dict(repDict)
-    repFrame = repFrame.transpose()
-    repFrame = pd.get_dummies(repFrame, prefix_sep='')
-    # lambda function to rename columns with string character first then
-    # position
-    repFrame = repFrame.rename(
-        mapper=(lambda x: (str(x[-1]) +str(int(x[:-1])+1))), axis=1)
-    repFrame.index.names = ['allele']
-    repFrame = ungap(repFrame, refseq, loc)
-    if loc == "DRB1":
-        repFrame.insert(1, "ZZ1", 0)
-        repFrame.insert(2, "ZZ2", 0)
-    repFrame.to_csv('./imputed/' + loc + '_imputed_poly.csv', index=True)
-    print("Done with locus " + loc)
+def main():
+    refseq = nuc_mm.refseq
+    HLA_seq = nuc_mm.HLA_seq
+    for loc in nuc_mm.refseq:
+        print("Processing locus " + loc + "...")
+        locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
+        # TODO (gbiagini) - Removing the indexes that limit this to the antigen
+        #  recognition domain. I'll need to reintroduce this in the future.
+        newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
+                    locKey.split('*')[0] == loc)}
+        locDict = newDict
+        del (newDict)
+        imputed = impute(locDict, refseq[loc])
+        # creates list from sequence strings for Pandas dataframe
+        repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
+        del (imputed)
+        repFrame = pd.DataFrame.from_dict(repDict)
+        repFrame = repFrame.transpose()
+        repFrame = pd.get_dummies(repFrame, prefix_sep='')
+        # lambda function to rename columns with string character first then
+        # position
+        repFrame = repFrame.rename(
+            mapper=(lambda x: (str(x[-1]) +str(int(x[:-1])+1))), axis=1)
+        repFrame.index.names = ['allele']
+        repFrame = ungap(repFrame, refseq, loc)
+        if loc == "DRB1":
+            repFrame.insert(1, "ZZ1", 0)
+            repFrame.insert(2, "ZZ2", 0)
+        repFrame.to_csv('./imputed/' + loc + '_imputed_poly.csv', index=True)
+        print("Done with locus " + loc)
+    return
+
+main()

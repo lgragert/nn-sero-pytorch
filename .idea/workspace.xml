@@ -31,21 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/A_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/B_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/C_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DPA1_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DPB1_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DQA1_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DQB1_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DRB1_nuc_3400.msf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DRB345_nuc_3400.msf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/nuc_translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/nuc_translate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,9 +149,6 @@
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -293,7 +278,7 @@
       <workItem from="1599001372183" duration="4000" />
       <workItem from="1599093072253" duration="24000" />
       <workItem from="1599093107786" duration="8413000" />
-      <workItem from="1599141410017" duration="730000" />
+      <workItem from="1599141410017" duration="7046000" />
     </task>
     <servers />
   </component>
