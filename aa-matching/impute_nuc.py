@@ -10,12 +10,10 @@
 #   NOTES:          Written upon suggestions from Martin Maiers (NMDP)
 ###############################################################################
 
-import re
 import pandas as pd
-import numpy as np
-import aa_matching_msf as aa_mm
-from collections import OrderedDict
-
+import nuc_matching_msf as nuc_mm
+from Bio.SeqRecord import SeqRecord
+import nuc_translate
 
 def ungap(dataframe, refseq, loc):
     # the dashes will be put at the beginning of every set of possible
@@ -88,6 +86,13 @@ def sumHam(binNum):
         sum += int(char)
     return sum
 
+def translate_nuc(nuc_dict):
+    translated = {}
+    for record in nuc_dict.keys():
+        nuc_seq = SeqRecord(nuc_dict[record])
+        aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+        translated[record] = aa_seq
+    return translated
 
 def impute(locDict, refseq):
     seqIns = findIns(locDict[refseq])
@@ -99,16 +104,14 @@ def impute(locDict, refseq):
     for rKey in replacePos.keys():
         rDist = {}
         if (len(replacePos[rKey]) != 0):
-            # print("Imputing peptide sequence for allele " + str(rKey))
-            # difference accumulation - possible sorting 
+            print("Imputing nucleotide sequence for allele " + str(rKey))
+            # TODO (gbiagini) - difference accumulation - possible sorting
             hDict = {hKey: binDict[hKey] for hKey in
                      binDict.keys() if len(replacePos[hKey]) == 0}
             for binKey in hDict.keys():
                 if binKey != rKey:
-                    # TODO (gbiagini) - rename summed variable - it is not
-                    #  summed
-                    summed = int(binDict[rKey], 2) ^ int(hDict[binKey], 2)
-                    rDist[binKey] = bin(summed)[2:].zfill(len(locDict[rKey]))
+                    xoresult = int(binDict[rKey], 2) ^ int(hDict[binKey], 2)
+                    rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[rKey]))
                     rDist[binKey] = sumHam(rDist[binKey])
             # arbitrary nearest value to be overwritten
             nNearest = 100000
@@ -129,17 +132,17 @@ def impute(locDict, refseq):
                     locDict[rKey] = locDict[rKey][:rVal] + \
                                     locDict[nearest][rVal] + \
                                     locDict[rKey][rVal + 1:]
+    locDict = translate_nuc(locDict)
     return locDict
 
-
-refseq = aa_mm.refseq
-HLA_seq = aa_mm.HLA_seq
-for loc in aa_mm.ard_start_pos:
+refseq = nuc_mm.refseq
+HLA_seq = nuc_mm.HLA_seq
+for loc in nuc_mm.refseq:
     print("Processing locus " + loc + "...")
     locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
-    # TODO (gbiagini) - fix next line according to style guide (too long)
-    newDict = {locKey: locDict[locKey][(aa_mm.ard_start_pos[loc]-1):(
-                aa_mm.ard_end_pos[loc])] for locKey in locDict.keys() if (
+    # GB - Removing the indexes that limit this to the antigen recognition
+    # domain. I'll need to reintroduce this in the future.
+    newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
                 locKey.split('*')[0] == loc)}
     locDict = newDict
     del (newDict)

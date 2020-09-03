@@ -31,18 +31,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gbiagini.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_prot_validation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_translate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/A_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/B_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/C_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DPA1_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DPB1_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DQA1_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DQB1_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DRB1_nuc_3400.msf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_msf/DRB345_nuc_3400.msf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/aa_poly_to_alleles_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_poly_to_alleles_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/impute_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_aa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,29 +112,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.metrics (1)">
-    <configuration name="RSNNS_prep_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nn-sero-pytorch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSNNS_prep_pipeline.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.impute_nuc">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,6 +149,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="impute_nuc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aa-matching/impute_nuc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.impute_nuc" />
+        <item itemvalue="Python.metrics (1)" />
         <item itemvalue="Python.nn-sero-fastai" />
         <item itemvalue="Python.metrics" />
-        <item itemvalue="Python.metrics (1)" />
         <item itemvalue="Python.compare" />
-        <item itemvalue="Python.RSNNS_prep_pipeline" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +292,8 @@
       <workItem from="1599000774843" duration="581000" />
       <workItem from="1599001372183" duration="4000" />
       <workItem from="1599093072253" duration="24000" />
-      <workItem from="1599093107786" duration="1134000" />
+      <workItem from="1599093107786" duration="8413000" />
+      <workItem from="1599141410017" duration="730000" />
     </task>
     <servers />
   </component>
@@ -312,10 +316,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1070" y="345" width="729" height="430" key="#Notifications" timestamp="1598993030361">
+    <state x="1070" y="345" width="729" height="430" key="#Notifications" timestamp="1599097912303">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1070" y="345" width="729" height="430" key="#Notifications/0.34.1920.1046@0.34.1920.1046" timestamp="1598993030361" />
+    <state x="1070" y="345" width="729" height="430" key="#Notifications/0.34.1920.1046@0.34.1920.1046" timestamp="1599097912303" />
     <state x="455" y="115" width="1000" height="890" key="#Plugins" timestamp="1598463601934">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -386,10 +390,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="705" y="387" width="500" height="346" key="scopes/0.34.1920.1046@0.34.1920.1046" timestamp="1598992847089" />
-    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1598752633019">
+    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1599095554962">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1598752633019" />
+    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1599095554962" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nn_sero_pytorch$one_hot_aa__1_.coverage" NAME="one_hot_aa (1) Coverage Results" MODIFIED="1598461042943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aa-matching" />

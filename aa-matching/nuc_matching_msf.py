@@ -163,14 +163,14 @@ if (quest == "y") or (quest == "Y"):
 	dbversion = dbversion.strip()
 	dbversion = dbversion.replace('.', '')
 else:
-	dbversion = "3410"
+	dbversion = "3400"
 
 # The "$loc_nuc.msf" files are supposed to only contain coding sequences,
 # so we can start with using those as a basis for translation,
 # and translating the codons directly before making alterations.
 for locus in loci:
 	loc_full_alseq = {}
-	seq_filename = "./aa-matching/nuc_msf/" + locus + "_nuc_" + str(
+	seq_filename = "../aa-matching/nuc_msf/" + locus + "_nuc_" + str(
 		dbversion) \
 	               + ".msf"
 	if path.exists(seq_filename) == False:
@@ -179,7 +179,7 @@ for locus in loci:
 		url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/" + str(
 			dbversion) + "/msf/" + locus + "_nuc.msf"
 		r = requests.get(url)
-		with open(seq_filename, 'wb') as f:
+		with open(seq_filename, 'wb+') as f:
 			f.write(r.content)
 	else:
 		print("MSF nucleotide files already downloaded")
@@ -199,18 +199,23 @@ for locus in loci:
 			continue
 
 		(loc, full_allele) = loc_full_allele.split("*")
-		mature_protein = full_protein[getMatureProteinOffset(loc):]
 
-		# FIXME (gbiagini) - This is going to need to wait until after the
-		#  translation is done - the ARD refers to the protein sequence
-		if loc_full_allele == refseq_full[loc]:
-			new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc],
-			                                     ard_start_pos_incomplete[loc],
-			                                     ard_end_pos[loc],
-			                                     ard_end_pos_incomplete[loc],
-			                                     prev=0, prev_inc=0)
-			ard_end_pos[loc] = new_end
-			ard_end_pos_incomplete[loc] = new_end_inc
+		# TODO (gbiagini) - Keep in mind that this will need to be
+		#  reimplemented using the translated protein sequence
+		# mature_protein = full_protein[getMatureProteinOffset(loc):]
+		#
+		mature_protein = full_protein
+		# # FIXME (gbiagini) - This is going to need to wait until after the
+		# #  translation is done - the ARD refers to the protein sequence. It
+		# #  might be worthwhile to write another function or module.
+		# if loc_full_allele == refseq_full[loc]:
+		# 	new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc],
+		# 	                                     ard_start_pos_incomplete[loc],
+		# 	                                     ard_end_pos[loc],
+		# 	                                     ard_end_pos_incomplete[loc],
+		# 	                                     prev=0, prev_inc=0)
+		# 	ard_end_pos[loc] = new_end
+		# 	ard_end_pos_incomplete[loc] = new_end_inc
 
 		# print(mature_protein)
 
@@ -232,136 +237,3 @@ for locus in loci:
 		# https://www.biostars.org/p/57549/
 
 		# print (HLA_seqrecord_dict[allele].seq)
-
-	# !GB!# Commented out these two lines as well as the generate_IMGT()
-	# function call, since the process is intensive and does not need to be
-	# !GB!# run every time the code is used. Might should consider a switch to
-	# splitting a HLA_full_alseq DataFrame by locus and doing all of the work in
-	# !GB!# a single function definition.
-	# loc_full_alseq = remove_ins(loc_full_alseq)
-	# HLA_full_alseq.update(loc_full_alseq)
-
-
-# generate_IMGT(HLA_full_alseq, dbversion)
-
-# get the AA mature protein subsequence of any HLA allele
-# Python strings start at zero, but amino acid sequences start at position 1
-def getAAsubstring(allele, start_position, end_position):
-	return HLA_full_allele[allele].seq[start_position + 1:end_position]
-
-
-# get the AA at any position of any HLA allele
-def getAAposition(allele, position):
-	return HLA_full_allele[allele].seq[position + 1]
-
-
-# get the SFVT epitope name (with underscore)
-def getEpitope(allele, position_list):
-	sfvt_list = []
-	for position in position_list:
-		AA = getAAposition(allele, position)
-		sfvt_aa = str(position) + AA
-		sfvt_list.append(sfvt_aa)
-
-	sfvt = "_".join(sfvt_list)
-	return (sfvt)
-
-
-# given two alleles at same locus and a position - Yes/No if mismatched
-def isPositionMismatched(allele1, allele2, position):
-	AA_allele1 = getAAposition(allele1, position)
-	AA_allele2 = getAAposition(allele2, position)
-	if (AA_allele1 != AA_allele2):
-		return True
-	else:
-		return False
-
-
-# count number of mismatches at position between donor and recip
-# getTruth function from runMatchMC
-def count_AA_Mismatches(aa1_donor, aa2_donor, aa1_recip, aa2_recip):
-	mm_count = 0
-	if ((aa1_donor != aa1_recip) & (aa1_donor != aa2_recip)):
-		mm_count += 1
-	if ((aa2_donor != aa1_recip) & (aa2_donor != aa2_recip)):
-		mm_count += 1
-	return mm_count
-
-
-# count number of mismatches between alleles at a given position, adjusting
-# for donor homozygosity
-def count_AA_Mismatches_Allele(allele1_donor, allele2_donor, allele1_recip,
-                               allele2_recip, position):
-	donor_homoz = 0
-	if (allele1_donor == allele2_donor):
-		donor_homoz = 1
-	aa1_donor = getAAposition(allele1_donor, position)
-	aa2_donor = getAAposition(allele2_donor, position)
-	aa1_recip = getAAposition(allele1_recip, position)
-	aa2_recip = getAAposition(allele2_recip, position)
-
-	mm_count = count_AA_Mismatches(aa1_donor, aa2_donor, aa1_recip, aa2_recip)
-
-	if ((mm_count == 2) & (donor_homoz == 1)):
-		mm_count = 1
-
-	return mm_count
-
-
-def count_AA_Mismatches_SFVT(allele1_donor, allele2_donor, allele1_recip,
-                             allele2_recip, position_list):
-	donor_homoz = 0
-	mm_total = 0
-	if (allele1_donor == allele2_donor):
-		donor_homoz = 1
-
-	# increment MM count for all positions in list
-	for position in position_list:
-		aa1_donor = getAAposition(allele1_donor, position)
-		aa2_donor = getAAposition(allele2_donor, position)
-		aa1_recip = getAAposition(allele1_recip, position)
-		aa2_recip = getAAposition(allele2_recip, position)
-
-		mm_count = count_AA_Mismatches(aa1_donor, aa2_donor, aa1_recip,
-		                               aa2_recip)
-
-		if ((mm_count == 2) & (donor_homoz == 1)):
-			mm_count = 1
-
-		mm_total = mm_total + mm_count
-
-	return mm_total
-
-
-def AA_MM(aa1_donor, aa2_donor, aa1_recip, aa2_recip):
-	mm_count = 0
-	if ((aa1_donor != aa1_recip) & (aa1_donor != aa2_recip)):
-		mm_count = 1
-	if ((aa2_donor != aa1_recip) & (aa2_donor != aa2_recip)):
-		mm_count = 1
-	return mm_count
-
-
-# any there any mismatches between alleles at a given position
-def AA_MM_Allele(allele1_donor, allele2_donor, allele1_recip, allele2_recip,
-                 position):
-	aa1_donor = getAAposition(allele1_donor, position)
-	aa2_donor = getAAposition(allele2_donor, position)
-	aa1_recip = getAAposition(allele1_recip, position)
-	aa2_recip = getAAposition(allele2_recip, position)
-
-	is_mm = AA_MM(aa1_donor, aa2_donor, aa1_recip, aa2_recip)
-
-	return is_mm
-
-
-# weighted choice from https://scaron.info/blog/python-weighted-choice.html
-def weighted_choice(seq, weights):
-	assert len(weights) == len(seq)
-	assert abs(1. - sum(weights)) < 1e-6
-
-	x = random.random()
-	for i, elmt in enumerate(seq):
-		if x <= weights[i]:
-			return elmt
-		x -= weights[i]
