@@ -20,7 +20,8 @@ import requests
 # https://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/align.cgi - Mature protein
 
 hlaProteinOffset = {
-    "A" : 26, # 365 versus 341 mature (increased by 2 due to inserts in the offset region)
+    "A" : 26, # 365 versus 341 mature (increased by 2 due to inserts in the
+    # offset region)
     "B" : 24,
     "C" : 24,
     "DRA" : 25,
@@ -37,7 +38,8 @@ hlaProteinOffset = {
 def getMatureProteinOffset(locus):
         return hlaProteinOffset.get(locus, "Invalid HLA Locus")
     
-def adjust_offset(loc, ard_start_pos, ard_start_pos_incomplete, ard_end_pos, ard_end_pos_incomplete, prev=0, prev_inc=0):
+def adjust_offset(loc, ard_start_pos, ard_start_pos_incomplete, ard_end_pos,
+                  ard_end_pos_incomplete, prev=0, prev_inc=0):
     start = ard_start_pos
     end = ard_end_pos
     start_inc = ard_start_pos_incomplete
@@ -59,13 +61,16 @@ def adjust_offset(loc, ard_start_pos, ard_start_pos_incomplete, ard_end_pos, ard
         if (check_inc != 0):
             new_end_inc = end_inc + (count_inc - prev_inc)
             prev_inc = count_inc
-            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc)
+            return adjust_offset(loc, start, start_inc, new_end,
+                                 new_end_inc, prev, prev_inc)
         else:
             new_end_inc = end_inc
-            return adjust_offset(loc, start, start_inc, new_end, new_end_inc, prev, prev_inc=0)
+            return adjust_offset(loc, start, start_inc, new_end,
+                                 new_end_inc, prev, prev_inc=0)
 
 def remove_ins(loc_full_alseq):
-    # need to remove the inserts from the reference sequence to print into the IMGT/HLA .txt file
+    # need to remove the inserts from the reference sequence to print into
+    # the IMGT/HLA .txt file
     gapframe = pd.DataFrame.from_dict(loc_full_alseq, orient="index")
     droplist = []
     for i, row in gapframe.iterrows():
@@ -90,7 +95,8 @@ def generate_IMGT(HLA_full_alseq, dbversion):
     outfile = open("./IMGT_HLA_Full_Protein_" + str(dbversion) + ".txt", "w+")
     outfile.write("Allele\tFull_Protein\n")
     for allele_loctype in HLA_full_alseq:
-        outfile.write("HLA-" + allele_loctype + "\t" + str(HLA_full_alseq[allele_loctype]) + "\n")
+        outfile.write("HLA-" + allele_loctype + "\t" +
+                      str(HLA_full_alseq[allele_loctype]) + "\n")
     outfile.close()
     return
 
@@ -200,13 +206,15 @@ else:
 
 for locus in loci:
     loc_full_alseq = {}
-    seq_filename = "./aa-matching/msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    seq_filename = "./aa-matching/msf/" + locus + "_prot_" + str(dbversion) \
+                   + ".msf"
     #old_filename = seq_filename
     #new_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
     #os.rename(r(old_filename),r(new_filename))
     if path.exists(seq_filename) == False:
         print("Downloading requested MSF files for locus " + locus + "...")
-        url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/" + str(dbversion) + "/msf/" + locus + "_prot.msf"
+        url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/" + str(
+            dbversion) + "/msf/" + locus + "_prot.msf"
         r = requests.get(url)
         #seq_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
         with open(seq_filename, 'wb') as f:
@@ -235,7 +243,11 @@ for locus in loci:
 
         
         if loc_full_allele == refseq_full[loc]:
-            new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc], ard_start_pos_incomplete[loc], ard_end_pos[loc], ard_end_pos_incomplete[loc], prev=0, prev_inc=0)
+            new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc],
+                                                 ard_start_pos_incomplete[loc],
+                                                 ard_end_pos[loc],
+                                                 ard_end_pos_incomplete[loc],
+                                                 prev=0, prev_inc=0)
             ard_end_pos[loc] = new_end
             ard_end_pos_incomplete[loc] = new_end_inc
 
@@ -247,7 +259,8 @@ for locus in loci:
         # full allele name
         HLA_full_allele[loc_full_allele] = mrecord
 
-        # don't overwrite two-field alleles with new sequences - more likely to be incomplete
+        # don't overwrite two-field alleles with new sequences - more likely
+        # to be incomplete
         if (loc_two_field_allele not in HLA_seq):
             HLA_seq[loc_two_field_allele] = mrecord
 
@@ -260,8 +273,10 @@ for locus in loci:
 
         # print (HLA_seqrecord_dict[allele].seq)
     
-    #!GB!# Commented out these two lines as well as the generate_IMGT() function call, since the process is intensive and does not need to be
-    #!GB!# run every time the code is used. Might should consider a switch to splitting a HLA_full_alseq DataFrame by locus and doing all of the work in 
+    #!GB!# Commented out these two lines as well as the generate_IMGT()
+    # function call, since the process is intensive and does not need to be
+    #!GB!# run every time the code is used. Might should consider a switch to
+    # splitting a HLA_full_alseq DataFrame by locus and doing all of the work in
     #!GB!# a single function definition.
     #loc_full_alseq = remove_ins(loc_full_alseq)
     #HLA_full_alseq.update(loc_full_alseq)
@@ -307,8 +322,10 @@ def count_AA_Mismatches(aa1_donor,aa2_donor,aa1_recip,aa2_recip):
 		mm_count+=1
 	return mm_count
 
-# count number of mismatches between alleles at a given position, adjusting for donor homozygosity
-def count_AA_Mismatches_Allele(allele1_donor,allele2_donor,allele1_recip,allele2_recip,position):
+# count number of mismatches between alleles at a given position, adjusting
+# for donor homozygosity
+def count_AA_Mismatches_Allele(allele1_donor,allele2_donor,allele1_recip,
+                               allele2_recip,position):
 	donor_homoz = 0
 	if (allele1_donor == allele2_donor):
 		donor_homoz = 1
@@ -324,7 +341,8 @@ def count_AA_Mismatches_Allele(allele1_donor,allele2_donor,allele1_recip,allele2
 
 	return mm_count
 
-def count_AA_Mismatches_SFVT(allele1_donor,allele2_donor,allele1_recip,allele2_recip,position_list):
+def count_AA_Mismatches_SFVT(allele1_donor,allele2_donor,allele1_recip,
+                             allele2_recip,position_list):
 	donor_homoz = 0
 	mm_total = 0
 	if (allele1_donor == allele2_donor):
@@ -357,7 +375,8 @@ def AA_MM(aa1_donor,aa2_donor,aa1_recip,aa2_recip):
 
 
 # any there any mismatches between alleles at a given position
-def AA_MM_Allele(allele1_donor,allele2_donor,allele1_recip,allele2_recip,position):
+def AA_MM_Allele(allele1_donor,allele2_donor,allele1_recip,allele2_recip,
+                 position):
 	aa1_donor = getAAposition(allele1_donor,position)
 	aa2_donor = getAAposition(allele2_donor,position)
 	aa1_recip = getAAposition(allele1_recip,position)

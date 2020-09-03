@@ -31,20 +31,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gbiagini.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_prot_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa-matching/nuc_translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nn-sero-pytorch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tmp.pth" beforeDir="false" afterPath="$PROJECT_DIR$/models/tmp.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nn-sero-fastai.py" beforeDir="false" afterPath="$PROJECT_DIR$/nn-sero-fastai.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/A_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/A_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/B_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/B_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/C_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/C_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/aa_poly_to_alleles_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_poly_to_alleles_msf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/impute_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_aa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/nuc_matching_msf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/one_hot_aa.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/aa-matching" />
@@ -98,14 +97,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/aa-matching" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aa-matching" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Python.metrics (1)">
@@ -243,9 +244,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.metrics (1)" />
-        <item itemvalue="Python.metrics" />
         <item itemvalue="Python.nn-sero-fastai" />
+        <item itemvalue="Python.metrics" />
+        <item itemvalue="Python.metrics (1)" />
         <item itemvalue="Python.compare" />
         <item itemvalue="Python.RSNNS_prep_pipeline" />
       </list>
@@ -273,7 +274,22 @@
       <workItem from="1598812079152" duration="1220000" />
       <workItem from="1598837839838" duration="4251000" />
       <workItem from="1598880989174" duration="5275000" />
-      <workItem from="1598978890206" duration="870000" />
+      <workItem from="1598978890206" duration="2991000" />
+      <workItem from="1598982288622" duration="7244000" />
+      <workItem from="1598993019520" duration="3213000" />
+      <workItem from="1598996243068" duration="75000" />
+      <workItem from="1598996329896" duration="43000" />
+      <workItem from="1598996382900" duration="177000" />
+      <workItem from="1598996569355" duration="38000" />
+      <workItem from="1598996615869" duration="1009000" />
+      <workItem from="1598997636314" duration="1397000" />
+      <workItem from="1598999045016" duration="95000" />
+      <workItem from="1598999150897" duration="1316000" />
+      <workItem from="1599000589923" duration="176000" />
+      <workItem from="1599000774843" duration="581000" />
+      <workItem from="1599001372183" duration="4000" />
+      <workItem from="1599093072253" duration="24000" />
+      <workItem from="1599093107786" duration="1134000" />
     </task>
     <servers />
   </component>
@@ -296,6 +312,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1070" y="345" width="729" height="430" key="#Notifications" timestamp="1598993030361">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1070" y="345" width="729" height="430" key="#Notifications/0.34.1920.1046@0.34.1920.1046" timestamp="1598993030361" />
     <state x="455" y="115" width="1000" height="890" key="#Plugins" timestamp="1598463601934">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -304,6 +324,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="414" y="208" width="1092" height="791" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1598489789454" />
+    <state x="642" y="375" width="625" height="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598985789182">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="642" y="375" width="625" height="371" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.34.1920.1046@0.34.1920.1046" timestamp="1598985789182" />
     <state x="100" y="134" width="1720" height="846" key="DiffContextDialog" timestamp="1598452852626">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -349,15 +373,19 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1862" height="320" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1598465988629" />
-    <state x="160" y="100" width="1546" height="912" key="SettingsEditor" timestamp="1598753671331">
+    <state x="85" y="52" width="1547" height="919" key="SettingsEditor" timestamp="1599093093518">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595863842936" />
-    <state x="160" y="100" width="1546" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1598753671331" />
+    <state x="85" y="52" width="1547" height="919" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1599093093518" />
     <state x="440" y="133" width="1030" height="855" key="editAsTableFormatDialogDimension" timestamp="1598881798331">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="440" y="133" width="1030" height="855" key="editAsTableFormatDialogDimension/0.34.1920.1046@0.34.1920.1046" timestamp="1598881798331" />
+    <state x="705" y="387" width="500" height="346" key="scopes" timestamp="1598992847089">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="705" y="387" width="500" height="346" key="scopes/0.34.1920.1046@0.34.1920.1046" timestamp="1598992847089" />
     <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1598752633019">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

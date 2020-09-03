@@ -6,7 +6,8 @@ import faulthandler
 from collections import OrderedDict
 
 def ungap(dataframe, refseq, loc):
-    # the dashes will be put at the beginning of every set of possible polymorphisms per residue
+    # the dashes will be put at the beginning of every set of possible
+    # polymorphisms per residue
     ## this is to prevent all of the '-' characters from being sent to front
     #output_frame = output_frame.sort_index(axis=1, key = lambda x: (int(x[1])))
     i = 0
@@ -100,8 +101,11 @@ for loc in aa_mm.ard_start_pos:
                     HLA_AA_polys[poly] = 1
 
             
-        ## lambda function to sort on the number following the AA residue (i.e. the residue position), then on the actual character for the residue 
-        outie = OrderedDict(sorted(HLA_AA_polys.items(), key = lambda x: ((int(x[0][1:])), str(x[0][0]))))
+        ## lambda function to sort on the number following the AA residue
+        # (i.e. the residue position), then on the actual character for the
+        # residue
+        outie = OrderedDict(sorted(HLA_AA_polys.items(),
+                                   key=lambda x: (int(x[0][1:]),str(x[0][0]))))
         outie['allele'] = Xallele_loctyp
         outie.move_to_end('allele', last=False)
         

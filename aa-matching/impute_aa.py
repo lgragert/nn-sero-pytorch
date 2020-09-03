@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+###############################################################################
+#   SCRIPT NAME:    impute_aa.py
+#   DESCRIPTION:    Package for inference of HLA protein sequences
+#   OUTPUT:         ./imputed/*_imputed_poly.csv
+#   DATE:           August 28, 2020
+#   AUTHOR:         Giovanni Biagini (dbiagini@tulane.edu ; GitHub: gbiagini)
+#   PI:             Loren Gragert, Ph.D.
+#   ORGANIZATION:   Tulane University School of Medicine
+#   NOTES:
+###############################################################################
+
 import re
 import pandas as pd
 import numpy as np
@@ -5,9 +17,9 @@ import aa_matching_msf as aa_mm
 from collections import OrderedDict
 
 def ungap(dataframe, refseq, loc):
-    # the dashes will be put at the beginning of every set of possible polymorphisms per residue
+    # the dashes will be put at the beginning of every set of possible
+    # polymorphisms per residue
     ## this is to prevent all of the '-' characters from being sent to front
-    # output_frame = output_frame.sort_index(axis=1, key = lambda x: (int(x[1])))
     i = 0
     j = 0
     new_cols = {}
@@ -39,7 +51,6 @@ def toBinary(string):
     string = ''.join(format(ord(x), 'b') for x in string)
     return string
 
-# from StackOverflow:  https://stackoverflow.com/questions/52452911/finding-all-positions-of-a-character-in-a-string
 # returns list of indexes for dash characters in all sequences
 def findIns(sequence):
     seqIns = []
@@ -86,11 +97,10 @@ def impute(locDict, refseq):
             # print("Imputing peptide sequence for allele " + str(rKey))
             # difference accumulation - possible sorting 
             hDict = {hKey: binDict[hKey] for hKey in
-                       # binDict.keys() if (hKey.split(':')[0] == rKey.split(':')[0]) and len(replacePos[hKey]) == 0}
                         binDict.keys() if len(replacePos[hKey]) == 0}
             for binKey in hDict.keys():
                 if binKey != rKey:
-                    #rename summed variable - it is not summed - just result of XOR
+                    # TODO (gbiagini) - rename summed variable - result of XOR
                     summed = int(binDict[rKey], 2) ^ int(hDict[binKey], 2)
                     rDist[binKey] = bin(summed)[2:].zfill(len(locDict[rKey]))
                     rDist[binKey] = sumHam(rDist[binKey])
@@ -108,12 +118,15 @@ def impute(locDict, refseq):
                     nearest = near
                 else:
                     next
-            if rKey in ["A*26:03","C*03:23", "C*03:46", "DPB1*35:01","DRB1*04:20", "DRB1*05:13", "DQB1*06:06"]:
+            if rKey in ["A*26:03","C*03:23", "C*03:46", "DPB1*35:01",
+                        "DRB1*04:20", "DRB1*05:13", "DQB1*06:06"]:
                 print(rKey + " nearest neighbor: " + nearest)
             # infers sequence from nearest neighbor
             for rVal in replacePos[rKey]:
                 if nearest != "NA":
-                    locDict[rKey] = locDict[rKey][:rVal] + locDict[nearest][rVal] + locDict[rKey][rVal+1:]
+                    locDict[rKey] = locDict[rKey][:rVal] + \
+                                    locDict[nearest][rVal] + \
+                                    locDict[rKey][rVal+1:]
     return locDict
 
 refseq = aa_mm.refseq
@@ -121,8 +134,9 @@ HLA_seq = aa_mm.HLA_seq
 for loc in aa_mm.ard_start_pos:
     print("Processing locus " + loc + "...")
     locDict = { newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys() }
-    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(aa_mm.ard_end_pos[loc])] for locKey in
-               locDict.keys() if (locKey.split('*')[0] == loc) }
+    newDict = { locKey: locDict[locKey][(aa_mm.ard_start_pos[loc] - 1):(
+                aa_mm.ard_end_pos[loc])] for locKey in
+                locDict.keys() if (locKey.split('*')[0] == loc) }
     locDict = newDict
     del(newDict)
     imputed = impute(locDict, refseq[loc])
@@ -132,8 +146,10 @@ for loc in aa_mm.ard_start_pos:
     repFrame = pd.DataFrame.from_dict(repDict)
     repFrame = repFrame.transpose()
     repFrame = pd.get_dummies(repFrame, prefix_sep='')
-    # lambda function to rename columns with string character first then position
-    repFrame = repFrame.rename(mapper=(lambda x: (str(x[-1]) + str(int(x[:-1]) + 1))), axis=1)
+    # lambda function to rename columns with string character first then
+    # AA position
+    repFrame = repFrame.rename(mapper=(lambda x: str(x[-1])+
+                                                 str(int(x[:-1])+1)), axis=1)
     repFrame.index.names = ['allele']
     repFrame = ungap(repFrame, refseq, loc)
     if loc == "DRB1":
