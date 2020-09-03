@@ -1,0 +1,4 @@
+*.sh
+*slurm-idv*
+*pycache*
+*.pyc
