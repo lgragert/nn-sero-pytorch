@@ -200,7 +200,7 @@ else:
 
 for locus in loci:
     loc_full_alseq = {}
-    seq_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
+    seq_filename = "./aa-matching/msf/" + locus + "_prot_" + str(dbversion) + ".msf"
     #old_filename = seq_filename
     #new_filename = "./msf/" + locus + "_prot_" + str(dbversion) + ".msf"
     #os.rename(r(old_filename),r(new_filename))

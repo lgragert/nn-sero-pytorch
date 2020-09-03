@@ -31,69 +31,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/compfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newsies.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/A.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/B.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/C.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/DPB1.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/DQB1.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old-predictions/DRB1.chile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/B_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/C_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/DPB1_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/DQB1_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictions/DRB1_predictions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/similar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/A_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/C_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DPB1_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DPB1_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQB1_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DQB1_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DRB1_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DRB1_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_prep_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/aa_matching_msf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/impute_aa.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_aa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/A_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/A_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/B_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/B_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/C_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/C_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DPA1_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DPA1_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DPB1_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DPB1_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DQA1_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DQA1_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DQB1_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DQB1_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DRB1_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DRB1_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DRB3_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DRB3_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DRB4_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DRB4_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/DRB5_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/DRB5_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/A_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/A_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/B_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/B_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/C_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/C_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/DPB1_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/DPB1_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/DQB1_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/DQB1_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/DRB1_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/DRB1_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/B_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/B_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/C_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/C_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DPB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DPB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DQB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DQB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/DRB1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/DRB1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/A_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/A_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/A_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/A_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/B_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/B_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/B_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/B_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/C_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/C_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/C_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/C_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DPB1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DPB1_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DPB1_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DPB1_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DQB1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DQB1_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DQB1_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DQB1_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DRB1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DRB1_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/DRB1_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/DRB1_validation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictions/A_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predictions/A_predictions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stash/nn-sero-pytorch/aa-matching/impute_aa.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -150,15 +105,21 @@
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/aa-matching" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.compare">
+  <component name="RunManager" selected="Python.metrics (1)">
     <configuration name="RSNNS_prep_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -200,6 +161,9 @@
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -219,6 +183,9 @@
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -234,20 +201,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="one_hot_aa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="metrics (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/metrics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="metrics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nn-serology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/miniconda3/envs/nn-sero/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../nn-serology" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aa-matching/one_hot_aa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../nn-serology/metrics.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,10 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.metrics (1)" />
+        <item itemvalue="Python.metrics" />
         <item itemvalue="Python.compare" />
         <item itemvalue="Python.RSNNS_prep_pipeline" />
         <item itemvalue="Python.impute_aa" />
-        <item itemvalue="Python.one_hot_aa" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +271,8 @@
       <workItem from="1598463505075" duration="5718000" />
       <workItem from="1598488792084" duration="1423000" />
       <workItem from="1598555006042" duration="22288000" />
+      <workItem from="1598812079152" duration="1220000" />
+      <workItem from="1598837839838" duration="4251000" />
     </task>
     <servers />
   </component>
@@ -318,10 +307,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="100" y="134" width="1720" height="846" key="DiffContextDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1598452852626" />
-    <state x="680" y="290" width="530" height="605" key="FileChooserDialogImpl" timestamp="1598738616407">
+    <state x="680" y="290" width="530" height="605" key="FileChooserDialogImpl" timestamp="1598742227756">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="680" y="290" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1598738616407" />
+    <state x="680" y="290" width="530" height="605" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1598742227756" />
     <state x="2600" y="475" width="530" height="605" key="FileChooserDialogImpl/1920.211.1920.1080/0.245.1920.955@1920.211.1920.1080" timestamp="1597779220135" />
     <state width="1862" height="320" key="GridCell.Tab.0.bottom" timestamp="1598465988628">
       <screen x="0" y="34" width="1920" height="1046" />
@@ -359,15 +348,15 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1862" height="320" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1598465988629" />
-    <state x="160" y="100" width="1546" height="912" key="SettingsEditor" timestamp="1598463765263">
+    <state x="160" y="100" width="1546" height="912" key="SettingsEditor" timestamp="1598753671331">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595863842936" />
-    <state x="160" y="100" width="1546" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1598463765263" />
-    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1598576989391">
+    <state x="160" y="100" width="1546" height="912" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1598753671331" />
+    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1598752633019">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1598576989391" />
+    <state x="1019" y="45" width="840" height="1034" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1598752633019" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nn_sero_pytorch$one_hot_aa__1_.coverage" NAME="one_hot_aa (1) Coverage Results" MODIFIED="1598461042943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aa-matching" />
