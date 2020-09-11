@@ -95,7 +95,8 @@ def translate_nuc(nuc_dict, seqIns):
     for record in tqdm(nuc_dict.keys()):
         nuc_seq = SeqRecord(Seq(nuc_dict[record]))
         try:
-            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True,
+                                                         to_stop=True))
             print(aa_seq)
         except TranslationError:
             incorrect.append(record)
@@ -105,7 +106,8 @@ def translate_nuc(nuc_dict, seqIns):
             new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
                            not in seqIns) ]
             nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
-            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True,
+                                                         to_stop=True))
             print("Sequence for allele " + record + ": " + aa_seq.seq)
         translated[record] = aa_seq
     return translated, incorrect
