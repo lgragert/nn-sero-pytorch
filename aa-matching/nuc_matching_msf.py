@@ -156,6 +156,7 @@ HLA_full_allele = {}  # Full four-field allele names
 HLA_full_alseq = {}
 HLA_seq = {}  # Two-field
 regex = '\w*\*\d*\:\d*'
+suffixes = ["L", "S", "C", "A", "Q", "N"]
 
 quest = input("Specify HLA/IMGT DB version? (y/n) ")
 if (quest == "y") or (quest == "Y"):
@@ -187,7 +188,13 @@ for locus in loci:
 
 	for record in multipleseq:
 		loc_full_allele = record.id
-		loc_two_field_allele = re.match(regex, loc_full_allele).group()
+		# append the suffix - needed for null alleles
+		# index starts at 1 since some loci characters are also suffixes
+		if any(x in loc_full_allele[1:] for x in suffixes):
+			loc_two_field_allele = re.match(regex, loc_full_allele).group() +\
+			                       loc_full_allele[-1]
+		else:
+			loc_two_field_allele = re.match(regex, loc_full_allele).group()
 		full_protein = record.seq
 		nogap = full_protein
 

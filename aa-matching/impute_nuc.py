@@ -18,6 +18,8 @@ from Bio.Seq import Seq
 from Bio.Data.CodonTable import TranslationError
 from tqdm import tqdm
 
+suffixes = ["L", "S", "C", "A", "Q", "N"]
+
 def ungap(dataframe, refseq, loc):
     # the dashes will be put at the beginning of every set of possible
     # polymorphisms per residue
@@ -95,9 +97,8 @@ def translate_nuc(nuc_dict, seqIns):
     for record in tqdm(nuc_dict.keys()):
         nuc_seq = SeqRecord(Seq(nuc_dict[record]))
         try:
-            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True,
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=False,
                                                          to_stop=True))
-            print(aa_seq)
         except TranslationError:
             incorrect.append(record)
             new_seq = str(nuc_seq.seq)
@@ -106,7 +107,7 @@ def translate_nuc(nuc_dict, seqIns):
             new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
                            not in seqIns) ]
             nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
-            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True,
+            aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=False,
                                                          to_stop=True))
             print("Sequence for allele " + record + ": " + aa_seq.seq)
         translated[record] = aa_seq
@@ -116,8 +117,21 @@ def correction(incorrect, translated, aaIns):
     for each in incorrect:
         for insert in aaIns:
             translated[each] = translated[each][:insert] + '-' + \
-                               translated[each][insert+1:]
+                               translated[each][insert:]
     return translated
+
+def finish_null(refseq, repDict):
+    length = len(repDict[refseq])
+    for entry in repDict.keys():
+        if any(x in entry[1:] for x in suffixes):
+            trunk = len(repDict[entry])
+            diff = length - trunk
+            if (diff > 0):
+                filler = "*" * diff
+                fillist = list(filler)
+                fix = repDict[entry] + fillist
+                repDict[entry] = fix
+    return repDict
 
 # testing function for validation of the translation approach
 # def test_translate(sequence, rKey, seqIns):
@@ -178,7 +192,7 @@ def impute(locDict, refseq, aaDict):
 		# Here to test functionality of translation
         # elif (len(replacePos[rKey]) == 0):
         #     test_translate(locDict[rKey], rKey, seqIns)
-    locDict, incorrect = translate_nuc(locDict)
+    locDict, incorrect = translate_nuc(locDict, seqIns)
     translated = correction(incorrect, locDict, aaIns)
     return translated
 
@@ -186,7 +200,8 @@ def main():
     aaDict = aa_mm.HLA_seq
     refseq = nuc_mm.refseq
     HLA_seq = nuc_mm.HLA_seq
-    for loc in nuc_mm.refseq:
+    #for loc in nuc_mm.refseq:
+    for loc in ["B", "C", "DPB1", "DRB1", "DQB1"]:
         print("Processing locus " + loc + "...")
         locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
         # TODO (gbiagini) - Removing the indexes that limit this to the antigen
@@ -199,6 +214,7 @@ def main():
         # creates list from sequence strings for Pandas dataframe
         repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
         del (imputed)
+        repDict = finish_null(refseq[loc], repDict)
         repFrame = pd.DataFrame.from_dict(repDict)
         repFrame = repFrame.transpose()
         repFrame = pd.get_dummies(repFrame, prefix_sep='')
