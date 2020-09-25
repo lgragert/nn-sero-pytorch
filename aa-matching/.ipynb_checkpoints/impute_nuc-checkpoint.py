@@ -131,7 +131,7 @@ def finish_null(refseq, repDict):
                 fillist = list(filler)
                 fix = repDict[entry] + fillist
                 repDict[entry] = fix
-                print(entry + ": " + str(fix))
+                print(entry + ": " + fix)
     return repDict
 
 # testing function for validation of the translation approach
