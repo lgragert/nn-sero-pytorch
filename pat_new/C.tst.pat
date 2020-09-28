@@ -1,5 +1,5 @@
 SNNS pattern definition file V3.2
-generated at August 29, 2020
+generated at September 28, 2020
 
 
 No. of patterns : 3865

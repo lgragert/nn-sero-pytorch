@@ -121,17 +121,22 @@ def correction(incorrect, translated, aaIns):
     return translated
 
 def finish_null(refseq, repDict):
+    removal = []
     length = len(repDict[refseq])
     for entry in repDict.keys():
         if any(x in entry[1:] for x in suffixes):
-            trunk = len(repDict[entry])
-            diff = length - trunk
-            if (diff > 0):
-                filler = "*" * diff
-                fillist = list(filler)
-                fix = repDict[entry] + fillist
-                repDict[entry] = fix
-                print(entry + ": " + str(fix))
+            if (entry[-1] == "N"):
+                trunk = len(repDict[entry])
+                diff = length - trunk
+                if (diff > 0):
+                    filler = "*" * diff
+                    fillist = list(filler)
+                    fix = repDict[entry] + fillist
+                    repDict[entry] = fix
+            else:
+                removal.append(entry)
+    for bad in removal:
+        del repDict[bad]
     return repDict
 
 # testing function for validation of the translation approach
@@ -197,39 +202,44 @@ def impute(locDict, refseq, aaDict):
     translated = correction(incorrect, locDict, aaIns)
     return translated
 
-def main():
-    aaDict = aa_mm.HLA_seq
-    refseq = nuc_mm.refseq
-    HLA_seq = nuc_mm.HLA_seq
-    #for loc in nuc_mm.refseq:
-    for loc in ["B", "C", "DPB1", "DRB1", "DQB1"]:
-        print("Processing locus " + loc + "...")
-        locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
-        # TODO (gbiagini) - Removing the indexes that limit this to the antigen
-        #  recognition domain. I'll need to reintroduce this in the future.
-        newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
-                    locKey.split('*')[0] == loc)}
-        locDict = newDict
-        del (newDict)
-        imputed = impute(locDict, refseq[loc], aaDict)
-        # creates list from sequence strings for Pandas dataframe
-        repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
-        del (imputed)
-        repDict = finish_null(refseq[loc], repDict)
-        repFrame = pd.DataFrame.from_dict(repDict)
-        repFrame = repFrame.transpose()
-        repFrame = pd.get_dummies(repFrame, prefix_sep='')
-        # lambda function to rename columns with string character first then
-        # position
-        repFrame = repFrame.rename(
-            mapper=(lambda x: (str(x[-1]) +str(int(x[:-1])+1))), axis=1)
-        repFrame.index.names = ['allele']
-        repFrame = ungap(repFrame, refseq, loc)
-        if loc == "DRB1":
-            repFrame.insert(1, "ZZ1", 0)
-            repFrame.insert(2, "ZZ2", 0)
-        repFrame.to_csv('./imputed/' + loc + '_imputed_poly.csv', index=True)
-        print("Done with locus " + loc)
-    return
+# apply hlaProteinOffset and then limit to antigen recognition domain
+def post_trans_mod(repDict, loc):
+    for each in repDict.keys():
+        repDict[each] = repDict[each][aa_mm.hlaProteinOffset[loc]:]
+        repDict[each] = repDict[each][aa_mm.ard_start_pos[loc]:aa_mmard_end_pos[
+            loc]]
+    return repDict
 
-main()
+aaDict = aa_mm.HLA_seq
+refseq = nuc_mm.refseq
+HLA_seq = nuc_mm.HLA_seq
+#for loc in nuc_mm.refseq:
+for loc in ["C", "DPB1", "DRB1", "DQB1"]:
+    print("Processing locus " + loc + "...")
+    locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
+    # TODO (gbiagini) - Removing the indexes that limit this to the antigen
+    #  recognition domain. I'll need to reintroduce this in the future.
+    newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
+                locKey.split('*')[0] == loc)}
+    locDict = newDict
+    del (newDict)
+    imputed = impute(locDict, refseq[loc], aaDict)
+    # creates list from sequence strings for Pandas dataframe
+    repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
+    del (imputed)
+    repDict = finish_null(refseq[loc], repDict)
+    repDict = post_trans_mod(repDict, loc)
+    repFrame = pd.DataFrame.from_dict(repDict)
+    repFrame = repFrame.transpose()
+    repFrame = pd.get_dummies(repFrame, prefix_sep='')
+    # lambda function to rename columns with string character first then
+    # position
+    repFrame = repFrame.rename(
+        mapper=(lambda x: (str(x[-1]) + str(int(x[:-1]) + 1))), axis=1)
+    repFrame.index.names = ['allele']
+    repFrame = ungap(repFrame, refseq, loc)
+    if loc == "DRB1":
+        repFrame.insert(1, "ZZ1", 0)
+        repFrame.insert(2, "ZZ2", 0)
+    repFrame.to_csv('./imputed/' + loc + '_imputed_poly.csv', index=True)
+    print("Done with locus " + loc)
