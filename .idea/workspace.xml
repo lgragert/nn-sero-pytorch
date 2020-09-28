@@ -31,47 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aa-matching/.ipynb_checkpoints/impute_nuc-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/A_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B_diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/B_diff.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/testing/B_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/testing/B_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/training/A_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/training/A_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/training/A_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/training/A_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/training/B_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/training/B_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSNNS_fixed/training/B_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/RSNNS_fixed/training/B_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/B_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/B_imputed_poly.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/A_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/A_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outframe/B_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/outframe/B_full.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/A.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/B.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/C.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.val.pat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/A_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/A_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/B_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/testing/B_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/A_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/A_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/A_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/A_validation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/B_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/B_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/B_validation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/B_validation.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +292,7 @@
       <workItem from="1600960581011" duration="910000" />
       <workItem from="1601063913213" duration="2963000" />
       <workItem from="1601301447112" duration="1502000" />
-      <workItem from="1601304203582" duration="992000" />
+      <workItem from="1601304203582" duration="1273000" />
     </task>
     <servers />
   </component>

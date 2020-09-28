@@ -91,6 +91,7 @@ def sumHam(binNum):
         sum += int(char)
     return sum
 
+# translate the nucleotide CDS into the amino acid sequence for all alleles
 def translate_nuc(nuc_dict, seqIns):
     translated = {}
     incorrect = []
@@ -113,6 +114,8 @@ def translate_nuc(nuc_dict, seqIns):
         translated[record] = aa_seq
     return translated, incorrect
 
+# add back gaps that are present in the reference (and other) alleles so that
+# arrays are the same length
 def correction(incorrect, translated, aaIns):
     for each in incorrect:
         for insert in aaIns:
@@ -120,6 +123,7 @@ def correction(incorrect, translated, aaIns):
                                translated[each][insert:]
     return translated
 
+# complete null alleles so that arrays are the same length
 def finish_null(refseq, repDict):
     removal = []
     length = len(repDict[refseq])
