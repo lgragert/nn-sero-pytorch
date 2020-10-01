@@ -210,15 +210,15 @@ def impute(locDict, refseq, aaDict):
 def post_trans_mod(repDict, loc):
     for each in repDict.keys():
         repDict[each] = repDict[each][aa_mm.hlaProteinOffset[loc]:]
-        repDict[each] = repDict[each][aa_mm.ard_start_pos[loc]:aa_mmard_end_pos[
-            loc]]
+        repDict[each] = repDict[each][aa_mm.ard_start_pos[
+                                          loc]:aa_mm.ard_end_pos[loc]]
     return repDict
 
 aaDict = aa_mm.HLA_seq
 refseq = nuc_mm.refseq
 HLA_seq = nuc_mm.HLA_seq
 #for loc in nuc_mm.refseq:
-for loc in ["C", "DPB1", "DRB1", "DQB1"]:
+for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
     print("Processing locus " + loc + "...")
     locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
     # TODO (gbiagini) - Removing the indexes that limit this to the antigen

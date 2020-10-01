@@ -31,8 +31,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c44845-08c6-4b9a-b54d-39dc82dda635" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/park/pat_new/A.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/A.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/A.val.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/B.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/B.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/B.val.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/C.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/C.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/C.val.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DPB1.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DPB1.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DPB1.val.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DQB1.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DQB1.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DQB1.val.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DRB1.tng.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DRB1.tst.pat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/park/pat_new/DRB1.val.pat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/impute_nuc.py" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/impute_nuc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aa-matching/imputed/C_imputed_poly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/aa-matching/imputed/C_imputed_poly.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/A.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/A.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/A.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/A.val.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/B.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/B.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/B.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/B.val.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/C.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/C.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/C.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/C.val.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DPB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DPB1.val.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DQB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DQB1.val.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tng.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.tst.pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat_new/DRB1.val.pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat_new/DRB1.val.pat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +125,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,14 +136,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.compare">
+  <component name="RunManager" selected="Python.RSNNS_prep_pipeline">
     <configuration name="RSNNS_prep_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -170,9 +204,6 @@
       <module name="nn-sero-pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aa-matching" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -234,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.compare" />
         <item itemvalue="Python.RSNNS_prep_pipeline" />
         <item itemvalue="Python.impute_nuc" />
-        <item itemvalue="Python.metrics (1)" />
         <item itemvalue="Python.nn-sero-fastai" />
+        <item itemvalue="Python.metrics (1)" />
+        <item itemvalue="Python.compare" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +323,9 @@
       <workItem from="1601063913213" duration="2963000" />
       <workItem from="1601301447112" duration="1502000" />
       <workItem from="1601304203582" duration="3940000" />
+      <workItem from="1601562028983" duration="859000" />
+      <workItem from="1601562955031" duration="44000" />
+      <workItem from="1601563009619" duration="4354000" />
     </task>
     <servers />
   </component>
@@ -375,11 +409,12 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="932" height="317" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1600960886097" />
-    <state x="85" y="52" width="1547" height="919" key="SettingsEditor" timestamp="1599093093518">
-      <screen x="0" y="34" width="1920" height="1046" />
+    <state x="85" y="172" width="1256" height="912" key="SettingsEditor" timestamp="1601563051000">
+      <screen x="0" y="154" width="1920" height="1046" />
     </state>
     <state x="872" y="160" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1595863842936" />
     <state x="85" y="52" width="1547" height="919" key="SettingsEditor/0.34.1920.1046@0.34.1920.1046" timestamp="1599093093518" />
+    <state x="85" y="172" width="1256" height="912" key="SettingsEditor/1920.120.1920.1080/0.154.1920.1046@0.154.1920.1046" timestamp="1601563051000" />
     <state x="440" y="133" width="1030" height="855" key="editAsTableFormatDialogDimension" timestamp="1598881798331">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
