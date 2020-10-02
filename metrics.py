@@ -9,6 +9,7 @@ similarities = open("similar.txt", "w+")
 
 # function to check if value can be an integer - to eliminate excess characters from serology labels
 def checkInt(x):
+    print(x)
     try:
         int(x)
         return True
@@ -37,7 +38,13 @@ for loc in loci:
     newPredict = newPreds["serology"]
     for nKey in newPredict.keys():
         adjustMe = newPredict[nKey]
+        adjustMe = adjustMe.replace('[','')
+        adjustMe = adjustMe.replace(']','')
+        adjustMe = adjustMe.replace(' ','')
+        adjustMe = adjustMe.replace("'",'')
+        adjustMe = adjustMe.split(',')
         newPredict[nKey] = [x.strip('a') for x in adjustMe if checkInt(x)]
+        print(newPredict[nKey])
     with open(oldPredFile, "r") as handle:
         for line in handle:
             if line.find('%') == -1:
