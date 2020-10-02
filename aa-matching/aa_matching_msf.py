@@ -20,19 +20,18 @@ import requests
 # https://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/align.cgi - Mature protein
 
 hlaProteinOffset = {
-    "A" : 26, # 365 versus 341 mature (increased by 2 due to inserts in the
-    # offset region)
+    "A" : 23, # 365 versus 341 mature (decreased by 1))
     "B" : 24,
-    "C" : 24,
+    "C" : 23, # decreased by 1
     "DRA" : 25,
     "DRB1" : 29,
     "DRB3" : 29,
     "DRB4" : 29,
     "DRB5" : 29,
     "DQA1" : 23,
-    "DQB1" : 28,#(decreased by 4 to match RSNNS pat files)
+    "DQB1" : 27, #(decreased by 5 to match RSNNS pat files)
     "DPA1" : 31,
-    "DPB1" : 29,
+    "DPB1" : 35, # increased by 6
 }
 
 def getMatureProteinOffset(locus):
@@ -123,7 +122,7 @@ ard_end_pos = {
 	"DRB4" : 94,
 	"DRB5" : 94,	
     "DQA1" : 94,
-    "DQB1" : 94,
+    "DQB1" : 95, #increased by 1
     "DPA1" : 94,
     "DPB1" : 94,
 }
@@ -231,7 +230,8 @@ for locus in loci:
         loc_full_allele = record.id
         # append the suffix - needed for null alleles
         # index starts at 1 since some loci characters are also suffixes
-        if any(x in loc_full_allele[1:] for x in suffixes):
+        separator = loc_full_allele.find("*")
+        if any(x in loc_full_allele[separator:] for x in suffixes):
 	        loc_two_field_allele = re.match(regex, loc_full_allele).group() + \
 	                               loc_full_allele[-1]
         else:

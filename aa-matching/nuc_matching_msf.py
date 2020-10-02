@@ -190,7 +190,8 @@ for locus in loci:
 		loc_full_allele = record.id
 		# append the suffix - needed for null alleles
 		# index starts at 1 since some loci characters are also suffixes
-		if any(x in loc_full_allele[1:] for x in suffixes):
+		separator = loc_full_allele.find("*")
+		if any(x in loc_full_allele[separator:] for x in suffixes):
 			loc_two_field_allele = re.match(regex, loc_full_allele).group() +\
 			                       loc_full_allele[-1]
 		else:

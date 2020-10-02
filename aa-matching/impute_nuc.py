@@ -110,7 +110,6 @@ def translate_nuc(nuc_dict, seqIns):
             nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
             aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=False,
                                                          to_stop=True))
-            print("Sequence for allele " + record + ": " + aa_seq.seq)
         translated[record] = aa_seq
     return translated, incorrect
 
@@ -128,7 +127,8 @@ def finish_null(refseq, repDict):
     removal = []
     length = len(repDict[refseq])
     for entry in repDict.keys():
-        if any(x in entry[1:] for x in suffixes):
+        separator = entry.find("*")
+        if any(x in entry[separator:] for x in suffixes):
             if (entry[-1] == "N"):
                 trunk = len(repDict[entry])
                 diff = length - trunk
@@ -171,7 +171,6 @@ def impute(locDict, refseq, aaDict):
     for rKey in tqdm(replacePos.keys()):
         rDist = {}
         if (len(replacePos[rKey]) != 0):
-            print("Imputing nucleotide sequence for allele " + str(rKey))
             # TODO (gbiagini) - difference accumulation - possible sorting
             hDict = {hKey: binDict[hKey] for hKey in
                      binDict.keys() if len(replacePos[hKey]) == 0}
@@ -190,8 +189,7 @@ def impute(locDict, refseq, aaDict):
                 if (nNear < nNearest):
                     nNearest = nNear
                     nearest = near
-            if rKey in ["A*26:03", "C*03:23", "C*03:46", "DPB1*35:01",
-                        "DRB1*04:20", "DRB1*05:13", "DQB1*06:06"]:
+            if rKey in ["DRB1*04:20", "DQB1*06:06"]:
                 print(rKey + " nearest neighbor: " + nearest)
             # infers sequence from nearest neighbor
             for rVal in replacePos[rKey]:
@@ -218,7 +216,10 @@ aaDict = aa_mm.HLA_seq
 refseq = nuc_mm.refseq
 HLA_seq = nuc_mm.HLA_seq
 #for loc in nuc_mm.refseq:
-for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
+#for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
+
+#for loc in ["A", "C", "DPB1", "DQB1"]:
+for loc in ["DRB1", "DQB1"]:
     print("Processing locus " + loc + "...")
     locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
     # TODO (gbiagini) - Removing the indexes that limit this to the antigen
@@ -241,6 +242,7 @@ for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
     repFrame = repFrame.rename(
         mapper=(lambda x: (str(x[-1]) + str(int(x[:-1]) + 1))), axis=1)
     repFrame.index.names = ['allele']
+    print(repFrame)
     repFrame = ungap(repFrame, refseq, loc)
     if loc == "DRB1":
         repFrame.insert(1, "ZZ1", 0)
