@@ -1,0 +1,1572 @@
+Different: C*01:03
+Old Serologic Assignment: ['1']
+New Serologic Assignment: ['8']
+Different: C*01:05
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:07
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:09
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:11
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:13
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:15
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:17
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:19
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:21
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:23
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:25
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:27
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:29
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:31
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:33
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:35
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:38
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:40
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:42
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:44
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:46
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:48
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:50
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:52
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:54
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:57
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:59
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:61
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:63
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:65
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:67
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:70
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:72
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:74
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:76
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*01:78
+Old Serologic Assignment: ['1']
+New Serologic Assignment: ['8']
+Different: C*02:03
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*02:05
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:07
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*02:09
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:11
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:13
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:15
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:17
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:19
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*02:21
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:23
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*02:25Q
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:27
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*02:29
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:31
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:33
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*02:35
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:37
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:40
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:43
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*02:45
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:47
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*02:49
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*02:51
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:54
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:56
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:58
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:60
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:62
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*02:64
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:66
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4', '6']
+Different: C*02:68
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*03:03
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:05
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:07
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:09
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:11
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:14
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:16
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:18
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:21
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:23
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:25
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:27
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:29
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:31
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: ['3']
+Different: C*03:33
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:35
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:37
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:39
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:41
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:43
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:45
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:47
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:49
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:51
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:53
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:55
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:57
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:59
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:61
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:63
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:65
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:67
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:69
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:71
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:73
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:75
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:77
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:79
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:81
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:83
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:85
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:87
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:89
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:91
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:93
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:95
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:97
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:99
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*03:101
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:103
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:105
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:107
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:109
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:111
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:113
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:115
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:117
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:119
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:122
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:124
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:126
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:128
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:130
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:132
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:134
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:136
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:138
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:140
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:142
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:144
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:146
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:148
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:150
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:152
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:154
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:156
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:158
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:160
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:162
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:164
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:166
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:168
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:170
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:172
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:174
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:176
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:178
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:180
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:182
+Old Serologic Assignment: ['9', '3']
+New Serologic Assignment: []
+Different: C*03:184
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*03:186
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:188
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*03:191
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:193
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*03:195
+Old Serologic Assignment: ['3', '9']
+New Serologic Assignment: []
+Different: C*04:36
+Old Serologic Assignment: ['4']
+New Serologic Assignment: ['8']
+Different: C*04:80
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*04:140
+Old Serologic Assignment: ['4']
+New Serologic Assignment: []
+Different: C*05:02
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:04
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:06
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:09
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:11
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:13
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:15
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:17
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:19
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:21
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:23
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:25
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:27
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:29
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:31
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:33
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:35
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:37
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:39
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:41
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:43
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:45
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:47
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:50
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:52
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:54
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:56
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:58
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:60
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:62
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:64
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:66
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:68
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:70
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:72
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:74
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:76
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:78
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:80
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:82
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:84
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:86
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:88
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:90
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*05:94
+Old Serologic Assignment: ['5']
+New Serologic Assignment: []
+Different: C*06:09
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*06:11
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*06:28
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*06:34
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*06:76
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*06:101
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*07:01
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:03
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:05
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:07
+Old Serologic Assignment: ['7']
+New Serologic Assignment: ['6']
+Different: C*07:09
+Old Serologic Assignment: ['7']
+New Serologic Assignment: ['6']
+Different: C*07:11
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:13
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:15
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:17
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:19
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:21
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:23
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:25
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:27
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:29
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:31
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:36
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:38
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:40
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:42
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:44
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:46
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:48
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:50
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:52
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:54
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:57
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:59
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:62
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:64
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:66
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:68
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:70
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:72
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:74
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:76
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:78
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:80
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:82
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:84
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:86
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:88
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:90
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:92
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:94
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:96
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:99
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:101
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:103
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:106
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:108
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:110
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:112
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:114
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:116
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:118
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:120
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:122
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:124
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:126
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:128
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:130
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:132
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:134
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:136
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:138
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:140
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:142
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:144
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:146
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:148
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:150Q
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:153
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:155
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:157
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:159
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:161
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:163
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:166
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:168
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:170
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:172
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:174
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:176
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:178
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:180
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:182
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:184
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:186
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:188
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:190
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:193
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:195
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:197
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:200
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:202
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:204
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:206
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:208
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:210
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:212
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:214
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:216
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:218
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:220
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:222
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:224
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:226
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:229
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:231
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:233
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:235Q
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:237
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:239
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:241
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:243
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:245
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:247
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:249
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:251
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:253
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:255
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:257
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:259
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:261
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:263
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:266
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:268
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:270
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:272
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:274
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:276
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:278
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:280
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:282
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:284
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:286
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:288
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:290
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:292
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:294
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:297
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:299
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:301
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:303
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:305
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:307
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:309
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:311
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:313
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*07:315
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*08:10
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:12
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:14
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:27
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:29
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:31
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:42
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:44
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:53
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*08:62
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*12:02
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:04
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:06
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:08
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*12:10
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:12
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:14
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*12:16
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:18
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*12:20
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:22
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:24
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:26
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:28
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:30
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:32
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:34
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:36
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:38
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:41
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:43
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:45
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:48
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:50
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:52
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:54
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:56
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:58
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:60
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:62
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:64
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:66
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:68
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:70
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:72
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:74
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:76
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:78
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:81
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:83
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*12:86
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*12:88
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:90
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:92
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:94
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*12:96
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*12:98
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*14:02
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:04
+Old Serologic Assignment: ['4']
+New Serologic Assignment: []
+Different: C*14:06
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:09
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:11
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:13
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:15
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:17
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:19
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:22
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:24
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:26
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:28
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:30
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:32
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:34
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:37
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:39
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:41
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:43
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:45
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:48
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:50
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*14:52
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*15:03
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:05
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:07
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*15:09
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*15:11
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:13
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:16
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:18
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:21
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*15:23
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:25
+Old Serologic Assignment: ['3']
+New Serologic Assignment: []
+Different: C*15:27
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:29
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:31
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:33
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:35
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:37
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:39
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:41
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:43
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*15:45
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:47
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:49
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:51
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:53
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:55
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*15:57
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:59
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:61
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*15:63
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*15:65
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*15:67
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*15:69
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*15:71
+Old Serologic Assignment: ['3', '10']
+New Serologic Assignment: []
+Different: C*16:02
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*16:06
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*16:08
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:10
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:12
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*16:14
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:16Q
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:18
+Old Serologic Assignment: ['1']
+New Serologic Assignment: []
+Different: C*16:20
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:22
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:24
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:26
+Old Serologic Assignment: ['7']
+New Serologic Assignment: []
+Different: C*16:28
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:31
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:33
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*16:35
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:37
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*16:39
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:41
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:43
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:45
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:47
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['6']
+Different: C*16:49
+Old Serologic Assignment: ['10', '3']
+New Serologic Assignment: []
+Different: C*16:51
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:53
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*16:55
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*16:57
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*16:59
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: C*17:02
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:04
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:06
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:08
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:10
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:12
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:14
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*17:16
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['4']
+Different: C*17:18
+Old Serologic Assignment: ['2']
+New Serologic Assignment: []
+Different: C*18:01
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []
+Different: C*18:03
+Old Serologic Assignment: ['6']
+New Serologic Assignment: ['4']
+Different: C*18:05
+Old Serologic Assignment: ['6']
+New Serologic Assignment: []

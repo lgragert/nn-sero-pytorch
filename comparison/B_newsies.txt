@@ -1,0 +1,2272 @@
+NEW: B*07:02
+Serologic Assignment: ['7']
+NEW: B*07:04
+Serologic Assignment: ['7']
+NEW: B*07:06
+Serologic Assignment: []
+NEW: B*07:08
+Serologic Assignment: ['48']
+NEW: B*07:10
+Serologic Assignment: []
+NEW: B*07:100
+Serologic Assignment: ['22', '55']
+NEW: B*07:102
+Serologic Assignment: []
+NEW: B*07:104
+Serologic Assignment: []
+NEW: B*07:106
+Serologic Assignment: []
+NEW: B*07:108
+Serologic Assignment: []
+NEW: B*07:110
+Serologic Assignment: []
+NEW: B*07:113
+Serologic Assignment: []
+NEW: B*07:115
+Serologic Assignment: []
+NEW: B*07:117
+Serologic Assignment: []
+NEW: B*07:119
+Serologic Assignment: []
+NEW: B*07:12
+Serologic Assignment: ['81']
+NEW: B*07:121
+Serologic Assignment: ['7']
+NEW: B*07:123
+Serologic Assignment: []
+NEW: B*07:125
+Serologic Assignment: []
+NEW: B*07:127
+Serologic Assignment: []
+NEW: B*07:129
+Serologic Assignment: []
+NEW: B*07:131
+Serologic Assignment: ['22']
+NEW: B*07:133
+Serologic Assignment: []
+NEW: B*07:136
+Serologic Assignment: []
+NEW: B*07:138
+Serologic Assignment: []
+NEW: B*07:14
+Serologic Assignment: []
+NEW: B*07:140
+Serologic Assignment: ['7']
+NEW: B*07:142
+Serologic Assignment: []
+NEW: B*07:144
+Serologic Assignment: []
+NEW: B*07:146
+Serologic Assignment: ['7']
+NEW: B*07:148
+Serologic Assignment: []
+NEW: B*07:150
+Serologic Assignment: []
+NEW: B*07:152
+Serologic Assignment: []
+NEW: B*07:154
+Serologic Assignment: []
+NEW: B*07:156
+Serologic Assignment: []
+NEW: B*07:158
+Serologic Assignment: []
+NEW: B*07:16
+Serologic Assignment: ['48']
+NEW: B*07:160
+Serologic Assignment: []
+NEW: B*07:163
+Serologic Assignment: []
+NEW: B*07:165
+Serologic Assignment: []
+NEW: B*07:168
+Serologic Assignment: []
+NEW: B*07:170
+Serologic Assignment: []
+NEW: B*07:172
+Serologic Assignment: []
+NEW: B*07:174
+Serologic Assignment: []
+NEW: B*07:176
+Serologic Assignment: []
+NEW: B*07:178
+Serologic Assignment: []
+NEW: B*07:18
+Serologic Assignment: []
+NEW: B*07:180
+Serologic Assignment: ['48']
+NEW: B*07:184
+Serologic Assignment: []
+NEW: B*07:186
+Serologic Assignment: []
+NEW: B*07:188
+Serologic Assignment: []
+NEW: B*07:190
+Serologic Assignment: []
+NEW: B*07:192
+Serologic Assignment: []
+NEW: B*07:194
+Serologic Assignment: []
+NEW: B*07:196
+Serologic Assignment: []
+NEW: B*07:198
+Serologic Assignment: []
+NEW: B*07:20
+Serologic Assignment: ['7']
+NEW: B*07:22
+Serologic Assignment: []
+NEW: B*07:24
+Serologic Assignment: ['7']
+NEW: B*07:26
+Serologic Assignment: []
+NEW: B*07:28
+Serologic Assignment: ['7']
+NEW: B*07:30
+Serologic Assignment: []
+NEW: B*07:32
+Serologic Assignment: ['48']
+NEW: B*07:34
+Serologic Assignment: ['22', '55']
+NEW: B*07:36
+Serologic Assignment: ['7']
+NEW: B*07:38
+Serologic Assignment: ['48']
+NEW: B*07:40
+Serologic Assignment: []
+NEW: B*07:42
+Serologic Assignment: []
+NEW: B*07:44
+Serologic Assignment: []
+NEW: B*07:46
+Serologic Assignment: []
+NEW: B*07:48
+Serologic Assignment: ['81']
+NEW: B*07:51
+Serologic Assignment: []
+NEW: B*07:53
+Serologic Assignment: []
+NEW: B*07:55
+Serologic Assignment: []
+NEW: B*07:57
+Serologic Assignment: ['7']
+NEW: B*07:59
+Serologic Assignment: []
+NEW: B*07:61
+Serologic Assignment: []
+NEW: B*07:63
+Serologic Assignment: []
+NEW: B*07:65
+Serologic Assignment: ['22']
+NEW: B*07:68
+Serologic Assignment: []
+NEW: B*07:70
+Serologic Assignment: []
+NEW: B*07:72
+Serologic Assignment: ['22']
+NEW: B*07:74
+Serologic Assignment: []
+NEW: B*07:76
+Serologic Assignment: []
+NEW: B*07:78
+Serologic Assignment: ['22']
+NEW: B*07:80
+Serologic Assignment: []
+NEW: B*07:82
+Serologic Assignment: []
+NEW: B*07:84
+Serologic Assignment: []
+NEW: B*07:86
+Serologic Assignment: ['22']
+NEW: B*07:88
+Serologic Assignment: []
+NEW: B*07:90
+Serologic Assignment: []
+NEW: B*07:92
+Serologic Assignment: []
+NEW: B*07:94
+Serologic Assignment: []
+NEW: B*07:96
+Serologic Assignment: []
+NEW: B*07:98
+Serologic Assignment: []
+NEW: B*08:02
+Serologic Assignment: ['8']
+NEW: B*08:04
+Serologic Assignment: ['8']
+NEW: B*08:06
+Serologic Assignment: []
+NEW: B*08:09
+Serologic Assignment: ['8']
+NEW: B*08:101
+Serologic Assignment: ['8']
+NEW: B*08:103
+Serologic Assignment: ['8']
+NEW: B*08:105
+Serologic Assignment: ['8']
+NEW: B*08:107
+Serologic Assignment: ['8']
+NEW: B*08:109
+Serologic Assignment: ['8']
+NEW: B*08:11
+Serologic Assignment: ['8']
+NEW: B*08:111
+Serologic Assignment: ['8']
+NEW: B*08:13
+Serologic Assignment: ['22', '8']
+NEW: B*08:15
+Serologic Assignment: ['8']
+NEW: B*08:17
+Serologic Assignment: ['8']
+NEW: B*08:20
+Serologic Assignment: ['55', '8']
+NEW: B*08:22
+Serologic Assignment: ['8']
+NEW: B*08:24
+Serologic Assignment: ['8']
+NEW: B*08:26
+Serologic Assignment: ['8']
+NEW: B*08:28
+Serologic Assignment: ['8']
+NEW: B*08:31
+Serologic Assignment: ['8']
+NEW: B*08:33
+Serologic Assignment: ['8']
+NEW: B*08:35
+Serologic Assignment: ['8']
+NEW: B*08:37
+Serologic Assignment: ['8']
+NEW: B*08:39
+Serologic Assignment: ['8']
+NEW: B*08:41
+Serologic Assignment: ['8']
+NEW: B*08:43
+Serologic Assignment: ['8']
+NEW: B*08:45
+Serologic Assignment: ['8']
+NEW: B*08:47
+Serologic Assignment: ['8']
+NEW: B*08:49
+Serologic Assignment: ['8']
+NEW: B*08:51
+Serologic Assignment: ['8']
+NEW: B*08:53
+Serologic Assignment: ['55', '8']
+NEW: B*08:55
+Serologic Assignment: ['8']
+NEW: B*08:57
+Serologic Assignment: ['42', '8']
+NEW: B*08:59
+Serologic Assignment: ['8']
+NEW: B*08:61
+Serologic Assignment: ['8']
+NEW: B*08:63
+Serologic Assignment: ['8']
+NEW: B*08:65
+Serologic Assignment: ['8']
+NEW: B*08:68
+Serologic Assignment: ['8']
+NEW: B*08:70
+Serologic Assignment: ['8']
+NEW: B*08:73
+Serologic Assignment: ['8']
+NEW: B*08:75
+Serologic Assignment: ['8']
+NEW: B*08:77
+Serologic Assignment: ['8']
+NEW: B*08:79
+Serologic Assignment: []
+NEW: B*08:81
+Serologic Assignment: ['8']
+NEW: B*08:84
+Serologic Assignment: ['8']
+NEW: B*08:87
+Serologic Assignment: ['8']
+NEW: B*08:89
+Serologic Assignment: ['8']
+NEW: B*08:91
+Serologic Assignment: ['8']
+NEW: B*08:93
+Serologic Assignment: ['8']
+NEW: B*08:95
+Serologic Assignment: ['8']
+NEW: B*08:97
+Serologic Assignment: ['8']
+NEW: B*08:99
+Serologic Assignment: ['8']
+NEW: B*13:02
+Serologic Assignment: ['13']
+NEW: B*13:04
+Serologic Assignment: []
+NEW: B*13:08
+Serologic Assignment: ['13']
+NEW: B*13:10
+Serologic Assignment: []
+NEW: B*13:12
+Serologic Assignment: []
+NEW: B*13:14
+Serologic Assignment: ['13']
+NEW: B*13:16
+Serologic Assignment: ['13']
+NEW: B*13:18
+Serologic Assignment: ['13']
+NEW: B*13:20
+Serologic Assignment: ['13']
+NEW: B*13:22
+Serologic Assignment: []
+NEW: B*13:25
+Serologic Assignment: ['13']
+NEW: B*13:27
+Serologic Assignment: ['13']
+NEW: B*13:29
+Serologic Assignment: ['13']
+NEW: B*13:31
+Serologic Assignment: ['13']
+NEW: B*13:33
+Serologic Assignment: ['13']
+NEW: B*13:35
+Serologic Assignment: ['13']
+NEW: B*13:37
+Serologic Assignment: ['13']
+NEW: B*13:39
+Serologic Assignment: ['13']
+NEW: B*13:41
+Serologic Assignment: ['13']
+NEW: B*13:43
+Serologic Assignment: ['13']
+NEW: B*13:45
+Serologic Assignment: []
+NEW: B*13:47
+Serologic Assignment: ['13']
+NEW: B*13:50
+Serologic Assignment: ['13']
+NEW: B*13:52
+Serologic Assignment: ['13']
+NEW: B*13:54
+Serologic Assignment: ['13']
+NEW: B*13:57
+Serologic Assignment: ['13']
+NEW: B*13:59
+Serologic Assignment: ['13']
+NEW: B*13:61
+Serologic Assignment: ['13']
+NEW: B*13:64
+Serologic Assignment: ['13']
+NEW: B*13:66
+Serologic Assignment: ['13']
+NEW: B*13:68
+Serologic Assignment: ['13']
+NEW: B*14:01
+Serologic Assignment: ['14']
+NEW: B*14:03
+Serologic Assignment: ['14']
+NEW: B*14:05
+Serologic Assignment: ['14']
+NEW: B*14:08
+Serologic Assignment: ['14']
+NEW: B*14:10
+Serologic Assignment: ['14']
+NEW: B*14:12
+Serologic Assignment: ['14']
+NEW: B*14:14
+Serologic Assignment: ['14']
+NEW: B*14:16
+Serologic Assignment: ['14']
+NEW: B*14:18
+Serologic Assignment: ['14']
+NEW: B*14:20
+Serologic Assignment: ['14']
+NEW: B*14:22
+Serologic Assignment: ['14']
+NEW: B*14:24
+Serologic Assignment: ['14']
+NEW: B*14:26
+Serologic Assignment: ['14']
+NEW: B*14:28
+Serologic Assignment: ['14', '22']
+NEW: B*14:30
+Serologic Assignment: ['14']
+NEW: B*14:32
+Serologic Assignment: ['14']
+NEW: B*14:34
+Serologic Assignment: ['14']
+NEW: B*14:36
+Serologic Assignment: ['14']
+NEW: B*15:01
+Serologic Assignment: ['15', '62']
+NEW: B*15:03
+Serologic Assignment: ['70', '72']
+NEW: B*15:05
+Serologic Assignment: ['15']
+NEW: B*15:07
+Serologic Assignment: ['15', '62']
+NEW: B*15:09
+Serologic Assignment: ['70', '71']
+NEW: B*15:102
+Serologic Assignment: ['15']
+NEW: B*15:104
+Serologic Assignment: ['15']
+NEW: B*15:106
+Serologic Assignment: ['21']
+NEW: B*15:108
+Serologic Assignment: ['70']
+NEW: B*15:11
+Serologic Assignment: ['15']
+NEW: B*15:110
+Serologic Assignment: ['15']
+NEW: B*15:113
+Serologic Assignment: ['15']
+NEW: B*15:115
+Serologic Assignment: ['70']
+NEW: B*15:117
+Serologic Assignment: ['15']
+NEW: B*15:119
+Serologic Assignment: ['70', '72']
+NEW: B*15:121
+Serologic Assignment: ['15']
+NEW: B*15:123
+Serologic Assignment: ['70']
+NEW: B*15:125
+Serologic Assignment: ['15']
+NEW: B*15:127
+Serologic Assignment: ['70', '72']
+NEW: B*15:129
+Serologic Assignment: ['15']
+NEW: B*15:13
+Serologic Assignment: ['15', '77']
+NEW: B*15:132
+Serologic Assignment: ['70', '72']
+NEW: B*15:134
+Serologic Assignment: ['70', '72']
+NEW: B*15:136
+Serologic Assignment: ['15']
+NEW: B*15:138
+Serologic Assignment: ['15']
+NEW: B*15:140
+Serologic Assignment: ['15']
+NEW: B*15:142
+Serologic Assignment: ['15']
+NEW: B*15:144
+Serologic Assignment: ['15']
+NEW: B*15:146
+Serologic Assignment: ['15']
+NEW: B*15:148
+Serologic Assignment: ['15']
+NEW: B*15:15
+Serologic Assignment: ['15']
+NEW: B*15:151
+Serologic Assignment: ['70']
+NEW: B*15:153
+Serologic Assignment: ['70', '72']
+NEW: B*15:155
+Serologic Assignment: ['15']
+NEW: B*15:157
+Serologic Assignment: ['15', '77']
+NEW: B*15:159
+Serologic Assignment: ['15']
+NEW: B*15:161
+Serologic Assignment: ['12', '18']
+NEW: B*15:163
+Serologic Assignment: ['15']
+NEW: B*15:165
+Serologic Assignment: ['15']
+NEW: B*15:167
+Serologic Assignment: ['15']
+NEW: B*15:169
+Serologic Assignment: ['15']
+NEW: B*15:17
+Serologic Assignment: ['15', '63']
+NEW: B*15:171
+Serologic Assignment: ['15']
+NEW: B*15:173
+Serologic Assignment: ['70', '72']
+NEW: B*15:175
+Serologic Assignment: ['15']
+NEW: B*15:177
+Serologic Assignment: ['15', '63']
+NEW: B*15:179
+Serologic Assignment: ['15', '62']
+NEW: B*15:183
+Serologic Assignment: ['15']
+NEW: B*15:185
+Serologic Assignment: ['15']
+NEW: B*15:187
+Serologic Assignment: ['15']
+NEW: B*15:189
+Serologic Assignment: ['15']
+NEW: B*15:19
+Serologic Assignment: ['15', '76']
+NEW: B*15:192
+Serologic Assignment: ['15']
+NEW: B*15:194
+Serologic Assignment: ['15']
+NEW: B*15:196
+Serologic Assignment: ['15', '63']
+NEW: B*15:198
+Serologic Assignment: ['70', '72']
+NEW: B*15:200
+Serologic Assignment: ['70', '71']
+NEW: B*15:202
+Serologic Assignment: ['15']
+NEW: B*15:204
+Serologic Assignment: ['15', '75']
+NEW: B*15:206
+Serologic Assignment: ['15']
+NEW: B*15:208
+Serologic Assignment: ['15', '63']
+NEW: B*15:21
+Serologic Assignment: ['15', '75']
+NEW: B*15:211
+Serologic Assignment: ['15']
+NEW: B*15:213
+Serologic Assignment: ['15', '75']
+NEW: B*15:215
+Serologic Assignment: ['15']
+NEW: B*15:217
+Serologic Assignment: ['15']
+NEW: B*15:219
+Serologic Assignment: ['15']
+NEW: B*15:221
+Serologic Assignment: ['70', '72']
+NEW: B*15:223
+Serologic Assignment: ['15']
+NEW: B*15:225
+Serologic Assignment: ['15']
+NEW: B*15:228
+Serologic Assignment: ['15']
+NEW: B*15:230
+Serologic Assignment: ['15', '63']
+NEW: B*15:232
+Serologic Assignment: ['15']
+NEW: B*15:234
+Serologic Assignment: ['15']
+NEW: B*15:236
+Serologic Assignment: ['15']
+NEW: B*15:238
+Serologic Assignment: ['70']
+NEW: B*15:24
+Serologic Assignment: ['15', '77']
+NEW: B*15:240
+Serologic Assignment: ['15', '75']
+NEW: B*15:242
+Serologic Assignment: ['70']
+NEW: B*15:244
+Serologic Assignment: ['15']
+NEW: B*15:247
+Serologic Assignment: ['15']
+NEW: B*15:249
+Serologic Assignment: ['15']
+NEW: B*15:251
+Serologic Assignment: ['15']
+NEW: B*15:253
+Serologic Assignment: ['70']
+NEW: B*15:255
+Serologic Assignment: ['22']
+NEW: B*15:257
+Serologic Assignment: ['15']
+NEW: B*15:260
+Serologic Assignment: ['15']
+NEW: B*15:263
+Serologic Assignment: ['70', '72']
+NEW: B*15:265
+Serologic Assignment: ['15']
+NEW: B*15:267
+Serologic Assignment: ['15']
+NEW: B*15:269
+Serologic Assignment: ['15']
+NEW: B*15:27
+Serologic Assignment: ['15', '62']
+NEW: B*15:271
+Serologic Assignment: ['15', '75']
+NEW: B*15:274
+Serologic Assignment: ['70', '72']
+NEW: B*15:276
+Serologic Assignment: ['15']
+NEW: B*15:278
+Serologic Assignment: ['15']
+NEW: B*15:280
+Serologic Assignment: ['15']
+NEW: B*15:282
+Serologic Assignment: ['70', '72']
+NEW: B*15:29
+Serologic Assignment: ['70', '72']
+NEW: B*15:31
+Serologic Assignment: ['15']
+NEW: B*15:33
+Serologic Assignment: ['15']
+NEW: B*15:35
+Serologic Assignment: ['15', '62']
+NEW: B*15:37
+Serologic Assignment: ['70']
+NEW: B*15:39
+Serologic Assignment: ['15']
+NEW: B*15:42
+Serologic Assignment: ['15', '22']
+NEW: B*15:44
+Serologic Assignment: ['15']
+NEW: B*15:46
+Serologic Assignment: ['21']
+NEW: B*15:48
+Serologic Assignment: ['15']
+NEW: B*15:50
+Serologic Assignment: ['15']
+NEW: B*15:52
+Serologic Assignment: ['70']
+NEW: B*15:54
+Serologic Assignment: ['70', '72']
+NEW: B*15:56
+Serologic Assignment: ['15']
+NEW: B*15:58
+Serologic Assignment: ['15']
+NEW: B*15:61
+Serologic Assignment: ['70', '72']
+NEW: B*15:63
+Serologic Assignment: ['15']
+NEW: B*15:65
+Serologic Assignment: ['15']
+NEW: B*15:67
+Serologic Assignment: ['15', '63']
+NEW: B*15:69
+Serologic Assignment: ['70']
+NEW: B*15:71
+Serologic Assignment: ['15']
+NEW: B*15:73
+Serologic Assignment: ['15']
+NEW: B*15:75
+Serologic Assignment: ['15']
+NEW: B*15:77
+Serologic Assignment: ['15']
+NEW: B*15:80
+Serologic Assignment: ['70', '72']
+NEW: B*15:82
+Serologic Assignment: ['15']
+NEW: B*15:84
+Serologic Assignment: ['15', '62']
+NEW: B*15:86
+Serologic Assignment: ['15', '22']
+NEW: B*15:88
+Serologic Assignment: ['15', '75']
+NEW: B*15:90
+Serologic Assignment: ['70']
+NEW: B*15:92
+Serologic Assignment: ['15']
+NEW: B*15:95
+Serologic Assignment: ['15', '63']
+NEW: B*15:97
+Serologic Assignment: ['15']
+NEW: B*15:99
+Serologic Assignment: ['70', '72']
+NEW: B*18:02
+Serologic Assignment: ['18']
+NEW: B*18:04
+Serologic Assignment: ['35', '78']
+NEW: B*18:06
+Serologic Assignment: ['18']
+NEW: B*18:08
+Serologic Assignment: ['18']
+NEW: B*18:10
+Serologic Assignment: []
+NEW: B*18:12
+Serologic Assignment: ['18']
+NEW: B*18:14
+Serologic Assignment: ['18']
+NEW: B*18:18
+Serologic Assignment: ['18']
+NEW: B*18:20
+Serologic Assignment: ['18']
+NEW: B*18:22
+Serologic Assignment: ['18']
+NEW: B*18:25
+Serologic Assignment: ['78']
+NEW: B*18:27
+Serologic Assignment: ['18']
+NEW: B*18:29
+Serologic Assignment: ['18']
+NEW: B*18:31
+Serologic Assignment: ['18']
+NEW: B*18:33
+Serologic Assignment: ['18']
+NEW: B*18:35
+Serologic Assignment: []
+NEW: B*18:37
+Serologic Assignment: ['18']
+NEW: B*18:39
+Serologic Assignment: ['18']
+NEW: B*18:41
+Serologic Assignment: ['18']
+NEW: B*18:43
+Serologic Assignment: ['18']
+NEW: B*18:45
+Serologic Assignment: ['18']
+NEW: B*18:47
+Serologic Assignment: ['18']
+NEW: B*18:49
+Serologic Assignment: ['18']
+NEW: B*18:51
+Serologic Assignment: ['18']
+NEW: B*18:53
+Serologic Assignment: ['18']
+NEW: B*18:55
+Serologic Assignment: ['18']
+NEW: B*18:57
+Serologic Assignment: ['18']
+NEW: B*18:59
+Serologic Assignment: ['18']
+NEW: B*18:61
+Serologic Assignment: ['18']
+NEW: B*18:63
+Serologic Assignment: ['18']
+NEW: B*18:65
+Serologic Assignment: ['18']
+NEW: B*18:67
+Serologic Assignment: ['21']
+NEW: B*18:69
+Serologic Assignment: ['18']
+NEW: B*18:71
+Serologic Assignment: ['18']
+NEW: B*18:73
+Serologic Assignment: ['18']
+NEW: B*18:76
+Serologic Assignment: ['18']
+NEW: B*18:78
+Serologic Assignment: ['18']
+NEW: B*18:80
+Serologic Assignment: ['18']
+NEW: B*18:82
+Serologic Assignment: ['18']
+NEW: B*18:84
+Serologic Assignment: ['18']
+NEW: B*18:86
+Serologic Assignment: ['18']
+NEW: B*18:88
+Serologic Assignment: ['18']
+NEW: B*18:90
+Serologic Assignment: ['18']
+NEW: B*27:01
+Serologic Assignment: ['27']
+NEW: B*27:03
+Serologic Assignment: ['27']
+NEW: B*27:05
+Serologic Assignment: ['27']
+NEW: B*27:07
+Serologic Assignment: []
+NEW: B*27:09
+Serologic Assignment: ['27']
+NEW: B*27:101
+Serologic Assignment: ['27']
+NEW: B*27:103
+Serologic Assignment: ['27']
+NEW: B*27:105
+Serologic Assignment: ['27']
+NEW: B*27:11
+Serologic Assignment: []
+NEW: B*27:13
+Serologic Assignment: ['27']
+NEW: B*27:15
+Serologic Assignment: ['27']
+NEW: B*27:17
+Serologic Assignment: ['27']
+NEW: B*27:19
+Serologic Assignment: ['27']
+NEW: B*27:21
+Serologic Assignment: ['27']
+NEW: B*27:24
+Serologic Assignment: []
+NEW: B*27:26
+Serologic Assignment: []
+NEW: B*27:28
+Serologic Assignment: ['27']
+NEW: B*27:30
+Serologic Assignment: ['27']
+NEW: B*27:32
+Serologic Assignment: ['27']
+NEW: B*27:34
+Serologic Assignment: []
+NEW: B*27:36
+Serologic Assignment: ['27']
+NEW: B*27:38
+Serologic Assignment: ['27']
+NEW: B*27:40
+Serologic Assignment: ['27']
+NEW: B*27:42
+Serologic Assignment: ['27']
+NEW: B*27:44
+Serologic Assignment: ['27']
+NEW: B*27:46
+Serologic Assignment: ['27']
+NEW: B*27:48
+Serologic Assignment: ['27']
+NEW: B*27:50
+Serologic Assignment: ['27']
+NEW: B*27:52
+Serologic Assignment: ['27']
+NEW: B*27:54
+Serologic Assignment: ['27']
+NEW: B*27:56
+Serologic Assignment: ['27']
+NEW: B*27:58
+Serologic Assignment: ['27']
+NEW: B*27:61
+Serologic Assignment: ['27']
+NEW: B*27:63
+Serologic Assignment: ['27']
+NEW: B*27:68
+Serologic Assignment: ['27']
+NEW: B*27:70
+Serologic Assignment: ['27']
+NEW: B*27:72
+Serologic Assignment: ['27']
+NEW: B*27:74
+Serologic Assignment: ['27']
+NEW: B*27:76
+Serologic Assignment: []
+NEW: B*27:78
+Serologic Assignment: ['27']
+NEW: B*27:80
+Serologic Assignment: ['27']
+NEW: B*27:82
+Serologic Assignment: ['27']
+NEW: B*27:84
+Serologic Assignment: ['27']
+NEW: B*27:86
+Serologic Assignment: ['27']
+NEW: B*27:88
+Serologic Assignment: ['27']
+NEW: B*27:90
+Serologic Assignment: ['27']
+NEW: B*27:92
+Serologic Assignment: ['27']
+NEW: B*27:95
+Serologic Assignment: ['27']
+NEW: B*27:97
+Serologic Assignment: ['27']
+NEW: B*27:99
+Serologic Assignment: ['27']
+NEW: B*35:01
+Serologic Assignment: ['35']
+NEW: B*35:03
+Serologic Assignment: ['35']
+NEW: B*35:05
+Serologic Assignment: ['35']
+NEW: B*35:07
+Serologic Assignment: ['35']
+NEW: B*35:09
+Serologic Assignment: ['35']
+NEW: B*35:100
+Serologic Assignment: ['35']
+NEW: B*35:102
+Serologic Assignment: ['35']
+NEW: B*35:104
+Serologic Assignment: ['35']
+NEW: B*35:106
+Serologic Assignment: ['35']
+NEW: B*35:108
+Serologic Assignment: ['35']
+NEW: B*35:11
+Serologic Assignment: ['35']
+NEW: B*35:110
+Serologic Assignment: ['35']
+NEW: B*35:112
+Serologic Assignment: ['35']
+NEW: B*35:114
+Serologic Assignment: ['35']
+NEW: B*35:116
+Serologic Assignment: ['35']
+NEW: B*35:118
+Serologic Assignment: ['35']
+NEW: B*35:120
+Serologic Assignment: ['35']
+NEW: B*35:122
+Serologic Assignment: ['35']
+NEW: B*35:124
+Serologic Assignment: ['35']
+NEW: B*35:126
+Serologic Assignment: ['35']
+NEW: B*35:128
+Serologic Assignment: ['35']
+NEW: B*35:13
+Serologic Assignment: ['35']
+NEW: B*35:132
+Serologic Assignment: ['35']
+NEW: B*35:135
+Serologic Assignment: ['35']
+NEW: B*35:137
+Serologic Assignment: ['35']
+NEW: B*35:139
+Serologic Assignment: ['35']
+NEW: B*35:141
+Serologic Assignment: ['35']
+NEW: B*35:143
+Serologic Assignment: ['35']
+NEW: B*35:146
+Serologic Assignment: ['35']
+NEW: B*35:148
+Serologic Assignment: ['35']
+NEW: B*35:15
+Serologic Assignment: ['35']
+NEW: B*35:150
+Serologic Assignment: ['35']
+NEW: B*35:152
+Serologic Assignment: ['35']
+NEW: B*35:154
+Serologic Assignment: ['35']
+NEW: B*35:156
+Serologic Assignment: ['35']
+NEW: B*35:158
+Serologic Assignment: ['35']
+NEW: B*35:160
+Serologic Assignment: ['35']
+NEW: B*35:162
+Serologic Assignment: ['35']
+NEW: B*35:164
+Serologic Assignment: ['35']
+NEW: B*35:167
+Serologic Assignment: ['35']
+NEW: B*35:169
+Serologic Assignment: ['12', '35']
+NEW: B*35:17
+Serologic Assignment: ['35']
+NEW: B*35:171
+Serologic Assignment: ['35']
+NEW: B*35:174
+Serologic Assignment: ['35']
+NEW: B*35:176
+Serologic Assignment: ['35']
+NEW: B*35:178
+Serologic Assignment: ['35']
+NEW: B*35:180
+Serologic Assignment: ['35']
+NEW: B*35:182
+Serologic Assignment: ['35']
+NEW: B*35:184
+Serologic Assignment: ['35']
+NEW: B*35:186
+Serologic Assignment: ['22']
+NEW: B*35:188
+Serologic Assignment: ['35', '78']
+NEW: B*35:19
+Serologic Assignment: ['35']
+NEW: B*35:190
+Serologic Assignment: ['35']
+NEW: B*35:192
+Serologic Assignment: ['35']
+NEW: B*35:194
+Serologic Assignment: ['35']
+NEW: B*35:196
+Serologic Assignment: ['35']
+NEW: B*35:198
+Serologic Assignment: ['35', '70']
+NEW: B*35:200
+Serologic Assignment: ['35']
+NEW: B*35:202
+Serologic Assignment: ['35']
+NEW: B*35:204
+Serologic Assignment: ['35']
+NEW: B*35:206
+Serologic Assignment: ['35']
+NEW: B*35:208
+Serologic Assignment: ['35']
+NEW: B*35:21
+Serologic Assignment: ['35']
+NEW: B*35:210
+Serologic Assignment: ['35']
+NEW: B*35:212
+Serologic Assignment: ['35']
+NEW: B*35:214
+Serologic Assignment: ['35']
+NEW: B*35:217
+Serologic Assignment: ['35']
+NEW: B*35:219
+Serologic Assignment: ['35']
+NEW: B*35:221
+Serologic Assignment: ['35']
+NEW: B*35:223
+Serologic Assignment: ['35']
+NEW: B*35:225
+Serologic Assignment: ['35']
+NEW: B*35:227
+Serologic Assignment: ['35']
+NEW: B*35:229
+Serologic Assignment: ['35']
+NEW: B*35:23
+Serologic Assignment: ['35']
+NEW: B*35:232
+Serologic Assignment: ['35']
+NEW: B*35:25
+Serologic Assignment: ['35', '70']
+NEW: B*35:27
+Serologic Assignment: ['35']
+NEW: B*35:29
+Serologic Assignment: ['35']
+NEW: B*35:31
+Serologic Assignment: []
+NEW: B*35:33
+Serologic Assignment: ['35']
+NEW: B*35:35
+Serologic Assignment: ['35']
+NEW: B*35:37
+Serologic Assignment: ['35']
+NEW: B*35:39
+Serologic Assignment: ['35']
+NEW: B*35:42
+Serologic Assignment: ['35']
+NEW: B*35:44
+Serologic Assignment: ['35']
+NEW: B*35:46
+Serologic Assignment: ['15', '35']
+NEW: B*35:48
+Serologic Assignment: ['35']
+NEW: B*35:50
+Serologic Assignment: ['35']
+NEW: B*35:52
+Serologic Assignment: ['35']
+NEW: B*35:55
+Serologic Assignment: ['35']
+NEW: B*35:57
+Serologic Assignment: ['35']
+NEW: B*35:59
+Serologic Assignment: ['35']
+NEW: B*35:61
+Serologic Assignment: ['35']
+NEW: B*35:63
+Serologic Assignment: []
+NEW: B*35:65Q
+Serologic Assignment: ['35']
+NEW: B*35:67
+Serologic Assignment: ['35']
+NEW: B*35:69
+Serologic Assignment: ['35']
+NEW: B*35:71
+Serologic Assignment: ['12', '35', '45']
+NEW: B*35:74
+Serologic Assignment: ['35']
+NEW: B*35:76
+Serologic Assignment: ['22']
+NEW: B*35:78
+Serologic Assignment: ['35']
+NEW: B*35:80
+Serologic Assignment: ['35']
+NEW: B*35:82
+Serologic Assignment: ['35']
+NEW: B*35:84
+Serologic Assignment: []
+NEW: B*35:86
+Serologic Assignment: []
+NEW: B*35:88
+Serologic Assignment: ['35', '40']
+NEW: B*35:90
+Serologic Assignment: ['35']
+NEW: B*35:92
+Serologic Assignment: ['35']
+NEW: B*35:94
+Serologic Assignment: ['35']
+NEW: B*35:96
+Serologic Assignment: ['78']
+NEW: B*35:98
+Serologic Assignment: ['35']
+NEW: B*37:01
+Serologic Assignment: ['37']
+NEW: B*37:04
+Serologic Assignment: ['37']
+NEW: B*37:06
+Serologic Assignment: ['37']
+NEW: B*37:08
+Serologic Assignment: ['37']
+NEW: B*37:10
+Serologic Assignment: ['37']
+NEW: B*37:12
+Serologic Assignment: []
+NEW: B*37:14
+Serologic Assignment: ['37']
+NEW: B*37:16Q
+Serologic Assignment: ['37']
+NEW: B*37:18
+Serologic Assignment: ['37']
+NEW: B*37:20
+Serologic Assignment: ['37']
+NEW: B*37:22
+Serologic Assignment: ['37']
+NEW: B*37:24
+Serologic Assignment: ['37']
+NEW: B*37:26
+Serologic Assignment: ['37']
+NEW: B*37:28
+Serologic Assignment: ['37']
+NEW: B*37:31
+Serologic Assignment: ['37']
+NEW: B*37:34
+Serologic Assignment: ['37']
+NEW: B*37:36
+Serologic Assignment: ['37']
+NEW: B*38:01
+Serologic Assignment: ['16', '38']
+NEW: B*38:03
+Serologic Assignment: ['16', '39']
+NEW: B*38:05
+Serologic Assignment: ['16', '38']
+NEW: B*38:07
+Serologic Assignment: ['16', '38']
+NEW: B*38:09
+Serologic Assignment: ['16', '38']
+NEW: B*38:11
+Serologic Assignment: ['16', '38']
+NEW: B*38:13
+Serologic Assignment: ['16', '38']
+NEW: B*38:15
+Serologic Assignment: ['16', '38']
+NEW: B*38:17
+Serologic Assignment: ['16', '38', '39']
+NEW: B*38:19
+Serologic Assignment: ['16', '38']
+NEW: B*38:21
+Serologic Assignment: ['16', '38']
+NEW: B*38:23
+Serologic Assignment: ['16', '38']
+NEW: B*38:25
+Serologic Assignment: ['16', '38']
+NEW: B*38:27
+Serologic Assignment: ['16', '38']
+NEW: B*38:29
+Serologic Assignment: ['16', '38']
+NEW: B*38:31
+Serologic Assignment: ['16', '38']
+NEW: B*38:33
+Serologic Assignment: ['16', '38']
+NEW: B*38:36
+Serologic Assignment: ['16', '38']
+NEW: B*38:38
+Serologic Assignment: ['16', '38']
+NEW: B*38:40
+Serologic Assignment: ['16', '38']
+NEW: B*38:42
+Serologic Assignment: ['16', '38']
+NEW: B*39:01
+Serologic Assignment: ['16', '39']
+NEW: B*39:03
+Serologic Assignment: ['16', '39']
+NEW: B*39:05
+Serologic Assignment: ['16']
+NEW: B*39:07
+Serologic Assignment: ['16', '39']
+NEW: B*39:09
+Serologic Assignment: ['16', '39']
+NEW: B*39:11
+Serologic Assignment: ['16', '39']
+NEW: B*39:13
+Serologic Assignment: ['16', '39']
+NEW: B*39:15
+Serologic Assignment: ['16', '39']
+NEW: B*39:17
+Serologic Assignment: []
+NEW: B*39:19
+Serologic Assignment: ['16', '39']
+NEW: B*39:22
+Serologic Assignment: ['16', '39']
+NEW: B*39:24
+Serologic Assignment: ['16', '39']
+NEW: B*39:27
+Serologic Assignment: ['16', '39']
+NEW: B*39:29
+Serologic Assignment: ['16', '39']
+NEW: B*39:31
+Serologic Assignment: ['16', '39']
+NEW: B*39:33
+Serologic Assignment: ['39', '48']
+NEW: B*39:35
+Serologic Assignment: ['16', '39']
+NEW: B*39:37
+Serologic Assignment: ['16', '39']
+NEW: B*39:39
+Serologic Assignment: ['16', '39']
+NEW: B*39:42
+Serologic Assignment: ['16', '39']
+NEW: B*39:44
+Serologic Assignment: ['16', '39']
+NEW: B*39:46
+Serologic Assignment: ['16', '39']
+NEW: B*39:48
+Serologic Assignment: ['16', '39']
+NEW: B*39:50
+Serologic Assignment: ['39']
+NEW: B*39:52
+Serologic Assignment: ['16', '39']
+NEW: B*39:54
+Serologic Assignment: ['16', '39']
+NEW: B*39:56
+Serologic Assignment: ['16', '39']
+NEW: B*39:58
+Serologic Assignment: ['16', '39']
+NEW: B*39:60
+Serologic Assignment: ['16', '39']
+NEW: B*39:62
+Serologic Assignment: ['16', '39']
+NEW: B*39:64
+Serologic Assignment: ['16', '39']
+NEW: B*39:66
+Serologic Assignment: ['16', '39']
+NEW: B*39:68
+Serologic Assignment: ['16', '39']
+NEW: B*39:70
+Serologic Assignment: ['16', '39']
+NEW: B*39:72
+Serologic Assignment: ['16', '39']
+NEW: B*39:74
+Serologic Assignment: ['16', '39']
+NEW: B*39:76
+Serologic Assignment: ['16', '39']
+NEW: B*39:78
+Serologic Assignment: ['16', '39']
+NEW: B*39:80
+Serologic Assignment: ['16', '39']
+NEW: B*39:82
+Serologic Assignment: ['16', '39']
+NEW: B*40:01
+Serologic Assignment: ['40', '60']
+NEW: B*40:03
+Serologic Assignment: ['40', '61']
+NEW: B*40:05
+Serologic Assignment: ['40', '61']
+NEW: B*40:07
+Serologic Assignment: ['40', '60']
+NEW: B*40:09
+Serologic Assignment: ['40', '61']
+NEW: B*40:100
+Serologic Assignment: ['40']
+NEW: B*40:102
+Serologic Assignment: ['40', '60']
+NEW: B*40:104
+Serologic Assignment: ['40', '61']
+NEW: B*40:106
+Serologic Assignment: ['40', '60']
+NEW: B*40:108
+Serologic Assignment: ['40', '60']
+NEW: B*40:11
+Serologic Assignment: ['40']
+NEW: B*40:110
+Serologic Assignment: ['21']
+NEW: B*40:112
+Serologic Assignment: ['40', '60']
+NEW: B*40:114
+Serologic Assignment: ['40']
+NEW: B*40:116
+Serologic Assignment: ['40', '60']
+NEW: B*40:119
+Serologic Assignment: ['40', '61']
+NEW: B*40:121
+Serologic Assignment: ['40']
+NEW: B*40:123
+Serologic Assignment: ['40', '60']
+NEW: B*40:125
+Serologic Assignment: ['40', '60']
+NEW: B*40:127
+Serologic Assignment: ['40', '61']
+NEW: B*40:129
+Serologic Assignment: ['40']
+NEW: B*40:13
+Serologic Assignment: []
+NEW: B*40:131
+Serologic Assignment: ['40', '61']
+NEW: B*40:133Q
+Serologic Assignment: ['40', '61']
+NEW: B*40:135
+Serologic Assignment: ['40', '60']
+NEW: B*40:137
+Serologic Assignment: ['40', '60']
+NEW: B*40:139
+Serologic Assignment: ['40', '60']
+NEW: B*40:141
+Serologic Assignment: ['40', '60']
+NEW: B*40:145
+Serologic Assignment: ['40', '61']
+NEW: B*40:147
+Serologic Assignment: ['40', '60']
+NEW: B*40:149
+Serologic Assignment: ['40', '61']
+NEW: B*40:15
+Serologic Assignment: ['40', '61']
+NEW: B*40:151
+Serologic Assignment: ['40', '60']
+NEW: B*40:153
+Serologic Assignment: ['40', '60']
+NEW: B*40:156
+Serologic Assignment: ['40', '60']
+NEW: B*40:158
+Serologic Assignment: ['21', '40']
+NEW: B*40:160
+Serologic Assignment: ['40', '60']
+NEW: B*40:162
+Serologic Assignment: ['40', '61']
+NEW: B*40:164
+Serologic Assignment: ['40', '61']
+NEW: B*40:166
+Serologic Assignment: ['40']
+NEW: B*40:168
+Serologic Assignment: ['40', '60']
+NEW: B*40:170
+Serologic Assignment: ['40', '60']
+NEW: B*40:172
+Serologic Assignment: ['40']
+NEW: B*40:174
+Serologic Assignment: ['61']
+NEW: B*40:176
+Serologic Assignment: ['40', '61']
+NEW: B*40:178
+Serologic Assignment: ['12', '40', '44', '45']
+NEW: B*40:18
+Serologic Assignment: ['40', '61']
+NEW: B*40:180
+Serologic Assignment: ['40', '61']
+NEW: B*40:182
+Serologic Assignment: ['40', '60']
+NEW: B*40:184
+Serologic Assignment: []
+NEW: B*40:186
+Serologic Assignment: ['40', '60']
+NEW: B*40:188
+Serologic Assignment: ['40']
+NEW: B*40:190
+Serologic Assignment: ['40', '61']
+NEW: B*40:192
+Serologic Assignment: ['40', '60']
+NEW: B*40:194
+Serologic Assignment: ['40', '60']
+NEW: B*40:196
+Serologic Assignment: ['40', '60']
+NEW: B*40:198
+Serologic Assignment: ['40']
+NEW: B*40:20
+Serologic Assignment: ['40', '61']
+NEW: B*40:200
+Serologic Assignment: ['40', '61']
+NEW: B*40:202
+Serologic Assignment: ['40', '61']
+NEW: B*40:204
+Serologic Assignment: ['40', '60']
+NEW: B*40:206
+Serologic Assignment: ['40', '61']
+NEW: B*40:208
+Serologic Assignment: ['40', '60']
+NEW: B*40:210
+Serologic Assignment: ['40', '61']
+NEW: B*40:212
+Serologic Assignment: ['40', '60']
+NEW: B*40:214
+Serologic Assignment: ['40', '61']
+NEW: B*40:217
+Serologic Assignment: ['40', '60']
+NEW: B*40:219
+Serologic Assignment: ['40', '61']
+NEW: B*40:221
+Serologic Assignment: ['40', '60']
+NEW: B*40:223
+Serologic Assignment: ['40', '60']
+NEW: B*40:225
+Serologic Assignment: ['40', '61']
+NEW: B*40:227
+Serologic Assignment: ['40', '60']
+NEW: B*40:229
+Serologic Assignment: ['40', '61']
+NEW: B*40:23
+Serologic Assignment: ['40']
+NEW: B*40:231
+Serologic Assignment: []
+NEW: B*40:233
+Serologic Assignment: ['40', '60']
+NEW: B*40:235
+Serologic Assignment: ['40']
+NEW: B*40:237
+Serologic Assignment: ['40']
+NEW: B*40:239
+Serologic Assignment: ['40', '60']
+NEW: B*40:244
+Serologic Assignment: ['40', '61']
+NEW: B*40:246
+Serologic Assignment: ['40', '61']
+NEW: B*40:25
+Serologic Assignment: ['40', '60']
+NEW: B*40:27
+Serologic Assignment: ['40', '61']
+NEW: B*40:29
+Serologic Assignment: ['40', '61']
+NEW: B*40:31
+Serologic Assignment: ['40', '60']
+NEW: B*40:33
+Serologic Assignment: ['40', '60']
+NEW: B*40:35
+Serologic Assignment: ['40', '61']
+NEW: B*40:37
+Serologic Assignment: ['40', '61']
+NEW: B*40:39
+Serologic Assignment: ['40', '61']
+NEW: B*40:42
+Serologic Assignment: ['40']
+NEW: B*40:44
+Serologic Assignment: ['40', '61']
+NEW: B*40:46
+Serologic Assignment: ['40']
+NEW: B*40:48
+Serologic Assignment: ['40', '60']
+NEW: B*40:50
+Serologic Assignment: ['40', '61']
+NEW: B*40:52
+Serologic Assignment: ['40', '60']
+NEW: B*40:54
+Serologic Assignment: ['40', '60']
+NEW: B*40:56
+Serologic Assignment: ['40', '61']
+NEW: B*40:58
+Serologic Assignment: ['40', '61']
+NEW: B*40:60
+Serologic Assignment: ['40', '60']
+NEW: B*40:62
+Serologic Assignment: ['40', '60']
+NEW: B*40:64
+Serologic Assignment: ['40', '61']
+NEW: B*40:66
+Serologic Assignment: ['40', '60']
+NEW: B*40:68
+Serologic Assignment: ['40', '61']
+NEW: B*40:70
+Serologic Assignment: ['40', '61']
+NEW: B*40:72
+Serologic Assignment: ['40']
+NEW: B*40:74
+Serologic Assignment: ['40', '61']
+NEW: B*40:76
+Serologic Assignment: ['40', '60']
+NEW: B*40:78
+Serologic Assignment: ['40', '61']
+NEW: B*40:80
+Serologic Assignment: ['40']
+NEW: B*40:82
+Serologic Assignment: ['40', '61']
+NEW: B*40:84
+Serologic Assignment: ['40', '60']
+NEW: B*40:86
+Serologic Assignment: ['40', '61']
+NEW: B*40:88
+Serologic Assignment: ['40', '60']
+NEW: B*40:90
+Serologic Assignment: ['40', '61']
+NEW: B*40:92
+Serologic Assignment: ['40']
+NEW: B*40:94
+Serologic Assignment: ['40', '61']
+NEW: B*40:96
+Serologic Assignment: ['40']
+NEW: B*40:98
+Serologic Assignment: ['40', '61']
+NEW: B*41:02
+Serologic Assignment: ['41']
+NEW: B*41:04
+Serologic Assignment: ['41']
+NEW: B*41:06
+Serologic Assignment: ['41']
+NEW: B*41:08
+Serologic Assignment: ['41']
+NEW: B*41:10
+Serologic Assignment: ['41']
+NEW: B*41:12
+Serologic Assignment: ['41']
+NEW: B*41:14
+Serologic Assignment: ['41']
+NEW: B*41:16
+Serologic Assignment: ['41']
+NEW: B*41:18
+Serologic Assignment: ['41']
+NEW: B*41:20
+Serologic Assignment: ['41']
+NEW: B*41:22
+Serologic Assignment: ['41']
+NEW: B*41:24
+Serologic Assignment: ['41']
+NEW: B*41:26
+Serologic Assignment: ['41']
+NEW: B*41:28
+Serologic Assignment: ['41']
+NEW: B*42:02
+Serologic Assignment: ['42']
+NEW: B*42:05
+Serologic Assignment: ['42']
+NEW: B*42:07
+Serologic Assignment: ['42']
+NEW: B*42:09
+Serologic Assignment: ['42']
+NEW: B*42:11
+Serologic Assignment: ['42']
+NEW: B*42:13
+Serologic Assignment: ['42']
+NEW: B*42:15
+Serologic Assignment: ['42']
+NEW: B*42:17
+Serologic Assignment: ['42']
+NEW: B*42:19
+Serologic Assignment: ['22', '55']
+NEW: B*44:02
+Serologic Assignment: ['12', '44']
+NEW: B*44:04
+Serologic Assignment: ['12', '44']
+NEW: B*44:06
+Serologic Assignment: ['12', '44']
+NEW: B*44:08
+Serologic Assignment: ['12', '44']
+NEW: B*44:10
+Serologic Assignment: ['12', '44']
+NEW: B*44:100
+Serologic Assignment: ['12', '44']
+NEW: B*44:102
+Serologic Assignment: ['12', '44']
+NEW: B*44:104
+Serologic Assignment: ['12', '44']
+NEW: B*44:106
+Serologic Assignment: ['12', '44']
+NEW: B*44:109
+Serologic Assignment: ['12', '44']
+NEW: B*44:111
+Serologic Assignment: ['12', '44']
+NEW: B*44:113
+Serologic Assignment: ['12', '44']
+NEW: B*44:115
+Serologic Assignment: ['12', '44']
+NEW: B*44:117
+Serologic Assignment: ['12', '44']
+NEW: B*44:119
+Serologic Assignment: ['12', '44']
+NEW: B*44:12
+Serologic Assignment: ['12', '44']
+NEW: B*44:121
+Serologic Assignment: ['12', '44']
+NEW: B*44:123
+Serologic Assignment: ['12', '44']
+NEW: B*44:125
+Serologic Assignment: ['12', '44']
+NEW: B*44:127
+Serologic Assignment: ['12', '44']
+NEW: B*44:129
+Serologic Assignment: ['12', '44']
+NEW: B*44:131
+Serologic Assignment: ['12', '44']
+NEW: B*44:133
+Serologic Assignment: ['12', '44']
+NEW: B*44:135
+Serologic Assignment: ['12', '44']
+NEW: B*44:137
+Serologic Assignment: ['12', '44']
+NEW: B*44:139
+Serologic Assignment: ['12', '44']
+NEW: B*44:14
+Serologic Assignment: ['12', '44']
+NEW: B*44:141
+Serologic Assignment: ['12', '44']
+NEW: B*44:143
+Serologic Assignment: ['12', '44']
+NEW: B*44:145
+Serologic Assignment: ['12', '44']
+NEW: B*44:147
+Serologic Assignment: ['12', '44']
+NEW: B*44:150
+Serologic Assignment: ['21', '47']
+NEW: B*44:152
+Serologic Assignment: ['12', '44']
+NEW: B*44:154
+Serologic Assignment: ['12', '44']
+NEW: B*44:156
+Serologic Assignment: ['12', '44']
+NEW: B*44:158
+Serologic Assignment: ['12', '44']
+NEW: B*44:16
+Serologic Assignment: ['47']
+NEW: B*44:160Q
+Serologic Assignment: ['12', '44']
+NEW: B*44:162
+Serologic Assignment: ['12', '44']
+NEW: B*44:164
+Serologic Assignment: ['12', '44']
+NEW: B*44:166
+Serologic Assignment: []
+NEW: B*44:168
+Serologic Assignment: ['12', '44']
+NEW: B*44:170
+Serologic Assignment: ['12', '44']
+NEW: B*44:173
+Serologic Assignment: ['12', '44']
+NEW: B*44:175
+Serologic Assignment: ['12', '44']
+NEW: B*44:177
+Serologic Assignment: ['12', '44']
+NEW: B*44:179
+Serologic Assignment: ['12', '44']
+NEW: B*44:18
+Serologic Assignment: ['12', '44']
+NEW: B*44:181
+Serologic Assignment: ['12', '44']
+NEW: B*44:21
+Serologic Assignment: ['53']
+NEW: B*44:24
+Serologic Assignment: ['12', '44']
+NEW: B*44:26
+Serologic Assignment: ['12', '44']
+NEW: B*44:28
+Serologic Assignment: ['12', '44']
+NEW: B*44:30
+Serologic Assignment: ['12', '44']
+NEW: B*44:32
+Serologic Assignment: ['12', '44']
+NEW: B*44:34
+Serologic Assignment: ['12', '44']
+NEW: B*44:36
+Serologic Assignment: ['12', '44']
+NEW: B*44:38
+Serologic Assignment: ['12', '44']
+NEW: B*44:40
+Serologic Assignment: ['12', '44']
+NEW: B*44:42
+Serologic Assignment: ['47']
+NEW: B*44:44
+Serologic Assignment: ['12', '44']
+NEW: B*44:46
+Serologic Assignment: ['12', '44']
+NEW: B*44:48
+Serologic Assignment: ['12', '44']
+NEW: B*44:50
+Serologic Assignment: ['12', '44']
+NEW: B*44:53
+Serologic Assignment: ['12', '44']
+NEW: B*44:55
+Serologic Assignment: ['12', '44']
+NEW: B*44:59
+Serologic Assignment: ['12', '44']
+NEW: B*44:62
+Serologic Assignment: ['12', '44']
+NEW: B*44:64
+Serologic Assignment: ['47']
+NEW: B*44:66
+Serologic Assignment: ['12', '44']
+NEW: B*44:68
+Serologic Assignment: ['12', '44']
+NEW: B*44:70
+Serologic Assignment: ['12', '44']
+NEW: B*44:72
+Serologic Assignment: ['12', '44']
+NEW: B*44:74
+Serologic Assignment: ['12', '44']
+NEW: B*44:76
+Serologic Assignment: ['12', '44']
+NEW: B*44:78
+Serologic Assignment: ['12', '44']
+NEW: B*44:80
+Serologic Assignment: ['12', '44']
+NEW: B*44:82
+Serologic Assignment: ['12', '44']
+NEW: B*44:84
+Serologic Assignment: ['12', '44']
+NEW: B*44:86
+Serologic Assignment: ['12', '44']
+NEW: B*44:88
+Serologic Assignment: ['12', '44']
+NEW: B*44:90
+Serologic Assignment: ['12', '44']
+NEW: B*44:92
+Serologic Assignment: ['12', '44']
+NEW: B*44:94
+Serologic Assignment: ['12', '44']
+NEW: B*44:96
+Serologic Assignment: ['12', '44']
+NEW: B*44:98
+Serologic Assignment: ['12', '44']
+NEW: B*45:02
+Serologic Assignment: ['12']
+NEW: B*45:04
+Serologic Assignment: ['21']
+NEW: B*45:06
+Serologic Assignment: ['12']
+NEW: B*45:08
+Serologic Assignment: []
+NEW: B*45:10
+Serologic Assignment: ['21']
+NEW: B*45:12
+Serologic Assignment: ['12', '45']
+NEW: B*45:14
+Serologic Assignment: ['12', '45']
+NEW: B*46:02
+Serologic Assignment: ['46']
+NEW: B*46:04
+Serologic Assignment: ['46']
+NEW: B*46:06
+Serologic Assignment: []
+NEW: B*46:09
+Serologic Assignment: ['46']
+NEW: B*46:11
+Serologic Assignment: ['22']
+NEW: B*46:13
+Serologic Assignment: ['46']
+NEW: B*46:16
+Serologic Assignment: ['46']
+NEW: B*46:18
+Serologic Assignment: ['22']
+NEW: B*46:20
+Serologic Assignment: ['46']
+NEW: B*46:22
+Serologic Assignment: ['46']
+NEW: B*46:24
+Serologic Assignment: ['46']
+NEW: B*46:26
+Serologic Assignment: ['46']
+NEW: B*46:28
+Serologic Assignment: ['46']
+NEW: B*46:30
+Serologic Assignment: ['46']
+NEW: B*46:32
+Serologic Assignment: ['46']
+NEW: B*46:34
+Serologic Assignment: ['46']
+NEW: B*46:36
+Serologic Assignment: ['46']
+NEW: B*46:38
+Serologic Assignment: ['46']
+NEW: B*46:40
+Serologic Assignment: ['46']
+NEW: B*47:01
+Serologic Assignment: ['47']
+NEW: B*47:03
+Serologic Assignment: ['47']
+NEW: B*47:05
+Serologic Assignment: ['47']
+NEW: B*47:07
+Serologic Assignment: ['47']
+NEW: B*48:01
+Serologic Assignment: ['48']
+NEW: B*48:03
+Serologic Assignment: ['48']
+NEW: B*48:05
+Serologic Assignment: ['48']
+NEW: B*48:07
+Serologic Assignment: ['48']
+NEW: B*48:09
+Serologic Assignment: ['48']
+NEW: B*48:11
+Serologic Assignment: ['48']
+NEW: B*48:13
+Serologic Assignment: ['48']
+NEW: B*48:15
+Serologic Assignment: ['48']
+NEW: B*48:17
+Serologic Assignment: ['48']
+NEW: B*48:19
+Serologic Assignment: ['48']
+NEW: B*48:21
+Serologic Assignment: ['48']
+NEW: B*48:23
+Serologic Assignment: ['48']
+NEW: B*48:25
+Serologic Assignment: ['48']
+NEW: B*48:27
+Serologic Assignment: ['48']
+NEW: B*48:29
+Serologic Assignment: ['48']
+NEW: B*48:31
+Serologic Assignment: ['48']
+NEW: B*49:02
+Serologic Assignment: ['21', '49']
+NEW: B*49:04
+Serologic Assignment: ['21', '49']
+NEW: B*49:06
+Serologic Assignment: ['21', '49']
+NEW: B*49:08
+Serologic Assignment: ['21', '49']
+NEW: B*49:10
+Serologic Assignment: ['21', '49']
+NEW: B*49:12
+Serologic Assignment: ['21', '49']
+NEW: B*49:14
+Serologic Assignment: ['21', '49']
+NEW: B*49:16
+Serologic Assignment: ['21', '49']
+NEW: B*49:18
+Serologic Assignment: ['21', '49']
+NEW: B*49:21
+Serologic Assignment: ['21', '49']
+NEW: B*49:23
+Serologic Assignment: ['21', '49']
+NEW: B*49:25
+Serologic Assignment: ['21', '49']
+NEW: B*50:01
+Serologic Assignment: ['21', '50']
+NEW: B*50:04
+Serologic Assignment: ['21', '50']
+NEW: B*50:06
+Serologic Assignment: ['21', '50']
+NEW: B*50:08
+Serologic Assignment: ['21', '50']
+NEW: B*50:10
+Serologic Assignment: ['21', '50']
+NEW: B*50:12
+Serologic Assignment: ['21', '50']
+NEW: B*50:14
+Serologic Assignment: ['21', '50']
+NEW: B*50:16
+Serologic Assignment: ['21', '50']
+NEW: B*50:18
+Serologic Assignment: ['21', '50']
+NEW: B*50:20
+Serologic Assignment: ['21', '47']
+NEW: B*50:32
+Serologic Assignment: ['21', '50']
+NEW: B*51:01
+Serologic Assignment: ['51', '5']
+NEW: B*51:03
+Serologic Assignment: ['5']
+NEW: B*51:05
+Serologic Assignment: ['51', '5']
+NEW: B*51:07
+Serologic Assignment: ['51', '5']
+NEW: B*51:09
+Serologic Assignment: ['51', '5']
+NEW: B*51:100
+Serologic Assignment: ['5']
+NEW: B*51:102
+Serologic Assignment: ['5']
+NEW: B*51:104
+Serologic Assignment: ['5']
+NEW: B*51:106
+Serologic Assignment: ['5']
+NEW: B*51:108
+Serologic Assignment: []
+NEW: B*51:111
+Serologic Assignment: ['5']
+NEW: B*51:113
+Serologic Assignment: ['5']
+NEW: B*51:115
+Serologic Assignment: ['5']
+NEW: B*51:117
+Serologic Assignment: ['5']
+NEW: B*51:12
+Serologic Assignment: ['5']
+NEW: B*51:120
+Serologic Assignment: ['5']
+NEW: B*51:122
+Serologic Assignment: ['5']
+NEW: B*51:124
+Serologic Assignment: ['5']
+NEW: B*51:126
+Serologic Assignment: ['5']
+NEW: B*51:128
+Serologic Assignment: ['5']
+NEW: B*51:130
+Serologic Assignment: ['5']
+NEW: B*51:132
+Serologic Assignment: ['5']
+NEW: B*51:134
+Serologic Assignment: ['5']
+NEW: B*51:136
+Serologic Assignment: ['5']
+NEW: B*51:138
+Serologic Assignment: ['5']
+NEW: B*51:14
+Serologic Assignment: ['5']
+NEW: B*51:140
+Serologic Assignment: ['5']
+NEW: B*51:142
+Serologic Assignment: ['5']
+NEW: B*51:144
+Serologic Assignment: ['53', '5']
+NEW: B*51:146
+Serologic Assignment: ['53', '5']
+NEW: B*51:148
+Serologic Assignment: ['53', '5']
+NEW: B*51:151
+Serologic Assignment: ['5']
+NEW: B*51:153
+Serologic Assignment: ['51', '5']
+NEW: B*51:16
+Serologic Assignment: ['52', '5']
+NEW: B*51:18
+Serologic Assignment: ['51', '5']
+NEW: B*51:20
+Serologic Assignment: ['51', '5']
+NEW: B*51:22
+Serologic Assignment: ['5']
+NEW: B*51:24
+Serologic Assignment: ['51', '5']
+NEW: B*51:28
+Serologic Assignment: ['5']
+NEW: B*51:30
+Serologic Assignment: ['5']
+NEW: B*51:32
+Serologic Assignment: ['5']
+NEW: B*51:34
+Serologic Assignment: ['5']
+NEW: B*51:36
+Serologic Assignment: ['5']
+NEW: B*51:38
+Serologic Assignment: ['5']
+NEW: B*51:40
+Serologic Assignment: ['53', '5']
+NEW: B*51:43
+Serologic Assignment: ['5']
+NEW: B*51:46
+Serologic Assignment: ['5']
+NEW: B*51:49
+Serologic Assignment: ['5']
+NEW: B*51:51
+Serologic Assignment: ['5']
+NEW: B*51:53
+Serologic Assignment: ['5']
+NEW: B*51:55
+Serologic Assignment: ['51', '5']
+NEW: B*51:57
+Serologic Assignment: ['5']
+NEW: B*51:59
+Serologic Assignment: ['53', '5']
+NEW: B*51:61
+Serologic Assignment: ['51', '5']
+NEW: B*51:63
+Serologic Assignment: ['5']
+NEW: B*51:65
+Serologic Assignment: ['5']
+NEW: B*51:67
+Serologic Assignment: ['5']
+NEW: B*51:69
+Serologic Assignment: ['5']
+NEW: B*51:71
+Serologic Assignment: ['5']
+NEW: B*51:73
+Serologic Assignment: ['5']
+NEW: B*51:75
+Serologic Assignment: ['5']
+NEW: B*51:77
+Serologic Assignment: ['5']
+NEW: B*51:79
+Serologic Assignment: ['5']
+NEW: B*51:81
+Serologic Assignment: []
+NEW: B*51:83
+Serologic Assignment: ['5']
+NEW: B*51:85
+Serologic Assignment: ['5']
+NEW: B*51:87
+Serologic Assignment: ['5']
+NEW: B*51:89
+Serologic Assignment: ['5']
+NEW: B*51:91
+Serologic Assignment: ['5']
+NEW: B*51:93
+Serologic Assignment: []
+NEW: B*51:95
+Serologic Assignment: ['5']
+NEW: B*51:97
+Serologic Assignment: ['5']
+NEW: B*52:01
+Serologic Assignment: ['52', '5']
+NEW: B*52:03
+Serologic Assignment: ['53', '5']
+NEW: B*52:05
+Serologic Assignment: ['5']
+NEW: B*52:07
+Serologic Assignment: ['5']
+NEW: B*52:09
+Serologic Assignment: ['5']
+NEW: B*52:11
+Serologic Assignment: ['5']
+NEW: B*52:13
+Serologic Assignment: ['5']
+NEW: B*52:15
+Serologic Assignment: []
+NEW: B*52:17
+Serologic Assignment: ['5']
+NEW: B*52:19
+Serologic Assignment: ['51', '5']
+NEW: B*52:21
+Serologic Assignment: ['5']
+NEW: B*52:23
+Serologic Assignment: ['5']
+NEW: B*52:25
+Serologic Assignment: ['5']
+NEW: B*52:27
+Serologic Assignment: ['5']
+NEW: B*52:29
+Serologic Assignment: ['5']
+NEW: B*52:31
+Serologic Assignment: ['5']
+NEW: B*53:02
+Serologic Assignment: ['53']
+NEW: B*53:04
+Serologic Assignment: ['53']
+NEW: B*53:06
+Serologic Assignment: ['53']
+NEW: B*53:08
+Serologic Assignment: ['53']
+NEW: B*53:10
+Serologic Assignment: ['53']
+NEW: B*53:12
+Serologic Assignment: ['35', '53']
+NEW: B*53:14
+Serologic Assignment: ['53']
+NEW: B*53:16
+Serologic Assignment: ['35', '53']
+NEW: B*53:18
+Serologic Assignment: ['53']
+NEW: B*53:20
+Serologic Assignment: ['53']
+NEW: B*53:22
+Serologic Assignment: ['12', '44']
+NEW: B*53:24
+Serologic Assignment: ['53']
+NEW: B*53:26
+Serologic Assignment: ['53']
+NEW: B*53:28
+Serologic Assignment: ['53']
+NEW: B*53:30
+Serologic Assignment: ['21', '53']
+NEW: B*54:01
+Serologic Assignment: ['22', '54']
+NEW: B*54:03
+Serologic Assignment: ['22', '54']
+NEW: B*54:06
+Serologic Assignment: ['22']
+NEW: B*54:09
+Serologic Assignment: ['22']
+NEW: B*54:11
+Serologic Assignment: ['22', '54']
+NEW: B*54:13
+Serologic Assignment: ['22', '54']
+NEW: B*54:15
+Serologic Assignment: ['22']
+NEW: B*54:17
+Serologic Assignment: ['22', '54']
+NEW: B*54:19
+Serologic Assignment: ['22', '54']
+NEW: B*54:21
+Serologic Assignment: ['22']
+NEW: B*54:23
+Serologic Assignment: ['22', '54']
+NEW: B*54:25
+Serologic Assignment: ['22', '54']
+NEW: B*54:27
+Serologic Assignment: ['22', '54']
+NEW: B*54:29
+Serologic Assignment: ['22', '54']
+NEW: B*55:01
+Serologic Assignment: ['22', '55']
+NEW: B*55:03
+Serologic Assignment: ['22', '55']
+NEW: B*55:05
+Serologic Assignment: ['22']
+NEW: B*55:08
+Serologic Assignment: ['22']
+NEW: B*55:10
+Serologic Assignment: ['22', '55']
+NEW: B*55:12
+Serologic Assignment: ['22', '55']
+NEW: B*55:14
+Serologic Assignment: ['22', '55']
+NEW: B*55:16
+Serologic Assignment: ['22', '55']
+NEW: B*55:18
+Serologic Assignment: ['22']
+NEW: B*55:20
+Serologic Assignment: ['22', '55']
+NEW: B*55:22
+Serologic Assignment: ['22']
+NEW: B*55:24
+Serologic Assignment: ['22']
+NEW: B*55:26
+Serologic Assignment: ['22', '55']
+NEW: B*55:28
+Serologic Assignment: ['22', '55']
+NEW: B*55:30
+Serologic Assignment: ['22', '55']
+NEW: B*55:32
+Serologic Assignment: ['22']
+NEW: B*55:34
+Serologic Assignment: ['22', '55']
+NEW: B*55:36
+Serologic Assignment: ['22', '55']
+NEW: B*55:38
+Serologic Assignment: ['22', '55']
+NEW: B*55:40
+Serologic Assignment: ['22', '55']
+NEW: B*55:42
+Serologic Assignment: ['22', '55']
+NEW: B*55:44
+Serologic Assignment: ['22', '55']
+NEW: B*55:46
+Serologic Assignment: ['22', '55']
+NEW: B*55:48
+Serologic Assignment: ['22', '55']
+NEW: B*55:50
+Serologic Assignment: ['22', '55']
+NEW: B*55:52
+Serologic Assignment: ['22', '55']
+NEW: B*55:54
+Serologic Assignment: ['22', '55']
+NEW: B*55:57
+Serologic Assignment: ['22', '55']
+NEW: B*55:59
+Serologic Assignment: ['22', '55']
+NEW: B*56:02
+Serologic Assignment: ['22', '56']
+NEW: B*56:04
+Serologic Assignment: ['22', '56']
+NEW: B*56:06
+Serologic Assignment: ['78']
+NEW: B*56:08
+Serologic Assignment: ['22']
+NEW: B*56:10
+Serologic Assignment: ['22', '55']
+NEW: B*56:12
+Serologic Assignment: ['22', '55']
+NEW: B*56:14
+Serologic Assignment: ['22']
+NEW: B*56:16
+Serologic Assignment: ['22']
+NEW: B*56:18
+Serologic Assignment: ['22', '55']
+NEW: B*56:21
+Serologic Assignment: []
+NEW: B*56:23
+Serologic Assignment: ['22']
+NEW: B*56:25
+Serologic Assignment: ['22']
+NEW: B*56:27
+Serologic Assignment: ['22']
+NEW: B*56:30
+Serologic Assignment: ['22', '56']
+NEW: B*56:32
+Serologic Assignment: ['22', '55']
+NEW: B*56:34
+Serologic Assignment: ['22']
+NEW: B*56:36
+Serologic Assignment: ['22']
+NEW: B*56:39
+Serologic Assignment: ['22']
+NEW: B*56:42
+Serologic Assignment: ['22']
+NEW: B*57:02
+Serologic Assignment: ['17', '57']
+NEW: B*57:04
+Serologic Assignment: ['17', '57']
+NEW: B*57:06
+Serologic Assignment: ['17', '57']
+NEW: B*57:08
+Serologic Assignment: ['17', '57']
+NEW: B*57:10
+Serologic Assignment: ['17', '57']
+NEW: B*57:12
+Serologic Assignment: ['17', '57']
+NEW: B*57:14
+Serologic Assignment: ['17', '57']
+NEW: B*57:16
+Serologic Assignment: ['17', '57']
+NEW: B*57:18
+Serologic Assignment: ['17', '57']
+NEW: B*57:20
+Serologic Assignment: ['17', '57']
+NEW: B*57:22
+Serologic Assignment: ['17', '57']
+NEW: B*57:24
+Serologic Assignment: ['17', '57']
+NEW: B*57:26
+Serologic Assignment: ['17', '57']
+NEW: B*57:29
+Serologic Assignment: ['17', '57']
+NEW: B*57:31
+Serologic Assignment: ['17', '57']
+NEW: B*57:33
+Serologic Assignment: ['17', '57']
+NEW: B*57:35
+Serologic Assignment: ['17', '57']
+NEW: B*57:37
+Serologic Assignment: ['17', '57']
+NEW: B*57:39
+Serologic Assignment: ['17', '57']
+NEW: B*57:41
+Serologic Assignment: ['17', '57']
+NEW: B*57:43
+Serologic Assignment: ['17', '57']
+NEW: B*57:45
+Serologic Assignment: ['17', '57']
+NEW: B*57:47
+Serologic Assignment: ['17', '57']
+NEW: B*57:49
+Serologic Assignment: ['17', '57']
+NEW: B*57:51
+Serologic Assignment: ['57']
+NEW: B*57:53
+Serologic Assignment: ['17', '57']
+NEW: B*57:55
+Serologic Assignment: ['17', '57']
+NEW: B*57:57
+Serologic Assignment: ['17', '57']
+NEW: B*57:59
+Serologic Assignment: ['17', '57']
+NEW: B*57:61
+Serologic Assignment: ['17', '57']
+NEW: B*57:63
+Serologic Assignment: ['17', '57']
+NEW: B*57:65
+Serologic Assignment: ['17', '57']
+NEW: B*58:02
+Serologic Assignment: ['17', '58']
+NEW: B*58:05
+Serologic Assignment: ['17', '58']
+NEW: B*58:07
+Serologic Assignment: ['58']
+NEW: B*58:09
+Serologic Assignment: ['17', '58']
+NEW: B*58:12
+Serologic Assignment: ['17', '58']
+NEW: B*58:14
+Serologic Assignment: ['17', '57', '58']
+NEW: B*58:16
+Serologic Assignment: ['17', '58']
+NEW: B*58:19
+Serologic Assignment: ['17', '58']
+NEW: B*58:21
+Serologic Assignment: ['17', '58']
+NEW: B*58:23
+Serologic Assignment: ['17', '58']
+NEW: B*58:25
+Serologic Assignment: ['17', '58']
+NEW: B*58:27
+Serologic Assignment: ['17']
+NEW: B*58:29
+Serologic Assignment: ['17', '58']
+NEW: B*58:33
+Serologic Assignment: ['17', '58']
+NEW: B*58:35
+Serologic Assignment: ['17', '58']
+NEW: B*58:37
+Serologic Assignment: ['17', '58']
+NEW: B*58:40
+Serologic Assignment: ['17', '58']
+NEW: B*58:42
+Serologic Assignment: ['17', '58']
+NEW: B*58:44
+Serologic Assignment: ['17', '58']
+NEW: B*58:46
+Serologic Assignment: ['17', '58']
+NEW: B*59:02
+Serologic Assignment: []
+NEW: B*59:04
+Serologic Assignment: ['59']
+NEW: B*59:06
+Serologic Assignment: []
+NEW: B*67:02
+Serologic Assignment: []
+NEW: B*73:01
+Serologic Assignment: ['73']
+NEW: B*78:01
+Serologic Assignment: ['78']
+NEW: B*78:03
+Serologic Assignment: ['78']
+NEW: B*78:05
+Serologic Assignment: ['78']
+NEW: B*78:07
+Serologic Assignment: ['78']
+NEW: B*81:02
+Serologic Assignment: ['81']
+NEW: B*81:05
+Serologic Assignment: ['81']
+NEW: B*82:01
+Serologic Assignment: ['53']
+NEW: B*82:03
+Serologic Assignment: ['12', '22', '45']

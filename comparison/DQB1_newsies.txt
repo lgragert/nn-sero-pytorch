@@ -1,0 +1,2346 @@
+NEW: DQB1*02:01
+Serologic Assignment: ['2']
+NEW: DQB1*02:03
+Serologic Assignment: ['2']
+NEW: DQB1*02:05
+Serologic Assignment: ['2']
+NEW: DQB1*02:07
+Serologic Assignment: ['2']
+NEW: DQB1*02:09
+Serologic Assignment: ['2']
+NEW: DQB1*02:100
+Serologic Assignment: ['2']
+NEW: DQB1*02:101
+Serologic Assignment: ['2']
+NEW: DQB1*02:102
+Serologic Assignment: ['2']
+NEW: DQB1*02:103
+Serologic Assignment: ['2']
+NEW: DQB1*02:104
+Serologic Assignment: ['2']
+NEW: DQB1*02:105
+Serologic Assignment: ['2']
+NEW: DQB1*02:106
+Serologic Assignment: ['2']
+NEW: DQB1*02:107
+Serologic Assignment: ['2']
+NEW: DQB1*02:108
+Serologic Assignment: ['2']
+NEW: DQB1*02:109
+Serologic Assignment: ['2']
+NEW: DQB1*02:11
+Serologic Assignment: ['2']
+NEW: DQB1*02:110
+Serologic Assignment: ['2']
+NEW: DQB1*02:111
+Serologic Assignment: ['2']
+NEW: DQB1*02:112
+Serologic Assignment: ['2']
+NEW: DQB1*02:113
+Serologic Assignment: ['2']
+NEW: DQB1*02:114
+Serologic Assignment: ['2']
+NEW: DQB1*02:115
+Serologic Assignment: ['2']
+NEW: DQB1*02:116
+Serologic Assignment: ['2']
+NEW: DQB1*02:117
+Serologic Assignment: ['2']
+NEW: DQB1*02:118
+Serologic Assignment: ['2']
+NEW: DQB1*02:119
+Serologic Assignment: ['2']
+NEW: DQB1*02:120
+Serologic Assignment: ['2']
+NEW: DQB1*02:121
+Serologic Assignment: ['2']
+NEW: DQB1*02:122
+Serologic Assignment: ['2']
+NEW: DQB1*02:123
+Serologic Assignment: ['2']
+NEW: DQB1*02:124
+Serologic Assignment: ['2']
+NEW: DQB1*02:125
+Serologic Assignment: ['2']
+NEW: DQB1*02:126
+Serologic Assignment: ['2']
+NEW: DQB1*02:127
+Serologic Assignment: ['2']
+NEW: DQB1*02:128
+Serologic Assignment: ['2']
+NEW: DQB1*02:129
+Serologic Assignment: ['6']
+NEW: DQB1*02:13
+Serologic Assignment: ['2']
+NEW: DQB1*02:130
+Serologic Assignment: ['2']
+NEW: DQB1*02:131
+Serologic Assignment: ['2']
+NEW: DQB1*02:132
+Serologic Assignment: ['2']
+NEW: DQB1*02:133
+Serologic Assignment: ['2']
+NEW: DQB1*02:134
+Serologic Assignment: ['2']
+NEW: DQB1*02:135
+Serologic Assignment: ['2']
+NEW: DQB1*02:136
+Serologic Assignment: ['2']
+NEW: DQB1*02:137
+Serologic Assignment: ['2']
+NEW: DQB1*02:138
+Serologic Assignment: ['2']
+NEW: DQB1*02:139
+Serologic Assignment: ['2']
+NEW: DQB1*02:140
+Serologic Assignment: ['2']
+NEW: DQB1*02:141
+Serologic Assignment: ['2']
+NEW: DQB1*02:142
+Serologic Assignment: ['2']
+NEW: DQB1*02:143
+Serologic Assignment: ['2']
+NEW: DQB1*02:144
+Serologic Assignment: ['2']
+NEW: DQB1*02:145
+Serologic Assignment: ['2']
+NEW: DQB1*02:146
+Serologic Assignment: ['2']
+NEW: DQB1*02:147
+Serologic Assignment: ['2']
+NEW: DQB1*02:148
+Serologic Assignment: ['2']
+NEW: DQB1*02:149
+Serologic Assignment: ['2']
+NEW: DQB1*02:15
+Serologic Assignment: ['2']
+NEW: DQB1*02:150
+Serologic Assignment: ['2']
+NEW: DQB1*02:151
+Serologic Assignment: ['2']
+NEW: DQB1*02:152
+Serologic Assignment: ['2']
+NEW: DQB1*02:153
+Serologic Assignment: ['2']
+NEW: DQB1*02:154
+Serologic Assignment: ['2']
+NEW: DQB1*02:155
+Serologic Assignment: ['2']
+NEW: DQB1*02:156
+Serologic Assignment: ['2']
+NEW: DQB1*02:157
+Serologic Assignment: ['2']
+NEW: DQB1*02:158
+Serologic Assignment: ['2']
+NEW: DQB1*02:159
+Serologic Assignment: ['2']
+NEW: DQB1*02:160
+Serologic Assignment: ['2']
+NEW: DQB1*02:161
+Serologic Assignment: ['2']
+NEW: DQB1*02:162
+Serologic Assignment: []
+NEW: DQB1*02:163
+Serologic Assignment: ['5']
+NEW: DQB1*02:164
+Serologic Assignment: ['2']
+NEW: DQB1*02:165
+Serologic Assignment: ['2']
+NEW: DQB1*02:166
+Serologic Assignment: ['2']
+NEW: DQB1*02:167
+Serologic Assignment: ['6']
+NEW: DQB1*02:168
+Serologic Assignment: ['2']
+NEW: DQB1*02:169
+Serologic Assignment: ['2']
+NEW: DQB1*02:17
+Serologic Assignment: ['2']
+NEW: DQB1*02:170
+Serologic Assignment: ['2']
+NEW: DQB1*02:171
+Serologic Assignment: ['2']
+NEW: DQB1*02:172
+Serologic Assignment: ['2']
+NEW: DQB1*02:173
+Serologic Assignment: ['2']
+NEW: DQB1*02:174
+Serologic Assignment: ['2']
+NEW: DQB1*02:18
+Serologic Assignment: []
+NEW: DQB1*02:20
+Serologic Assignment: ['2']
+NEW: DQB1*02:21
+Serologic Assignment: ['2']
+NEW: DQB1*02:23
+Serologic Assignment: ['2']
+NEW: DQB1*02:25
+Serologic Assignment: ['2']
+NEW: DQB1*02:27
+Serologic Assignment: ['2']
+NEW: DQB1*02:29
+Serologic Assignment: ['2']
+NEW: DQB1*02:31
+Serologic Assignment: ['2']
+NEW: DQB1*02:33
+Serologic Assignment: ['2']
+NEW: DQB1*02:34
+Serologic Assignment: ['2']
+NEW: DQB1*02:35
+Serologic Assignment: ['2']
+NEW: DQB1*02:36
+Serologic Assignment: ['2']
+NEW: DQB1*02:37
+Serologic Assignment: ['2']
+NEW: DQB1*02:38
+Serologic Assignment: ['2']
+NEW: DQB1*02:39
+Serologic Assignment: ['2']
+NEW: DQB1*02:40
+Serologic Assignment: ['2']
+NEW: DQB1*02:41
+Serologic Assignment: ['2']
+NEW: DQB1*02:42
+Serologic Assignment: ['2']
+NEW: DQB1*02:43
+Serologic Assignment: ['2']
+NEW: DQB1*02:44
+Serologic Assignment: ['2']
+NEW: DQB1*02:45
+Serologic Assignment: ['2']
+NEW: DQB1*02:46
+Serologic Assignment: ['2']
+NEW: DQB1*02:47
+Serologic Assignment: ['2']
+NEW: DQB1*02:48
+Serologic Assignment: ['2']
+NEW: DQB1*02:49
+Serologic Assignment: ['2']
+NEW: DQB1*02:50
+Serologic Assignment: ['2']
+NEW: DQB1*02:51
+Serologic Assignment: ['2']
+NEW: DQB1*02:52
+Serologic Assignment: ['2']
+NEW: DQB1*02:53
+Serologic Assignment: ['2']
+NEW: DQB1*02:54
+Serologic Assignment: ['2']
+NEW: DQB1*02:55
+Serologic Assignment: ['2']
+NEW: DQB1*02:56
+Serologic Assignment: ['2']
+NEW: DQB1*02:57
+Serologic Assignment: ['2']
+NEW: DQB1*02:58
+Serologic Assignment: ['6']
+NEW: DQB1*02:59
+Serologic Assignment: ['2']
+NEW: DQB1*02:60
+Serologic Assignment: ['2']
+NEW: DQB1*02:61
+Serologic Assignment: ['2']
+NEW: DQB1*02:62
+Serologic Assignment: ['2']
+NEW: DQB1*02:63
+Serologic Assignment: ['2']
+NEW: DQB1*02:64
+Serologic Assignment: ['2']
+NEW: DQB1*02:65
+Serologic Assignment: ['2']
+NEW: DQB1*02:66
+Serologic Assignment: ['2']
+NEW: DQB1*02:67
+Serologic Assignment: ['6']
+NEW: DQB1*02:68
+Serologic Assignment: ['2']
+NEW: DQB1*02:69
+Serologic Assignment: ['2']
+NEW: DQB1*02:70
+Serologic Assignment: ['2']
+NEW: DQB1*02:71
+Serologic Assignment: ['2']
+NEW: DQB1*02:72
+Serologic Assignment: ['2']
+NEW: DQB1*02:73
+Serologic Assignment: ['2']
+NEW: DQB1*02:74
+Serologic Assignment: ['2']
+NEW: DQB1*02:75
+Serologic Assignment: ['2']
+NEW: DQB1*02:76
+Serologic Assignment: ['2']
+NEW: DQB1*02:77
+Serologic Assignment: ['2']
+NEW: DQB1*02:78
+Serologic Assignment: ['2']
+NEW: DQB1*02:79
+Serologic Assignment: ['2']
+NEW: DQB1*02:80
+Serologic Assignment: ['2']
+NEW: DQB1*02:81
+Serologic Assignment: ['2']
+NEW: DQB1*02:82
+Serologic Assignment: ['2']
+NEW: DQB1*02:83
+Serologic Assignment: ['2']
+NEW: DQB1*02:84
+Serologic Assignment: ['2']
+NEW: DQB1*02:85
+Serologic Assignment: ['2']
+NEW: DQB1*02:86
+Serologic Assignment: ['2']
+NEW: DQB1*02:87
+Serologic Assignment: ['2']
+NEW: DQB1*02:88
+Serologic Assignment: ['2']
+NEW: DQB1*02:89
+Serologic Assignment: ['2']
+NEW: DQB1*02:90
+Serologic Assignment: ['2']
+NEW: DQB1*02:91
+Serologic Assignment: ['2']
+NEW: DQB1*02:92
+Serologic Assignment: ['2']
+NEW: DQB1*02:93
+Serologic Assignment: ['2']
+NEW: DQB1*02:94
+Serologic Assignment: ['2']
+NEW: DQB1*02:95
+Serologic Assignment: ['2']
+NEW: DQB1*02:96
+Serologic Assignment: ['2']
+NEW: DQB1*02:97
+Serologic Assignment: ['2']
+NEW: DQB1*02:98
+Serologic Assignment: ['2']
+NEW: DQB1*02:99
+Serologic Assignment: ['2']
+NEW: DQB1*03:02
+Serologic Assignment: ['8']
+NEW: DQB1*03:04
+Serologic Assignment: ['7']
+NEW: DQB1*03:06
+Serologic Assignment: ['4']
+NEW: DQB1*03:08
+Serologic Assignment: ['8']
+NEW: DQB1*03:10
+Serologic Assignment: ['8']
+NEW: DQB1*03:100
+Serologic Assignment: ['8']
+NEW: DQB1*03:101
+Serologic Assignment: ['7']
+NEW: DQB1*03:102
+Serologic Assignment: ['7']
+NEW: DQB1*03:103
+Serologic Assignment: ['7']
+NEW: DQB1*03:104
+Serologic Assignment: ['8']
+NEW: DQB1*03:105
+Serologic Assignment: ['8']
+NEW: DQB1*03:106
+Serologic Assignment: ['8']
+NEW: DQB1*03:107
+Serologic Assignment: ['8']
+NEW: DQB1*03:108
+Serologic Assignment: ['7']
+NEW: DQB1*03:109
+Serologic Assignment: ['7']
+NEW: DQB1*03:110
+Serologic Assignment: ['8']
+NEW: DQB1*03:111
+Serologic Assignment: ['8']
+NEW: DQB1*03:112
+Serologic Assignment: ['8']
+NEW: DQB1*03:113
+Serologic Assignment: ['8']
+NEW: DQB1*03:114
+Serologic Assignment: ['7']
+NEW: DQB1*03:115
+Serologic Assignment: ['7']
+NEW: DQB1*03:116
+Serologic Assignment: ['7']
+NEW: DQB1*03:117
+Serologic Assignment: ['8']
+NEW: DQB1*03:118
+Serologic Assignment: ['6']
+NEW: DQB1*03:119
+Serologic Assignment: ['7']
+NEW: DQB1*03:12
+Serologic Assignment: ['8']
+NEW: DQB1*03:120
+Serologic Assignment: ['7']
+NEW: DQB1*03:121
+Serologic Assignment: ['7']
+NEW: DQB1*03:122
+Serologic Assignment: ['7']
+NEW: DQB1*03:123
+Serologic Assignment: ['8']
+NEW: DQB1*03:124
+Serologic Assignment: ['8']
+NEW: DQB1*03:125
+Serologic Assignment: ['8']
+NEW: DQB1*03:126
+Serologic Assignment: ['8']
+NEW: DQB1*03:127
+Serologic Assignment: ['7']
+NEW: DQB1*03:128
+Serologic Assignment: ['7']
+NEW: DQB1*03:129
+Serologic Assignment: ['7']
+NEW: DQB1*03:130
+Serologic Assignment: ['7']
+NEW: DQB1*03:131
+Serologic Assignment: ['7']
+NEW: DQB1*03:132
+Serologic Assignment: ['8']
+NEW: DQB1*03:133
+Serologic Assignment: ['7']
+NEW: DQB1*03:134
+Serologic Assignment: ['7']
+NEW: DQB1*03:135
+Serologic Assignment: ['7']
+NEW: DQB1*03:136
+Serologic Assignment: ['8']
+NEW: DQB1*03:137
+Serologic Assignment: ['8']
+NEW: DQB1*03:138
+Serologic Assignment: ['8']
+NEW: DQB1*03:139
+Serologic Assignment: ['7']
+NEW: DQB1*03:14
+Serologic Assignment: ['8']
+NEW: DQB1*03:140
+Serologic Assignment: ['7']
+NEW: DQB1*03:141
+Serologic Assignment: ['8']
+NEW: DQB1*03:142
+Serologic Assignment: ['7']
+NEW: DQB1*03:143
+Serologic Assignment: ['7']
+NEW: DQB1*03:144
+Serologic Assignment: ['7']
+NEW: DQB1*03:145
+Serologic Assignment: ['8']
+NEW: DQB1*03:146
+Serologic Assignment: ['8']
+NEW: DQB1*03:147
+Serologic Assignment: ['7']
+NEW: DQB1*03:148
+Serologic Assignment: ['7']
+NEW: DQB1*03:149
+Serologic Assignment: ['8']
+NEW: DQB1*03:150
+Serologic Assignment: ['7']
+NEW: DQB1*03:151
+Serologic Assignment: ['7']
+NEW: DQB1*03:152
+Serologic Assignment: ['7']
+NEW: DQB1*03:153
+Serologic Assignment: ['8']
+NEW: DQB1*03:154
+Serologic Assignment: ['7']
+NEW: DQB1*03:155
+Serologic Assignment: ['8']
+NEW: DQB1*03:156
+Serologic Assignment: ['8']
+NEW: DQB1*03:157
+Serologic Assignment: ['7']
+NEW: DQB1*03:158
+Serologic Assignment: ['7']
+NEW: DQB1*03:159
+Serologic Assignment: ['7']
+NEW: DQB1*03:16
+Serologic Assignment: ['7']
+NEW: DQB1*03:160
+Serologic Assignment: ['7']
+NEW: DQB1*03:161
+Serologic Assignment: ['8']
+NEW: DQB1*03:162
+Serologic Assignment: ['7']
+NEW: DQB1*03:163
+Serologic Assignment: ['7']
+NEW: DQB1*03:164
+Serologic Assignment: ['7']
+NEW: DQB1*03:165
+Serologic Assignment: ['7']
+NEW: DQB1*03:166
+Serologic Assignment: ['7']
+NEW: DQB1*03:167
+Serologic Assignment: ['7']
+NEW: DQB1*03:168
+Serologic Assignment: ['8']
+NEW: DQB1*03:169
+Serologic Assignment: ['7']
+NEW: DQB1*03:170
+Serologic Assignment: ['7']
+NEW: DQB1*03:171
+Serologic Assignment: ['7']
+NEW: DQB1*03:172
+Serologic Assignment: ['7']
+NEW: DQB1*03:173
+Serologic Assignment: ['7']
+NEW: DQB1*03:174
+Serologic Assignment: ['8']
+NEW: DQB1*03:175
+Serologic Assignment: ['8']
+NEW: DQB1*03:176
+Serologic Assignment: ['8']
+NEW: DQB1*03:177
+Serologic Assignment: ['8']
+NEW: DQB1*03:178
+Serologic Assignment: ['8']
+NEW: DQB1*03:179
+Serologic Assignment: ['8']
+NEW: DQB1*03:18
+Serologic Assignment: ['8']
+NEW: DQB1*03:180
+Serologic Assignment: ['8']
+NEW: DQB1*03:181
+Serologic Assignment: ['8']
+NEW: DQB1*03:182
+Serologic Assignment: ['7']
+NEW: DQB1*03:183
+Serologic Assignment: ['8']
+NEW: DQB1*03:184
+Serologic Assignment: ['8']
+NEW: DQB1*03:185
+Serologic Assignment: ['8']
+NEW: DQB1*03:186
+Serologic Assignment: ['7']
+NEW: DQB1*03:187
+Serologic Assignment: ['7']
+NEW: DQB1*03:188
+Serologic Assignment: ['7']
+NEW: DQB1*03:189
+Serologic Assignment: ['8']
+NEW: DQB1*03:190
+Serologic Assignment: ['8']
+NEW: DQB1*03:191
+Serologic Assignment: ['7']
+NEW: DQB1*03:192
+Serologic Assignment: ['7']
+NEW: DQB1*03:193
+Serologic Assignment: ['7']
+NEW: DQB1*03:194
+Serologic Assignment: ['7']
+NEW: DQB1*03:195
+Serologic Assignment: ['8']
+NEW: DQB1*03:196
+Serologic Assignment: ['7']
+NEW: DQB1*03:197
+Serologic Assignment: ['7']
+NEW: DQB1*03:198
+Serologic Assignment: ['7']
+NEW: DQB1*03:199
+Serologic Assignment: ['8']
+NEW: DQB1*03:20
+Serologic Assignment: ['8']
+NEW: DQB1*03:200
+Serologic Assignment: ['8']
+NEW: DQB1*03:201
+Serologic Assignment: ['7']
+NEW: DQB1*03:202
+Serologic Assignment: ['7']
+NEW: DQB1*03:203
+Serologic Assignment: ['8']
+NEW: DQB1*03:204
+Serologic Assignment: ['8']
+NEW: DQB1*03:205
+Serologic Assignment: ['8']
+NEW: DQB1*03:206
+Serologic Assignment: ['7']
+NEW: DQB1*03:207
+Serologic Assignment: ['7']
+NEW: DQB1*03:208
+Serologic Assignment: ['7']
+NEW: DQB1*03:209
+Serologic Assignment: ['8']
+NEW: DQB1*03:210
+Serologic Assignment: ['8']
+NEW: DQB1*03:211
+Serologic Assignment: ['8']
+NEW: DQB1*03:212
+Serologic Assignment: ['8']
+NEW: DQB1*03:213
+Serologic Assignment: ['6']
+NEW: DQB1*03:214
+Serologic Assignment: ['8']
+NEW: DQB1*03:215
+Serologic Assignment: ['8']
+NEW: DQB1*03:216
+Serologic Assignment: ['7']
+NEW: DQB1*03:217
+Serologic Assignment: ['8']
+NEW: DQB1*03:218
+Serologic Assignment: ['7']
+NEW: DQB1*03:219
+Serologic Assignment: ['7']
+NEW: DQB1*03:22
+Serologic Assignment: ['7']
+NEW: DQB1*03:220
+Serologic Assignment: ['8']
+NEW: DQB1*03:221
+Serologic Assignment: ['8']
+NEW: DQB1*03:222
+Serologic Assignment: ['8']
+NEW: DQB1*03:223
+Serologic Assignment: ['8']
+NEW: DQB1*03:224
+Serologic Assignment: ['8']
+NEW: DQB1*03:225
+Serologic Assignment: ['8']
+NEW: DQB1*03:226
+Serologic Assignment: ['8']
+NEW: DQB1*03:227
+Serologic Assignment: ['8']
+NEW: DQB1*03:228
+Serologic Assignment: ['8']
+NEW: DQB1*03:229
+Serologic Assignment: ['8']
+NEW: DQB1*03:230
+Serologic Assignment: ['8']
+NEW: DQB1*03:231
+Serologic Assignment: ['7']
+NEW: DQB1*03:232
+Serologic Assignment: ['7']
+NEW: DQB1*03:233
+Serologic Assignment: ['8']
+NEW: DQB1*03:234
+Serologic Assignment: ['8']
+NEW: DQB1*03:235
+Serologic Assignment: ['7']
+NEW: DQB1*03:236
+Serologic Assignment: ['7']
+NEW: DQB1*03:237
+Serologic Assignment: ['6']
+NEW: DQB1*03:238
+Serologic Assignment: ['8']
+NEW: DQB1*03:239
+Serologic Assignment: ['8']
+NEW: DQB1*03:24
+Serologic Assignment: ['7']
+NEW: DQB1*03:240
+Serologic Assignment: ['8']
+NEW: DQB1*03:241
+Serologic Assignment: ['7']
+NEW: DQB1*03:242
+Serologic Assignment: ['7']
+NEW: DQB1*03:243
+Serologic Assignment: ['7']
+NEW: DQB1*03:244
+Serologic Assignment: ['8']
+NEW: DQB1*03:245
+Serologic Assignment: ['8']
+NEW: DQB1*03:246
+Serologic Assignment: ['7']
+NEW: DQB1*03:247
+Serologic Assignment: ['8']
+NEW: DQB1*03:248
+Serologic Assignment: ['8']
+NEW: DQB1*03:249
+Serologic Assignment: ['8']
+NEW: DQB1*03:250
+Serologic Assignment: ['8']
+NEW: DQB1*03:251
+Serologic Assignment: ['8']
+NEW: DQB1*03:252
+Serologic Assignment: ['7']
+NEW: DQB1*03:253
+Serologic Assignment: ['7']
+NEW: DQB1*03:254
+Serologic Assignment: ['7']
+NEW: DQB1*03:255
+Serologic Assignment: ['7']
+NEW: DQB1*03:256
+Serologic Assignment: ['7']
+NEW: DQB1*03:257
+Serologic Assignment: ['7']
+NEW: DQB1*03:258
+Serologic Assignment: ['8']
+NEW: DQB1*03:259
+Serologic Assignment: ['8']
+NEW: DQB1*03:26
+Serologic Assignment: ['8']
+NEW: DQB1*03:260
+Serologic Assignment: ['7']
+NEW: DQB1*03:261
+Serologic Assignment: ['8']
+NEW: DQB1*03:262
+Serologic Assignment: ['8']
+NEW: DQB1*03:263
+Serologic Assignment: ['8']
+NEW: DQB1*03:264
+Serologic Assignment: ['7']
+NEW: DQB1*03:265
+Serologic Assignment: ['8']
+NEW: DQB1*03:266
+Serologic Assignment: ['7']
+NEW: DQB1*03:267
+Serologic Assignment: ['7']
+NEW: DQB1*03:268
+Serologic Assignment: ['7']
+NEW: DQB1*03:269
+Serologic Assignment: ['6']
+NEW: DQB1*03:270
+Serologic Assignment: ['8']
+NEW: DQB1*03:271
+Serologic Assignment: ['7']
+NEW: DQB1*03:272
+Serologic Assignment: ['8']
+NEW: DQB1*03:273
+Serologic Assignment: ['8']
+NEW: DQB1*03:274
+Serologic Assignment: ['8']
+NEW: DQB1*03:275
+Serologic Assignment: ['7']
+NEW: DQB1*03:276
+Serologic Assignment: ['5']
+NEW: DQB1*03:277
+Serologic Assignment: ['8']
+NEW: DQB1*03:278
+Serologic Assignment: ['8']
+NEW: DQB1*03:279
+Serologic Assignment: ['8']
+NEW: DQB1*03:28
+Serologic Assignment: ['7']
+NEW: DQB1*03:280
+Serologic Assignment: ['8']
+NEW: DQB1*03:281
+Serologic Assignment: ['7']
+NEW: DQB1*03:282
+Serologic Assignment: []
+NEW: DQB1*03:283
+Serologic Assignment: ['8']
+NEW: DQB1*03:284
+Serologic Assignment: ['7']
+NEW: DQB1*03:285
+Serologic Assignment: ['7']
+NEW: DQB1*03:286
+Serologic Assignment: ['7']
+NEW: DQB1*03:287
+Serologic Assignment: ['8']
+NEW: DQB1*03:288
+Serologic Assignment: ['7']
+NEW: DQB1*03:289
+Serologic Assignment: ['8']
+NEW: DQB1*03:290
+Serologic Assignment: ['7']
+NEW: DQB1*03:291
+Serologic Assignment: ['7']
+NEW: DQB1*03:292
+Serologic Assignment: ['7']
+NEW: DQB1*03:293
+Serologic Assignment: ['7']
+NEW: DQB1*03:294
+Serologic Assignment: ['7']
+NEW: DQB1*03:295
+Serologic Assignment: ['8']
+NEW: DQB1*03:296
+Serologic Assignment: ['8']
+NEW: DQB1*03:297
+Serologic Assignment: ['7']
+NEW: DQB1*03:298
+Serologic Assignment: ['8']
+NEW: DQB1*03:299
+Serologic Assignment: ['8']
+NEW: DQB1*03:30
+Serologic Assignment: ['8']
+NEW: DQB1*03:300
+Serologic Assignment: ['8']
+NEW: DQB1*03:301
+Serologic Assignment: ['8']
+NEW: DQB1*03:302
+Serologic Assignment: ['7']
+NEW: DQB1*03:303
+Serologic Assignment: ['7']
+NEW: DQB1*03:304
+Serologic Assignment: ['8']
+NEW: DQB1*03:305
+Serologic Assignment: ['7']
+NEW: DQB1*03:306
+Serologic Assignment: ['7']
+NEW: DQB1*03:307
+Serologic Assignment: ['7']
+NEW: DQB1*03:308
+Serologic Assignment: ['8']
+NEW: DQB1*03:309
+Serologic Assignment: ['7']
+NEW: DQB1*03:310
+Serologic Assignment: ['8']
+NEW: DQB1*03:311
+Serologic Assignment: ['7']
+NEW: DQB1*03:312
+Serologic Assignment: ['7']
+NEW: DQB1*03:313
+Serologic Assignment: ['8']
+NEW: DQB1*03:314
+Serologic Assignment: ['7']
+NEW: DQB1*03:315
+Serologic Assignment: ['8']
+NEW: DQB1*03:316
+Serologic Assignment: ['8']
+NEW: DQB1*03:317
+Serologic Assignment: ['7']
+NEW: DQB1*03:318
+Serologic Assignment: ['8']
+NEW: DQB1*03:319
+Serologic Assignment: ['8']
+NEW: DQB1*03:32
+Serologic Assignment: ['8']
+NEW: DQB1*03:320
+Serologic Assignment: ['8']
+NEW: DQB1*03:321
+Serologic Assignment: ['8']
+NEW: DQB1*03:322
+Serologic Assignment: ['8']
+NEW: DQB1*03:323
+Serologic Assignment: ['8']
+NEW: DQB1*03:324
+Serologic Assignment: ['8']
+NEW: DQB1*03:326
+Serologic Assignment: ['7']
+NEW: DQB1*03:327
+Serologic Assignment: ['8']
+NEW: DQB1*03:328
+Serologic Assignment: ['7']
+NEW: DQB1*03:329
+Serologic Assignment: ['7']
+NEW: DQB1*03:330
+Serologic Assignment: ['7']
+NEW: DQB1*03:331
+Serologic Assignment: ['7']
+NEW: DQB1*03:332
+Serologic Assignment: ['8']
+NEW: DQB1*03:333
+Serologic Assignment: ['8']
+NEW: DQB1*03:334
+Serologic Assignment: ['6']
+NEW: DQB1*03:335
+Serologic Assignment: ['7']
+NEW: DQB1*03:336
+Serologic Assignment: ['8']
+NEW: DQB1*03:337
+Serologic Assignment: ['8']
+NEW: DQB1*03:338
+Serologic Assignment: ['7']
+NEW: DQB1*03:339
+Serologic Assignment: []
+NEW: DQB1*03:34
+Serologic Assignment: ['8']
+NEW: DQB1*03:340
+Serologic Assignment: ['7']
+NEW: DQB1*03:341
+Serologic Assignment: ['7']
+NEW: DQB1*03:342
+Serologic Assignment: ['7']
+NEW: DQB1*03:343
+Serologic Assignment: ['8']
+NEW: DQB1*03:344
+Serologic Assignment: ['8']
+NEW: DQB1*03:345
+Serologic Assignment: ['8']
+NEW: DQB1*03:346
+Serologic Assignment: ['8']
+NEW: DQB1*03:347
+Serologic Assignment: ['7']
+NEW: DQB1*03:348
+Serologic Assignment: ['8']
+NEW: DQB1*03:349
+Serologic Assignment: ['8']
+NEW: DQB1*03:350
+Serologic Assignment: ['7']
+NEW: DQB1*03:351
+Serologic Assignment: ['8']
+NEW: DQB1*03:352
+Serologic Assignment: ['8']
+NEW: DQB1*03:353
+Serologic Assignment: ['7']
+NEW: DQB1*03:354
+Serologic Assignment: ['6']
+NEW: DQB1*03:355
+Serologic Assignment: ['7']
+NEW: DQB1*03:356
+Serologic Assignment: ['6']
+NEW: DQB1*03:357
+Serologic Assignment: ['6']
+NEW: DQB1*03:358
+Serologic Assignment: ['7']
+NEW: DQB1*03:359
+Serologic Assignment: ['8']
+NEW: DQB1*03:36
+Serologic Assignment: ['7']
+NEW: DQB1*03:360
+Serologic Assignment: ['7']
+NEW: DQB1*03:361
+Serologic Assignment: ['7']
+NEW: DQB1*03:362
+Serologic Assignment: ['8']
+NEW: DQB1*03:363
+Serologic Assignment: ['8']
+NEW: DQB1*03:364
+Serologic Assignment: ['8']
+NEW: DQB1*03:365
+Serologic Assignment: ['8']
+NEW: DQB1*03:366
+Serologic Assignment: ['7']
+NEW: DQB1*03:367
+Serologic Assignment: ['8']
+NEW: DQB1*03:368
+Serologic Assignment: ['8']
+NEW: DQB1*03:369
+Serologic Assignment: ['8']
+NEW: DQB1*03:370
+Serologic Assignment: ['7']
+NEW: DQB1*03:371
+Serologic Assignment: ['8']
+NEW: DQB1*03:372
+Serologic Assignment: ['7']
+NEW: DQB1*03:373
+Serologic Assignment: ['7']
+NEW: DQB1*03:374
+Serologic Assignment: ['8']
+NEW: DQB1*03:375
+Serologic Assignment: ['8']
+NEW: DQB1*03:376
+Serologic Assignment: ['7']
+NEW: DQB1*03:377
+Serologic Assignment: ['7']
+NEW: DQB1*03:378
+Serologic Assignment: ['7']
+NEW: DQB1*03:379
+Serologic Assignment: ['8']
+NEW: DQB1*03:38
+Serologic Assignment: ['8']
+NEW: DQB1*03:380
+Serologic Assignment: ['7']
+NEW: DQB1*03:381
+Serologic Assignment: ['7']
+NEW: DQB1*03:382
+Serologic Assignment: ['8']
+NEW: DQB1*03:383
+Serologic Assignment: ['8']
+NEW: DQB1*03:384
+Serologic Assignment: ['8']
+NEW: DQB1*03:385
+Serologic Assignment: ['7']
+NEW: DQB1*03:386
+Serologic Assignment: ['8']
+NEW: DQB1*03:387
+Serologic Assignment: ['7']
+NEW: DQB1*03:388
+Serologic Assignment: ['8']
+NEW: DQB1*03:389
+Serologic Assignment: ['7']
+NEW: DQB1*03:390
+Serologic Assignment: ['7']
+NEW: DQB1*03:391
+Serologic Assignment: ['7']
+NEW: DQB1*03:392
+Serologic Assignment: ['8']
+NEW: DQB1*03:393
+Serologic Assignment: ['8']
+NEW: DQB1*03:394
+Serologic Assignment: ['7']
+NEW: DQB1*03:395
+Serologic Assignment: ['8']
+NEW: DQB1*03:396
+Serologic Assignment: ['7']
+NEW: DQB1*03:397
+Serologic Assignment: ['8']
+NEW: DQB1*03:398
+Serologic Assignment: ['8']
+NEW: DQB1*03:399
+Serologic Assignment: ['7']
+NEW: DQB1*03:40
+Serologic Assignment: ['8']
+NEW: DQB1*03:400
+Serologic Assignment: ['7']
+NEW: DQB1*03:401
+Serologic Assignment: ['7']
+NEW: DQB1*03:402
+Serologic Assignment: ['8']
+NEW: DQB1*03:403
+Serologic Assignment: ['8']
+NEW: DQB1*03:404
+Serologic Assignment: ['7']
+NEW: DQB1*03:405
+Serologic Assignment: ['8']
+NEW: DQB1*03:406
+Serologic Assignment: ['8']
+NEW: DQB1*03:407
+Serologic Assignment: ['6']
+NEW: DQB1*03:408
+Serologic Assignment: ['7']
+NEW: DQB1*03:409
+Serologic Assignment: ['8']
+NEW: DQB1*03:410
+Serologic Assignment: ['8']
+NEW: DQB1*03:411
+Serologic Assignment: ['8']
+NEW: DQB1*03:412
+Serologic Assignment: ['8']
+NEW: DQB1*03:413
+Serologic Assignment: ['8']
+NEW: DQB1*03:414
+Serologic Assignment: ['8']
+NEW: DQB1*03:415
+Serologic Assignment: ['8']
+NEW: DQB1*03:416
+Serologic Assignment: ['8']
+NEW: DQB1*03:417
+Serologic Assignment: ['7']
+NEW: DQB1*03:418
+Serologic Assignment: ['7']
+NEW: DQB1*03:419
+Serologic Assignment: ['7']
+NEW: DQB1*03:42
+Serologic Assignment: ['7']
+NEW: DQB1*03:420
+Serologic Assignment: ['7']
+NEW: DQB1*03:421
+Serologic Assignment: ['7']
+NEW: DQB1*03:422
+Serologic Assignment: ['8']
+NEW: DQB1*03:423
+Serologic Assignment: ['7']
+NEW: DQB1*03:424
+Serologic Assignment: ['7']
+NEW: DQB1*03:425
+Serologic Assignment: ['7']
+NEW: DQB1*03:426
+Serologic Assignment: ['7']
+NEW: DQB1*03:427
+Serologic Assignment: ['7']
+NEW: DQB1*03:428
+Serologic Assignment: ['7']
+NEW: DQB1*03:429
+Serologic Assignment: ['8']
+NEW: DQB1*03:430
+Serologic Assignment: ['7']
+NEW: DQB1*03:431
+Serologic Assignment: ['7']
+NEW: DQB1*03:432
+Serologic Assignment: ['7']
+NEW: DQB1*03:44
+Serologic Assignment: ['7']
+NEW: DQB1*03:46
+Serologic Assignment: ['7']
+NEW: DQB1*03:48
+Serologic Assignment: ['7']
+NEW: DQB1*03:50
+Serologic Assignment: ['7']
+NEW: DQB1*03:52
+Serologic Assignment: ['7']
+NEW: DQB1*03:54
+Serologic Assignment: ['7']
+NEW: DQB1*03:56
+Serologic Assignment: ['7']
+NEW: DQB1*03:58
+Serologic Assignment: ['7']
+NEW: DQB1*03:60
+Serologic Assignment: ['7']
+NEW: DQB1*03:62
+Serologic Assignment: ['8']
+NEW: DQB1*03:64
+Serologic Assignment: ['8']
+NEW: DQB1*03:66
+Serologic Assignment: ['6']
+NEW: DQB1*03:67
+Serologic Assignment: ['8']
+NEW: DQB1*03:69
+Serologic Assignment: ['7']
+NEW: DQB1*03:71
+Serologic Assignment: ['7']
+NEW: DQB1*03:73
+Serologic Assignment: ['7']
+NEW: DQB1*03:74
+Serologic Assignment: ['7']
+NEW: DQB1*03:76
+Serologic Assignment: ['7']
+NEW: DQB1*03:78
+Serologic Assignment: ['7']
+NEW: DQB1*03:80
+Serologic Assignment: ['8']
+NEW: DQB1*03:82
+Serologic Assignment: ['7']
+NEW: DQB1*03:84
+Serologic Assignment: ['7']
+NEW: DQB1*03:85
+Serologic Assignment: ['8']
+NEW: DQB1*03:87
+Serologic Assignment: ['8']
+NEW: DQB1*03:89
+Serologic Assignment: ['8']
+NEW: DQB1*03:90
+Serologic Assignment: ['6']
+NEW: DQB1*03:91
+Serologic Assignment: ['8']
+NEW: DQB1*03:92
+Serologic Assignment: ['7']
+NEW: DQB1*03:93
+Serologic Assignment: ['7']
+NEW: DQB1*03:94
+Serologic Assignment: ['7']
+NEW: DQB1*03:95
+Serologic Assignment: ['6']
+NEW: DQB1*03:96
+Serologic Assignment: ['8']
+NEW: DQB1*03:97
+Serologic Assignment: ['8']
+NEW: DQB1*03:98
+Serologic Assignment: ['8']
+NEW: DQB1*03:99
+Serologic Assignment: ['8']
+NEW: DQB1*04:02
+Serologic Assignment: ['4']
+NEW: DQB1*04:04
+Serologic Assignment: ['4']
+NEW: DQB1*04:06
+Serologic Assignment: ['4']
+NEW: DQB1*04:08
+Serologic Assignment: ['4']
+NEW: DQB1*04:10
+Serologic Assignment: ['4']
+NEW: DQB1*04:12
+Serologic Assignment: ['4']
+NEW: DQB1*04:14
+Serologic Assignment: ['4']
+NEW: DQB1*04:16
+Serologic Assignment: ['4']
+NEW: DQB1*04:18
+Serologic Assignment: ['4']
+NEW: DQB1*04:19
+Serologic Assignment: ['4']
+NEW: DQB1*04:20
+Serologic Assignment: ['4']
+NEW: DQB1*04:21
+Serologic Assignment: ['4']
+NEW: DQB1*04:22
+Serologic Assignment: ['4']
+NEW: DQB1*04:23
+Serologic Assignment: ['4']
+NEW: DQB1*04:24
+Serologic Assignment: ['4']
+NEW: DQB1*04:25
+Serologic Assignment: ['6']
+NEW: DQB1*04:26
+Serologic Assignment: ['4']
+NEW: DQB1*04:27
+Serologic Assignment: ['4']
+NEW: DQB1*04:28
+Serologic Assignment: ['4']
+NEW: DQB1*04:29
+Serologic Assignment: ['4']
+NEW: DQB1*04:30
+Serologic Assignment: ['4']
+NEW: DQB1*04:31
+Serologic Assignment: ['4']
+NEW: DQB1*04:32
+Serologic Assignment: ['4']
+NEW: DQB1*04:33
+Serologic Assignment: ['4']
+NEW: DQB1*04:34
+Serologic Assignment: ['4']
+NEW: DQB1*04:35
+Serologic Assignment: ['4']
+NEW: DQB1*04:36
+Serologic Assignment: ['4']
+NEW: DQB1*04:37
+Serologic Assignment: ['4']
+NEW: DQB1*04:38
+Serologic Assignment: ['4']
+NEW: DQB1*04:39
+Serologic Assignment: ['4']
+NEW: DQB1*04:40
+Serologic Assignment: ['4']
+NEW: DQB1*04:41
+Serologic Assignment: ['4']
+NEW: DQB1*04:42
+Serologic Assignment: ['4']
+NEW: DQB1*04:43
+Serologic Assignment: ['4']
+NEW: DQB1*04:44
+Serologic Assignment: ['4']
+NEW: DQB1*04:45
+Serologic Assignment: ['4']
+NEW: DQB1*04:46
+Serologic Assignment: ['4']
+NEW: DQB1*04:47
+Serologic Assignment: ['4']
+NEW: DQB1*04:48
+Serologic Assignment: ['4']
+NEW: DQB1*04:49
+Serologic Assignment: ['4']
+NEW: DQB1*04:50
+Serologic Assignment: ['4']
+NEW: DQB1*04:51
+Serologic Assignment: ['4']
+NEW: DQB1*04:52
+Serologic Assignment: ['4']
+NEW: DQB1*04:53
+Serologic Assignment: ['4']
+NEW: DQB1*04:54
+Serologic Assignment: ['4']
+NEW: DQB1*04:55
+Serologic Assignment: ['4']
+NEW: DQB1*04:56
+Serologic Assignment: ['4']
+NEW: DQB1*04:57
+Serologic Assignment: ['4']
+NEW: DQB1*04:58
+Serologic Assignment: ['4']
+NEW: DQB1*04:59
+Serologic Assignment: ['4']
+NEW: DQB1*04:60
+Serologic Assignment: ['4']
+NEW: DQB1*04:61
+Serologic Assignment: ['4']
+NEW: DQB1*04:62
+Serologic Assignment: ['4']
+NEW: DQB1*04:63
+Serologic Assignment: ['4']
+NEW: DQB1*04:64
+Serologic Assignment: ['4']
+NEW: DQB1*04:65
+Serologic Assignment: ['4']
+NEW: DQB1*04:66
+Serologic Assignment: ['4']
+NEW: DQB1*04:67
+Serologic Assignment: ['4']
+NEW: DQB1*04:68
+Serologic Assignment: ['4']
+NEW: DQB1*04:69
+Serologic Assignment: ['4']
+NEW: DQB1*04:70
+Serologic Assignment: ['4']
+NEW: DQB1*04:71
+Serologic Assignment: ['4']
+NEW: DQB1*04:72
+Serologic Assignment: ['4']
+NEW: DQB1*04:73
+Serologic Assignment: ['3']
+NEW: DQB1*04:74
+Serologic Assignment: ['4']
+NEW: DQB1*04:75
+Serologic Assignment: ['4']
+NEW: DQB1*04:76
+Serologic Assignment: ['4']
+NEW: DQB1*04:77
+Serologic Assignment: ['4']
+NEW: DQB1*04:78
+Serologic Assignment: ['4']
+NEW: DQB1*04:79
+Serologic Assignment: ['4']
+NEW: DQB1*05:01
+Serologic Assignment: ['5']
+NEW: DQB1*05:03
+Serologic Assignment: ['5']
+NEW: DQB1*05:05
+Serologic Assignment: ['6']
+NEW: DQB1*05:07
+Serologic Assignment: ['5']
+NEW: DQB1*05:09
+Serologic Assignment: ['5']
+NEW: DQB1*05:100
+Serologic Assignment: ['5']
+NEW: DQB1*05:101
+Serologic Assignment: ['5']
+NEW: DQB1*05:102
+Serologic Assignment: ['5']
+NEW: DQB1*05:103
+Serologic Assignment: ['5']
+NEW: DQB1*05:104
+Serologic Assignment: ['5']
+NEW: DQB1*05:105
+Serologic Assignment: ['5']
+NEW: DQB1*05:106
+Serologic Assignment: ['5']
+NEW: DQB1*05:107
+Serologic Assignment: ['5']
+NEW: DQB1*05:108
+Serologic Assignment: ['5']
+NEW: DQB1*05:109
+Serologic Assignment: ['5']
+NEW: DQB1*05:11
+Serologic Assignment: ['6']
+NEW: DQB1*05:110
+Serologic Assignment: ['6']
+NEW: DQB1*05:111
+Serologic Assignment: ['5']
+NEW: DQB1*05:112
+Serologic Assignment: ['5']
+NEW: DQB1*05:113
+Serologic Assignment: ['5']
+NEW: DQB1*05:114
+Serologic Assignment: ['5']
+NEW: DQB1*05:115
+Serologic Assignment: ['5']
+NEW: DQB1*05:116
+Serologic Assignment: ['5']
+NEW: DQB1*05:117
+Serologic Assignment: ['5']
+NEW: DQB1*05:118
+Serologic Assignment: ['5']
+NEW: DQB1*05:119
+Serologic Assignment: ['6']
+NEW: DQB1*05:120
+Serologic Assignment: ['6']
+NEW: DQB1*05:121
+Serologic Assignment: ['6']
+NEW: DQB1*05:122
+Serologic Assignment: ['6']
+NEW: DQB1*05:123
+Serologic Assignment: ['5']
+NEW: DQB1*05:124
+Serologic Assignment: ['5']
+NEW: DQB1*05:125
+Serologic Assignment: ['6']
+NEW: DQB1*05:126
+Serologic Assignment: ['5']
+NEW: DQB1*05:127
+Serologic Assignment: ['5']
+NEW: DQB1*05:128
+Serologic Assignment: ['5']
+NEW: DQB1*05:129
+Serologic Assignment: ['5']
+NEW: DQB1*05:13
+Serologic Assignment: ['5']
+NEW: DQB1*05:130
+Serologic Assignment: ['5']
+NEW: DQB1*05:131
+Serologic Assignment: ['6']
+NEW: DQB1*05:132
+Serologic Assignment: ['5']
+NEW: DQB1*05:133
+Serologic Assignment: ['5']
+NEW: DQB1*05:134
+Serologic Assignment: ['5']
+NEW: DQB1*05:135
+Serologic Assignment: ['5']
+NEW: DQB1*05:136
+Serologic Assignment: ['5']
+NEW: DQB1*05:137
+Serologic Assignment: ['5']
+NEW: DQB1*05:138
+Serologic Assignment: ['5']
+NEW: DQB1*05:139
+Serologic Assignment: ['5']
+NEW: DQB1*05:140
+Serologic Assignment: ['5']
+NEW: DQB1*05:141
+Serologic Assignment: ['5']
+NEW: DQB1*05:142
+Serologic Assignment: ['5']
+NEW: DQB1*05:143
+Serologic Assignment: ['5']
+NEW: DQB1*05:144
+Serologic Assignment: ['5']
+NEW: DQB1*05:145
+Serologic Assignment: ['5']
+NEW: DQB1*05:146
+Serologic Assignment: ['5']
+NEW: DQB1*05:147
+Serologic Assignment: ['5']
+NEW: DQB1*05:148
+Serologic Assignment: ['5']
+NEW: DQB1*05:149
+Serologic Assignment: ['5']
+NEW: DQB1*05:15
+Serologic Assignment: ['5']
+NEW: DQB1*05:150
+Serologic Assignment: ['5']
+NEW: DQB1*05:151
+Serologic Assignment: ['5']
+NEW: DQB1*05:152
+Serologic Assignment: ['5']
+NEW: DQB1*05:153
+Serologic Assignment: ['5']
+NEW: DQB1*05:154
+Serologic Assignment: ['5']
+NEW: DQB1*05:155
+Serologic Assignment: ['5']
+NEW: DQB1*05:156
+Serologic Assignment: ['5']
+NEW: DQB1*05:157
+Serologic Assignment: ['5']
+NEW: DQB1*05:158
+Serologic Assignment: ['5']
+NEW: DQB1*05:159
+Serologic Assignment: ['5']
+NEW: DQB1*05:160
+Serologic Assignment: ['5']
+NEW: DQB1*05:161
+Serologic Assignment: ['5']
+NEW: DQB1*05:162
+Serologic Assignment: ['5']
+NEW: DQB1*05:163
+Serologic Assignment: ['5']
+NEW: DQB1*05:164
+Serologic Assignment: ['5']
+NEW: DQB1*05:165
+Serologic Assignment: ['5']
+NEW: DQB1*05:166
+Serologic Assignment: ['5']
+NEW: DQB1*05:167
+Serologic Assignment: ['5']
+NEW: DQB1*05:168
+Serologic Assignment: ['5']
+NEW: DQB1*05:169
+Serologic Assignment: ['5']
+NEW: DQB1*05:17
+Serologic Assignment: ['5']
+NEW: DQB1*05:170
+Serologic Assignment: ['5']
+NEW: DQB1*05:171
+Serologic Assignment: ['5']
+NEW: DQB1*05:172
+Serologic Assignment: ['5']
+NEW: DQB1*05:173
+Serologic Assignment: ['5']
+NEW: DQB1*05:174
+Serologic Assignment: ['5']
+NEW: DQB1*05:175
+Serologic Assignment: ['5']
+NEW: DQB1*05:176
+Serologic Assignment: ['5']
+NEW: DQB1*05:177
+Serologic Assignment: ['5']
+NEW: DQB1*05:178
+Serologic Assignment: ['5']
+NEW: DQB1*05:179
+Serologic Assignment: ['5']
+NEW: DQB1*05:180
+Serologic Assignment: ['5']
+NEW: DQB1*05:181
+Serologic Assignment: ['5']
+NEW: DQB1*05:182
+Serologic Assignment: ['5']
+NEW: DQB1*05:183
+Serologic Assignment: ['5']
+NEW: DQB1*05:184
+Serologic Assignment: ['5']
+NEW: DQB1*05:185
+Serologic Assignment: ['5']
+NEW: DQB1*05:186
+Serologic Assignment: ['5']
+NEW: DQB1*05:187
+Serologic Assignment: ['5']
+NEW: DQB1*05:188
+Serologic Assignment: ['5']
+NEW: DQB1*05:189
+Serologic Assignment: ['5']
+NEW: DQB1*05:19
+Serologic Assignment: ['5']
+NEW: DQB1*05:190
+Serologic Assignment: ['5']
+NEW: DQB1*05:191
+Serologic Assignment: ['5']
+NEW: DQB1*05:192
+Serologic Assignment: ['5']
+NEW: DQB1*05:193
+Serologic Assignment: ['5']
+NEW: DQB1*05:194
+Serologic Assignment: ['5']
+NEW: DQB1*05:195
+Serologic Assignment: ['5']
+NEW: DQB1*05:196
+Serologic Assignment: ['5']
+NEW: DQB1*05:197
+Serologic Assignment: ['5']
+NEW: DQB1*05:198
+Serologic Assignment: ['5']
+NEW: DQB1*05:199
+Serologic Assignment: ['5']
+NEW: DQB1*05:200
+Serologic Assignment: ['5']
+NEW: DQB1*05:201
+Serologic Assignment: ['5']
+NEW: DQB1*05:202
+Serologic Assignment: ['5']
+NEW: DQB1*05:203
+Serologic Assignment: ['5']
+NEW: DQB1*05:204
+Serologic Assignment: ['5']
+NEW: DQB1*05:205
+Serologic Assignment: ['5']
+NEW: DQB1*05:206
+Serologic Assignment: ['6']
+NEW: DQB1*05:207
+Serologic Assignment: ['5']
+NEW: DQB1*05:208
+Serologic Assignment: ['6']
+NEW: DQB1*05:209
+Serologic Assignment: ['5']
+NEW: DQB1*05:21
+Serologic Assignment: ['5']
+NEW: DQB1*05:210
+Serologic Assignment: ['5']
+NEW: DQB1*05:211
+Serologic Assignment: ['5']
+NEW: DQB1*05:212
+Serologic Assignment: ['5']
+NEW: DQB1*05:213
+Serologic Assignment: ['5']
+NEW: DQB1*05:214
+Serologic Assignment: ['5']
+NEW: DQB1*05:215
+Serologic Assignment: ['1']
+NEW: DQB1*05:216
+Serologic Assignment: ['5']
+NEW: DQB1*05:217
+Serologic Assignment: ['5']
+NEW: DQB1*05:218
+Serologic Assignment: ['5']
+NEW: DQB1*05:219
+Serologic Assignment: ['5']
+NEW: DQB1*05:220
+Serologic Assignment: ['5']
+NEW: DQB1*05:221
+Serologic Assignment: ['5']
+NEW: DQB1*05:222
+Serologic Assignment: ['5']
+NEW: DQB1*05:223
+Serologic Assignment: ['5']
+NEW: DQB1*05:224
+Serologic Assignment: ['8']
+NEW: DQB1*05:225
+Serologic Assignment: ['5']
+NEW: DQB1*05:226
+Serologic Assignment: ['5']
+NEW: DQB1*05:227
+Serologic Assignment: ['5']
+NEW: DQB1*05:228
+Serologic Assignment: ['5']
+NEW: DQB1*05:229
+Serologic Assignment: ['5']
+NEW: DQB1*05:23
+Serologic Assignment: ['5']
+NEW: DQB1*05:230
+Serologic Assignment: ['5']
+NEW: DQB1*05:231
+Serologic Assignment: ['5']
+NEW: DQB1*05:232
+Serologic Assignment: ['5']
+NEW: DQB1*05:233
+Serologic Assignment: ['5']
+NEW: DQB1*05:234
+Serologic Assignment: ['5']
+NEW: DQB1*05:235
+Serologic Assignment: ['6']
+NEW: DQB1*05:236
+Serologic Assignment: ['6']
+NEW: DQB1*05:237
+Serologic Assignment: ['5']
+NEW: DQB1*05:238
+Serologic Assignment: ['5']
+NEW: DQB1*05:239
+Serologic Assignment: ['5']
+NEW: DQB1*05:240
+Serologic Assignment: ['5']
+NEW: DQB1*05:241
+Serologic Assignment: ['5']
+NEW: DQB1*05:242
+Serologic Assignment: ['5']
+NEW: DQB1*05:243
+Serologic Assignment: ['5']
+NEW: DQB1*05:244
+Serologic Assignment: ['5']
+NEW: DQB1*05:245
+Serologic Assignment: ['5']
+NEW: DQB1*05:246
+Serologic Assignment: ['5']
+NEW: DQB1*05:247
+Serologic Assignment: ['5']
+NEW: DQB1*05:248
+Serologic Assignment: ['5']
+NEW: DQB1*05:249
+Serologic Assignment: ['5']
+NEW: DQB1*05:25
+Serologic Assignment: ['5']
+NEW: DQB1*05:250
+Serologic Assignment: ['5']
+NEW: DQB1*05:251
+Serologic Assignment: ['5']
+NEW: DQB1*05:252
+Serologic Assignment: ['5']
+NEW: DQB1*05:253
+Serologic Assignment: ['5']
+NEW: DQB1*05:254
+Serologic Assignment: ['5']
+NEW: DQB1*05:27
+Serologic Assignment: ['5']
+NEW: DQB1*05:29
+Serologic Assignment: ['5']
+NEW: DQB1*05:31
+Serologic Assignment: ['5']
+NEW: DQB1*05:33
+Serologic Assignment: ['6']
+NEW: DQB1*05:35
+Serologic Assignment: ['5']
+NEW: DQB1*05:37
+Serologic Assignment: ['5']
+NEW: DQB1*05:39
+Serologic Assignment: ['5']
+NEW: DQB1*05:41
+Serologic Assignment: ['5']
+NEW: DQB1*05:42
+Serologic Assignment: ['5']
+NEW: DQB1*05:44
+Serologic Assignment: ['5']
+NEW: DQB1*05:45
+Serologic Assignment: ['5']
+NEW: DQB1*05:46
+Serologic Assignment: ['5']
+NEW: DQB1*05:47
+Serologic Assignment: ['5']
+NEW: DQB1*05:48
+Serologic Assignment: ['6']
+NEW: DQB1*05:49
+Serologic Assignment: ['5']
+NEW: DQB1*05:50
+Serologic Assignment: ['5']
+NEW: DQB1*05:51
+Serologic Assignment: ['6']
+NEW: DQB1*05:52
+Serologic Assignment: ['5']
+NEW: DQB1*05:53
+Serologic Assignment: ['5']
+NEW: DQB1*05:54
+Serologic Assignment: ['5']
+NEW: DQB1*05:55
+Serologic Assignment: ['5']
+NEW: DQB1*05:56
+Serologic Assignment: ['5']
+NEW: DQB1*05:57
+Serologic Assignment: ['5']
+NEW: DQB1*05:58
+Serologic Assignment: ['5']
+NEW: DQB1*05:59
+Serologic Assignment: ['5']
+NEW: DQB1*05:60
+Serologic Assignment: ['5']
+NEW: DQB1*05:61
+Serologic Assignment: ['5']
+NEW: DQB1*05:62
+Serologic Assignment: ['6']
+NEW: DQB1*05:63
+Serologic Assignment: ['6']
+NEW: DQB1*05:64
+Serologic Assignment: ['5']
+NEW: DQB1*05:65
+Serologic Assignment: ['5']
+NEW: DQB1*05:66
+Serologic Assignment: ['6']
+NEW: DQB1*05:67
+Serologic Assignment: ['5']
+NEW: DQB1*05:68
+Serologic Assignment: ['5']
+NEW: DQB1*05:69
+Serologic Assignment: ['5']
+NEW: DQB1*05:70
+Serologic Assignment: ['5']
+NEW: DQB1*05:71
+Serologic Assignment: ['6']
+NEW: DQB1*05:72
+Serologic Assignment: ['5']
+NEW: DQB1*05:73
+Serologic Assignment: ['5']
+NEW: DQB1*05:74
+Serologic Assignment: ['5']
+NEW: DQB1*05:75
+Serologic Assignment: ['5']
+NEW: DQB1*05:76
+Serologic Assignment: ['5']
+NEW: DQB1*05:77
+Serologic Assignment: ['5']
+NEW: DQB1*05:78
+Serologic Assignment: ['5']
+NEW: DQB1*05:79
+Serologic Assignment: ['5']
+NEW: DQB1*05:80
+Serologic Assignment: ['5']
+NEW: DQB1*05:81
+Serologic Assignment: ['5']
+NEW: DQB1*05:82
+Serologic Assignment: ['5']
+NEW: DQB1*05:83
+Serologic Assignment: ['5']
+NEW: DQB1*05:84
+Serologic Assignment: ['5']
+NEW: DQB1*05:85
+Serologic Assignment: ['6']
+NEW: DQB1*05:86
+Serologic Assignment: ['5']
+NEW: DQB1*05:87
+Serologic Assignment: ['5']
+NEW: DQB1*05:88
+Serologic Assignment: ['6']
+NEW: DQB1*05:89
+Serologic Assignment: ['5']
+NEW: DQB1*05:90
+Serologic Assignment: ['5']
+NEW: DQB1*05:91
+Serologic Assignment: ['5']
+NEW: DQB1*05:92
+Serologic Assignment: ['5']
+NEW: DQB1*05:93
+Serologic Assignment: ['5']
+NEW: DQB1*05:94
+Serologic Assignment: ['5']
+NEW: DQB1*05:95
+Serologic Assignment: ['6']
+NEW: DQB1*05:96
+Serologic Assignment: ['5']
+NEW: DQB1*05:97
+Serologic Assignment: ['5']
+NEW: DQB1*05:98
+Serologic Assignment: ['5']
+NEW: DQB1*05:99
+Serologic Assignment: ['5']
+NEW: DQB1*06:01
+Serologic Assignment: ['6']
+NEW: DQB1*06:03
+Serologic Assignment: ['6']
+NEW: DQB1*06:05
+Serologic Assignment: ['6']
+NEW: DQB1*06:07
+Serologic Assignment: ['6']
+NEW: DQB1*06:09
+Serologic Assignment: ['6']
+NEW: DQB1*06:101
+Serologic Assignment: ['6']
+NEW: DQB1*06:102
+Serologic Assignment: ['6']
+NEW: DQB1*06:104
+Serologic Assignment: ['6']
+NEW: DQB1*06:106
+Serologic Assignment: ['6']
+NEW: DQB1*06:107
+Serologic Assignment: ['6']
+NEW: DQB1*06:108
+Serologic Assignment: ['6']
+NEW: DQB1*06:109
+Serologic Assignment: ['6']
+NEW: DQB1*06:11
+Serologic Assignment: ['6']
+NEW: DQB1*06:110
+Serologic Assignment: ['6']
+NEW: DQB1*06:111
+Serologic Assignment: ['6']
+NEW: DQB1*06:112
+Serologic Assignment: ['6']
+NEW: DQB1*06:113
+Serologic Assignment: ['6']
+NEW: DQB1*06:114
+Serologic Assignment: ['6']
+NEW: DQB1*06:115
+Serologic Assignment: ['6']
+NEW: DQB1*06:116
+Serologic Assignment: ['6']
+NEW: DQB1*06:117
+Serologic Assignment: ['6']
+NEW: DQB1*06:118
+Serologic Assignment: ['6']
+NEW: DQB1*06:119
+Serologic Assignment: ['6']
+NEW: DQB1*06:120
+Serologic Assignment: ['6']
+NEW: DQB1*06:121
+Serologic Assignment: ['6']
+NEW: DQB1*06:122
+Serologic Assignment: ['6']
+NEW: DQB1*06:123
+Serologic Assignment: ['1']
+NEW: DQB1*06:124
+Serologic Assignment: ['6']
+NEW: DQB1*06:125
+Serologic Assignment: ['6']
+NEW: DQB1*06:126
+Serologic Assignment: ['6']
+NEW: DQB1*06:127
+Serologic Assignment: ['6']
+NEW: DQB1*06:128
+Serologic Assignment: ['6']
+NEW: DQB1*06:129
+Serologic Assignment: ['6']
+NEW: DQB1*06:13
+Serologic Assignment: ['6']
+NEW: DQB1*06:130
+Serologic Assignment: ['6']
+NEW: DQB1*06:131
+Serologic Assignment: ['6']
+NEW: DQB1*06:132
+Serologic Assignment: ['6']
+NEW: DQB1*06:133
+Serologic Assignment: ['6']
+NEW: DQB1*06:134
+Serologic Assignment: ['6']
+NEW: DQB1*06:135
+Serologic Assignment: ['6']
+NEW: DQB1*06:136
+Serologic Assignment: ['6']
+NEW: DQB1*06:137
+Serologic Assignment: ['6']
+NEW: DQB1*06:138
+Serologic Assignment: ['6']
+NEW: DQB1*06:139
+Serologic Assignment: ['6']
+NEW: DQB1*06:140
+Serologic Assignment: ['6']
+NEW: DQB1*06:141
+Serologic Assignment: ['6']
+NEW: DQB1*06:142
+Serologic Assignment: ['6']
+NEW: DQB1*06:143
+Serologic Assignment: ['6']
+NEW: DQB1*06:144
+Serologic Assignment: ['6']
+NEW: DQB1*06:145
+Serologic Assignment: ['6']
+NEW: DQB1*06:146
+Serologic Assignment: ['6']
+NEW: DQB1*06:147
+Serologic Assignment: ['6']
+NEW: DQB1*06:148
+Serologic Assignment: ['6']
+NEW: DQB1*06:149
+Serologic Assignment: ['6']
+NEW: DQB1*06:15
+Serologic Assignment: ['6']
+NEW: DQB1*06:150
+Serologic Assignment: ['6']
+NEW: DQB1*06:151
+Serologic Assignment: ['6']
+NEW: DQB1*06:152
+Serologic Assignment: ['6']
+NEW: DQB1*06:153
+Serologic Assignment: ['6']
+NEW: DQB1*06:154
+Serologic Assignment: ['6']
+NEW: DQB1*06:155
+Serologic Assignment: ['6']
+NEW: DQB1*06:156
+Serologic Assignment: ['6']
+NEW: DQB1*06:157
+Serologic Assignment: ['6']
+NEW: DQB1*06:158
+Serologic Assignment: ['6']
+NEW: DQB1*06:159
+Serologic Assignment: ['6']
+NEW: DQB1*06:160
+Serologic Assignment: ['6']
+NEW: DQB1*06:161
+Serologic Assignment: ['6']
+NEW: DQB1*06:162
+Serologic Assignment: ['6']
+NEW: DQB1*06:163
+Serologic Assignment: ['6']
+NEW: DQB1*06:164
+Serologic Assignment: ['6']
+NEW: DQB1*06:165
+Serologic Assignment: ['6']
+NEW: DQB1*06:166
+Serologic Assignment: ['6']
+NEW: DQB1*06:167
+Serologic Assignment: ['6']
+NEW: DQB1*06:168
+Serologic Assignment: ['6']
+NEW: DQB1*06:169
+Serologic Assignment: ['6']
+NEW: DQB1*06:17
+Serologic Assignment: ['6']
+NEW: DQB1*06:170
+Serologic Assignment: ['6']
+NEW: DQB1*06:171
+Serologic Assignment: ['6']
+NEW: DQB1*06:172
+Serologic Assignment: ['6']
+NEW: DQB1*06:173
+Serologic Assignment: ['6']
+NEW: DQB1*06:174
+Serologic Assignment: ['6']
+NEW: DQB1*06:175
+Serologic Assignment: ['6']
+NEW: DQB1*06:176
+Serologic Assignment: ['6']
+NEW: DQB1*06:177
+Serologic Assignment: ['6']
+NEW: DQB1*06:178
+Serologic Assignment: ['6']
+NEW: DQB1*06:179
+Serologic Assignment: ['6']
+NEW: DQB1*06:180
+Serologic Assignment: ['6']
+NEW: DQB1*06:181
+Serologic Assignment: ['6']
+NEW: DQB1*06:182
+Serologic Assignment: ['6']
+NEW: DQB1*06:183
+Serologic Assignment: ['6']
+NEW: DQB1*06:184
+Serologic Assignment: ['6']
+NEW: DQB1*06:185
+Serologic Assignment: ['6']
+NEW: DQB1*06:186
+Serologic Assignment: ['6']
+NEW: DQB1*06:187
+Serologic Assignment: ['6']
+NEW: DQB1*06:188
+Serologic Assignment: ['6']
+NEW: DQB1*06:189
+Serologic Assignment: ['6']
+NEW: DQB1*06:19
+Serologic Assignment: ['6']
+NEW: DQB1*06:190
+Serologic Assignment: ['6']
+NEW: DQB1*06:191
+Serologic Assignment: ['6']
+NEW: DQB1*06:192
+Serologic Assignment: ['6']
+NEW: DQB1*06:193
+Serologic Assignment: ['6']
+NEW: DQB1*06:194
+Serologic Assignment: ['6']
+NEW: DQB1*06:195
+Serologic Assignment: ['6']
+NEW: DQB1*06:196
+Serologic Assignment: ['6']
+NEW: DQB1*06:197
+Serologic Assignment: ['6']
+NEW: DQB1*06:198
+Serologic Assignment: ['6']
+NEW: DQB1*06:199
+Serologic Assignment: ['6']
+NEW: DQB1*06:200
+Serologic Assignment: ['6']
+NEW: DQB1*06:201
+Serologic Assignment: ['6']
+NEW: DQB1*06:202
+Serologic Assignment: ['6']
+NEW: DQB1*06:203
+Serologic Assignment: ['6']
+NEW: DQB1*06:204
+Serologic Assignment: ['6']
+NEW: DQB1*06:205
+Serologic Assignment: ['6']
+NEW: DQB1*06:206
+Serologic Assignment: ['6']
+NEW: DQB1*06:207
+Serologic Assignment: ['6']
+NEW: DQB1*06:208
+Serologic Assignment: ['6']
+NEW: DQB1*06:209
+Serologic Assignment: ['6']
+NEW: DQB1*06:21
+Serologic Assignment: ['6']
+NEW: DQB1*06:210
+Serologic Assignment: ['6']
+NEW: DQB1*06:211
+Serologic Assignment: ['6']
+NEW: DQB1*06:212
+Serologic Assignment: ['6']
+NEW: DQB1*06:213
+Serologic Assignment: ['6']
+NEW: DQB1*06:214
+Serologic Assignment: ['6']
+NEW: DQB1*06:215
+Serologic Assignment: ['6']
+NEW: DQB1*06:216
+Serologic Assignment: ['6']
+NEW: DQB1*06:217
+Serologic Assignment: ['6']
+NEW: DQB1*06:218
+Serologic Assignment: ['6']
+NEW: DQB1*06:219
+Serologic Assignment: ['6']
+NEW: DQB1*06:221
+Serologic Assignment: ['6']
+NEW: DQB1*06:222
+Serologic Assignment: ['6']
+NEW: DQB1*06:223
+Serologic Assignment: ['6']
+NEW: DQB1*06:224
+Serologic Assignment: ['6']
+NEW: DQB1*06:225
+Serologic Assignment: ['6']
+NEW: DQB1*06:226
+Serologic Assignment: ['6']
+NEW: DQB1*06:227
+Serologic Assignment: ['6']
+NEW: DQB1*06:228
+Serologic Assignment: ['6']
+NEW: DQB1*06:229
+Serologic Assignment: ['6']
+NEW: DQB1*06:23
+Serologic Assignment: ['6']
+NEW: DQB1*06:230
+Serologic Assignment: ['6']
+NEW: DQB1*06:231
+Serologic Assignment: ['6']
+NEW: DQB1*06:232
+Serologic Assignment: ['6']
+NEW: DQB1*06:233
+Serologic Assignment: ['6']
+NEW: DQB1*06:234
+Serologic Assignment: ['6']
+NEW: DQB1*06:235
+Serologic Assignment: ['6']
+NEW: DQB1*06:236
+Serologic Assignment: ['6']
+NEW: DQB1*06:237
+Serologic Assignment: ['6']
+NEW: DQB1*06:238
+Serologic Assignment: ['6']
+NEW: DQB1*06:239
+Serologic Assignment: ['6']
+NEW: DQB1*06:240
+Serologic Assignment: ['6']
+NEW: DQB1*06:241
+Serologic Assignment: ['6']
+NEW: DQB1*06:242
+Serologic Assignment: ['6']
+NEW: DQB1*06:243
+Serologic Assignment: ['6']
+NEW: DQB1*06:244
+Serologic Assignment: ['6']
+NEW: DQB1*06:245
+Serologic Assignment: ['6']
+NEW: DQB1*06:246
+Serologic Assignment: ['6']
+NEW: DQB1*06:247
+Serologic Assignment: ['6']
+NEW: DQB1*06:248
+Serologic Assignment: ['6']
+NEW: DQB1*06:249
+Serologic Assignment: ['6']
+NEW: DQB1*06:25
+Serologic Assignment: ['6']
+NEW: DQB1*06:250
+Serologic Assignment: ['6']
+NEW: DQB1*06:251
+Serologic Assignment: ['6']
+NEW: DQB1*06:252
+Serologic Assignment: ['6']
+NEW: DQB1*06:253
+Serologic Assignment: ['6']
+NEW: DQB1*06:254
+Serologic Assignment: ['6']
+NEW: DQB1*06:255
+Serologic Assignment: ['6']
+NEW: DQB1*06:256
+Serologic Assignment: ['6']
+NEW: DQB1*06:257
+Serologic Assignment: ['6']
+NEW: DQB1*06:258
+Serologic Assignment: ['6']
+NEW: DQB1*06:259
+Serologic Assignment: ['6']
+NEW: DQB1*06:26
+Serologic Assignment: ['6']
+NEW: DQB1*06:260
+Serologic Assignment: ['6']
+NEW: DQB1*06:261
+Serologic Assignment: ['6']
+NEW: DQB1*06:262
+Serologic Assignment: ['6']
+NEW: DQB1*06:263
+Serologic Assignment: ['6']
+NEW: DQB1*06:264
+Serologic Assignment: ['6']
+NEW: DQB1*06:265
+Serologic Assignment: ['6']
+NEW: DQB1*06:266
+Serologic Assignment: ['6']
+NEW: DQB1*06:267
+Serologic Assignment: ['6']
+NEW: DQB1*06:268
+Serologic Assignment: ['6']
+NEW: DQB1*06:269
+Serologic Assignment: ['6']
+NEW: DQB1*06:270
+Serologic Assignment: ['6']
+NEW: DQB1*06:271
+Serologic Assignment: ['6']
+NEW: DQB1*06:272
+Serologic Assignment: ['6']
+NEW: DQB1*06:273
+Serologic Assignment: ['6']
+NEW: DQB1*06:274
+Serologic Assignment: ['6']
+NEW: DQB1*06:275
+Serologic Assignment: ['6']
+NEW: DQB1*06:276
+Serologic Assignment: ['6']
+NEW: DQB1*06:277
+Serologic Assignment: ['6']
+NEW: DQB1*06:278
+Serologic Assignment: ['6']
+NEW: DQB1*06:279
+Serologic Assignment: ['6']
+NEW: DQB1*06:28
+Serologic Assignment: ['6']
+NEW: DQB1*06:280
+Serologic Assignment: ['6']
+NEW: DQB1*06:281
+Serologic Assignment: ['6']
+NEW: DQB1*06:282
+Serologic Assignment: ['6']
+NEW: DQB1*06:283
+Serologic Assignment: ['6']
+NEW: DQB1*06:284
+Serologic Assignment: ['6']
+NEW: DQB1*06:285
+Serologic Assignment: ['6']
+NEW: DQB1*06:286
+Serologic Assignment: ['6']
+NEW: DQB1*06:287
+Serologic Assignment: ['6']
+NEW: DQB1*06:288
+Serologic Assignment: ['6']
+NEW: DQB1*06:289
+Serologic Assignment: ['6']
+NEW: DQB1*06:290
+Serologic Assignment: ['6']
+NEW: DQB1*06:291
+Serologic Assignment: ['6']
+NEW: DQB1*06:292
+Serologic Assignment: ['6']
+NEW: DQB1*06:293
+Serologic Assignment: ['6']
+NEW: DQB1*06:294
+Serologic Assignment: ['6']
+NEW: DQB1*06:295
+Serologic Assignment: ['6']
+NEW: DQB1*06:296
+Serologic Assignment: ['6']
+NEW: DQB1*06:297
+Serologic Assignment: ['6']
+NEW: DQB1*06:298
+Serologic Assignment: ['6']
+NEW: DQB1*06:299
+Serologic Assignment: ['6']
+NEW: DQB1*06:30
+Serologic Assignment: ['6']
+NEW: DQB1*06:300
+Serologic Assignment: ['6']
+NEW: DQB1*06:301
+Serologic Assignment: ['6']
+NEW: DQB1*06:302
+Serologic Assignment: ['6']
+NEW: DQB1*06:303
+Serologic Assignment: ['1']
+NEW: DQB1*06:304
+Serologic Assignment: ['6']
+NEW: DQB1*06:305
+Serologic Assignment: ['6']
+NEW: DQB1*06:306
+Serologic Assignment: ['1']
+NEW: DQB1*06:307
+Serologic Assignment: ['6']
+NEW: DQB1*06:308
+Serologic Assignment: ['6']
+NEW: DQB1*06:309
+Serologic Assignment: ['6']
+NEW: DQB1*06:310
+Serologic Assignment: ['6']
+NEW: DQB1*06:311
+Serologic Assignment: ['6']
+NEW: DQB1*06:312
+Serologic Assignment: ['6']
+NEW: DQB1*06:313
+Serologic Assignment: ['6']
+NEW: DQB1*06:314
+Serologic Assignment: ['6']
+NEW: DQB1*06:315
+Serologic Assignment: ['6']
+NEW: DQB1*06:316
+Serologic Assignment: ['6']
+NEW: DQB1*06:317
+Serologic Assignment: ['6']
+NEW: DQB1*06:318
+Serologic Assignment: ['6']
+NEW: DQB1*06:319
+Serologic Assignment: ['6']
+NEW: DQB1*06:32
+Serologic Assignment: ['6']
+NEW: DQB1*06:320
+Serologic Assignment: ['6']
+NEW: DQB1*06:321
+Serologic Assignment: ['6']
+NEW: DQB1*06:322
+Serologic Assignment: ['6']
+NEW: DQB1*06:323
+Serologic Assignment: ['6']
+NEW: DQB1*06:324
+Serologic Assignment: ['6']
+NEW: DQB1*06:325
+Serologic Assignment: ['6']
+NEW: DQB1*06:326
+Serologic Assignment: ['6']
+NEW: DQB1*06:327
+Serologic Assignment: ['6']
+NEW: DQB1*06:328
+Serologic Assignment: ['6']
+NEW: DQB1*06:329
+Serologic Assignment: ['6']
+NEW: DQB1*06:330
+Serologic Assignment: ['6']
+NEW: DQB1*06:331
+Serologic Assignment: ['6']
+NEW: DQB1*06:332
+Serologic Assignment: ['6']
+NEW: DQB1*06:333
+Serologic Assignment: ['6']
+NEW: DQB1*06:334
+Serologic Assignment: ['6']
+NEW: DQB1*06:335
+Serologic Assignment: ['6']
+NEW: DQB1*06:336
+Serologic Assignment: ['6']
+NEW: DQB1*06:337
+Serologic Assignment: ['6']
+NEW: DQB1*06:338
+Serologic Assignment: ['6']
+NEW: DQB1*06:339
+Serologic Assignment: ['6']
+NEW: DQB1*06:34
+Serologic Assignment: ['6']
+NEW: DQB1*06:340
+Serologic Assignment: ['6']
+NEW: DQB1*06:341
+Serologic Assignment: ['6']
+NEW: DQB1*06:342
+Serologic Assignment: ['6']
+NEW: DQB1*06:343
+Serologic Assignment: ['6']
+NEW: DQB1*06:344
+Serologic Assignment: ['6']
+NEW: DQB1*06:345
+Serologic Assignment: ['6']
+NEW: DQB1*06:346
+Serologic Assignment: ['6']
+NEW: DQB1*06:347
+Serologic Assignment: ['6']
+NEW: DQB1*06:348
+Serologic Assignment: ['6']
+NEW: DQB1*06:349
+Serologic Assignment: ['6']
+NEW: DQB1*06:350
+Serologic Assignment: ['6']
+NEW: DQB1*06:351
+Serologic Assignment: ['6']
+NEW: DQB1*06:352
+Serologic Assignment: ['6']
+NEW: DQB1*06:353
+Serologic Assignment: ['6']
+NEW: DQB1*06:354
+Serologic Assignment: ['6']
+NEW: DQB1*06:355
+Serologic Assignment: ['6']
+NEW: DQB1*06:356
+Serologic Assignment: ['6']
+NEW: DQB1*06:357
+Serologic Assignment: ['6']
+NEW: DQB1*06:358
+Serologic Assignment: ['6']
+NEW: DQB1*06:359
+Serologic Assignment: ['6']
+NEW: DQB1*06:36
+Serologic Assignment: ['6']
+NEW: DQB1*06:360
+Serologic Assignment: ['6']
+NEW: DQB1*06:361
+Serologic Assignment: ['6']
+NEW: DQB1*06:362
+Serologic Assignment: ['6']
+NEW: DQB1*06:363
+Serologic Assignment: ['6']
+NEW: DQB1*06:364
+Serologic Assignment: ['6']
+NEW: DQB1*06:365
+Serologic Assignment: ['6']
+NEW: DQB1*06:366
+Serologic Assignment: ['6']
+NEW: DQB1*06:367
+Serologic Assignment: ['6']
+NEW: DQB1*06:368
+Serologic Assignment: ['6']
+NEW: DQB1*06:369
+Serologic Assignment: ['6']
+NEW: DQB1*06:370
+Serologic Assignment: ['6']
+NEW: DQB1*06:371
+Serologic Assignment: ['6']
+NEW: DQB1*06:372
+Serologic Assignment: ['6']
+NEW: DQB1*06:373
+Serologic Assignment: ['6']
+NEW: DQB1*06:374
+Serologic Assignment: ['6']
+NEW: DQB1*06:38
+Serologic Assignment: ['6']
+NEW: DQB1*06:40
+Serologic Assignment: ['6']
+NEW: DQB1*06:42
+Serologic Assignment: ['6']
+NEW: DQB1*06:44
+Serologic Assignment: ['6']
+NEW: DQB1*06:46
+Serologic Assignment: ['6']
+NEW: DQB1*06:48
+Serologic Assignment: ['6']
+NEW: DQB1*06:50
+Serologic Assignment: ['6']
+NEW: DQB1*06:52
+Serologic Assignment: ['6']
+NEW: DQB1*06:54
+Serologic Assignment: ['6']
+NEW: DQB1*06:55
+Serologic Assignment: ['6']
+NEW: DQB1*06:57
+Serologic Assignment: ['6']
+NEW: DQB1*06:59
+Serologic Assignment: ['6']
+NEW: DQB1*06:61
+Serologic Assignment: ['6']
+NEW: DQB1*06:63
+Serologic Assignment: ['6']
+NEW: DQB1*06:65
+Serologic Assignment: ['6']
+NEW: DQB1*06:67
+Serologic Assignment: ['6']
+NEW: DQB1*06:69
+Serologic Assignment: ['6']
+NEW: DQB1*06:71
+Serologic Assignment: ['6']
+NEW: DQB1*06:73
+Serologic Assignment: ['6']
+NEW: DQB1*06:75
+Serologic Assignment: ['8']
+NEW: DQB1*06:76
+Serologic Assignment: ['6']
+NEW: DQB1*06:77
+Serologic Assignment: ['6']
+NEW: DQB1*06:79
+Serologic Assignment: ['6']
+NEW: DQB1*06:81
+Serologic Assignment: ['6']
+NEW: DQB1*06:83
+Serologic Assignment: ['6']
+NEW: DQB1*06:85
+Serologic Assignment: ['6']
+NEW: DQB1*06:87
+Serologic Assignment: ['6']
+NEW: DQB1*06:89
+Serologic Assignment: ['6']
+NEW: DQB1*06:91
+Serologic Assignment: ['6']
+NEW: DQB1*06:93
+Serologic Assignment: ['6']
+NEW: DQB1*06:95
+Serologic Assignment: ['6']
+NEW: DQB1*06:97
+Serologic Assignment: ['6']
+NEW: DQB1*06:99
+Serologic Assignment: ['6']

@@ -3,9 +3,7 @@ import numpy as np
 
 loci = ['A', 'B', 'C', 'DPB1', 'DRB1', 'DQB1']
 
-comparison = open("compfile.txt", "w+")
-newsies = open("newsies.txt", "w+")
-similarities = open("similar.txt", "w+")
+
 
 # function to check if value can be an integer - to eliminate excess characters from serology labels
 def checkInt(x):
@@ -29,6 +27,9 @@ def chance(x, line):
     return test
 
 for loc in loci:
+    comparison = open("./comparison/" + loc + "_compfile.txt", "w+")
+    newsies = open("./comparison/" + loc + "_newsies.txt", "w+")
+    similarities = open("./comparison/" + loc + "_similar.txt", "w+")
     oldPredict = {}
     newPredict = {}
     oldPredFile = "./old-predictions/" + loc + ".chile"
@@ -71,8 +72,11 @@ for loc in loci:
             similarities.write("Same: " + str(each) + "\n")
             similarities.write("Old Serologic Assignment: " + str(oldPredict[each]) + "\n")
             similarities.write("New Serologic Assignment: " + str(newPredict[each]) + "\n")
+    comparison.close()
+    similarities.close()
 
     for allele in newPredict.keys():
         if allele not in oldPredict.keys():
             newsies.write("NEW: " + str(allele) + "\n")
             newsies.write("Serologic Assignment: " + str(newPredict[allele]) + "\n")
+    newsies.close()
