@@ -4,6 +4,8 @@
 #   DESCRIPTION:    Module for inference of HLA nucleotide sequences
 #   OUTPUT:
 #   DATE:           September 01, 2020
+#   LATEST UPDATE:  October 5, 2020
+#   UPDATE REASON:  Distance matrix addition for computational efficiency
 #   AUTHOR:         Giovanni Biagini (dbiagini@tulane.edu ; GitHub: gbiagini)
 #   PI:             Loren Gragert, Ph.D.
 #   ORGANIZATION:   Tulane University School of Medicine
@@ -11,6 +13,7 @@
 ###############################################################################
 
 import pandas as pd
+import numpy as np
 import nuc_matching_msf as nuc_mm
 import aa_matching_msf as aa_mm
 from Bio.SeqRecord import SeqRecord
@@ -20,10 +23,11 @@ from tqdm import tqdm
 
 suffixes = ["L", "S", "C", "A", "Q", "N"]
 
+
 def ungap(dataframe, refseq, loc):
     # the dashes will be put at the beginning of every set of possible
     # polymorphisms per residue
-    ## this is to prevent all of the '-' characters from being sent to front
+    # this is to prevent all of the '-' characters from being sent to front
     i = 0
     j = 0
     new_cols = {}
@@ -57,6 +61,8 @@ def toBinary(string):
     return string
 
 # returns list of indexes for dash characters in all sequences
+
+
 def findIns(sequence):
     seqIns = []
     idx = sequence.find('-')
@@ -92,6 +98,8 @@ def sumHam(binNum):
     return sum
 
 # translate the nucleotide CDS into the amino acid sequence for all alleles
+
+
 def translate_nuc(nuc_dict, seqIns):
     translated = {}
     incorrect = []
@@ -105,8 +113,9 @@ def translate_nuc(nuc_dict, seqIns):
             new_seq = str(nuc_seq.seq)
             new_sequel = []
             new_sequel[:] = new_seq
-            new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
-                           not in seqIns) ]
+            new_sequel = [new_sequel[x]
+                          for x in range(0, len(new_sequel))
+                          if (x not in seqIns)]
             nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
             aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=False,
                                                          to_stop=True))
@@ -115,14 +124,18 @@ def translate_nuc(nuc_dict, seqIns):
 
 # add back gaps that are present in the reference (and other) alleles so that
 # arrays are the same length
+
+
 def correction(incorrect, translated, aaIns):
     for each in incorrect:
         for insert in aaIns:
             translated[each] = translated[each][:insert] + '-' + \
-                               translated[each][insert:]
+                translated[each][insert:]
     return translated
 
 # complete null alleles so that arrays are the same length
+
+
 def finish_null(refseq, repDict):
     removal = []
     length = len(repDict[refseq])
@@ -143,92 +156,133 @@ def finish_null(refseq, repDict):
         del repDict[bad]
     return repDict
 
-# testing function for validation of the translation approach
-# def test_translate(sequence, rKey, seqIns):
-#     nuc_seq = SeqRecord(Seq(sequence))
-#     try:
-#         aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
-#         print(aa_seq)
-#     except TranslationError:
-#         new_seq = str(nuc_seq.seq)
-#         new_sequel = []
-#         new_sequel[:] = new_seq
-#         new_sequel = [ new_sequel[x] for x in range(0,len(new_sequel)) if (x
-#                        not in seqIns) ]
-#         nuc_seq = SeqRecord(Seq(''.join(new_sequel)))
-#         aa_seq = SeqRecord(seq=nuc_seq.seq.translate(cds=True))
-#         print("Sequence for allele " + rKey + ": " + aa_seq.seq)
-#     return
 
-def impute(locDict, refseq, aaDict):
-    seqIns = findIns(locDict[refseq])
-    aaIns = findIns(str(aaDict[refseq].seq))
-    replacePos = {}
-    binDict = {}
-    for key in locDict.keys():
-        replacePos[key] = checkComplete(locDict[key], seqIns)
-        binDict[key] = toBinary(locDict[key])
-    for rKey in tqdm(replacePos.keys()):
+# algorithm to generate distance matrices for AA sequences and output to csv
+# files
+
+# self is a Boolean to describe if the allele should be compared to itself.
+# Set to False when performing imputation
+def distmat(locDict, binDict, hDict, self=True):
+    matDist = {}
+    for bKey in tqdm(binDict.keys()):
         rDist = {}
-        if (len(replacePos[rKey]) != 0):
-            # TODO (gbiagini) - difference accumulation - possible sorting
-            hDict = {hKey: binDict[hKey] for hKey in
-                     binDict.keys() if len(replacePos[hKey]) == 0}
-            for binKey in hDict.keys():
-                if binKey != rKey:
-                    xoresult = int(binDict[rKey], 2) ^ int(hDict[binKey], 2)
-                    rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[rKey]))
+        for binKey in hDict.keys():
+            if self:
+                xoresult = int(binDict[bKey], 2) ^ int(hDict[binKey], 2)
+                rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[bKey]))
+                rDist[binKey] = sumHam(rDist[binKey])
+            else:
+                if (bKey != binKey):
+                    xoresult = int(binDict[bKey], 2) ^ int(hDict[binKey], 2)
+                    rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[bKey]))
                     rDist[binKey] = sumHam(rDist[binKey])
-            # arbitrary nearest value to be overwritten
-            nNearest = 100000
-            # placeholder for nearest allele
-            nearest = "NA"
-            # return allele closest to incomplete sequence
-            for near in rDist.keys():
-                nNear = int(rDist[near])
-                if (nNear < nNearest):
-                    nNearest = nNear
-                    nearest = near
+        matDist[bKey] = rDist
+    disFrame = pd.DataFrame.from_dict(matDist)
+    return disFrame
+
+# nearest 10 vote based on distance matrix
+# TODO (gbiagini) - this function is not yet complete
+def nearest10(loc, disFrame, rPos):
+    with open("./data/nearest/" + loc + "_topten.txt", "w+") as handle:
+        handle.write("NEAREST 10 NEIGHBORS FOR EACH IMPUTED ALLELE + \n")
+        handle.write("Format for neighbors is $ALLELE (HamDist for NA Seq)")
+        for rKey in rPos.keys():
+            disFrame = disFrame.sort_values(by=rKey, axis=0, ignore_index=True)
+            # pull top 10 closest alleles
+            topten = disFrame.columns[0:10]
+            print(topten)
             if rKey in ["DRB1*04:20", "DQB1*06:06"]:
                 print(rKey + " nearest neighbor: " + nearest)
+            handle.write("Imputed allele:\t\t\t\t" + rKey + "\n")
+            for i in range(0,10):
+                handle.write("Neighbor #"+str(i)+":\t\t\t\t"+disFrame[i]+" (" \
+                    + str(disFrame[i][0])+")\n")
             # infers sequence from nearest neighbor
-            for rVal in replacePos[rKey]:
-                if nearest != "NA":
-                    locDict[rKey] = locDict[rKey][:rVal] + \
-                                    locDict[nearest][rVal] + \
-                                    locDict[rKey][rVal + 1:]
-		# Here to test functionality of translation
-        # elif (len(replacePos[rKey]) == 0):
-        #     test_translate(locDict[rKey], rKey, seqIns)
+            for rVal in rPos[rKey]:
+                locDict[rKey] = locDict[rKey][:rVal] + \
+                                locDict[nearest][rVal] + \
+                                locDict[rKey][rVal + 1:]
+
+    return
+
+def impute(loc, locDict, refseq, aaDict):
+    seqIns = findIns(locDict[refseq])
+    aaIns = findIns(str(aaDict[refseq].seq))
+    binFrame = pd.read_csv("./data/nadist/" + loc + ".csv", index_col=0)
+    binDict = binFrame.to_dict()
+
+    # check to see if any new alleles have been added to the dataset
+    # if so, update distance matrix
+    # if not, use previously computed distance matrix
+    if (set(binDict.keys()) != set(locDict.keys())):
+        # TODO (gbiagini) - modify this to simply update previous distance
+        #  matrix, rather than re-do the entire computation
+        print("New alleles detected - must generate distance matrix!")
+        replacePos = {}
+        binDict = {}
+        with open("./data/nabin/" + loc + ".tsv", "w+") as handle:
+            handle.write("Allele\t\tBinary Nucleotide Sequence\n")
+            for key in locDict.keys():
+                replacePos[key] = checkComplete(locDict[key], seqIns)
+                binDict[key] = toBinary(locDict[key])
+                handle.write(key + '\t\t' + binDict[key] + '\n')
+        disFrame = distmat(locDict, binDict, binDict)
+        disFrame.to_csv("./data/nadist/" + loc + ".csv")
+        del(disFrame)
+
+        hDict = {hKey: binDict[hKey] for hKey in binDict.keys() if len(
+            replacePos[hKey]) == 0}
+        rPos = {r: replacePos[r] for r in replacePos.keys() if
+                (len(replacePos[r]) != 0)}
+        del(replacePos)
+        disFrame = distmat(locDict, binDict, hDict, self=False)
+        disFrame.to_csv("./data/compdist/" + loc + ".csv")
+    else:
+        replacePos = {}
+        for key in locDict.keys():
+                replacePos[key] = checkComplete(locDict[key], seqIns)
+        rPos = {r: replacePos[r] for r in replacePos.keys() if
+                (len(replacePos[r]) != 0)}
+        del (replacePos)
+        disFrame = pd.read_csv("./data/compdist/" + loc + ".csv")
+
+    nearest10(loc, disFrame, rPos)
     locDict, incorrect = translate_nuc(locDict, seqIns)
+    binDict = {}
+    with open("./data/nabini/" + loc + ".tsv", "w+") as handle:
+        handle.write("Allele\t\tBinary Nucleotide Sequence (with Imputation)\n")
+        for key in locDict.keys():
+            binDict[key] = toBinary(locDict[key])
+            handle.write(key + '\t\t' + binDict[key] + '\n')
+    disFrame = distmat(locDict, binDict, binDict)
+    disFrame.to_csv("./data/nadisti/" + loc + ".csv")
+    del(disFrame)
     translated = correction(incorrect, locDict, aaIns)
     return translated
 
 # apply hlaProteinOffset and then limit to antigen recognition domain
+# !!IMPORTANT!! to use nuc_mm and NOT aa_mm due to modified offsets
+
 def post_trans_mod(repDict, loc):
     for each in repDict.keys():
-        repDict[each] = repDict[each][aa_mm.hlaProteinOffset[loc]:]
-        repDict[each] = repDict[each][aa_mm.ard_start_pos[
-                                          loc]:aa_mm.ard_end_pos[loc]]
+        repDict[each] = repDict[each][nuc_mm.hlaProteinOffset[loc]:]
+        repDict[each] = repDict[each][nuc_mm.ard_start_pos[
+            loc]:nuc_mm.ard_end_pos[loc]]
     return repDict
+
 
 aaDict = aa_mm.HLA_seq
 refseq = nuc_mm.refseq
 HLA_seq = nuc_mm.HLA_seq
-#for loc in nuc_mm.refseq:
-#for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
-
-#for loc in ["A", "C", "DPB1", "DQB1"]:
-for loc in ["DRB1", "DQB1"]:
+# for loc in ["A", "B", "C", "DPB1", "DRB1", "DQB1"]:
+for loc in nuc_mm.refseq:
     print("Processing locus " + loc + "...")
     locDict = {newKey: str(HLA_seq[newKey].seq) for newKey in HLA_seq.keys()}
-    # TODO (gbiagini) - Removing the indexes that limit this to the antigen
-    #  recognition domain. I'll need to reintroduce this in the future.
     newDict = {locKey: locDict[locKey] for locKey in locDict.keys() if (
-                locKey.split('*')[0] == loc)}
+        locKey.split('*')[0] == loc)}
     locDict = newDict
     del (newDict)
-    imputed = impute(locDict, refseq[loc], aaDict)
+    imputed = impute(loc, locDict, refseq[loc], aaDict)
     # creates list from sequence strings for Pandas dataframe
     repDict = {repKey: list(imputed[repKey]) for repKey in imputed.keys()}
     del (imputed)

@@ -2,3 +2,5 @@
 *slurm-idv*
 *pycache*
 *.pyc
+*.idea
+*.vscode

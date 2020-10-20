@@ -19,13 +19,27 @@ from Bio import SeqIO
 from Bio import AlignIO
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
-from Bio.Alphabet import IUPAC
 import pandas as pd
 import random
 import requests
 
 # TODO (gbiagini) - wrap outer code in a main() function to avoid running
 #  every time scripts are imported
+
+hlaProteinOffset = {
+    "A" : 23, # 365 versus 341 mature (decreased by 1))
+    "B" : 24,
+    "C" : 23, # decreased by 1
+    "DRA" : 25,
+    "DRB1" : 29,
+    "DRB3" : 29,
+    "DRB4" : 29,
+    "DRB5" : 29,
+    "DQA1" : 23,
+    "DQB1" : 27, #(decreased by 5 to match RSNNS pat files)
+    "DPA1" : 31,
+    "DPB1" : 35, # increased by 6
+}
 
 def getMatureProteinOffset(locus):
 	return hlaProteinOffset.get(locus, "Invalid HLA Locus")
