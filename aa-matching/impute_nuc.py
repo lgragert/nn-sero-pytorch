@@ -103,6 +103,7 @@ def sumHam(binNum):
 def translate_nuc(nuc_dict, seqIns):
     translated = {}
     incorrect = []
+    print("Tranlsation in progress...")
     for record in tqdm(nuc_dict.keys()):
         nuc_seq = SeqRecord(Seq(nuc_dict[record]))
         try:
@@ -164,6 +165,7 @@ def finish_null(refseq, repDict):
 # Set to False when performing imputation
 def distmat(locDict, binDict, hDict, self=True):
     matDist = {}
+    print("Generating distance matrix...")
     for bKey in tqdm(binDict.keys()):
         rDist = {}
         for binKey in hDict.keys():
@@ -185,25 +187,35 @@ def distmat(locDict, binDict, hDict, self=True):
 def nearest10(loc, disFrame, rPos):
     with open("./data/nearest/" + loc + "_topten.txt", "w+") as handle:
         handle.write("NEAREST 10 NEIGHBORS FOR EACH IMPUTED ALLELE + \n")
-        handle.write("Format for neighbors is $ALLELE (HamDist for NA Seq)")
-        for rKey in rPos.keys():
-            disFrame = disFrame.sort_values(by=rKey, axis=0, ignore_index=True)
-            # pull top 10 closest alleles
-            topten = disFrame.columns[0:10]
-            print(topten)
-            if rKey in ["DRB1*04:20", "DQB1*06:06"]:
-                print(rKey + " nearest neighbor: " + nearest)
+        handle.write("Format for neighbors is $ALLELE (HamDist for NA Seq)\n")
+        print("Nearest 10 imputation...")
+        for rKey in tqdm(rPos.keys()):
+            disFrame = disFrame.sort_values(by=rKey, axis=1, ignore_index=False)
+            # pull top 10 closest alleles (skip index 0 --> "Unnamed")
             handle.write("Imputed allele:\t\t\t\t" + rKey + "\n")
-            for i in range(0,10):
-                handle.write("Neighbor #"+str(i)+":\t\t\t\t"+disFrame[i]+" (" \
-                    + str(disFrame[i][0])+")\n")
-            # infers sequence from nearest neighbor
-            for rVal in rPos[rKey]:
-                locDict[rKey] = locDict[rKey][:rVal] + \
-                                locDict[nearest][rVal] + \
-                                locDict[rKey][rVal + 1:]
+            topten = {}
+            i = 0
+            for n in list(disFrame.columns[0:10]):
+                i += 1
+                topten[n] = disFrame.loc[rKey][n]
+                handle.write("Neighbor #" + str(i) + ":\t\t\t\t" + n + " (" +
+                             str(topten[n]) + ")\n")
 
-    return
+            # infers sequence from nearest 10 neighbor vote
+            # TODO (gbiagini) - Weight sequence contribution for each
+            #  position by Hamming distance
+            for rVal in rPos[rKey]:
+                repseq = {}
+                for neighbor in topten.keys():
+                    n_acid = locDict[neighbor][rVal]
+                    if n_acid not in repseq.keys():
+                        repseq[n_acid] = -abs(float(topten[neighbor]))
+                    else:
+                        repseq[n_acid] -= abs(float(topten[neighbor]))
+                new_val = max(repseq, key = lambda x: repseq[x])
+                locDict[rKey] = locDict[rKey][:rVal] + \
+                                new_val + locDict[rKey][rVal + 1:]
+    return locDict
 
 def impute(loc, locDict, refseq, aaDict):
     seqIns = findIns(locDict[refseq])
@@ -244,9 +256,12 @@ def impute(loc, locDict, refseq, aaDict):
         rPos = {r: replacePos[r] for r in replacePos.keys() if
                 (len(replacePos[r]) != 0)}
         del (replacePos)
-        disFrame = pd.read_csv("./data/compdist/" + loc + ".csv")
+        # TODO (gbiagini) - Need to fix this for situations in which the
+        #  distance matrix is regenerated (make index_col = 0)
+        disFrame = pd.read_csv("./data/compdist/" + loc + ".csv", index_col=0)
 
-    nearest10(loc, disFrame, rPos)
+    disFrame = disFrame.transpose()
+    locDict = nearest10(loc, disFrame, rPos)
     locDict, incorrect = translate_nuc(locDict, seqIns)
     binDict = {}
     with open("./data/nabini/" + loc + ".tsv", "w+") as handle:
@@ -254,9 +269,12 @@ def impute(loc, locDict, refseq, aaDict):
         for key in locDict.keys():
             binDict[key] = toBinary(locDict[key])
             handle.write(key + '\t\t' + binDict[key] + '\n')
-    disFrame = distmat(locDict, binDict, binDict)
-    disFrame.to_csv("./data/nadisti/" + loc + ".csv")
+
     del(disFrame)
+    # generation of distance matrix for imputed sequences
+    #disFrame = distmat(locDict, binDict, binDict)
+    #disFrame.to_csv("./data/nadisti/" + loc + ".csv")
+    #del(disFrame)
     translated = correction(incorrect, locDict, aaIns)
     return translated
 

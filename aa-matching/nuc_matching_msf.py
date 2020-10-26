@@ -89,6 +89,8 @@ ard_start_pos = {
 	"DPA1": 1,
 	"DPB1": 1,
 }
+# FIXME (gbiagini) - Figure out why the shortened sequence error is only
+#  happening with DQB1 and fix it.
 ard_end_pos = {
 	"A": 182,
 	"B": 182,
@@ -98,7 +100,8 @@ ard_end_pos = {
 	"DRB4": 94,
 	"DRB5": 94,
 	"DQA1": 94,
-	"DQB1": 94,
+	"DQB1": 95, #increased by 1 because of weird issue stopping early only on
+	# DQB1
 	"DPA1": 94,
 	"DPB1": 94,
 }
@@ -170,8 +173,8 @@ HLA_full_allele = {}  # Full four-field allele names
 HLA_full_alseq = {}
 HLA_seq = {}  # Two-field
 regex = '\w*\*\d*\:\d*'
-suffixes = ["L", "S", "C", "A", "Q", "N"]
-
+#suffixes = ["L", "S", "C", "A", "Q", "N"]
+suffixes = ["test", "blank"]
 quest = input("Specify HLA/IMGT DB version? (y/n) ")
 if (quest == "y") or (quest == "Y"):
 	dbversion = input("HLA/IMGT DB version? (x.xx.x) ")
@@ -227,17 +230,14 @@ for locus in loci:
 		# mature_protein = full_protein[getMatureProteinOffset(loc):]
 		#
 		mature_protein = full_protein
-		# # FIXME (gbiagini) - This is going to need to wait until after the
-		# #  translation is done - the ARD refers to the protein sequence. It
-		# #  might be worthwhile to write another function or module.
-		# if loc_full_allele == refseq_full[loc]:
-		# 	new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc],
-		# 	                                     ard_start_pos_incomplete[loc],
-		# 	                                     ard_end_pos[loc],
-		# 	                                     ard_end_pos_incomplete[loc],
-		# 	                                     prev=0, prev_inc=0)
-		# 	ard_end_pos[loc] = new_end
-		# 	ard_end_pos_incomplete[loc] = new_end_inc
+		if loc_full_allele == refseq_full[loc]:
+		 	new_end, new_end_inc = adjust_offset(loc, ard_start_pos[loc],
+		 	                                     ard_start_pos_incomplete[loc],
+		 	                                     ard_end_pos[loc],
+		 	                                     ard_end_pos_incomplete[loc],
+		 	                                     prev=0, prev_inc=0)
+		 	ard_end_pos[loc] = new_end
+		 	ard_end_pos_incomplete[loc] = new_end_inc
 
 		# print(mature_protein)
 
