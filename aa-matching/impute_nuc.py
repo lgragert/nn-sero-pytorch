@@ -163,92 +163,183 @@ def finish_null(refseq, repDict):
 
 # self is a Boolean to describe if the allele should be compared to itself.
 # Set to False when performing imputation
-def distmat(locDict, binDict, hDict, self=True):
+# This version is for binary Hamming distance comparison
+'''
+def distmat(locDict, binDict, self=True):
     matDist = {}
     print("Generating distance matrix...")
     for bKey in tqdm(binDict.keys()):
         rDist = {}
-        for binKey in hDict.keys():
+        for binKey in binDict.keys():
             if self:
-                xoresult = int(binDict[bKey], 2) ^ int(hDict[binKey], 2)
+                xoresult = int(binDict[bKey], 2) ^ int(binDict[binKey], 2)
                 rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[bKey]))
                 rDist[binKey] = sumHam(rDist[binKey])
             else:
                 if (bKey != binKey):
-                    xoresult = int(binDict[bKey], 2) ^ int(hDict[binKey], 2)
+                    xoresult = int(binDict[bKey], 2) ^ int(binDict[binKey], 2)
                     rDist[binKey] = bin(xoresult)[2:].zfill(len(locDict[bKey]))
                     rDist[binKey] = sumHam(rDist[binKey])
         matDist[bKey] = rDist
     disFrame = pd.DataFrame.from_dict(matDist)
     return disFrame
+'''
+
+# This version is for normalized Hamming distance comparison.
+# Normalized Hamming distance is based on the number of sequence differences
+#   divided by the number of sequence positions that are defined in both
+#   sequences.
+def distmat(locDict, self=True):
+    matDist = {}
+    print("Generating distance matrix...")
+    for lKey in tqdm(locDict.keys()):
+        rDist = {}
+        for locKey in locDict.keys():
+            if self:
+                x = locDict[lKey]
+                y = locDict[locKey]
+                i = 0
+                diff = 0
+
+                # compare sequences position-to-position
+                for j in range(0, len(x)):
+                    if (x[j] == '-') or (y[j] == '-'):
+                        next
+                    else:
+                        if (x[j] == y[j]): 
+                            i += 1
+                        else:
+                            i += 1
+                            diff += 1
+                rDist[locKey] = diff/i
+            else:
+                if (lKey != locKey):
+                    x = locDict[lKey].split()
+                    y = locDict[locKey].split()
+                    i = 0
+                    diff = 0
+
+                    # compare sequences position-to-position
+                    for j in range(0, len(x)):
+                        if (x[j] == '-') or (y[j] == '-'):
+                            next
+                        else:
+                            if (x[j] == y[j]): 
+                                i += 1
+                            else:
+                                i += 1
+                                diff += 1
+                    rDist[locKey] = diff/i
+        matDist[lKey] = rDist
+    disFrame = pd.DataFrame.from_dict(matDist)
+    return disFrame
+
+# Recursive algorithm for nearest 10 neighbor voting for sequence inference.    
+def seqvote(rVal, rKey, disFrame, locDict, start):
+    votes = {}
+    topten = {}
+    for n in list(disFrame.columns[start:start+10]):
+        topten[n] = disFrame.loc[rKey][n]
+
+    for neighbor in topten.keys():
+        n_acid = locDict[neighbor][rVal]
+        if (n_acid not in votes.keys() and n_acid != "-"):
+            votes[n_acid] = -abs(float(topten[neighbor]))
+        elif (n_acid == "-"):
+            next
+        # for additional votes for a single position, add value
+        # to increase the likelihood of selection
+        else:
+            votes[n_acid] += abs(float(topten[neighbor]))
+
+        try:
+            new_val = max(votes, key = lambda x: votes[x])
+        except ValueError:
+            start += 10
+            return seqvote(rVal, rKey, disFrame, locDict, start)
+    return new_val
 
 # nearest 10 vote based on distance matrix
 # TODO (gbiagini) - this function is not yet complete
 def nearest10(loc, disFrame, rPos):
+    disFrame = disFrame.filter(regex=".*[^NQLSCA]$", axis=1)
     with open("./data/nearest/" + loc + "_topten.txt", "w+") as handle:
         handle.write("NEAREST 10 NEIGHBORS FOR EACH IMPUTED ALLELE + \n")
         handle.write("Format for neighbors is $ALLELE (HamDist for NA Seq)\n")
         print("Nearest 10 imputation...")
         for rKey in tqdm(rPos.keys()):
             disFrame = disFrame.sort_values(by=rKey, axis=1, ignore_index=False)
-            # pull top 10 closest alleles (skip index 0 --> "Unnamed")
+            # pull top 10 closest alleles
             handle.write("Imputed allele:\t\t\t\t" + rKey + "\n")
             topten = {}
-            i = 0
-            for n in list(disFrame.columns[0:10]):
-                i += 1
-                topten[n] = disFrame.loc[rKey][n]
-                handle.write("Neighbor #" + str(i) + ":\t\t\t\t" + n + " (" +
-                             str(topten[n]) + ")\n")
-
+            if str(disFrame.columns[0]) != rKey:
+                i = 0
+                for n in list(disFrame.columns[0:10]):
+                    i += 1
+                    topten[n] = disFrame.loc[rKey][n]
+                    handle.write("Neighbor #" + str(i) + ":\t\t\t\t" + n + " (" +
+                                 str(topten[n]) + ")\n")
+                    start = 0
+            else:
+                i = 0
+                for n in list(disFrame.columns[1:11]):
+                    i += 1
+                    topten[n] = disFrame.loc[rKey][n]
+                    handle.write("Neighbor #" + str(i) + ":\t\t\t\t" + n + " (" +
+                                 str(topten[n]) + ")\n")
+                    start = 1
             # infers sequence from nearest 10 neighbor vote
-            # TODO (gbiagini) - Weight sequence contribution for each
-            #  position by Hamming distance
+            #!# if all 10 nearest neighbors have '-' at a position,
+            # the search expands to other positions
             for rVal in rPos[rKey]:
-                repseq = {}
-                for neighbor in topten.keys():
-                    n_acid = locDict[neighbor][rVal]
-                    if n_acid not in repseq.keys():
-                        repseq[n_acid] = -abs(float(topten[neighbor]))
-                    else:
-                        repseq[n_acid] -= abs(float(topten[neighbor]))
-                new_val = max(repseq, key = lambda x: repseq[x])
+                new_val = seqvote(rVal, rKey, disFrame, locDict, start)
+
                 locDict[rKey] = locDict[rKey][:rVal] + \
-                                new_val + locDict[rKey][rVal + 1:]
+                            new_val + locDict[rKey][rVal + 1:]
     return locDict
 
 def impute(loc, locDict, refseq, aaDict):
     seqIns = findIns(locDict[refseq])
     aaIns = findIns(str(aaDict[refseq].seq))
-    binFrame = pd.read_csv("./data/nadist/" + loc + ".csv", index_col=0)
-    binDict = binFrame.to_dict()
+    
+    # Not needed for normalized distance measure
+    #binFrame = pd.read_csv("./data/nadist/" + loc + ".csv", index_col=0)
+    #binDict = binFrame.to_dict()
 
+    recompute = True
     # check to see if any new alleles have been added to the dataset
     # if so, update distance matrix
     # if not, use previously computed distance matrix
-    if (set(binDict.keys()) != set(locDict.keys())):
+    #if (set(binDict.keys()) != set(locDict.keys())):
+    if recompute:
         # TODO (gbiagini) - modify this to simply update previous distance
         #  matrix, rather than re-do the entire computation
         print("New alleles detected - must generate distance matrix!")
         replacePos = {}
         binDict = {}
-        with open("./data/nabin/" + loc + ".tsv", "w+") as handle:
-            handle.write("Allele\t\tBinary Nucleotide Sequence\n")
-            for key in locDict.keys():
-                replacePos[key] = checkComplete(locDict[key], seqIns)
-                binDict[key] = toBinary(locDict[key])
-                handle.write(key + '\t\t' + binDict[key] + '\n')
-        disFrame = distmat(locDict, binDict, binDict)
-        disFrame.to_csv("./data/nadist/" + loc + ".csv")
-        del(disFrame)
+        
+        # Commented out to use normalized distance over binary.
+        #with open("./data/nabin/" + loc + ".tsv", "w+") as handle:
+        #    handle.write("Allele\t\tBinary Nucleotide Sequence\n")
+        #    for key in locDict.keys():
+        #        replacePos[key] = checkComplete(locDict[key], seqIns)
+        #        binDict[key] = toBinary(locDict[key])
+        #        handle.write(key + '\t\t' + binDict[key] + '\n')
+        
+        for key in locDict.keys():
+            replacePos[key] = checkComplete(locDict[key], seqIns)
 
-        hDict = {hKey: binDict[hKey] for hKey in binDict.keys() if len(
-            replacePos[hKey]) == 0}
+        disFrame = distmat(locDict)
+        disFrame.to_csv("./data/locdist/" + loc + ".csv")
         rPos = {r: replacePos[r] for r in replacePos.keys() if
                 (len(replacePos[r]) != 0)}
         del(replacePos)
-        disFrame = distmat(locDict, binDict, hDict, self=False)
-        disFrame.to_csv("./data/compdist/" + loc + ".csv")
+        
+        # These two lines rendered somewhat moot with updates to filter
+        #   distance matrices on the fly.
+        #disFrame = distmat(locDict, binDict)
+        #disFrame.to_csv("./data/compdist/" + loc + ".csv")
+
     else:
         replacePos = {}
         for key in locDict.keys():
@@ -256,25 +347,27 @@ def impute(loc, locDict, refseq, aaDict):
         rPos = {r: replacePos[r] for r in replacePos.keys() if
                 (len(replacePos[r]) != 0)}
         del (replacePos)
+
         # TODO (gbiagini) - Need to fix this for situations in which the
         #  distance matrix is regenerated (make index_col = 0)
-        disFrame = pd.read_csv("./data/compdist/" + loc + ".csv", index_col=0)
+
+        # Modified to use complete distance matrix instead of previously used
+        #   exclusionary distance matrix
+        disFrame = pd.read_csv("./data/locdist/" + loc + ".csv", index_col=0)
 
     disFrame = disFrame.transpose()
     locDict = nearest10(loc, disFrame, rPos)
     locDict, incorrect = translate_nuc(locDict, seqIns)
-    binDict = {}
-    with open("./data/nabini/" + loc + ".tsv", "w+") as handle:
-        handle.write("Allele\t\tBinary Nucleotide Sequence (with Imputation)\n")
-        for key in locDict.keys():
-            binDict[key] = toBinary(locDict[key])
-            handle.write(key + '\t\t' + binDict[key] + '\n')
+    
+    # Not needed when using normalized distance measure
+    #binDict = {}
+    #with open("./data/nabini/" + loc + ".tsv", "w+") as handle:
+    #    handle.write("Allele\t\tBinary Nucleotide Sequence (with Imputation)\n")
+    #    for key in locDict.keys():
+    #        binDict[key] = toBinary(locDict[key])
+    #        handle.write(key + '\t\t' + binDict[key] + '\n')
 
     del(disFrame)
-    # generation of distance matrix for imputed sequences
-    #disFrame = distmat(locDict, binDict, binDict)
-    #disFrame.to_csv("./data/nadisti/" + loc + ".csv")
-    #del(disFrame)
     translated = correction(incorrect, locDict, aaIns)
     return translated
 

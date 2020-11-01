@@ -173,8 +173,9 @@ HLA_full_allele = {}  # Full four-field allele names
 HLA_full_alseq = {}
 HLA_seq = {}  # Two-field
 regex = '\w*\*\d*\:\d*'
-#suffixes = ["L", "S", "C", "A", "Q", "N"]
-suffixes = ["test", "blank"]
+suffixes = ["L", "S", "C", "A", "Q", "N"]
+
+#placeholder to test removal of null alleles from imputation
 quest = input("Specify HLA/IMGT DB version? (y/n) ")
 if (quest == "y") or (quest == "Y"):
 	dbversion = input("HLA/IMGT DB version? (x.xx.x) ")
