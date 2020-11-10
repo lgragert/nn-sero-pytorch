@@ -1,7 +1,6 @@
 *.sh
 *slurm-idv*
-<<<<<<< HEAD
-=======
 *pycache*
 *.pyc
->>>>>>> feature/imputation
+.vscode/*
+*.vscode
