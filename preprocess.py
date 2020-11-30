@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 # multi-purpose function to parse each type of file
 def _parse(tng_file, tst_file, val_file, locus):
@@ -41,20 +42,22 @@ def _parse(tng_file, tst_file, val_file, locus):
                 out_vals = line.strip(' ').split()
                 out_vals = list(map(float,out_vals))
                 out_dict = dict(zip(specificities, out_vals))
+                '''
                 for spec in list(out_dict):
                   if out_dict[spec] == 0.00:
                     del(out_dict[spec])
                 serology = list(out_dict)
                 serology = list(map(str,serology))
-                #for val in range(len(serology)):
-                #  serology[val] += 'a'
-                #values.append(out_dict)
-                spacer = ' '
+                for val in range(len(serology)):
+                  serology[val] += 'a'
+                values.append(out_dict)
+                spacer = ';'
                 serology = str(spacer.join(serology))
+                '''
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
-                trick['serology'] = serology
+                trick = {**trick, **out_dict}
                 tng_dict[allele] = trick
 
     # basically the same, but to parse the testing file
@@ -72,10 +75,20 @@ def _parse(tng_file, tst_file, val_file, locus):
                 line = next(tst_file)
                 bin_val = line.split()
                 bin_val = list(map(int,bin_val))
-                AAs = ['allele'] + AA_list + ['serology']
+                line = next(tst_file)
+                out_lines_idx = line
+                specificities_n = out_lines_idx.strip("# output")
+                specificities_f = specificities_n.rstrip()
+                specificities = specificities_f.split()
+                line = next(tst_file)
+                out_vals = line.strip(' ').split()
+                out_vals = list(map(float,out_vals))
+                out_dict = dict(zip(specificities, out_vals))
+                AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
-                trick['serology'] = None
+                trick = {**trick, **out_dict}
+
                 tst_dict[allele] = trick
 
      # final loop to parse the validation file       
@@ -102,20 +115,23 @@ def _parse(tng_file, tst_file, val_file, locus):
                 out_vals = line.strip(' ').split()
                 out_vals = list(map(float,out_vals))
                 out_dict = dict(zip(specificities, out_vals))
+                '''
                 for spec in list(out_dict):
                   if out_dict[spec] == 0.00:
                     del(out_dict[spec])
                 serology = list(out_dict)
                 serology = list(map(str,serology))
-                #for val in range(len(serology)):
-                #  serology[val] += ' '
+                for val in range(len(serology)):
+                  serology[val] += 'a'
                 #values.append(out_dict)
-                spacer = ' '
+                spacer = ';'
                 serology = str(spacer.join(serology))
+                '''
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
                 trick = dict(zip(AAs, values))
-                trick['serology'] = serology
+                trick = {**trick, **out_dict}
+
 
                 val_dict[allele] = trick
     return(tng_dict, tst_dict, val_dict)
@@ -146,7 +162,8 @@ def _file_handler():
             val_AAs.append(val_dict[val_key])
 
         for one in tng_AAs[0].keys():
-            if (one != 'serology') & (one != 'allele'):
+            x = re.search("(^\w\d*$)", one)
+            if x:
                 AAs.append(one)
 
 
