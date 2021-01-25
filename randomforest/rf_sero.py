@@ -85,7 +85,7 @@ for loc in tqdm(loci):
 	features = features.drop('allele', axis=1)
 	feature_list = list(features.columns)
 	n_features = len(feature_list)
-	maxfeat = int(n_features)
+	maxfeat = int(n_features)//8
 	features = np.array(features)
 	labels[labels!=labels]='0'
 	features[features!=features]='0'

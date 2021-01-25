@@ -94,4 +94,4 @@ def main(print_all='no'):
                 print("HLA-" +loc+ " Concordance: " + str(concordance) + "%")
     return concordances
 
-main(print_all="yes")
+#main(print_all="yes")

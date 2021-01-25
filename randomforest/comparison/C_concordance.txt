@@ -1,1 +1,1 @@
-HLA-C Similar: 974HLA-C Different: 347HLA-C Concordance: 73.73202119606358%
+HLA-C Similar: 988HLA-C Different: 333HLA-C Concordance: 74.79182437547313%
