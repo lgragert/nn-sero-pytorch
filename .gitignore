@@ -1,10 +1,2 @@
 *.sh
 *slurm-idv*
-*pycache*
-*.pyc
-<<<<<<< HEAD
-*.idea
-=======
-.vscode/*
->>>>>>> master
-*.vscode
