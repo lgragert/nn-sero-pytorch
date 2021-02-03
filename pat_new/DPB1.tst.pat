@@ -1,5 +1,5 @@
 SNNS pattern definition file V3.2
-generated at October 02, 2020
+generated at October 31, 2020
 
 
 No. of patterns : 1090
@@ -217,7 +217,7 @@ No. of output units : 3
 0.00 0.00 0.00 
 # testing 1029:01N
 # input
-0 1 0 1 0 0 1 1 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 0 0 0 0 1 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 0 1 0 1 
+0 1 0 1 0 0 1 1 0 0 1 0 1 0 0 0 1 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 0 1 0 1 
 # output 1 2 3 
 0.00 0.00 0.00 
 # testing 102:01
@@ -5012,7 +5012,7 @@ No. of output units : 3
 0.00 0.00 0.00 
 # testing 917:01N
 # input
-0 1 0 0 1 0 1 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 0 1 0 1 
+0 1 0 0 1 0 1 1 0 0 1 0 1 0 0 0 1 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 1 0 0 1 1 0 0 1 0 1 0 0 1 0 1 
 # output 1 2 3 
 0.00 0.00 0.00 
 # testing 918:01

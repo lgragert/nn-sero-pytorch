@@ -1,6 +1,2 @@
 *.sh
 *slurm-idv*
-*pycache*
-*.pyc
-.vscode/*
-*.vscode

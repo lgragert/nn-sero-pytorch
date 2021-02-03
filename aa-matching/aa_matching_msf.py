@@ -10,7 +10,6 @@ from Bio import SeqIO
 from Bio import AlignIO
 from Bio.SeqRecord import SeqRecord
 from Bio.Seq import Seq
-from Bio.Alphabet import IUPAC
 import pandas as pd
 import random
 import requests
@@ -18,6 +17,43 @@ import requests
 # mature protein sequence offsets differ by locus
 # get offsets by examining mature protein length in IMGT/HLA alignment tool
 # https://www.ebi.ac.uk/cgi-bin/ipd/imgt/hla/align.cgi - Mature protein
+
+
+# original offsets:
+
+# hlaProteinOffset = {
+#     "A" : 24, # 365 versus 341 mature 
+#     "B" : 24,
+#     "C" : 24,
+#     "DRA" : 25,
+#     "DRB1" : 29,
+#     "DRB3" : 29,
+#     "DRB4" : 29,
+#     "DRB5" : 29,
+#     "DQA1" : 23,
+#     "DQB1" : 32,
+#     "DPA1" : 31,
+#     "DPB1" : 29,
+# }
+
+# offsets modified for aa imputation:
+# hlaProteinOffset = {
+#     "A" : 26, # 365 versus 341 mature (increased by 2 due to inserts in the \
+#               # offset region)
+#     "B" : 24,
+#     "C" : 24,
+#     "DRA" : 25,
+#     "DRB1" : 29,
+#     "DRB3" : 29,
+#     "DRB4" : 29,
+#     "DRB5" : 29,
+#     "DQA1" : 23,
+#     "DQB1" : 32,
+#     "DPA1" : 31,
+#     "DPB1" : 29,
+# }
+
+# modified offsets for nucleotide imputation (still protein offsets)
 
 hlaProteinOffset = {
     "A" : 23, # 365 versus 341 mature (decreased by 1))
@@ -203,7 +239,7 @@ if (quest == "y") or (quest == "Y"):
     dbversion = dbversion.strip()
     dbversion = dbversion.replace('.','')
 else:
-    dbversion = "3410"
+    dbversion = "3400"
 
 for locus in loci:
     loc_full_alseq = {}
