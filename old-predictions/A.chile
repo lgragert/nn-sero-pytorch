@@ -1,6 +1,6 @@
-      Neural Network Mapping Results
-      ==============================
-        Date: 13.Jan.2020
+Neural Network Mapping Results
+==============================
+Date: 13.Jan.2020
 
 
 Allele = protein sequence
@@ -9,8 +9,8 @@ NN     = serology predicted by Neural Network
 [Pct]  = relative weight of serology output 
 
 
-     Allele  Curr NN  [Pct]
-     ------  ---- --- -------
+Allele  Curr NN  [Pct]
+------  ---- --- -------
 01:01:      1 [100.00%] 
 01:02:      1 [100.00%] 
 01:03:      1 [100.00%] 

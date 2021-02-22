@@ -4,7 +4,7 @@
 #   DESCRIPTION:    Module for inference of HLA nucleotide sequences
 #   OUTPUT:
 #   DATE:           September 01, 2020
-#   LATEST UPDATE:  October 5, 2020
+#   LATEST UPDATE:  October 20, 2020
 #   UPDATE REASON:  Distance matrix addition for computational efficiency
 #   AUTHOR:         Giovanni Biagini (dbiagini@tulane.edu ; GitHub: gbiagini)
 #   PI:             Loren Gragert, Ph.D.

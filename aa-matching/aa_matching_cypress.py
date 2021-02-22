@@ -53,22 +53,54 @@ import requests
 #     "DPB1" : 29,
 # }
 
-# modified offsets for nucleotide imputation (still protein offsets)
-
+# offsets to be automatically adjusted using coordinate() 
 hlaProteinOffset = {
-    "A" : 23, # 365 versus 341 mature (decreased by 1))
-    "B" : 24,
-    "C" : 23, # decreased by 1
-    "DRA" : 25,
-    "DRB1" : 29,
-    "DRB3" : 29,
-    "DRB4" : 29,
-    "DRB5" : 29,
-    "DQA1" : 23,
-    "DQB1" : 27, #(decreased by 5 to match RSNNS pat files)
-    "DPA1" : 31,
-    "DPB1" : 35, # increased by 6
+    "A" : 0,
+    "B" : 0,
+    "C" : 0, 
+    "DRA" : 0,
+    "DRB1" : 0,
+    "DRB3" : 0,
+    "DRB4" : 0,
+    "DRB5" : 0,
+    "DQA1" : 0,
+    "DQB1" : 0,
+    "DPA1" : 0,
+    "DPB1" : 0,
 }
+
+
+first_ten = {
+    "A*01:01:01:01" : "GSHSMRYFFT",
+    "B*07:02:01:01" : "GSHSMRYFYT",
+    "C*01:02:01:01" : "CSHSMKYFFT",
+    "DRB1*01:01:01:01" : "GDTRPRFLWQ",
+    "DRB3*01:01:02:01" : "GDTRPRFLEL",
+    "DRB4*01:01:01:01" : "GDTQPRFLEQ",
+    "DRB5*01:01:01:01" : "GDTRPRFLQQ",
+    "DQA1*01:01:01:01" : "EDIVADHVAS",
+    "DQB1*05:01:01:01" : "RDSPEDFVYQ",
+    "DPA1*01:03:01:01" : "IKADHVSTYA",
+    "DPB1*01:01:01:01" : "RATPENYVYQ"
+}
+
+# generate a regular expression to find first ten residues of each locus
+# ignoring '-' characters.
+def regex_gen(first_ten):
+    regexes = {}
+    for each in first_ten.keys():
+        regex = ""
+        for i in range(0,10):
+            regex += str(first_ten[each][i])+"[^"+first_ten[each]+"]*?"
+        regexes[each] = regex
+    return regexes
+
+# Align the coordinate system as appropriate to the beginning of the mature
+# protein sequence.
+def coordinate(regex, sequence):
+    o = re.search(regex, str(sequence))
+    offset = o.start()
+    return offset
 
 def getMatureProteinOffset(locus):
         return hlaProteinOffset.get(locus, "Invalid HLA Locus")

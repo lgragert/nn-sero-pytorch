@@ -313,8 +313,6 @@ def impute(loc, locDict, refseq, aaDict):
     # if not, use previously computed distance matrix
     #if (set(binDict.keys()) != set(locDict.keys())):
     if recompute:
-        # TODO (gbiagini) - modify this to simply update previous distance
-        #  matrix, rather than re-do the entire computation
         print("New alleles detected - must generate distance matrix!")
         replacePos = {}
         binDict = {}
