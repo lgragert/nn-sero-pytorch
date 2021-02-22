@@ -1,1 +1,1 @@
-HLA-DQB1 Similar: 270HLA-DQB1 Different: 6HLA-DQB1 Concordance: 97.82608695652173%
+HLA-DQB1 Similar: 274HLA-DQB1 Different: 2HLA-DQB1 Concordance: 99.27536231884058%

@@ -1,1 +1,1 @@
-HLA-B Similar: 2055HLA-B Different: 217HLA-B Concordance: 90.44894366197182%
+HLA-B Similar: 2045HLA-B Different: 216HLA-B Concordance: 90.44670499778859%

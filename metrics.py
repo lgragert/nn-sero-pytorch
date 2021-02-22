@@ -231,7 +231,6 @@ def evaluate(loc, p_allele, relser, right, wrong, partial, close, bad, broad_spl
         return right, wrong, partial, close, bad
 
 def met_pct(datalist, right, wrong, partial, close, bad):
-    print(len(datalist))
     n_alleles = len(datalist)
     n_r = len(right)
     n_w = len(wrong)
@@ -321,11 +320,11 @@ def compare_acc(mets, opt1, opt2, loci=loci):
         c2 = mets[opt2][loc]['Close']
         b2 = mets[opt2][loc]['Bad']
 
-        l_dict['Right'] = r1-r2
-        l_dict['Wrong'] = w1-w2
-        l_dict['Partial'] = p1-p2
-        l_dict['Close'] = c1-c2
-        l_dict['Bad'] = b1-b2
+        l_dict['Right'] = r2-r1
+        l_dict['Wrong'] = w2-w1
+        l_dict['Partial'] = p2-p1
+        l_dict['Close'] = c2-c1
+        l_dict['Bad'] = b2-b1
         c_dict[loc] = l_dict
 
     return c_dict

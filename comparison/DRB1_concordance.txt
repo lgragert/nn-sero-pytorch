@@ -1,0 +1,1 @@
+HLA-DRB1 Similar: 876HLA-DRB1 Different: 128HLA-DRB1 Concordance: 87.25099601593625%
