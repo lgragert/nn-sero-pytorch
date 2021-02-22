@@ -1,0 +1,714 @@
+Different: B*07:19
+Old Serologic Assignment: ['7']
+New Serologic Assignment: ['42']
+Different: B*08:03
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:21
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:23
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:25
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:32
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:40
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:54
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:78
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:94
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*08:98
+Old Serologic Assignment: ['8']
+New Serologic Assignment: ['17', '8']
+Different: B*08:106
+Old Serologic Assignment: ['8']
+New Serologic Assignment: ['17', '8']
+Different: B*08:110
+Old Serologic Assignment: ['8']
+New Serologic Assignment: []
+Different: B*13:62
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5']
+Different: B*15:08
+Old Serologic Assignment: ['15', '75']
+New Serologic Assignment: ['15', '62']
+Different: B*15:14
+Old Serologic Assignment: ['15', '76']
+New Serologic Assignment: ['15', '62']
+Different: B*15:28
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:34
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:36
+Old Serologic Assignment: ['77', '15']
+New Serologic Assignment: ['15']
+Different: B*15:38
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:47
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:49
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:51
+Old Serologic Assignment: ['70']
+New Serologic Assignment: ['70', '71']
+Different: B*15:53
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:55
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:57
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:60
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:62
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:64
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['70', '71']
+Different: B*15:66
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:68
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['15', '62', '70']
+Different: B*15:70
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:74
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:76
+Old Serologic Assignment: ['22']
+New Serologic Assignment: ['15', '22']
+Different: B*15:78
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:81
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:91
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['12', '70']
+Different: B*15:96
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:98
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:101
+Old Serologic Assignment: ['46']
+New Serologic Assignment: ['15', '62']
+Different: B*15:103
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:105
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:114
+Old Serologic Assignment: ['70']
+New Serologic Assignment: ['70', '71']
+Different: B*15:116
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:122
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:124
+Old Serologic Assignment: ['70']
+New Serologic Assignment: ['70', '71']
+Different: B*15:128
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:131
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['12', '70']
+Different: B*15:135
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:143
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['15', '70']
+Different: B*15:145
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:147
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:152
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:156
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:158
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:160
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:164
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:166
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:172
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:174
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:178
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:180
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['70']
+Different: B*15:184
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:186
+Old Serologic Assignment: ['39', '16']
+New Serologic Assignment: ['16', '70', '71']
+Different: B*15:191
+Old Serologic Assignment: ['15', '75']
+New Serologic Assignment: ['15', '62']
+Different: B*15:193
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:199
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:201
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:203
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:205
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:210
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:212
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:220
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:227
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:231
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:233
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:235
+Old Serologic Assignment: ['70', '72']
+New Serologic Assignment: ['70']
+Different: B*15:239
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['15', '62']
+Different: B*15:241
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:245Q
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:248
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:259
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62', '70']
+Different: B*15:261
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:266
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*15:275
+Old Serologic Assignment: ['70']
+New Serologic Assignment: ['70', '71']
+Different: B*15:277
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:279
+Old Serologic Assignment: ['15']
+New Serologic Assignment: ['15', '62']
+Different: B*15:281
+Old Serologic Assignment: ['72', '70']
+New Serologic Assignment: ['70']
+Different: B*18:56
+Old Serologic Assignment: ['18']
+New Serologic Assignment: ['12', '18']
+Different: B*18:77
+Old Serologic Assignment: ['18']
+New Serologic Assignment: ['17', '18']
+Different: B*27:18
+Old Serologic Assignment: ['40', '61']
+New Serologic Assignment: ['27']
+Different: B*27:33
+Old Serologic Assignment: ['27']
+New Serologic Assignment: ['27', '40', '61']
+Different: B*27:47
+Old Serologic Assignment: ['27']
+New Serologic Assignment: ['12', '27']
+Different: B*35:26
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['35', '70', '71']
+Different: B*35:45
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['12', '35']
+Different: B*35:60
+Old Serologic Assignment: ['78']
+New Serologic Assignment: ['35']
+Different: B*35:87
+Old Serologic Assignment: ['8']
+New Serologic Assignment: ['35']
+Different: B*35:207
+Old Serologic Assignment: ['62', '15']
+New Serologic Assignment: ['15', '35', '62']
+Different: B*35:226
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['17', '35', '58']
+Different: B*35:233
+Old Serologic Assignment: ['35']
+New Serologic Assignment: ['35', '5']
+Different: B*37:02
+Old Serologic Assignment: ['37']
+New Serologic Assignment: []
+Different: B*37:07
+Old Serologic Assignment: ['48']
+New Serologic Assignment: ['7']
+Different: B*37:09
+Old Serologic Assignment: ['37']
+New Serologic Assignment: []
+Different: B*37:11
+Old Serologic Assignment: ['37']
+New Serologic Assignment: []
+Different: B*37:37
+Old Serologic Assignment: ['37']
+New Serologic Assignment: []
+Different: B*38:26
+Old Serologic Assignment: ['67']
+New Serologic Assignment: ['16']
+Different: B*38:30
+Old Serologic Assignment: ['38', '16']
+New Serologic Assignment: ['16', '38', '70']
+Different: B*39:08
+Old Serologic Assignment: ['16', '39']
+New Serologic Assignment: ['16']
+Different: B*39:20
+Old Serologic Assignment: ['16', '39']
+New Serologic Assignment: ['16']
+Different: B*39:30
+Old Serologic Assignment: ['39', '16']
+New Serologic Assignment: []
+Different: B*39:34
+Old Serologic Assignment: ['39', '16']
+New Serologic Assignment: []
+Different: B*39:36
+Old Serologic Assignment: ['39', '16']
+New Serologic Assignment: []
+Different: B*39:43
+Old Serologic Assignment: ['16', '39']
+New Serologic Assignment: []
+Different: B*39:49
+Old Serologic Assignment: ['16', '39']
+New Serologic Assignment: ['16']
+Different: B*40:10
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['40']
+Different: B*40:12
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*40:14
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: ['40']
+Different: B*40:16
+Old Serologic Assignment: ['40', '61']
+New Serologic Assignment: ['40']
+Different: B*40:21
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['15']
+Different: B*40:26
+Old Serologic Assignment: ['21']
+New Serologic Assignment: ['40', '61']
+Different: B*40:30
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['17', '40', '57', '60']
+Different: B*40:32
+Old Serologic Assignment: ['40', '61']
+New Serologic Assignment: ['40', '7']
+Different: B*40:34
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: ['17', '40', '57', '60']
+Different: B*40:45
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['40']
+Different: B*40:51
+Old Serologic Assignment: ['41']
+New Serologic Assignment: []
+Different: B*40:77
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: ['40']
+Different: B*40:115
+Old Serologic Assignment: ['61', '40']
+New Serologic Assignment: ['17', '40', '61']
+Different: B*40:124
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: []
+Different: B*40:130
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['40', '61']
+Different: B*40:132
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: ['12', '40']
+Different: B*40:136
+Old Serologic Assignment: ['41']
+New Serologic Assignment: ['40']
+Different: B*40:163
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: []
+Different: B*40:185
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: []
+Different: B*40:199
+Old Serologic Assignment: ['40', '60']
+New Serologic Assignment: []
+Different: B*41:17
+Old Serologic Assignment: ['41']
+New Serologic Assignment: []
+Different: B*41:19
+Old Serologic Assignment: ['41']
+New Serologic Assignment: ['40']
+Different: B*42:08
+Old Serologic Assignment: ['42']
+New Serologic Assignment: []
+Different: B*42:14
+Old Serologic Assignment: ['42']
+New Serologic Assignment: []
+Different: B*44:09
+Old Serologic Assignment: ['12']
+New Serologic Assignment: ['12', '44']
+Different: B*44:15
+Old Serologic Assignment: ['12']
+New Serologic Assignment: ['12', '45']
+Different: B*44:31
+Old Serologic Assignment: ['60', '40']
+New Serologic Assignment: ['12', '44']
+Different: B*44:57
+Old Serologic Assignment: ['12', '44']
+New Serologic Assignment: ['12', '15', '44']
+Different: B*44:60
+Old Serologic Assignment: ['44', '12']
+New Serologic Assignment: ['12', '15', '44']
+Different: B*44:69
+Old Serologic Assignment: ['44', '12']
+New Serologic Assignment: ['12', '17', '44']
+Different: B*44:75
+Old Serologic Assignment: ['12']
+New Serologic Assignment: ['12', '44']
+Different: B*44:132
+Old Serologic Assignment: ['47']
+New Serologic Assignment: ['12', '44']
+Different: B*44:153
+Old Serologic Assignment: ['12', '44']
+New Serologic Assignment: ['12', '17', '44', '57']
+Different: B*46:19
+Old Serologic Assignment: ['46']
+New Serologic Assignment: []
+Different: B*46:21
+Old Serologic Assignment: ['46']
+New Serologic Assignment: []
+Different: B*46:33
+Old Serologic Assignment: ['46']
+New Serologic Assignment: []
+Different: B*47:02
+Old Serologic Assignment: ['47']
+New Serologic Assignment: []
+Different: B*47:04
+Old Serologic Assignment: ['47']
+New Serologic Assignment: []
+Different: B*48:02
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:04
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:06
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:08
+Old Serologic Assignment: ['48']
+New Serologic Assignment: ['7']
+Different: B*48:10
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:12
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:22
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*48:24
+Old Serologic Assignment: ['48']
+New Serologic Assignment: []
+Different: B*49:03
+Old Serologic Assignment: ['49', '21']
+New Serologic Assignment: []
+Different: B*49:05
+Old Serologic Assignment: ['49', '21']
+New Serologic Assignment: ['21']
+Different: B*49:07
+Old Serologic Assignment: ['49', '21']
+New Serologic Assignment: ['21']
+Different: B*49:09
+Old Serologic Assignment: ['21', '49']
+New Serologic Assignment: ['21']
+Different: B*49:11
+Old Serologic Assignment: ['21', '49']
+New Serologic Assignment: ['21']
+Different: B*49:17
+Old Serologic Assignment: ['21', '49']
+New Serologic Assignment: ['21']
+Different: B*49:20
+Old Serologic Assignment: ['49', '21']
+New Serologic Assignment: ['12', '45']
+Different: B*49:24
+Old Serologic Assignment: ['49', '21']
+New Serologic Assignment: ['21']
+Different: B*49:26
+Old Serologic Assignment: ['21', '49']
+New Serologic Assignment: ['70']
+Different: B*50:05
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: ['21']
+Different: B*50:07
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: []
+Different: B*50:09
+Old Serologic Assignment: ['50', '21']
+New Serologic Assignment: ['21']
+Different: B*50:11
+Old Serologic Assignment: ['50', '21']
+New Serologic Assignment: ['21']
+Different: B*50:13
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: ['21']
+Different: B*50:15
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: ['21']
+Different: B*50:17
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: ['21']
+Different: B*50:19
+Old Serologic Assignment: ['50', '21']
+New Serologic Assignment: ['21']
+Different: B*50:31
+Old Serologic Assignment: ['50', '21']
+New Serologic Assignment: []
+Different: B*50:33
+Old Serologic Assignment: ['21', '50']
+New Serologic Assignment: []
+Different: B*51:06
+Old Serologic Assignment: ['5']
+New Serologic Assignment: ['5', '51']
+Different: B*51:15
+Old Serologic Assignment: ['59']
+New Serologic Assignment: ['5']
+Different: B*51:23
+Old Serologic Assignment: ['51', '5']
+New Serologic Assignment: ['12', '5', '51']
+Different: B*51:45
+Old Serologic Assignment: ['5']
+New Serologic Assignment: ['5', '51']
+Different: B*51:62
+Old Serologic Assignment: ['5']
+New Serologic Assignment: ['5', '51']
+Different: B*51:64
+Old Serologic Assignment: ['5']
+New Serologic Assignment: ['5', '51']
+Different: B*51:82
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51']
+Different: B*51:135
+Old Serologic Assignment: ['5']
+New Serologic Assignment: ['5', '51']
+Different: B*52:02
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['15', '5']
+Different: B*52:04
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:06
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51']
+Different: B*52:08
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51']
+Different: B*52:10
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51']
+Different: B*52:14
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:16
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5']
+Different: B*52:18
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:20
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5']
+Different: B*52:22
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:24
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:26
+Old Serologic Assignment: ['5', '52']
+New Serologic Assignment: ['5']
+Different: B*52:28
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*52:30
+Old Serologic Assignment: ['52', '5']
+New Serologic Assignment: ['5', '51', '52']
+Different: B*53:03
+Old Serologic Assignment: ['53']
+New Serologic Assignment: ['35']
+Different: B*53:05
+Old Serologic Assignment: ['53']
+New Serologic Assignment: ['35']
+Different: B*53:09
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:11
+Old Serologic Assignment: ['53']
+New Serologic Assignment: ['35']
+Different: B*53:13
+Old Serologic Assignment: ['53']
+New Serologic Assignment: ['35']
+Different: B*53:15
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:17
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:19
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:21
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:23
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:29
+Old Serologic Assignment: ['53']
+New Serologic Assignment: []
+Different: B*53:31
+Old Serologic Assignment: ['53']
+New Serologic Assignment: ['35']
+Different: B*54:12
+Old Serologic Assignment: ['22', '56']
+New Serologic Assignment: ['22']
+Different: B*55:04
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22']
+Different: B*55:07
+Old Serologic Assignment: ['54', '22']
+New Serologic Assignment: ['22']
+Different: B*55:09
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22']
+Different: B*55:13
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22']
+Different: B*55:17
+Old Serologic Assignment: ['56', '22']
+New Serologic Assignment: ['22', '55']
+Different: B*55:35
+Old Serologic Assignment: ['54', '22']
+New Serologic Assignment: ['22']
+Different: B*55:41
+Old Serologic Assignment: ['55', '22']
+New Serologic Assignment: ['22']
+Different: B*55:49
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22']
+Different: B*55:51
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22']
+Different: B*56:05
+Old Serologic Assignment: ['22', '56']
+New Serologic Assignment: ['22']
+Different: B*56:07
+Old Serologic Assignment: ['56', '22']
+New Serologic Assignment: ['22']
+Different: B*56:33
+Old Serologic Assignment: ['22', '56']
+New Serologic Assignment: ['22', '70']
+Different: B*56:35
+Old Serologic Assignment: ['54', '22']
+New Serologic Assignment: ['22', '56']
+Different: B*56:37
+Old Serologic Assignment: ['22', '55']
+New Serologic Assignment: ['22', '56']
+Different: B*57:11
+Old Serologic Assignment: ['57', '17']
+New Serologic Assignment: ['17', '57', '58']
+Different: B*58:08
+Old Serologic Assignment: ['17', '58']
+New Serologic Assignment: ['17', '5', '51', '58']
+Different: B*58:36
+Old Serologic Assignment: ['17', '57']
+New Serologic Assignment: ['17', '58']
+Different: B*67:03
+Old Serologic Assignment: ['67']
+New Serologic Assignment: []
+Different: B*78:02
+Old Serologic Assignment: ['78']
+New Serologic Assignment: ['5', '51']
+Different: B*78:04
+Old Serologic Assignment: ['78']
+New Serologic Assignment: ['35']
+Different: B*78:06
+Old Serologic Assignment: ['78']
+New Serologic Assignment: ['5']
+Different: B*81:06
+Old Serologic Assignment: ['81']
+New Serologic Assignment: []
+Different: B*82:02
+Old Serologic Assignment: ['56', '22']
+New Serologic Assignment: ['12', '22']
+Different: B*83:01
+Old Serologic Assignment: ['22']
+New Serologic Assignment: ['12', '22', '44']

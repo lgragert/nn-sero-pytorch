@@ -1,0 +1,207 @@
+Different: A*02:35
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['2', '28']
+Different: A*02:37
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['1', '2']
+Different: A*02:50
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['2', '28', '68']
+Different: A*02:55
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['2', '28']
+Different: A*02:65
+Old Serologic Assignment: ['74']
+New Serologic Assignment: ['2', '74']
+Different: A*02:103
+Old Serologic Assignment: ['2']
+New Serologic Assignment: ['2', '28']
+Different: A*02:122
+Old Serologic Assignment: ['68', '28']
+New Serologic Assignment: ['2', '28', '68']
+Different: A*02:129
+Old Serologic Assignment: ['24', '9']
+New Serologic Assignment: ['2', '28']
+Different: A*02:135
+Old Serologic Assignment: ['26', '10']
+New Serologic Assignment: ['10', '2', '26']
+Different: A*03:24
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['10', '3']
+Different: A*03:43
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['3', '30']
+Different: A*03:89
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['10', '2', '3']
+Different: A*03:108
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['2', '3']
+Different: A*03:122
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['1', '3']
+Different: A*03:135
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['1', '3']
+Different: A*03:167
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['1', '3', '9']
+Different: A*03:172
+Old Serologic Assignment: ['3']
+New Serologic Assignment: ['10', '2', '3']
+Different: A*11:06
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['10', '11', '26']
+Different: A*11:10
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['10', '11', '28']
+Different: A*11:18
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['11', '2', '26']
+Different: A*11:27
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['1', '11', '34']
+Different: A*11:38
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['1', '11']
+Different: A*11:40
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['11', '26']
+Different: A*11:52Q
+Old Serologic Assignment: ['68', '28']
+New Serologic Assignment: ['2']
+Different: A*11:57
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['11', '28']
+Different: A*11:113
+Old Serologic Assignment: ['11']
+New Serologic Assignment: ['11', '30']
+Different: A*24:10
+Old Serologic Assignment: ['9']
+New Serologic Assignment: ['24', '9']
+Different: A*24:67
+Old Serologic Assignment: ['9', '24']
+New Serologic Assignment: ['24', '28', '9']
+Different: A*24:125
+Old Serologic Assignment: ['24', '9']
+New Serologic Assignment: ['24', '3', '9']
+Different: A*24:129
+Old Serologic Assignment: ['24', '9']
+New Serologic Assignment: ['1', '24', '9']
+Different: A*24:138
+Old Serologic Assignment: ['9']
+New Serologic Assignment: ['2', '24', '28', '68', '9']
+Different: A*24:167
+Old Serologic Assignment: ['9']
+New Serologic Assignment: ['24', '9']
+Different: A*25:02
+Old Serologic Assignment: ['10']
+New Serologic Assignment: ['10', '25']
+Different: A*25:04
+Old Serologic Assignment: ['10', '25']
+New Serologic Assignment: ['10', '25', '26']
+Different: A*25:06
+Old Serologic Assignment: ['10', '25']
+New Serologic Assignment: ['10', '25', '34']
+Different: A*25:13
+Old Serologic Assignment: ['10', '25']
+New Serologic Assignment: ['10', '25', '26']
+Different: A*25:15
+Old Serologic Assignment: ['10', '25']
+New Serologic Assignment: ['10', '25', '26']
+Different: A*25:17
+Old Serologic Assignment: ['25', '10']
+New Serologic Assignment: ['10', '25', '26']
+Different: A*26:04
+Old Serologic Assignment: ['10', '26']
+New Serologic Assignment: ['10', '26', '34']
+Different: A*26:10
+Old Serologic Assignment: ['10']
+New Serologic Assignment: ['10', '26']
+Different: A*26:34
+Old Serologic Assignment: ['10', '26']
+New Serologic Assignment: ['10', '26', '34']
+Different: A*26:49
+Old Serologic Assignment: ['10', '26']
+New Serologic Assignment: ['1', '10', '26']
+Different: A*26:91
+Old Serologic Assignment: ['10', '26']
+New Serologic Assignment: ['10', '26', '34']
+Different: A*29:03
+Old Serologic Assignment: ['29']
+New Serologic Assignment: ['1', '29']
+Different: A*29:48
+Old Serologic Assignment: ['33']
+New Serologic Assignment: ['2', '29']
+Different: A*30:44
+Old Serologic Assignment: ['30']
+New Serologic Assignment: ['2', '30']
+Different: A*30:46
+Old Serologic Assignment: ['30']
+New Serologic Assignment: ['2', '30']
+Different: A*30:75
+Old Serologic Assignment: ['30']
+New Serologic Assignment: ['1', '30']
+Different: A*31:05
+Old Serologic Assignment: ['31']
+New Serologic Assignment: ['1', '31']
+Different: A*31:75
+Old Serologic Assignment: ['31']
+New Serologic Assignment: ['31', '33']
+Different: A*32:04
+Old Serologic Assignment: ['32']
+New Serologic Assignment: ['3', '32']
+Different: A*33:08
+Old Serologic Assignment: ['33']
+New Serologic Assignment: ['2', '33']
+Different: A*33:10
+Old Serologic Assignment: ['33']
+New Serologic Assignment: ['1', '33']
+Different: A*33:24
+Old Serologic Assignment: ['33']
+New Serologic Assignment: ['10', '26', '33']
+Different: A*33:28
+Old Serologic Assignment: ['33']
+New Serologic Assignment: ['10', '33']
+Different: A*34:06
+Old Serologic Assignment: ['66', '10']
+New Serologic Assignment: ['10', '33', '34']
+Different: A*36:02
+Old Serologic Assignment: ['36']
+New Serologic Assignment: ['3', '36']
+Different: A*66:02
+Old Serologic Assignment: ['10']
+New Serologic Assignment: ['10', '34']
+Different: A*66:06
+Old Serologic Assignment: ['66', '10']
+New Serologic Assignment: ['10']
+Different: A*66:08
+Old Serologic Assignment: ['66', '10']
+New Serologic Assignment: ['10', '26', '66']
+Different: A*66:10
+Old Serologic Assignment: ['10', '66']
+New Serologic Assignment: ['1', '10']
+Different: A*66:12
+Old Serologic Assignment: ['10']
+New Serologic Assignment: ['10', '26']
+Different: A*66:14
+Old Serologic Assignment: ['66', '10']
+New Serologic Assignment: ['10', '26', '66']
+Different: A*66:16
+Old Serologic Assignment: ['10']
+New Serologic Assignment: ['10', '34']
+Different: A*68:05
+Old Serologic Assignment: ['28', '68']
+New Serologic Assignment: ['2', '26', '28', '68']
+Different: A*68:12
+Old Serologic Assignment: ['28']
+New Serologic Assignment: ['28', '68']
+Different: A*68:50
+Old Serologic Assignment: ['28']
+New Serologic Assignment: ['28', '68']
+Different: A*68:65
+Old Serologic Assignment: ['68', '28']
+New Serologic Assignment: ['1', '28', '68']
+Different: A*74:04
+Old Serologic Assignment: ['74']
+New Serologic Assignment: ['2', '74']

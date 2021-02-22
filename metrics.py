@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-loci = ['A', 'B', 'C', 'DRB1', 'DQB1']
+loci = ['A', 'B', 'C', 'DQB1', 'DRB1']
 summary = {}
 
 # dict of dicts to store splits of broad specificities
@@ -53,7 +53,6 @@ for alphakey in broad_split.keys():
 
 # function to check if value can be an integer - to eliminate excess characters from serology labels
 def checkInt(x):
-    print(x)
     try:
         int(x)
         return True
@@ -108,14 +107,13 @@ def concordance(loci=loci):
         newPreds = newPreds.to_dict()
         newPredict = newPreds["serology"]
         for nKey in newPredict.keys():
-            adjustMe = newPredict[nKey]
+            adjustMe = str(newPredict[nKey])
             adjustMe = adjustMe.replace('[','')
             adjustMe = adjustMe.replace(']','')
-            adjustMe = adjustMe.replace(' ','')
+            adjustMe = adjustMe.replace('a','')
             adjustMe = adjustMe.replace("'",'')
-            adjustMe = adjustMe.split(',')
+            adjustMe = adjustMe.split(' ')
             newPredict[nKey] = [x.strip('a') for x in adjustMe if checkInt(x)]
-            print(newPredict[nKey])
         with open(oldPredFile, "r") as handle:
             for line in handle:
                 if line.find('%') == -1:
@@ -132,7 +130,6 @@ def concordance(loci=loci):
 
         for each in oldPredict.keys():
             if each not in newPredict.keys():
-                print(each)
                 next
             elif set(newPredict[each]) != set(oldPredict[each]):
                 comparison.write("Different: " + str(each) + "\n")
@@ -198,7 +195,7 @@ def summary_table(loci=loci, summary=summary):
     return
 
 def evaluate(loc, p_allele, relser, right, wrong, partial, close, bad, broad_split=broad_split, split_broad=split_broad):
-    p_ser = p_allele.serology.replace("'",'').replace('[','').replace(']','').replace('"','').replace(',','')
+    p_ser = str(p_allele.serology).replace("'",'').replace('[','').replace(']','').replace('"','').replace(',','')
     p_ser = set(p_ser.split(' '))
     
     if p_allele.allele in relser.index:
@@ -356,6 +353,7 @@ def compare_acc_all(mets):
 
     return comp_dict
 
+concordance()
 mets = check_acc_all()
 mframe1 = pd.DataFrame.from_dict(mets['Old NN'])
 mframe1.to_csv('./comparison/OldNN_mets.csv', index=True)

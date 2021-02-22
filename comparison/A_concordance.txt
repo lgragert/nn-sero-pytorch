@@ -1,1 +1,3 @@
-HLA-A Similar: 1633HLA-A Different: 59HLA-A Concordance: 96.5130023640662%
+HLA-A Similar: 1563
+HLA-A Different: 129
+HLA-A Concordance: 92.37588652482269%

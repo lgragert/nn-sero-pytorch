@@ -1,14 +1,122 @@
+#base_dir = '/home/gbiagini/dev/nn-sero-pytorch/'
+base_dir = './'
+
 import pandas as pd
 import numpy as np
+import torch
+import random
 from fastai import *
+from fastai.basics import *
 from fastai.tabular import *
-# from parse import _file_handler
-from tqdm import tqdm
 
+def random_seed(seed_value, use_cuda):
+    np.random.seed(seed_value) # cpu vars
+    torch.manual_seed(seed_value) # cpu  vars
+    random.seed(seed_value) # Python
+    if use_cuda: 
+        torch.cuda.manual_seed(seed_value)
+        torch.cuda.manual_seed_all(seed_value) # gpu vars
+        torch.backends.cudnn.deterministic = True  #needed
+        torch.backends.cudnn.benchmark = False
+    
+    return
+
+loci = ['A', 'B', 'C', 'DQB1', 'DRB1']
+#loci = ['A']
+
+# function to check if value can be an integer - to eliminate excess characters from serology labels
+def metrics(print_all='no'):
+    loci = ['A', 'B', 'C', 'DQB1', 'DRB1']
+    #loci = ['A']
+
+    # function to check if value can be an integer - to eliminate excess characters from serology labels
+    def checkInt(x):
+        try:
+            int(x)
+            return True
+        except ValueError:
+            return False
+
+    concordances = {}
+
+    for loc in loci:
+        newDict = {}
+        simDict = {}
+        diffDict = {}
+        oldPredict = {}
+        newPredict = {}
+        oldPredFile = base_dir + "/old-predictions/" + loc + ".chile"
+        newPreds = pd.read_csv(base_dir + "predictions/" + loc + "_predictions.csv")
+        newPreds = newPreds.set_index('allele')
+        newPreds = newPreds.to_dict()
+        newPredict = newPreds["serology"]
+        for nKey in newPredict.keys():
+            adjustMe = str(newPredict[nKey])
+            adjustMe = adjustMe.replace('[','')
+            adjustMe = adjustMe.replace(']','')
+            adjustMe = adjustMe.replace("'",'')
+            adjustMe = adjustMe.split(' ')
+            newPredict[nKey] = [x.strip('a') for x in adjustMe if checkInt(x)]
+        with open(oldPredFile, "r") as handle:
+            for line in handle:
+                if line.find('%') == -1:
+                    next
+                else:
+                    line = line.split()
+                    if line == []:
+                        next
+                    else:
+                        line[:] = [x for x in line if (x != '[100.00%]')]
+                        allele = loc + "*" + str(line[0][:-1])
+                        oldPredict[allele] = line[1:]
+
+
+        for each in oldPredict.keys():
+            allDict = {}
+            allDict["Allele"] = each
+            allDict["Old Assignment"] = oldPredict[each]
+            if each not in newPredict.keys():
+                next
+            else:
+                allDict["New Assignment"] = newPredict[each]
+                if set(newPredict[each]) != set(oldPredict[each]):
+                    diffDict[each] = allDict
+                elif set(newPredict[each]) == set(oldPredict[each]):
+                    simDict[each] = allDict
+        diffFrame = pd.DataFrame.from_dict(diffDict)
+        diffFrame = diffFrame.transpose()
+        diffFrame.to_csv(base_dir + "comparison/" + loc + "_compfile.csv", index=False)
+        simFrame = pd.DataFrame.from_dict(simDict)
+        simFrame = simFrame.transpose()
+        simFrame.to_csv(base_dir + "comparison/" + loc + "_similar.csv", index=False)
+        
+
+        for allele in newPredict.keys():
+            allDict = {}
+            allDict["Allele"] = allele
+            allDict["Serologic Assignment"] = newPredict[allele]
+            if allele not in oldPredict.keys():
+                newDict[allele] = allDict
+        newFrame = pd.DataFrame.from_dict(simDict)
+        newFrame = newFrame.transpose()
+        newFrame.to_csv(base_dir + "comparison/" + loc + "_newsies.csv", index=False)
+
+        simLen = len(simFrame)
+        diffLen = len(diffFrame)
+        with open(base_dir + "comparison/" + loc + "_concordance.txt", "w+") as fhandle:
+            fhandle.write("HLA-" +loc+ " Similar: " + str(simLen)+'\n')
+            fhandle.write("HLA-" +loc+ " Different: " + str(diffLen)+'\n')
+            concordance = (simLen / (simLen + diffLen)) * 100
+            concordances[loc] = concordance
+            fhandle.write("HLA-" +loc+ " Concordance: " + str(concordance) + "%"+'\n')
+            if print_all == "yes":
+                print("HLA-" +loc+ " Similar: " + str(simLen))
+                print("HLA-" +loc+ " Different: " + str(diffLen))
+                print("HLA-" +loc+ " Concordance: " + str(concordance) + "%")
+    return concordances
 
 # below function directly from Andrew Chang in fast.ai forums (https://forums.fast.ai/t/automated-learning-rate-suggester/44199)
-def find_appropriate_lr(model: Learner, lr_diff: int = 15, loss_threshold: float = .05, adjust_value: float = 1,
-                        plot: bool = False) -> float:
+def find_appropriate_lr(model: Learner, lr_diff: int = 50, loss_threshold: float = .05, adjust_value: float = 1, plot: bool = False) -> float:
     # Run the Learning Rate Finder
     model.lr_find()
 
@@ -47,27 +155,32 @@ def find_appropriate_lr(model: Learner, lr_diff: int = 15, loss_threshold: float
 
     return lr_to_use
 
+pre_concord = metrics()
 
-# _file_handler()
-base_dir = "./"
-# loci = ['A', 'B', 'C', 'DPB1', 'DQB1', 'DRB1']
-loci = ["A"]
-epoch = {"A": 10, "B": 15, "C": 15, "DPB1": 10, "DQB1": 10, "DRB1": 15}
+#loci = ['A', 'B', 'C', 'DQB1', 'DRB1']
+loci = ['B']
+epoch = { "A":60, "B":120, "C":50, "DPB1":100, "DQB1":100, "DRB1":100 }
+layer = { "A":[2000, 1500], "B":[5000, 3000, 1000], "C":[150], "DPB1":[1000], "DQB1":[1000], "DRB1":[1000] }
+
 
 for locus in loci:
+
+    random_seed(50,use_cuda=True)
+
     AAs = []
-    tng_df = pd.read_csv(base_dir + 'RSNNS_fixed/training/' + locus + '_train.csv')
-    tst_df = pd.read_csv(base_dir + 'RSNNS_fixed/testing/' + locus + '_test.csv')
-    val_df = pd.read_csv(base_dir + 'RSNNS_fixed/training/' + locus + '_validation.csv')
+    tng_df = pd.read_csv(base_dir + 'old_sets/train/' + locus + '_train.csv')
+    tst_df = pd.read_csv(base_dir + 'old_sets/test/' + locus + '_test.csv')
+    val_df = pd.read_csv(base_dir + 'old_sets/train/' + locus + '_validation.csv')
     tng_idx = len(tng_df)
-    val_idx = len(val_df) + 1
+    val_len = len(val_df)
+    val_idx = tng_idx + val_len
     tst_idx = len(tst_df)
-    tbatch = tng_idx // 4
+    tbatch = int(tng_idx // 1.5)
     if (tbatch <= 1):
-        tbatch = tng_idx // 2
-    vbatch = val_idx // 4
+        tbatch = tng_idx // 1
+    vbatch = int(val_idx // 1.5)
     if (vbatch <= 1):
-        vbatch = val_idx // 2
+        vbatch = val_idx // 1
 
     df = tng_df.append(val_df)
 
@@ -79,41 +192,59 @@ for locus in loci:
     cat_names = ['allele'] + AAs
     procs = [FillMissing, Categorify]
 
+
     cat_names = ['allele'] + AAs
     test = TabularList.from_df(tst_df, path=Path(''), cat_names=cat_names)
+
     data = (TabularList.from_df(df=df, path=Path(''), procs=procs, cat_names=cat_names)
-            .split_by_idx(list(range(tng_idx, val_idx)))
-            .label_from_df(cols=dep_var, label_delim=';')
-            .add_test(test)
-            .databunch(bs=tbatch, val_bs=vbatch))
+                                .split_by_idx(list(range(tng_idx,val_idx)))
+                                .label_from_df(cols=dep_var, label_delim=' ')
+                                .add_test(test)
+                                .databunch(bs=tbatch, val_bs=vbatch))
 
     acc_02 = partial(accuracy_thresh, thresh=0.99)
-    f_score = partial(fbeta, thresh=0.2)
+    #acc_m = partial()
+    f_score = partial(fbeta, thresh=0.52)
 
-    learn = tabular_learner(data, layers=[200, 150], metrics=[acc_02, f_score])
-    print(data.classes)
+    pre_vote = {}
+    avg_pred = {}
+    all_models = []
+    #weights = torch.ones([data.c]).float().cuda()
+    #loss = nn.BCEWithLogitsLoss(pos_weight=weights)
+    #learn = tabular_learner(data, opt_func=optim.SGD, layers=layer[locus], metrics=[acc_02, f_score], loss_func=loss)
+    learn = tabular_learner(data, opt_func=optim.SGD, layers=layer[locus], metrics=[acc_02, f_score])
+    #learn = tabular_learner(data, layers=layer[locus], metrics=[acc_02, f_score])
 
-    lr = find_appropriate_lr(model=learn)
-    learn.recorder.plot(suggestion=True)
+    lr = 0.5
+    
+    #lr = find_appropriate_lr(model=learn)
 
-    learn.fit(epoch[locus], lr=lr)
-
+    #learn.recorder.plot(suggestion=True)
+    #learn.fit_one_cycle(epoch[locus], lr)
+    learn.fit_one_cycle(epoch[locus], max_lr=slice(lr))
     learn.model
-    learn.recorder.plot_losses()
+    #learn.recorder.plot_losses()
 
     test_id = list(tst_df['allele'])
 
     classes = data.classes
-    predictions = []
-    print(classes)
+    predictions = {}
 
-    for i in tqdm(range(0, tst_idx)):
-        category = str(learn.predict(tst_df.iloc[i], thresh=0.40)[0])
-        sero = category.strip('MultiCategory ')
-        sero = sero.replace(';', ' ')
-        sero = sero.replace('a', '')
-        predictions.append(sero.split())
 
-    # below code involved help from some website using fast.ai to demonstrate kaggle solutions
-    output_preds = pd.DataFrame({'allele': test_id, 'serology': predictions})
-    output_preds.to_csv(base_dir + 'predictions/' + locus + '_predictions.csv', index=False)
+    category = learn.get_preds(DatasetType.Test)
+    preds = category[0].tolist()
+    for count in range(0,len(preds)):
+        predictions[test_id[count]] = ' '.join([classes[i] for i in range(len(preds[count])) if (preds[count][i] >= 0.52)])
+    
+
+    frame = pd.Series(predictions, name='serology')
+    frame.index.name = 'allele'
+    frame.to_csv(base_dir + 'predictions/' + locus + '_predictions.csv', index=True)
+
+
+post_concord = metrics()
+
+for loc in loci:
+	print(loc + " Concordance:\t\t\t\t" + str(post_concord[loc])[:5] + "%")
+	change = post_concord[loc] - pre_concord[loc]
+	print("% Change:\t\t\t\t" + str(change)[:5] + "%")
