@@ -231,6 +231,7 @@ def evaluate(loc, p_allele, relser, right, wrong, partial, close, bad, broad_spl
         return right, wrong, partial, close, bad
 
 def met_pct(datalist, right, wrong, partial, close, bad):
+    print(len(datalist))
     n_alleles = len(datalist)
     n_r = len(right)
     n_w = len(wrong)
@@ -275,7 +276,9 @@ def accuracy(loc, dataframe, relser):
         
         right, wrong, partial, close, bad = evaluate(loc, all, relser, right, wrong, partial, close, bad)
 
-    met_dict = met_pct(relser, right, wrong, partial, close, bad)
+    df = relser[relser.index.isin(dataframe.allele)]
+
+    met_dict = met_pct(df, right, wrong, partial, close, bad)
 
     return met_dict
 
