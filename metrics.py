@@ -291,7 +291,7 @@ def check_acc_all(loci=loci):
         new_nn_preds = pd.read_csv("./predictions/"+loc+"_predictions.csv", dtype=str)
         new_nn_preds = new_nn_preds[new_nn_preds.allele.isin(old_nn_preds.allele)]
         rf_preds = pd.read_csv("./randomforest/predictions/"+loc+"_predictions.csv", dtype=str)
-        rf_preds = rf_preds[rf_preds.allele.isin(rf_preds.allele)]
+        #rf_preds = rf_preds[rf_preds.allele.isin(rf_preds.allele)]
         relser = pd.read_csv("./ser/"+loc+"_ser.csv", dtype=str)
         relser = relser.set_index('allele')
         relser = relser.dropna()
