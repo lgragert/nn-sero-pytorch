@@ -1,1 +1,1 @@
-HLA-B Similar: 1884HLA-B Different: 384HLA-B Concordance: 83.06878306878306%
+HLA-B Similar: 1885HLA-B Different: 383HLA-B Concordance: 83.11287477954144%

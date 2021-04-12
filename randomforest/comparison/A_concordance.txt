@@ -1,1 +1,1 @@
-HLA-A Similar: 1569HLA-A Different: 122HLA-A Concordance: 92.7853341218214%
+HLA-A Similar: 1594HLA-A Different: 97HLA-A Concordance: 94.26374926079242%
