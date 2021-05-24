@@ -20,11 +20,18 @@ pathloc = Path(__file__).parent
 
 class AAMatch:
 
-    def __init__(self, dbversion=3420, ungap=True):
+    def __init__(self, dbversion=3420, ungap=True, imputed=False):
         # if ungap = True, use complete reference sequence
         # if ungap = False, use gapped reference sequence
         self.dbversion = dbversion
         self.ungap = ungap
+        self.imputed = imputed
+        if self.imputed:
+            self.fdir = 'ifasta'
+            self.ftype = 'fasta'
+        else:
+            self.fdir = 'msf'
+            self.ftype = 'msf'
         hlaProteinOffset = {
             "A" : 0,
             "B" : 0,
@@ -295,23 +302,30 @@ class AAMatch:
         self.HLA_seq = {} # Two-field
         regex = '\w*\*\d*\:\d*'
         suffixes = ["L", "S", "C", "A", "Q", "N"]
-
+        fdir = self.fdir
+        ftype = self.ftype
         for locus in loci:
             loc_full_alseq = {}
-            seq_filename = str(pathloc) + "/msf/" + locus + "_prot_" + str(self.dbversion) \
-                        + ".msf"
+            seq_filename = "{}/{}/{}_prot_{}.{}".format(str(pathloc), fdir, locus, str(self.dbversion), ftype)
             seq_filename = Path(seq_filename)
-            if path.exists(seq_filename) == False:
+            if (path.exists(seq_filename) == False) & (ftype == 'msf'):
                 print("Downloading requested MSF files for locus " + locus + "...")
                 url = "https://raw.githubusercontent.com/ANHIG/IMGTHLA/" + str(
                     self.dbversion) + "/msf/" + locus + "_prot.msf"
                 r = requests.get(url)
                 with open(seq_filename, 'wb') as f:
                     f.write(r.content)
+                multipleseq = AlignIO.read(seq_filename, format="msf")
+            elif (path.exists(seq_filename) == False) & (ftype == 'fasta'):
+                print('ERROR - NO IMPUTED SEQUENCE FILES PRESENT - RUN IMPUTATION FIRST')
+                break
             else: 
-                print("MSF files already downloaded")
-            multipleseq = AlignIO.read(seq_filename, format="msf")
-            
+                if ftype == 'msf':
+                    print("MSF files already downloaded")
+                    multipleseq = AlignIO.read(seq_filename, format="msf")
+                elif ftype == 'fasta':
+                    print("Imputed sequence files found!")
+                    multipleseq = AlignIO.read(seq_filename, format="fasta")
             if locus == 'DRB345':
                 for loc in ['DRB3', 'DRB4', 'DRB5']:
                     self.reference(multipleseq, loc)
@@ -352,7 +366,6 @@ class AAMatch:
                 # to be incomplete
                 if (loc_two_field_allele not in self.HLA_seq):
                     self.HLA_seq[loc_two_field_allele] = mrecord
-
                 # print (HLA_seqrecord_dict[allele])
                 
                 # TODO - add feature annotation to SeqIO object
