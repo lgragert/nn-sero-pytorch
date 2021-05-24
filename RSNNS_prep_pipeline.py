@@ -1,7 +1,10 @@
+import os
 import pandas as pd
 import numpy as np
 from datetime import date
 from collections import OrderedDict
+
+pathloc = str(os.getcwd()) + '/'
 
 def ser_parse():
     current = '3370'
@@ -122,7 +125,7 @@ def ser_parse():
         serologies = serologies[~serologies.index.duplicated()]
         serologies.update(loc_frame, overwrite=True)
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
-        df = pd.read_csv('aa-matching/imputed/' + locus + '_imputed_poly.csv')
+        df = pd.read_csv('{}/aa-matching/output/{}_AA_poly.csv'.format(pathloc,locus))
         #df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
         df['allele'] = df['allele'].apply(lambda x: ':'.join(x.split(':')[:2]))
         df = df.set_index('allele')
@@ -154,17 +157,17 @@ def ser_parse():
         #newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
         newtst = tst[~tst.index.duplicated()]
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
-        newtst.to_csv('randomforest/itesting/' + locus + '_test.csv')
+        newtst.to_csv('randomforest/testing/' + locus + '_test.csv')
 
         trn = fixed_df[fixed_df['serology'] != np.nan]
         trn = trn[~trn.index.duplicated()]
         #trn = trn[~trn.serology.isnull()]
         trn.sort_values(by=['allele'], inplace=True, na_position='last')
         newtrn = trn[trn.index.isin(oldtrn_frame.index)]
-        newtrn.to_csv('randomforest/itraining/' + locus + '_train.csv')
+        newtrn.to_csv('randomforest/training/' + locus + '_train.csv')
         newval = trn[trn.index.isin(oldval_frame.index)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
-        newval.to_csv('randomforest/itraining/' + locus + '_validation.csv')
+        newval.to_csv('randomforest/training/' + locus + '_validation.csv')
     return
 
 def RSNNS_fixer():
