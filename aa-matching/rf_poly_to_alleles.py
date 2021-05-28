@@ -41,6 +41,7 @@ class Poly2Alleles:
     def getAApolys(self, loc, start, end):
         HLA_alleles = []
         for allele_loctyp in aa_mm.HLA_full_allele:
+            end = len(aa_mm.HLA_full_allele[allele_loctyp])
             AA_polys = {}
             (allele_loc, allele_typ) = allele_loctyp.split('*')
             if (allele_loc != loc):
