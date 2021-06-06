@@ -163,7 +163,11 @@ def ser_parse():
         trn = trn[~trn.index.duplicated()]
         #trn = trn[~trn.serology.isnull()]
         trn.sort_values(by=['allele'], inplace=True, na_position='last')
-        newtrn = trn[trn.index.isin(oldtrn_frame.index)]
+        check_index = oldtrn_frame.index.tolist()
+        
+        # correction to add back B*08:06, now named B*08:20
+        check_index.append("B*08:20")
+        newtrn = trn[trn.index.isin(check_index)]
         newtrn.to_csv('randomforest/OHtraining/' + locus + '_train.csv')
         newval = trn[trn.index.isin(oldval_frame.index)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
