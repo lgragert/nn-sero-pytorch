@@ -1,7 +1,6 @@
+#!/usr/bin/env python3
 import pandas as pd
 import aa_matching_msf as aa
-from collections import OrderedDict
-from tqdm import tqdm
 
 aa_mm = aa.AAMatch(dbversion=3420, ungap=False)
 
@@ -49,10 +48,12 @@ for loc in aa_mm.ard_start_pos:
 
     start = aa_mm.ard_start_pos[loc]
     end = aa_mm.ard_end_pos[loc]
+    print(end)
     
     HLA_alleles = getAApolys(loc, start, end)
     output_frame = pd.DataFrame(HLA_alleles)
     output_frame = output_frame.set_index('allele')
     
     output_frame = ungap(output_frame, aa_mm.refseq_full, loc)
+    output_frame = pd.get_dummies(output_frame)
     output_frame.to_csv('./output/{}_AA_poly.csv'.format(loc), index=True)

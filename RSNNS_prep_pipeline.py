@@ -45,6 +45,9 @@ def ser_parse():
                         info[2] = np.nan
                     elif info[2] == '':
                         info[2] = np.nan
+                    # adding to correct to old validation file
+                    elif allele == 'B*08:20':
+                        info[2] = '8'
                     else:
                         info[2] = info[2]
                     serology.append(str(info[2]))
@@ -124,6 +127,8 @@ def ser_parse():
 
         serologies = serologies[~serologies.index.duplicated()]
         serologies.update(loc_frame, overwrite=True)
+        if locus == 'B':
+            serologies.at['B*08:20','serology'] = '8'
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
         df = pd.read_csv('{}/aa-matching/OHoutput/{}_AA_poly.csv'.format(pathloc,locus))
         #df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
@@ -153,9 +158,9 @@ def ser_parse():
         #editing this section to create the new/old dataframes
         tst = fixed_df
 
-        #newtst1 = tst[~tst.index.isin(oldtrn_frame.index)]
-        #newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
-        newtst = tst[~tst.index.duplicated()]
+        newtst = tst[~tst.index.isin(oldtrn_frame.index)]
+        newtst = newtst[~newtst.index.isin(oldval_frame.index)]
+        newtst = newtst[~newtst.index.duplicated()]
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
         newtst.to_csv('randomforest/OHtesting/' + locus + '_test.csv')
 
@@ -163,13 +168,13 @@ def ser_parse():
         trn = trn[~trn.index.duplicated()]
         #trn = trn[~trn.serology.isnull()]
         trn.sort_values(by=['allele'], inplace=True, na_position='last')
-        check_index = oldtrn_frame.index.tolist()
         
-        # correction to add back B*08:06, now named B*08:20
-        check_index.append("B*08:20")
-        newtrn = trn[trn.index.isin(check_index)]
+        # adding to correct B validation file
+        check_ind = oldval_frame.index.tolist()
+        check_ind.append('B*08:20')
+        newtrn = trn[trn.index.isin(oldtrn_frame.index)]
         newtrn.to_csv('randomforest/OHtraining/' + locus + '_train.csv')
-        newval = trn[trn.index.isin(oldval_frame.index)]
+        newval = trn[trn.index.isin(check_ind)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
         newval.to_csv('randomforest/OHtraining/' + locus + '_validation.csv')
     return
