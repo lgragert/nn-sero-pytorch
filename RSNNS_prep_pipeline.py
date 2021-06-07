@@ -144,12 +144,13 @@ def ser_parse():
 
         #editing this section to create the new/old dataframes
         tst = fixed_df
-
+        '''
         newtst = tst[~tst.index.isin(oldtrn_frame.index)]
         newtst = newtst[~newtst.index.isin(oldval_frame.index)]
         newtst = newtst[~newtst.index.duplicated()]
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
         newtst.to_csv('randomforest/OHtesting/' + locus + '_test.csv')
+        '''
 
         trn = fixed_df[fixed_df.serology != np.nan]
         trn = trn[trn.serology != 'nan']
@@ -175,7 +176,13 @@ def ser_parse():
         keep.append('B*08:20')
         keep.append('C*05:09')
         newval = trn[trn.index.isin(keep)]
+        newtst = tst[~tst.index.isin(newval.index)]
+        newtst = newtst[~newtst.index.isin(newtrn.index)]
+        newtst = newtst[~newtst.index.duplicated()]
+        newtst.sort_values(by=['allele'], inplace=True, na_position='last')
+        newtst.to_csv('randomforest/OHtesting/' + locus + '_test.csv')
         # delete everything under 'testing expansion..' comment and uncomment out next line to return to old val sets
+        # also uncomment comment block for newtst above
         #newval = trn[trn.index.isin(check_ind)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
         newval.to_csv('randomforest/OHtraining/' + locus + '_validation.csv')
