@@ -129,6 +129,8 @@ def ser_parse():
         serologies.update(loc_frame, overwrite=True)
         if locus == 'B':
             serologies.at['B*08:20','serology'] = '8'
+        elif locus == 'C':
+            serologies.at['C*05:09','serology'] = '5'
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
         df = pd.read_csv('{}/aa-matching/OHoutput/{}_AA_poly.csv'.format(pathloc,locus))
         #df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
@@ -172,6 +174,7 @@ def ser_parse():
         # adding to correct B validation file
         check_ind = oldval_frame.index.tolist()
         check_ind.append('B*08:20')
+        check_ind.append('C*05:09')
         newtrn = trn[trn.index.isin(oldtrn_frame.index)]
         newtrn.to_csv('randomforest/OHtraining/' + locus + '_train.csv')
         newval = trn[trn.index.isin(check_ind)]
