@@ -17,22 +17,6 @@ def ser_parse():
         ser_dict = {}
         for line in ser_handler:
             serology = []
-           # if line.find('*') != -1:
-           #     info = line.split(';')
-           #     if info[0] == loc_test:
-           #         numsplit = info[1].split(':')
-           #         nums = numsplit[0] + ':' + numsplit[1]
-           #         allele = info[0] + nums
-           #         if info[2] == '?':
-           #             info[2] = np.nan
-           #         elif info[2] == '0':
-           #             info[2] = np.nan
-           #         elif info[2] == '':
-           #             info[2] = np.nan
-           #         else:
-           #             info[2] = info[2] + 'a'
-           #         serology.append(str(info[2]))
-           #         ser_dict[allele] = ';'.join(serology)
             if line.find('*') != -1:
                 info = line.split(';')
                 if info[0] == loc_test:
@@ -41,7 +25,7 @@ def ser_parse():
                     allele = info[0] + nums
                     if info[2] == '?':
                         info[2] = np.nan
-                    elif info[2] == '0':
+                    elif info[2] == '0' or not(info[2].isnumeric()):
                         info[2] = np.nan
                     elif info[2] == '':
                         info[2] = np.nan
@@ -137,8 +121,9 @@ def ser_parse():
         df['allele'] = df['allele'].apply(lambda x: ':'.join(x.split(':')[:2]))
         df = df.set_index('allele')
         df['serology'] = np.nan
-        df.update(serologies, overwrite=False)
-        df = df.replace('', np.nan)
+        df.update(serologies, overwrite=True)
+        #df = df.replace('', np.nan)
+        df = df.replace(r'^\s+$', np.nan, regex=True)
         df.sort_values(by=['serology'], inplace=True, na_position='last')
         df.to_csv('outframe/' + locus + '_full.csv')
 
@@ -166,7 +151,9 @@ def ser_parse():
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
         newtst.to_csv('randomforest/OHtesting/' + locus + '_test.csv')
 
-        trn = fixed_df[fixed_df['serology'] != np.nan]
+        trn = fixed_df[fixed_df.serology != np.nan]
+        trn = trn[trn.serology != 'nan']
+        trn = trn.dropna()
         trn = trn[~trn.index.duplicated()]
         #trn = trn[~trn.serology.isnull()]
         trn.sort_values(by=['allele'], inplace=True, na_position='last')
@@ -175,9 +162,21 @@ def ser_parse():
         check_ind = oldval_frame.index.tolist()
         check_ind.append('B*08:20')
         check_ind.append('C*05:09')
-        newtrn = trn[trn.index.isin(oldtrn_frame.index)]
+        newtrn = trn[trn.index.isin(oldtrn_frame.index.tolist())]
         newtrn.to_csv('randomforest/OHtraining/' + locus + '_train.csv')
-        newval = trn[trn.index.isin(check_ind)]
+        #testing expansion of the validation data
+        tstlist = trn[trn.index.isin(oldtst_frame.index.tolist())]
+        tstlist = tstlist[~tstlist.index.isin(oldval_frame.index.tolist())]
+        tstlist = tstlist[~tstlist.index.isin(oldtrn_frame.index.tolist())]
+        tstswithser = tstlist.index.tolist()
+        keep = trn[~trn.index.isin(tstswithser)]
+        keep = keep[~keep.index.isin(newtrn.index.tolist())]
+        keep = keep.index.tolist()
+        keep.append('B*08:20')
+        keep.append('C*05:09')
+        newval = trn[trn.index.isin(keep)]
+        # delete everything under 'testing expansion..' comment and uncomment out next line to return to old val sets
+        #newval = trn[trn.index.isin(check_ind)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
         newval.to_csv('randomforest/OHtraining/' + locus + '_validation.csv')
     return
