@@ -1,3 +1,0 @@
-HLA-DRB1 Similar: 771
-HLA-DRB1 Different: 233
-HLA-DRB1 Concordance: 76.79282868525897%

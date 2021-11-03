@@ -1,3 +1,0 @@
-HLA-B Similar: 1811
-HLA-B Different: 461
-HLA-B Concordance: 79.70950704225352%

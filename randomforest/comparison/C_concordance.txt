@@ -1,1 +1,0 @@
-HLA-C Similar: 892HLA-C Different: 135HLA-C Concordance: 86.85491723466407%

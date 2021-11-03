@@ -1,3 +1,0 @@
-HLA-DQB1 Similar: 224
-HLA-DQB1 Different: 52
-HLA-DQB1 Concordance: 81.15942028985508%

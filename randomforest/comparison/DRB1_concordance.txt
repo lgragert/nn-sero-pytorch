@@ -1,1 +1,0 @@
-HLA-DRB1 Similar: 909HLA-DRB1 Different: 95HLA-DRB1 Concordance: 90.5378486055777%
