@@ -1,0 +1,13 @@
+NEAREST 10 NEIGHBORS FOR EACH IMPUTED ALLELE + 
+Format for neighbors is $ALLELE (HamDist for NA Seq)
+Imputed allele:				DRB4*01:04
+Neighbor #1:				DRB4*01:59 (2)
+Neighbor #2:				DRB4*01:98 (2)
+Neighbor #3:				DRB4*01:69 (2)
+Neighbor #4:				DRB4*01:100 (2)
+Neighbor #5:				DRB4*01:58 (2)
+Neighbor #6:				DRB4*01:55 (2)
+Neighbor #7:				DRB4*01:53 (2)
+Neighbor #8:				DRB4*01:49 (2)
+Neighbor #9:				DRB4*01:48 (2)
+Neighbor #10:				DRB4*01:45 (2)

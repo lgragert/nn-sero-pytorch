@@ -5,8 +5,8 @@ from collections import OrderedDict
 
 def ser_parse():
     current = '3370'
-    loci = ["A", "B", "C", "DPB1", "DQB1", "DRB1"]
-    ref_seq = ["A*01:01", "B*07:02", "C*01:02", "DPB1*01:01", "DQB1*05:01", "DRB1*01:01"]
+    loci = ["A", "B", "C", "DQB1", "DRB1"]
+    ref_seq = ["A*01:01", "B*07:02", "C*01:02", "DQB1*05:01", "DRB1*01:01"]
     for locus in loci:
         indy = loci.index(locus)
         ser_handler = open('rel_dna_ser/rel_dna_ser_' + current + '.txt', 'r')
@@ -14,6 +14,22 @@ def ser_parse():
         ser_dict = {}
         for line in ser_handler:
             serology = []
+           # if line.find('*') != -1:
+           #     info = line.split(';')
+           #     if info[0] == loc_test:
+           #         numsplit = info[1].split(':')
+           #         nums = numsplit[0] + ':' + numsplit[1]
+           #         allele = info[0] + nums
+           #         if info[2] == '?':
+           #             info[2] = np.nan
+           #         elif info[2] == '0':
+           #             info[2] = np.nan
+           #         elif info[2] == '':
+           #             info[2] = np.nan
+           #         else:
+           #             info[2] = info[2] + 'a'
+           #         serology.append(str(info[2]))
+           #         ser_dict[allele] = ';'.join(serology)
             if line.find('*') != -1:
                 info = line.split(';')
                 if info[0] == loc_test:
@@ -27,56 +43,57 @@ def ser_parse():
                     elif info[2] == '':
                         info[2] = np.nan
                     else:
-                        info[2] = info[2] + 'a'
+                        info[2] = info[2]
                     serology.append(str(info[2]))
                     if locus == 'A':
-                        if serology[0] in ['23a', '24a']:
-                            serology.append('9a')
-                        elif serology[0] in ['25a', '26a', '34a', '66a']:
-                            serology.append('10a')
-                        elif serology[0] in ['29a', '30a', '31a', '32a', '33a', '74a']:
-                            serology.append('19a')
-                        elif serology[0] in ['68a', '69a']:
-                            serology.append('28a')
+                        if serology[0] in ['23', '24']:
+                            serology.append('9')
+                        elif serology[0] in ['25', '26', '34', '66']:
+                            serology.append('10')
+                        elif serology[0] in ['29', '30', '31', '32', '33', '74']:
+                            serology.append('19')
+                        elif serology[0] in ['68', '69']:
+                            serology.append('28')
                     elif locus == 'B':
-                        if serology[0] in ['51a', '52a']:
-                            serology.append('5a')
-                        elif serology[0] in ['44a', '45a']:
-                            serology.append('12a')
-                        elif serology[0] in ['64a', '65a']:
-                            serology.append('14a')
-                        elif serology[0] in ['62a', '63a', '75a', '76a', '77a']:
-                            serology.append('15a')
-                        elif serology[0] in ['38a', '39a']:
-                            serology.append('16a')
-                        elif serology[0] in ['57a', '58a']:
-                            serology.append('17a')
-                        elif serology[0] in ['49a', '50a']:
-                            serology.append('21a')
-                        elif serology[0] in ['54a', '55a', '56a']:
-                            serology.append('22a')
-                        elif serology[0] in ['60a', '61a']:
-                            serology.append('40a')
-                        elif serology[0] in ['71a', '72a']:
-                            serology.append('70a')
+                        if serology[0] in ['51', '52']:
+                            serology.append('5')
+                        elif serology[0] in ['44', '45']:
+                            serology.append('12')
+                        elif serology[0] in ['64', '65']:
+                            serology.append('14')
+                        elif serology[0] in ['62', '63', '75', '76', '77']:
+                            serology.append('15')
+                        elif serology[0] in ['38', '39']:
+                            serology.append('16')
+                        elif serology[0] in ['57', '58']:
+                            serology.append('17')
+                        elif serology[0] in ['49', '50']:
+                            serology.append('21')
+                        elif serology[0] in ['54', '55', '56']:
+                            serology.append('22')
+                        elif serology[0] in ['60', '61']:
+                            serology.append('40')
+                        elif serology[0] in ['71', '72']:
+                            serology.append('70')
                     elif locus == 'C':
-                        if serology[0] in ['9a', '10a']:
-                            serology.append('3a')
+                        if serology[0] in ['9', '10']:
+                            serology.append('3')
                     elif locus == 'DQB1':
-                        if serology[0] in ['5a', '6a']:
-                            serology.append('1a')
-                        elif serology[0] in ['7a', '8a', '9a']:
-                            serology.append('3a')
+                        if serology[0] in ['5', '6']:
+                            serology.append('1')
+                        elif serology[0] in ['7', '8', '9']:
+                            serology.append('3')
                     elif locus == 'DRB1':
-                        if serology[0] in ['15a', '16a']:
-                            serology.append('2a')
-                        elif serology[0] in ['17a', '18a']:
-                            serology.append('3a')
-                        elif serology[0] in ['11a', '12a']:
-                            serology.append('5a')
-                        elif serology[0] in ['13a', '14a']:
-                            serology.append('6a')
-                    ser_dict[allele] = ';'.join(serology)
+                        if serology[0] in ['15', '16']:
+                            serology.append('2')
+                        elif serology[0] in ['17', '18']:
+                            serology.append('3')
+                        elif serology[0] in ['11', '12']:
+                            serology.append('5')
+                        elif serology[0] in ['13', '14']:
+                            serology.append('6')
+                    ser_dict[allele] = ' '.join(serology)
+
 
         serologies = pd.DataFrame(ser_dict.items(), columns=['allele', 'serology'])
         serologies.replace('', np.nan)
@@ -106,6 +123,8 @@ def ser_parse():
         serologies.update(loc_frame, overwrite=True)
         serologies.to_csv('ser/' + locus + '_ser.csv', index=True)
         df = pd.read_csv('aa-matching/imputed/' + locus + '_imputed_poly.csv')
+        #df = pd.read_csv('aa-matching/output/' + locus + '_AA_poly.csv')
+        df['allele'] = df['allele'].apply(lambda x: ':'.join(x.split(':')[:2]))
         df = df.set_index('allele')
         df['serology'] = np.nan
         df.update(serologies, overwrite=False)
@@ -123,14 +142,6 @@ def ser_parse():
             if col.find('-') != -1:
                 droplist.append(col)
 
-        '''
-        corfac = 0
-        for vally in droplist:
-            if df.loc[ref_seq[indy]][vally] == 0:
-                droplist.remove(vally)
-                corfac += 1
-        '''
-
         fixed_df = df.drop(droplist, axis=1)
 
         loc_frame.to_csv('full_frames/' + locus + '_result.csv')
@@ -143,17 +154,17 @@ def ser_parse():
         #newtst = newtst1[~newtst1.index.isin(oldval_frame.index)]
         newtst = tst[~tst.index.duplicated()]
         newtst.sort_values(by=['allele'], inplace=True, na_position='last')
-        newtst.to_csv('testing/' + locus + '_test.csv')
+        newtst.to_csv('randomforest/itesting/' + locus + '_test.csv')
 
-        trn = fixed_df[fixed_df['serology'] != 'nan']
-        trn.sort_values(by=['allele'], inplace=True, na_position='last')
+        trn = fixed_df[fixed_df['serology'] != np.nan]
         trn = trn[~trn.index.duplicated()]
-        trn = trn[~trn.serology.isnull()]
+        #trn = trn[~trn.serology.isnull()]
+        trn.sort_values(by=['allele'], inplace=True, na_position='last')
         newtrn = trn[trn.index.isin(oldtrn_frame.index)]
-        newtrn.to_csv('training/' + locus + '_train.csv')
+        newtrn.to_csv('randomforest/itraining/' + locus + '_train.csv')
         newval = trn[trn.index.isin(oldval_frame.index)]
         newval.sort_values(by=['allele'], inplace=True, na_position='last')
-        newval.to_csv('training/' + locus + '_validation.csv')
+        newval.to_csv('randomforest/itraining/' + locus + '_validation.csv')
     return
 
 def RSNNS_fixer():
@@ -335,5 +346,5 @@ def pat_generator(date):
     return
 
 ser_parse()
-RSNNS_fixer()
-pat_generator(date)
+#RSNNS_fixer()
+#pat_generator(date)

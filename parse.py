@@ -46,10 +46,10 @@ def _parse(tng_file, tst_file, val_file, locus):
                     del(out_dict[spec])
                 serology = list(out_dict)
                 serology = list(map(str,serology))
-                for val in range(len(serology)):
-                  serology[val] += 'a'
+                #for val in range(len(serology)):
+                #  serology[val] += 'a'
                 #values.append(out_dict)
-                spacer = ';'
+                spacer = ' '
                 serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val
@@ -107,10 +107,10 @@ def _parse(tng_file, tst_file, val_file, locus):
                     del(out_dict[spec])
                 serology = list(out_dict)
                 serology = list(map(str,serology))
-                for val in range(len(serology)):
-                  serology[val] += 'a'
+                #for val in range(len(serology)):
+                #  serology[val] += ' '
                 #values.append(out_dict)
-                spacer = ';'
+                spacer = ' '
                 serology = str(spacer.join(serology))
                 AAs = ['allele'] + AA_list
                 values = [allele] + bin_val

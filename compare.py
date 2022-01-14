@@ -21,6 +21,12 @@ for locus in loci:
     oldlen = len(oldset)
     newlen = len(newset)
 
-    merged = pd.concat([oldset,newset]).drop_duplicates(keep=False)
+    row_drop = []
+    for index, row in newset.iterrows():
+        if (row.equals(oldset.loc[index])):
+            row_drop.append(index)
+
+    merged = newset.append(oldset)
+    merged = merged.drop(index = row_drop)
     merged = merged.drop(columns=col_drop)
     merged.to_csv(locus + "_diff.csv", index=True)
